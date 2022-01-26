@@ -218,15 +218,16 @@
   <!-- ODIN II specific config ends -->
   <!-- Physical descriptions begin -->
   <layout>
-    <fixed_layout name="xilinx" width="56" height="51">
+    <auto_layout>
       <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
       <col type="io" startx="0" starty="1" incry="1" priority="100"/>
       <!--Fill with 'clb'-->
       <fill type="clb" priority="10"/>
       <!--Column of 'memory' with 'EMPTY' blocks wherever a 'memory' does not fit. Vertical offset by 1 for perimeter.-->
-      <col type="memory" startx="19" starty="1" incry="6" priority="20"/>
-      <col type="EMPTY" startx="0" repeatx="1" starty="26" priority="101"/>
-    </fixed_layout>
+      <col type="memory" startx="19" starty="1" priority="20"/>
+      <region type="EMPTY" priority="30" startx="35" endx="45" starty="53" endy="155"/>
+      <row type="EMPTY" priority="101" starty="26"/>
+    </auto_layout>
   </layout>
   <device>
     <!-- VB & JL: Using Ian Kuon's transistor sizing and drive strength data for routing, at 40 nm. Ian used BPTM 
