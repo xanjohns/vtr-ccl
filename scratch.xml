@@ -1,0 +1,133 @@
+<architecture>
+  <models>
+  </models>
+  <tiles>
+    <tile name="clb">
+      <sub_tile name="slicem">
+        <equivalent_site>
+          <site pb_type="slicem" pin_mapping="direct"/>
+        </equivalent_site>
+        <clock name="CLK" num_pins="1"/>
+        <input name="CE" num_pins="1"/>
+        <input name="WE" num_pins="1"/>
+        <input name="SR" num_pins="1"/>
+        <input name="CIN" num_pins="1"/>
+        <input name="AI" num_pins="1"/>
+        <input name="AX" num_pins="1"/>
+        <input name="A" num_pins="6"/>
+        <input name="BI" num_pins="1"/>
+        <input name="BX" num_pins="1"/>
+        <input name="B" num_pins="6"/>
+        <input name="CI" num_pins="1"/>
+        <input name="CX" num_pins="1"/>
+        <input name="C" num_pins="6"/>
+        <input name="DI" num_pins="1"/>
+        <input name="DX" num_pins="1"/>
+        <input name="D" num_pins="6"/>
+        <!-- Outputs-->
+        <output name="AQ" num_pins="1"/>
+        <output name="A" num_pins="1"/>
+        <output name="AMUX" num_pins="1"/>
+        <output name="BQ" num_pins="1"/>
+        <output name="B" num_pins="1"/>
+        <output name="BMUX" num_pins="1"/>
+        <output name="CQ" num_pins="1"/>
+        <output name="C" num_pins="1"/>
+        <output name="CMUX" num_pins="1"/>
+        <output name="DQ" num_pins="1"/>
+        <output name="D" num_pins="1"/>
+        <output name="DMUX" num_pins="1"/>
+        <output name="COUT" num_pins="1"/>
+      </sub_tile>
+      <sub_tile name="slicel">
+        <equivalent_site>
+          <site pb_type="slicel" pin_mapping="direct"/>
+        </equivalent_site>
+        <clock name="CLK" num_pins="1"/>
+        <input name="CE" num_pins="1"/>
+        <input name="SR" num_pins="1"/>
+        <input name="CIN" num_pins="1"/>
+        <input name="AX" num_pins="1"/>
+        <input name="A" num_pins="6"/>
+        <input name="BX" num_pins="1"/>
+        <input name="B" num_pins="6"/>
+        <input name="CX" num_pins="1"/>
+        <input name="C" num_pins="6"/>
+        <input name="DX" num_pins="1"/>
+        <input name="D" num_pins="6"/>
+        <!-- Outputs-->
+        <output name="AQ" num_pins="1"/>
+        <output name="A" num_pins="1"/>
+        <output name="AMUX" num_pins="1"/>
+        <output name="BQ" num_pins="1"/>
+        <output name="B" num_pins="1"/>
+        <output name="BMUX" num_pins="1"/>
+        <output name="CQ" num_pins="1"/>
+        <output name="C" num_pins="1"/>
+        <output name="CMUX" num_pins="1"/>
+        <output name="DQ" num_pins="1"/>
+        <output name="D" num_pins="1"/>
+        <output name="DMUX" num_pins="1"/>
+        <output name="COUT" num_pins="1"/>
+      </sub_tile>
+    </tile>
+  </tiles>
+  <layout>
+  </layout>
+  <device>
+  </device>
+  <switchlist>
+  </switchlist>
+  <segmentlist>
+  </segmentlist>
+  <complexblocklist>
+    <!-- Define CLB -->
+    <pb_type name="clb">
+      <clock name="clk" num_pins="1"/>
+      <!-- Define SLICEM -->
+      <pb_type name="slicem">
+
+      </pb_type>
+      <!-- Define SLICEL -->
+      <pb_type name="slicel">
+        <input name="in" num_pins="28"/>
+        <input name="SR" num_pins="1"/>
+        <input name="CE" num_pins="1"/>
+        <input name="CLK" num_pins="1"/>
+        <input name="CIN" num_pins="1"/>
+        <output name="COUT" num_pins="1"/>
+        <output name="out" num_pins="12"/>
+        <!-- Define row in SLICEL -->
+        <pb_type name="slicel_row" num_pb="4">
+          <input name ="A" num_pins="6"/>
+          <input name ="AX" num_pins="1"/>
+          <output name="A_O" num_pins="1"/>
+          <output name="AQ" num_pins="1"/>
+          <output name="AMUX" num_pins="1"/>
+          <!-- Define LUT6 -->
+          <pb_type name="lut6" blif_model=".names" class="lut">
+            <input name="in" num_pins="6" port_class="lut_in"/>
+            <output name="out" num_pins="2" port_class="lut_out"/>
+          </pb_type>
+          <!-- Define FLIPFLOP -->
+          <pb_type name="ff" blif_model=".latch" num_pb="2" class="flipflop">
+            <input name="D" num_pins="1" port_class="D"/>
+            <input name="CE" num_pins="1" />
+            <output name="Q" num_pins="1" port_class="Q"/>
+            <clock name="clk" num_pins="1" port_class="clock"/>
+          </pb_type>
+          <interconnect>
+            <direct name="O6_A" input="lut6.out[1]" output="slicel_row.A_O"/>
+          </interconnect>
+        </pb_type>
+        <interconnect>
+          <direct name="direct1" input="slicel.CLK" output="ff.clk"/>
+        </interconnect>
+      </pb_type>
+    </pb_type>
+  </complexblocklist>
+  <power>
+  </power>
+  <clocks>
+  </clocks>
+</architecture>
