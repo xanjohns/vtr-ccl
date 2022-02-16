@@ -107,7 +107,8 @@
           <!-- Define LUT6 -->
           <pb_type name="lut6" blif_model=".names" class="lut">
             <input name="in" num_pins="6" port_class="lut_in"/>
-            <output name="out" num_pins="2" port_class="lut_out"/>
+            <output name="O6" num_pins="1" port_class="lut_out"/>
+            <output name="O5" num_pins="1" port_class="lut_out"/>
           </pb_type>
           <!-- Define FLIPFLOP -->
           <pb_type name="ff" blif_model=".latch" num_pb="2" class="flipflop">
@@ -117,11 +118,14 @@
             <clock name="clk" num_pins="1" port_class="clock"/>
           </pb_type>
           <interconnect>
-            <direct name="O6_A" input="lut6.out[1]" output="slicel_row.A_O"/>
+            <direct name="O6_A" input="lut6.O6" output="slicel_row.A_O"/>
           </interconnect>
         </pb_type>
         <interconnect>
           <direct name="direct1" input="slicel.CLK" output="ff.clk"/>
+          <mux name="F7AMUX" input="slicel_row[0].lut6.O6 slicel_row[1].lut6.O6" output
+          <mux name="F7BMUX" input="slicel_row[2].lut6.O6 slicel_row[3].lut6.O6" output
+          <mux name="F8MUX" input="F7AMUX.output F7BMUX.output" output
         </interconnect>
       </pb_type>
     </pb_type>
