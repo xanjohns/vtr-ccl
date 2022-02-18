@@ -5,7 +5,7 @@
   - General purpose logic block: 
     K = 6, N = 10
   - Routing architecture: L = 4, fc_in = 0.15, Fc_out = 0.1
-
+;
   Details on Modelling:
 
   Based on flagship k6_frac_N10_mem32K_40nm.xml architecture.  This architecture has no fracturable LUTs nor any heterogeneous blocks.
@@ -25,6 +25,288 @@
        that describe them.
   -->
   <models>
+    <model name="CE_VCC">
+      <output_ports>
+        <port name="VCC"/>
+      </output_ports>
+    </model>
+    <model name="SR_GND">
+      <output_ports>
+        <port name="GND"/>
+      </output_ports>
+    </model>
+    <model name="CARRY4_VPR">
+      <input_ports>
+        <port combinational_sink_ports="CO3 CO2 CO1 CO0 O3 O2 O1 O0" name="CIN"/>
+        <port combinational_sink_ports="CO3 CO2 CO1 CO0 O3 O2 O1 O0" name="CYINIT"/>
+        <port combinational_sink_ports="CO3 CO2 CO1 CO0 O3 O2 O1" name="DI0"/>
+        <port combinational_sink_ports="CO3 CO2 CO1 O3 O2" name="DI1"/>
+        <port combinational_sink_ports="CO3 CO2 O3" name="DI2"/>
+        <port combinational_sink_ports="CO3" name="DI3"/>
+        <port combinational_sink_ports="CO3 CO2 CO1 CO0 O3 O2 O1 O0" name="S0"/>
+        <port combinational_sink_ports="CO3 CO2 CO1 O3 O2 O1" name="S1"/>
+        <port combinational_sink_ports="CO3 CO2 O3 O2" name="S2"/>
+        <port combinational_sink_ports="CO3 O3" name="S3"/>
+      </input_ports>
+      <output_ports>
+        <port name="CO0"/>
+        <port name="CO1"/>
+        <port name="CO2"/>
+        <port name="CO3"/>
+        <port name="O0"/>
+        <port name="O1"/>
+        <port name="O2"/>
+        <port name="O3"/>
+      </output_ports>
+    </model>
+    <model name="CARRY_COUT_PLUG">
+      <input_ports>
+        <port combinational_sink_ports="COUT" name="CIN"/>
+      </input_ports>
+      <output_ports>
+        <port name="COUT"/>
+      </output_ports>
+    </model>
+    <model name="FDRE_ZINI">
+      <input_ports>
+        <port is_clock="1" name="C"/>
+        <port clock="C" name="CE"/>
+        <port clock="C" name="R"/>
+        <port clock="C" name="D"/>
+      </input_ports>
+      <output_ports>
+        <port clock="C" name="Q"/>
+      </output_ports>
+    </model>
+    <model name="FDSE_ZINI">
+      <input_ports>
+        <port is_clock="1" name="C"/>
+        <port clock="C" name="CE"/>
+        <port clock="C" name="S"/>
+        <port clock="C" name="D"/>
+      </input_ports>
+      <output_ports>
+        <port clock="C" name="Q"/>
+      </output_ports>
+    </model>
+    <model name="FDPE_ZINI">
+      <input_ports>
+        <port is_clock="1" name="C"/>
+        <port clock="C" name="CE"/>
+        <port clock="C" name="PRE"/>
+        <port clock="C" name="D"/>
+      </input_ports>
+      <output_ports>
+        <port clock="C" name="Q"/>
+      </output_ports>
+    </model>
+    <model name="FDCE_ZINI">
+      <input_ports>
+        <port is_clock="1" name="C"/>
+        <port clock="C" name="CE"/>
+        <port clock="C" name="CLR"/>
+        <port clock="C" name="D"/>
+      </input_ports>
+      <output_ports>
+        <port clock="C" name="Q"/>
+      </output_ports>
+    </model>
+    <model name="LDPE_ZINI">
+      <input_ports>
+        <port combinational_sink_ports="Q" is_clock="1" name="G"/>
+        <port combinational_sink_ports="Q" name="GE"/>
+        <port combinational_sink_ports="Q" name="PRE"/>
+        <port clock="G" name="D"/>
+      </input_ports>
+      <output_ports>
+        <port name="Q"/>
+      </output_ports>
+    </model>
+    <model name="LDCE_ZINI">
+      <input_ports>
+        <port combinational_sink_ports="Q" is_clock="1" name="G"/>
+        <port combinational_sink_ports="Q" name="GE"/>
+        <port combinational_sink_ports="Q" name="CLR"/>
+        <port clock="G" name="D"/>
+      </input_ports>
+      <output_ports>
+        <port name="Q"/>
+      </output_ports>
+    </model>
+    <model name="NO_FF">
+      <input_ports>
+        <port name="D"/>
+      </input_ports>
+    </model>
+    <model name="MUXF6">
+      <input_ports>
+        <port combinational_sink_ports="O" name="I0"/>
+        <port combinational_sink_ports="O" name="I1"/>
+        <port combinational_sink_ports="O" name="S"/>
+      </input_ports>
+      <output_ports>
+        <port name="O"/>
+      </output_ports>
+    </model>
+    <model name="MUXF7">
+      <input_ports>
+        <port combinational_sink_ports="O" name="I0"/>
+        <port combinational_sink_ports="O" name="I1"/>
+        <port combinational_sink_ports="O" name="S"/>
+      </input_ports>
+      <output_ports>
+        <port name="O"/>
+      </output_ports>
+    </model>
+    <model name="MUXF8">
+      <input_ports>
+        <port combinational_sink_ports="O" name="I0"/>
+        <port combinational_sink_ports="O" name="I1"/>
+        <port combinational_sink_ports="O" name="S"/>
+      </input_ports>
+      <output_ports>
+        <port name="O"/>
+      </output_ports>
+    </model>
+    <model name="NO_DRAM">
+      <input_ports>
+        <port name="A"/>
+      </input_ports>
+      <output_ports/>
+    </model>
+    <model name="DPRAM64_for_RAM128X1D">
+      <input_ports>
+        <port is_clock="1" name="CLK"/>
+        <port clock="CLK" name="WE"/>
+        <port clock="CLK" name="DI"/>
+        <port clock="CLK" name="WA"/>
+        <port clock="CLK" name="WA7"/>
+        <port combinational_sink_ports="O" name="A"/>
+      </input_ports>
+      <output_ports>
+        <port name="O"/>
+      </output_ports>
+    </model>
+    <model name="DPRAM64">
+      <input_ports>
+        <port is_clock="1" name="CLK"/>
+        <port clock="CLK" name="WE"/>
+        <port clock="CLK" name="DI"/>
+        <port clock="CLK" name="WA"/>
+        <port clock="CLK" name="WA7"/>
+        <port clock="CLK" name="WA8"/>
+        <port combinational_sink_ports="O" name="A"/>
+      </input_ports>
+      <output_ports>
+        <port name="O"/>
+      </output_ports>
+    </model>
+    <model name="DPRAM32">
+      <input_ports>
+        <port is_clock="1" name="CLK"/>
+        <port clock="CLK" name="WE"/>
+        <port clock="CLK" name="DI"/>
+        <port clock="CLK" name="WA"/>
+        <port combinational_sink_ports="O" name="A"/>
+      </input_ports>
+      <output_ports>
+        <port name="O"/>
+      </output_ports>
+    </model>
+    <model name="SPRAM32">
+      <input_ports>
+        <port is_clock="1" name="CLK"/>
+        <port clock="CLK" name="WE"/>
+        <port clock="CLK" name="DI"/>
+        <port clock="CLK" name="WA"/>
+        <port combinational_sink_ports="O" name="A"/>
+      </input_ports>
+      <output_ports>
+        <port name="O"/>
+      </output_ports>
+    </model>
+    <model name="DRAM_2_OUTPUT_STUB">
+      <input_ports>
+        <port combinational_sink_ports="DPO_OUT" name="DPO"/>
+        <port combinational_sink_ports="SPO_OUT" name="SPO"/>
+      </input_ports>
+      <output_ports>
+        <port name="DPO_OUT"/>
+        <port name="SPO_OUT"/>
+      </output_ports>
+    </model>
+    <model name="DRAM_4_OUTPUT_STUB">
+      <input_ports>
+        <port combinational_sink_ports="DOA_OUT" name="DOA"/>
+        <port combinational_sink_ports="DOB_OUT" name="DOB"/>
+        <port combinational_sink_ports="DOC_OUT" name="DOC"/>
+        <port combinational_sink_ports="DOD_OUT" name="DOD"/>
+      </input_ports>
+      <output_ports>
+        <port name="DOA_OUT"/>
+        <port name="DOB_OUT"/>
+        <port name="DOC_OUT"/>
+        <port name="DOD_OUT"/>
+      </output_ports>
+    </model>
+    <model name="DRAM_8_OUTPUT_STUB">
+      <input_ports>
+        <port combinational_sink_ports="DOA0_OUT" name="DOA0"/>
+        <port combinational_sink_ports="DOA1_OUT" name="DOA1"/>
+        <port combinational_sink_ports="DOB0_OUT" name="DOB0"/>
+        <port combinational_sink_ports="DOB1_OUT" name="DOB1"/>
+        <port combinational_sink_ports="DOC0_OUT" name="DOC0"/>
+        <port combinational_sink_ports="DOC1_OUT" name="DOC1"/>
+        <port combinational_sink_ports="DOD0_OUT" name="DOD0"/>
+        <port combinational_sink_ports="DOD1_OUT" name="DOD1"/>
+      </input_ports>
+      <output_ports>
+        <port name="DOA0_OUT"/>
+        <port name="DOA1_OUT"/>
+        <port name="DOB0_OUT"/>
+        <port name="DOB1_OUT"/>
+        <port name="DOC0_OUT"/>
+        <port name="DOC1_OUT"/>
+        <port name="DOD0_OUT"/>
+        <port name="DOD1_OUT"/>
+      </output_ports>
+    </model>
+    <model name="DI64_STUB">
+      <input_ports>
+        <port combinational_sink_ports="DO" name="DI"/>
+      </input_ports>
+      <output_ports>
+        <port name="DO"/>
+      </output_ports>
+    </model>
+    <model name="SRLC32E_VPR">
+      <input_ports>
+        <port is_clock="1" name="CLK"/>
+        <port clock="CLK" name="CE"/>
+        <port combinational_sink_ports="Q" name="A"/>
+        <port clock="CLK" name="D"/>
+      </input_ports>
+      <output_ports>
+        <!-- <port name="Q" clock="CLK"/> -->
+        <port name="Q"/>
+        <port clock="CLK" name="Q31"/>
+      </output_ports>
+    </model>
+    <model name="SRLC16E_VPR">
+      <input_ports>
+        <port is_clock="1" name="CLK"/>
+        <port clock="CLK" name="CE"/>
+        <port combinational_sink_ports="Q" name="A0"/>
+        <port combinational_sink_ports="Q" name="A1"/>
+        <port combinational_sink_ports="Q" name="A2"/>
+        <port combinational_sink_ports="Q" name="A3"/>
+        <port clock="CLK" name="D"/>
+      </input_ports>
+      <output_ports>
+        <port name="Q"/>
+        <port clock="CLK" name="Q15"/>
+      </output_ports>
+    </model>
   </models>
   <tiles>
     <tile name="io" area="0">
@@ -42,18 +324,6 @@
           <loc side="right">io.outpad io.inpad io.clock</loc>
           <loc side="bottom">io.outpad io.inpad io.clock</loc>
         </pinlocations>
-      </sub_tile>
-    </tile>
-    <tile name="clb" area="53894">
-      <sub_tile name="clb">
-        <equivalent_sites>
-          <site pb_type="clb" pin_mapping="direct"/>
-        </equivalent_sites>
-        <input name="I" num_pins="40" equivalent="full"/>
-        <output name="O" num_pins="10" equivalent="instance"/>
-        <clock name="clk" num_pins="1"/>
-        <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
-        <pinlocations pattern="spread"/>
       </sub_tile>
     </tile>
     <tile name="BLK-TL-CLBLL_L">
@@ -1064,6 +1334,7 @@
       <corners type="EMPTY" priority="101"/>
       <!--Fill with 'clb'-->
       <fill type="BLK-TL-CLBLL_L" priority="10"/>
+      <!-- <col type="BLK-TL-CLBLL_R" priority="11" start -->
     </auto_layout>
   </layout>
   <device>
