@@ -2341,29 +2341,15 @@
                 </metadata>
               </pb_type>
               <interconnect>
-                <!-- </direct> -->
-                <direct input="FF_FDSE_or_FDRE.C" name="C" output="FDSE.clk"/>
-                <direct input="FF_FDSE_or_FDRE.D" name="D" output="FDSE.D">
-                  <pack_pattern in_port="FF_FDSE_or_FDRE.D" name="LUT_to_FF_FDSE" out_port="FDSE.D"/>
-                </direct>
-                <!-- <direct input="FF_FDSE_or_FDRE.SR" name="S" output="FDSE.S"> -->
-                  <!-- <pack_pattern in_port="FF_FDSE_or_FDRE.SR" name="SR_FF_FDSE" out_port="FDSE.S"/> -->
-                <!-- </direct> -->
-                <direct input="FDSE.Q" name="Q" output="FF_FDSE_or_FDRE.Q"/>
+                <complete input="SLICE_FF.CK" name="C_FF" output="FDSE.clk"/>
+                <direct input="SLICE_FF.D5" name="D5" output="FDSE[3:0].D"/>
+                <direct input="SLICE_FF.D" name="D" output="FDSE[7:4].D"/>
+                <direct input="FDSE[3:0].Q" name="Q5" output="SLICE_FF.Q5"/>
+                <direct input="FDSE[7:4].Q" name="Q" output="SLICE_FF.Q"/>
               </interconnect>
-          </pb_type> 
-              <interconnect>
-                <complete input="SLICE_FF.CK" name="C_FF" output="FF_FDSE_or_FDRE.C"/>
-                <direct input="SLICE_FF.D5" name="D5" output="FF_FDSE_or_FDRE.D"/>
-                <complete input="SLICE_FF.CK" name="C_REG" output="REG_FDSE_or_FDRE.C"/>
-                <direct input="SLICE_FF.D" name="D" output="REG_FDSE_or_FDRE.D"/>
-                <direct input="FF_FDSE_or_FDRE.Q" name="Q5" output="SLICE_FF.Q5"/>
-                <direct input="REG_FDSE_or_FDRE.Q" name="Q" output="SLICE_FF.Q"/>
-              </interconnect>
-              <metadata>
+              <!-- <metadata>
                 <meta name="fasm_features">FFSYNC</meta>
-              </metadata>
-            </mode>
+              </metadata> -->
             <metadata>
               <meta name="type">block</meta>
               <meta name="subtype">ignore</meta>
@@ -2629,7 +2615,7 @@
             <direct input="COMMON_SLICE.DO6" name="COMMON_SLICE_DOUT" output="COMMON_SLICE.D">
               <delay_constant in_port="COMMON_SLICE.DO6" max="0.0" out_port="COMMON_SLICE.D"/>
             </direct>
-            <direct input="CEUSEDMUX.CE_OUT" name="CE_OUT" output="SLICE_FF.CE"/>
+            <!-- <direct input="CEUSEDMUX.CE_OUT" name="CE_OUT" output="SLICE_FF.CE"/> -->
             <direct input="COMMON_SLICE.CLK" name="CK" output="SLICE_FF.CK"/>
             <mux input="COMMON_SLICE.AX COMMON_SLICE.AO5" name="A5FFMUX" output="SLICE_FF.D5[0]">
               <metadata>
@@ -2790,7 +2776,7 @@
               <delay_constant in_port="CARRY4_VPR.CO3" max="3.3600000000000003e-10" out_port="SLICE_FF.D[3]"/>
               <delay_constant in_port="CARRY4_VPR.O3" max="7.600000000000001e-11" out_port="SLICE_FF.D[3]"/>
             </mux>
-            <direct input="SRUSEDMUX.SR_OUT" name="SR_OUT" output="SLICE_FF.SR"/>
+            <!-- <direct input="SRUSEDMUX.SR_OUT" name="SR_OUT" output="SLICE_FF.SR"/> -->
             <direct input="COMMON_SLICE.SR" name="SR" output="SRUSEDMUX.SR">
               <metadata>
                 <meta name="fasm_mux">
