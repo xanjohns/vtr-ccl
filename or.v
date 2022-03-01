@@ -1,6 +1,7 @@
 module simpleOR(
     input[13:0] in,  //Input
-    output[6:0] o_led);  //Output to LED
+    input clk,
+    output[7:0] o_led);  //Output to LED
 
     //Combinational logic 
     //
@@ -14,6 +15,16 @@ module simpleOR(
         o_led[5] = in[10] | in[11];
         o_led[6] = in[12] | in[13];
     end
+
+    reg register;
+    always @(posedge clk) begin
+        if(in[0] & in[1])
+        register <= in[13];
+        else 
+        register <= register;
+    end
+
+    assign o_led[7] = register;
 
     // use a width factor of at least 40
 endmodule
