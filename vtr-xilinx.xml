@@ -304,6 +304,8 @@
       <cb type="pattern">1 1 1 1</cb>
     </segment>
   </segmentlist>
+
+  
   <complexblocklist>
     <!-- Define I/O pads begin -->
     <!-- Capacity is a unique property of I/Os, it is the maximum number of I/Os that can be placed at the same (X,Y) location on the FPGA -->
