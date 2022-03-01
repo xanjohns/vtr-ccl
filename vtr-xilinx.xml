@@ -46,33 +46,33 @@
     </tile>
     <tile name="BLK-TL-CLBLL_L">
       <sub_tile capacity="2" name="BLK-TL-CLBLL_L_SLICEL">
-        <input name="CLBLL_LL_A" num_pins="5"/>
+        <input name="CLBLL_LL_AI" num_pins="5"/>
 		<input name="CLBLL_LL_AX" num_pins="1"/>
 
-		<input name="CLBLL_LL_B" num_pins="5"/>
+		<input name="CLBLL_LL_BI" num_pins="5"/>
 
 		<input name="CLBLL_LL_BX" num_pins="1"/>
-		<input name="CLBLL_LL_C" num_pins="5"/>
+		<input name="CLBLL_LL_CI" num_pins="5"/>
 		<input name="CLBLL_LL_CE" num_pins="1"/>
 		<input name="CLBLL_LL_CIN" num_pins="1"/>
         <clock name="CLBLL_LL_CLK" num_pins="1"/>
         <input name="CLBLL_LL_CX" num_pins="1"/>
 
-		<input name="CLBLL_LL_D" num_pins="5"/>
+		<input name="CLBLL_LL_DI" num_pins="5"/>
 		<input name="CLBLL_LL_DX" num_pins="1"/>
 		<input name="CLBLL_LL_SR" num_pins="1"/>
 
-        <output name="CLBLL_LL_A" num_pins="1"/>
+        <output name="CLBLL_LL_AO" num_pins="1"/>
         <output name="CLBLL_LL_AMUX" num_pins="1"/>
         <output name="CLBLL_LL_AQ" num_pins="1"/>
-        <output name="CLBLL_LL_B" num_pins="1"/>
+        <output name="CLBLL_LL_BO" num_pins="1"/>
         <output name="CLBLL_LL_BMUX" num_pins="1"/>
         <output name="CLBLL_LL_BQ" num_pins="1"/>
-        <output name="CLBLL_LL_C" num_pins="1"/>
+        <output name="CLBLL_LL_CO" num_pins="1"/>
         <output name="CLBLL_LL_CMUX" num_pins="1"/>
         <output name="CLBLL_LL_COUT" num_pins="1"/>
         <output name="CLBLL_LL_CQ" num_pins="1"/>
-        <output name="CLBLL_LL_D" num_pins="1"/>
+        <output name="CLBLL_LL_DO" num_pins="1"/>
         <output name="CLBLL_LL_DMUX" num_pins="1"/>
         <output name="CLBLL_LL_DQ" num_pins="1"/>
 
@@ -85,35 +85,35 @@
         <pinlocations pattern="spread"/>
 		 <equivalent_sites>
           <site pb_type="BLK-TL-SLICEL" pin_mapping="custom">
-		  	<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_A" to="BLK-TL-SLICEL.A"/>
-			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_A[0]" to="BLK-TL-SLICEL.A[0]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_A[1]" to="BLK-TL-SLICEL.A[1]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_A[2]" to="BLK-TL-SLICEL.A[2]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_A[3]" to="BLK-TL-SLICEL.A[3]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_A[4]" to="BLK-TL-SLICEL.A[4]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_A[5]" to="BLK-TL-SLICEL.A[5]"/>
+		  	<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AO" to="BLK-TL-SLICEL.AO"/>
+			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AI[0]" to="BLK-TL-SLICEL.AI[0]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AI[1]" to="BLK-TL-SLICEL.AI[1]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AI[2]" to="BLK-TL-SLICEL.AI[2]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AI[3]" to="BLK-TL-SLICEL.AI[3]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AI[4]" to="BLK-TL-SLICEL.AI[4]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AI[5]" to="BLK-TL-SLICEL.AI[5]"/>
 			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AMUX" to="BLK-TL-SLICEL.AMUX"/>
 			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AQ" to="BLK-TL-SLICEL.AQ"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_AX" to="BLK-TL-SLICEL.AX"/>
 
-			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_B" to="BLK-TL-SLICEL.B"/>
-			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_B[0]" to="BLK-TL-SLICEL.B[0]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_B[1]" to="BLK-TL-SLICEL.B[1]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_B[2]" to="BLK-TL-SLICEL.B[2]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_B[3]" to="BLK-TL-SLICEL.B[3]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_B[4]" to="BLK-TL-SLICEL.B[4]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_B[5]" to="BLK-TL-SLICEL.B[5]"/>
+			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BO" to="BLK-TL-SLICEL.BO"/>
+			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BI[0]" to="BLK-TL-SLICEL.BI[0]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BI[1]" to="BLK-TL-SLICEL.BI[1]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BI[2]" to="BLK-TL-SLICEL.BI[2]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BI[3]" to="BLK-TL-SLICEL.BI[3]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BI[4]" to="BLK-TL-SLICEL.BI[4]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BI[5]" to="BLK-TL-SLICEL.BI[5]"/>
 			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BMUX" to="BLK-TL-SLICEL.BMUX"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BQ" to="BLK-TL-SLICEL.BQ"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_BX" to="BLK-TL-SLICEL.BX"/>
 
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_C" to="BLK-TL-SLICEL.C"/>
-			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_C[0]" to="BLK-TL-SLICEL.C[0]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_C[1]" to="BLK-TL-SLICEL.C[1]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_C[2]" to="BLK-TL-SLICEL.C[2]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_C[3]" to="BLK-TL-SLICEL.C[3]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_C[4]" to="BLK-TL-SLICEL.C[4]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_C[5]" to="BLK-TL-SLICEL.C[5]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CO" to="BLK-TL-SLICEL.CO"/>
+			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CI[0]" to="BLK-TL-SLICEL.CI[0]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CI[1]" to="BLK-TL-SLICEL.CI[1]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CI[2]" to="BLK-TL-SLICEL.CI[2]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CI[3]" to="BLK-TL-SLICEL.CI[3]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CI[4]" to="BLK-TL-SLICEL.CI[4]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CI[5]" to="BLK-TL-SLICEL.CI[5]"/>
 			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CLK" to="BLK-TL-SLICEL.CLK"/>
@@ -122,13 +122,13 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CQ" to="BLK-TL-SLICEL.CQ"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_CX" to="BLK-TL-SLICEL.CX"/>
 
-			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_D" to="BLK-TL-SLICEL.D"/>
-			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_D[0]" to="BLK-TL-SLICEL.D[0]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_D[1]" to="BLK-TL-SLICEL.D[1]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_D[2]" to="BLK-TL-SLICEL.D[2]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_D[3]" to="BLK-TL-SLICEL.D[3]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_D[4]" to="BLK-TL-SLICEL.D[4]"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_D[5]" to="BLK-TL-SLICEL.D[5]"/>
+			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DO" to="BLK-TL-SLICEL.DO"/>
+			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DI[0]" to="BLK-TL-SLICEL.DI[0]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DI[1]" to="BLK-TL-SLICEL.DI[1]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DI[2]" to="BLK-TL-SLICEL.DI[2]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DI[3]" to="BLK-TL-SLICEL.DI[3]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DI[4]" to="BLK-TL-SLICEL.DI[4]"/>
+            <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DI[5]" to="BLK-TL-SLICEL.DI[5]"/>
 
 			<direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL.CLBLL_LL_DQ" to="BLK-TL-SLICEL.DQ"/>
@@ -141,33 +141,33 @@
     </tile>
 	  <tile name="BLK-TL-CLBLL_R">
 	  	<sub_tile capacity="2" name="BLK-TL-CLBLL_R_SLICEL">
-			<input name="CLBLL_LL_A" num_pins="5"/>
+			<input name="CLBLL_LL_AI" num_pins="5"/>
 			<input name="CLBLL_LL_AX" num_pins="1"/>
 
-			<input name="CLBLL_LL_B" num_pins="5"/>
+			<input name="CLBLL_LL_BI" num_pins="5"/>
 
 			<input name="CLBLL_LL_BX" num_pins="1"/>
-			<input name="CLBLL_LL_C" num_pins="5"/>
+			<input name="CLBLL_LL_CI" num_pins="5"/>
 			<input name="CLBLL_LL_CE" num_pins="1"/>
 			<input name="CLBLL_LL_CIN" num_pins="1"/>
 			<clock name="CLBLL_LL_CLK" num_pins="1"/>
 			<input name="CLBLL_LL_CX" num_pins="1"/>
 
-			<input name="CLBLL_LL_D" num_pins="5"/>
+			<input name="CLBLL_LL_DI" num_pins="5"/>
 			<input name="CLBLL_LL_DX" num_pins="1"/>
 			<input name="CLBLL_LL_SR" num_pins="1"/>
 
-			<output name="CLBLL_LL_A" num_pins="1"/>
+			<output name="CLBLL_LL_AO" num_pins="1"/>
 			<output name="CLBLL_LL_AMUX" num_pins="1"/>
 			<output name="CLBLL_LL_AQ" num_pins="1"/>
-			<output name="CLBLL_LL_B" num_pins="1"/>
+			<output name="CLBLL_LL_BO" num_pins="1"/>
 			<output name="CLBLL_LL_BMUX" num_pins="1"/>
 			<output name="CLBLL_LL_BQ" num_pins="1"/>
-			<output name="CLBLL_LL_C" num_pins="1"/>
+			<output name="CLBLL_LL_CO" num_pins="1"/>
 			<output name="CLBLL_LL_CMUX" num_pins="1"/>
 			<output name="CLBLL_LL_COUT" num_pins="1"/>
 			<output name="CLBLL_LL_CQ" num_pins="1"/>
-			<output name="CLBLL_LL_D" num_pins="1"/>
+			<output name="CLBLL_LL_DO" num_pins="1"/>
 			<output name="CLBLL_LL_DMUX" num_pins="1"/>
 			<output name="CLBLL_LL_DQ" num_pins="1"/>
 
@@ -181,35 +181,35 @@
 			
 			<equivalent_sites>
 			<site pb_type="BLK-TL-SLICEL" pin_mapping="custom">
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_A" to="BLK-TL-SLICEL.A"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_A[0]" to="BLK-TL-SLICEL.A[0]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_A[1]" to="BLK-TL-SLICEL.A[1]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_A[2]" to="BLK-TL-SLICEL.A[2]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_A[3]" to="BLK-TL-SLICEL.A[3]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_A[4]" to="BLK-TL-SLICEL.A[4]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_A[5]" to="BLK-TL-SLICEL.A[5]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AO" to="BLK-TL-SLICEL.AO"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AI[0]" to="BLK-TL-SLICEL.AI[0]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AI[1]" to="BLK-TL-SLICEL.AI[1]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AI[2]" to="BLK-TL-SLICEL.AI[2]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AI[3]" to="BLK-TL-SLICEL.AI[3]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AI[4]" to="BLK-TL-SLICEL.AI[4]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AI[5]" to="BLK-TL-SLICEL.AI[5]"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AMUX" to="BLK-TL-SLICEL.AMUX"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AQ" to="BLK-TL-SLICEL.AQ"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_AX" to="BLK-TL-SLICEL.AX"/>
 
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_B" to="BLK-TL-SLICEL.B"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_B[0]" to="BLK-TL-SLICEL.B[0]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_B[1]" to="BLK-TL-SLICEL.B[1]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_B[2]" to="BLK-TL-SLICEL.B[2]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_B[3]" to="BLK-TL-SLICEL.B[3]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_B[4]" to="BLK-TL-SLICEL.B[4]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_B[5]" to="BLK-TL-SLICEL.B[5]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BO" to="BLK-TL-SLICEL.BO"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BI[0]" to="BLK-TL-SLICEL.BI[0]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BI[1]" to="BLK-TL-SLICEL.BI[1]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BI[2]" to="BLK-TL-SLICEL.BI[2]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BI[3]" to="BLK-TL-SLICEL.BI[3]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BI[4]" to="BLK-TL-SLICEL.BI[4]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BI[5]" to="BLK-TL-SLICEL.BI[5]"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BMUX" to="BLK-TL-SLICEL.BMUX"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BQ" to="BLK-TL-SLICEL.BQ"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_BX" to="BLK-TL-SLICEL.BX"/>
 
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_C" to="BLK-TL-SLICEL.C"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_C[0]" to="BLK-TL-SLICEL.C[0]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_C[1]" to="BLK-TL-SLICEL.C[1]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_C[2]" to="BLK-TL-SLICEL.C[2]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_C[3]" to="BLK-TL-SLICEL.C[3]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_C[4]" to="BLK-TL-SLICEL.C[4]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_C[5]" to="BLK-TL-SLICEL.C[5]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CO" to="BLK-TL-SLICEL.CO"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CI[0]" to="BLK-TL-SLICEL.CI[0]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CI[1]" to="BLK-TL-SLICEL.CI[1]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CI[2]" to="BLK-TL-SLICEL.CI[2]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CI[3]" to="BLK-TL-SLICEL.CI[3]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CI[4]" to="BLK-TL-SLICEL.CI[4]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CI[5]" to="BLK-TL-SLICEL.CI[5]"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CE" to="BLK-TL-SLICEL.CE"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CIN" to="BLK-TL-SLICEL.CIN"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CLK" to="BLK-TL-SLICEL.CLK"/>
@@ -218,13 +218,13 @@
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CQ" to="BLK-TL-SLICEL.CQ"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_CX" to="BLK-TL-SLICEL.CX"/>
 
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_D" to="BLK-TL-SLICEL.D"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_D[0]" to="BLK-TL-SLICEL.D[0]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_D[1]" to="BLK-TL-SLICEL.D[1]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_D[2]" to="BLK-TL-SLICEL.D[2]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_D[3]" to="BLK-TL-SLICEL.D[3]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_D[4]" to="BLK-TL-SLICEL.D[4]"/>
-				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_D[5]" to="BLK-TL-SLICEL.D[5]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DO" to="BLK-TL-SLICEL.DO"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DI[0]" to="BLK-TL-SLICEL.DI[0]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DI[1]" to="BLK-TL-SLICEL.DI[1]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DI[2]" to="BLK-TL-SLICEL.DI[2]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DI[3]" to="BLK-TL-SLICEL.DI[3]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DI[4]" to="BLK-TL-SLICEL.DI[4]"/>
+				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DI[5]" to="BLK-TL-SLICEL.DI[5]"/>
 
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DMUX" to="BLK-TL-SLICEL.DMUX"/>
 				<direct from="BLK-TL-CLBLL_R_SLICEL.CLBLL_LL_DQ" to="BLK-TL-SLICEL.DQ"/>
@@ -305,7 +305,7 @@
     </segment>
   </segmentlist>
 
-  
+
   <complexblocklist>
     <!-- Define I/O pads begin -->
     <!-- Capacity is a unique property of I/Os, it is the maximum number of I/Os that can be placed at the same (X,Y) location on the FPGA -->
@@ -358,10 +358,36 @@
 	   assume, but note that the total routing area really includes the crossbar, which would push
 	   routing area up significantly, we estimate into the ~70% range. 
 	   -->
-    <pb_type name="clb">
-      <input name="I" num_pins="40" equivalent="full"/>
-      <output name="O" num_pins="20" equivalent="none"/>
-      <clock name="clk" num_pins="1"/>
+    <pb_type name="BLK-TL-SLICEL">
+		<clock name="CLK" num_pins="1"/>
+      	<input name="AI" num_pins="5"/>
+		<input name="AX" num_pins="1"/>
+
+		<input name="BI" num_pins="5"/>
+		<input name="BX" num_pins="1"/>
+
+		<input name="CI" num_pins="5"/>
+		<input name="CE" num_pins="1"/>
+		<input name="CIN" num_pins="1"/>
+        <input name="CX" num_pins="1"/>
+
+		<input name="DI" num_pins="5"/>
+		<input name="DX" num_pins="1"/>
+		<input name="SR" num_pins="1"/>
+
+        <output name="AO" num_pins="1"/>
+        <output name="AMUX" num_pins="1"/>
+        <output name="AQ" num_pins="1"/>
+        <output name="BO" num_pins="1"/>
+        <output name="BMUX" num_pins="1"/>
+        <output name="BQ" num_pins="1"/>
+        <output name="CO" num_pins="1"/>
+        <output name="CMUX" num_pins="1"/>
+        <output name="COUT" num_pins="1"/>
+        <output name="CQ" num_pins="1"/>
+        <output name="DO" num_pins="1"/>
+        <output name="DMUX" num_pins="1"/>
+        <output name="DQ" num_pins="1"/>
       <!-- Describe fracturable logic element.  
              Each fracturable logic element has a 6-LUT that can alternatively operate as two 5-LUTs with shared inputs. 
              The outputs of the fracturable logic element can be optionally registered
