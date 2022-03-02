@@ -647,27 +647,14 @@
 			  </metadata>
 			</pb_type>
 			
-			<pb_type blif_model=".subckt MUXF7" name="F7AMUX" num_pb="1">
+			<pb_type blif_model=".subckt MUXF7" name="F7MUX" num_pb="2">
 			  <input name="I0" num_pins="1" />
 			  <input name="I1" num_pins="1" />
 			  <input name="S" num_pins="1" />
 			  <output name="O" num_pins="1" />
-			  <delay_constant in_port="F7AMUX.I0" max="1.9000000000000002e-10" out_port="F7AMUX.O" min="5.3000000000000004e-11" />
-			  <delay_constant in_port="F7AMUX.I1" max="1.93e-10" out_port="F7AMUX.O" min="5.5000000000000004e-11" />
-			  <delay_constant in_port="F7AMUX.S" max="2.7600000000000003e-10" out_port="F7AMUX.O" min="8.500000000000002e-11" />
-			  <metadata>
-				<meta name="type">bel</meta>
-				<meta name="subtype">mux</meta>
-			  </metadata>
-			</pb_type>
-			<pb_type blif_model=".subckt MUXF7" name="F7BMUX" num_pb="1">
-			  <input name="I0" num_pins="1" />
-			  <input name="I1" num_pins="1" />
-			  <input name="S" num_pins="1" />
-			  <output name="O" num_pins="1" />
-			  <delay_constant in_port="F7BMUX.I0" max="2.17e-10" out_port="F7BMUX.O" min="6.2e-11" />
-			  <delay_constant in_port="F7BMUX.I1" max="2.23e-10" out_port="F7BMUX.O" min="6.500000000000001e-11" />
-			  <delay_constant in_port="F7BMUX.S" max="2.96e-10" out_port="F7BMUX.O" min="9.3e-11" />
+			  <delay_constant in_port="F7MUX[0].I0" max="1.9000000000000002e-10" out_port="F7MUX[0].O" min="5.3000000000000004e-11" />
+			  <delay_constant in_port="F7MUX[0].I1" max="1.93e-10" out_port="F7MUX[0].O" min="5.5000000000000004e-11" />
+			  <delay_constant in_port="F7MUX[0].S" max="2.7600000000000003e-10" out_port="F7MUX[0].O" min="8.500000000000002e-11" />
 			  <metadata>
 				<meta name="type">bel</meta>
 				<meta name="subtype">mux</meta>
@@ -717,8 +704,8 @@
 			  <direct input="LUT[2].O6" name="CO6" output="COMMON_LUT_AND_F78MUX.CO6" />
 			  <direct input="LUT[3].O5" name="DO5" output="COMMON_LUT_AND_F78MUX.DO5" />
 			  <direct input="LUT[3].O6" name="DO6" output="COMMON_LUT_AND_F78MUX.DO6" />
-			  <direct input="F7AMUX.O" name="F7AMUX_O" output="COMMON_LUT_AND_F78MUX.F7AMUX_O" />
-			  <direct input="F7BMUX.O" name="F7BMUX_O" output="COMMON_LUT_AND_F78MUX.F7BMUX_O" />
+			  <direct input="F7MUX[0].O" name="F7AMUX_O" output="COMMON_LUT_AND_F78MUX.F7AMUX_O" />
+			  <direct input="F7MUX[1].O" name="F7BMUX_O" output="COMMON_LUT_AND_F78MUX.F7BMUX_O" />
 			  <direct input="F8MUX.O" name="F8MUX_O" output="COMMON_LUT_AND_F78MUX.F8MUX_O" />
 			  <direct input="COMMON_LUT_AND_F78MUX.D1" name="D1" output="LUT[3].A1" />
 			  <direct input="COMMON_LUT_AND_F78MUX.D2" name="D2" output="LUT[3].A2" />
@@ -726,29 +713,29 @@
 			  <direct input="COMMON_LUT_AND_F78MUX.D4" name="D4" output="LUT[3].A4" />
 			  <direct input="COMMON_LUT_AND_F78MUX.D5" name="D5" output="LUT[3].A5" />
 			  <direct input="COMMON_LUT_AND_F78MUX.D6" name="D6" output="LUT[3].A6" />
-			  <direct input="LUT[1].O6" name="F7AMUX_I0" output="F7AMUX.I0">
-				<pack_pattern in_port="LUT[1].O6" name="LUT5toLUT7" out_port="F7AMUX.I0" />
-				<pack_pattern in_port="LUT[1].O6" name="LUT5toLUT8" out_port="F7AMUX.I0" />
+			  <direct input="LUT[1].O6" name="F7AMUX_I0" output="F7MUX[0].I0">
+				<pack_pattern in_port="LUT[1].O6" name="LUT5toLUT7" out_port="F7MUX[0].I0" />
+				<pack_pattern in_port="LUT[1].O6" name="LUT5toLUT8" out_port="F7MUX[0].I0" />
 			  </direct>
-			  <direct input="LUT[0].O6" name="F7AMUX_I1" output="F7AMUX.I1">
-				<pack_pattern in_port="LUT[0].O6" name="LUT5toLUT7" out_port="F7AMUX.I1" />
-				<pack_pattern in_port="LUT[0].O6" name="LUT5toLUT8" out_port="F7AMUX.I1" />
+			  <direct input="LUT[0].O6" name="F7AMUX_I1" output="F7MUX[0].I1">
+				<pack_pattern in_port="LUT[0].O6" name="LUT5toLUT7" out_port="F7MUX[0].I1" />
+				<pack_pattern in_port="LUT[0].O6" name="LUT5toLUT8" out_port="F7MUX[0].I1" />
 			  </direct>
-			  <direct input="COMMON_LUT_AND_F78MUX.AX" name="F7AMUX_S" output="F7AMUX.S" />
-			  <direct input="LUT[3].O6" name="F7BMUX_I0" output="F7BMUX.I0">
-				<pack_pattern in_port="LUT[3].O6" name="LUT5toLUT7" out_port="F7BMUX.I0" />
-				<pack_pattern in_port="LUT[3].O6" name="LUT5toLUT8" out_port="F7BMUX.I0" />
+			  <direct input="COMMON_LUT_AND_F78MUX.AX" name="F7AMUX_S" output="F7MUX[0].S" />
+			  <direct input="LUT[3].O6" name="F7BMUX_I0" output="F7MUX[1].I0">
+				<pack_pattern in_port="LUT[3].O6" name="LUT5toLUT7" out_port="F7MUX[1].I0" />
+				<pack_pattern in_port="LUT[3].O6" name="LUT5toLUT8" out_port="F7MUX[1].I0" />
 			  </direct>
-			  <direct input="LUT[2].O6" name="F7BMUX_I1" output="F7BMUX.I1">
-				<pack_pattern in_port="LUT[2].O6" name="LUT5toLUT7" out_port="F7BMUX.I1" />
-				<pack_pattern in_port="LUT[2].O6" name="LUT5toLUT8" out_port="F7BMUX.I1" />
+			  <direct input="LUT[2].O6" name="F7BMUX_I1" output="F7MUX[1].I1">
+				<pack_pattern in_port="LUT[2].O6" name="LUT5toLUT7" out_port="F7MUX[1].I1" />
+				<pack_pattern in_port="LUT[2].O6" name="LUT5toLUT8" out_port="F7MUX[1].I1" />
 			  </direct>
-			  <direct input="COMMON_LUT_AND_F78MUX.CX" name="F7BMUX_S" output="F7BMUX.S" />
-			  <direct input="F7BMUX.O" name="F8MUX_I0" output="F8MUX.I0">
-				<pack_pattern in_port="F7BMUX.O" name="LUT5toLUT8" out_port="F8MUX.I0" />
+			  <direct input="COMMON_LUT_AND_F78MUX.CX" name="F7BMUX_S" output="F7MUX[1].S" />
+			  <direct input="F7MUX[1].O" name="F8MUX_I0" output="F8MUX.I0">
+				<pack_pattern in_port="F7MUX[1].O" name="LUT5toLUT8" out_port="F8MUX.I0" />
 			  </direct>
-			  <direct input="F7AMUX.O" name="F8MUX_I1" output="F8MUX.I1">
-				<pack_pattern in_port="F7AMUX.O" name="LUT5toLUT8" out_port="F8MUX.I1" />
+			  <direct input="F7MUX[0].O" name="F8MUX_I1" output="F8MUX.I1">
+				<pack_pattern in_port="F7MUX[0].O" name="LUT5toLUT8" out_port="F8MUX.I1" />
 			  </direct>
 			  <direct input="COMMON_LUT_AND_F78MUX.BX" name="F8MUX_S" output="F8MUX.S" />
 			</interconnect>
