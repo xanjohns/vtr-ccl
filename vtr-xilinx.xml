@@ -549,7 +549,7 @@
 			<output name="F7AMUX_O" num_pins="1" />
 			<output name="F7BMUX_O" num_pins="1" />
 			<output name="F8MUX_O" num_pins="1" />
-			<pb_type name="ALUT" num_pb="1">
+			<pb_type name="LUT" num_pb="4">
 			  <input name="A1" num_pins="1" />
 			  <input name="A2" num_pins="1" />
 			  <input name="A3" num_pins="1" />
@@ -599,34 +599,34 @@
 				  <!-- LUT5 (lower) -> O5 -->
 				  <!-- MUX used for LUT6 -->
 				  <!-- LUT outputs -->
-				  <direct input="ALUT.A1" name="ALUT_A1_0" output="A5LUT[0].in[0]" />
-				  <direct input="ALUT.A2" name="ALUT_A2_0" output="A5LUT[0].in[1]" />
-				  <direct input="ALUT.A3" name="ALUT_A3_0" output="A5LUT[0].in[2]" />
-				  <direct input="ALUT.A4" name="ALUT_A4_0" output="A5LUT[0].in[3]" />
-				  <direct input="ALUT.A5" name="ALUT_A5_0" output="A5LUT[0].in[4]" />
-				  <direct input="ALUT.A1" name="ALUT_A1_1" output="A5LUT[1].in[0]" />
-				  <direct input="ALUT.A2" name="ALUT_A2_1" output="A5LUT[1].in[1]" />
-				  <direct input="ALUT.A3" name="ALUT_A3_1" output="A5LUT[1].in[2]" />
-				  <direct input="ALUT.A4" name="ALUT_A4_1" output="A5LUT[1].in[3]" />
-				  <direct input="ALUT.A5" name="ALUT_A5_1" output="A5LUT[1].in[4]" />
-				  <direct input="A5LUT[0].out" name="O5" output="ALUT.O5">
-					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDSE" out_port="ALUT.O5" />
-					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDRE" out_port="ALUT.O5" />
-					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDCE" out_port="ALUT.O5" />
-					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDPE" out_port="ALUT.O5" />
+				  <direct input="LUT[0].A1" name="ALUT_A1_0" output="A5LUT[0].in[0]" />
+				  <direct input="LUT[0].A2" name="ALUT_A2_0" output="A5LUT[0].in[1]" />
+				  <direct input="LUT[0].A3" name="ALUT_A3_0" output="A5LUT[0].in[2]" />
+				  <direct input="LUT[0].A4" name="ALUT_A4_0" output="A5LUT[0].in[3]" />
+				  <direct input="LUT[0].A5" name="ALUT_A5_0" output="A5LUT[0].in[4]" />
+				  <direct input="LUT[0].A1" name="ALUT_A1_1" output="A5LUT[1].in[0]" />
+				  <direct input="LUT[0].A2" name="ALUT_A2_1" output="A5LUT[1].in[1]" />
+				  <direct input="LUT[0].A3" name="ALUT_A3_1" output="A5LUT[1].in[2]" />
+				  <direct input="LUT[0].A4" name="ALUT_A4_1" output="A5LUT[1].in[3]" />
+				  <direct input="LUT[0].A5" name="ALUT_A5_1" output="A5LUT[1].in[4]" />
+				  <direct input="A5LUT[0].out" name="O5" output="LUT[0].O5">
+					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDSE" out_port="LUT[0].O5" />
+					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDRE" out_port="LUT[0].O5" />
+					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDCE" out_port="LUT[0].O5" />
+					<pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDPE" out_port="LUT[0].O5" />
 				  </direct>
-				  <mux input="A5LUT[1].out F6MUX.O" name="O6" output="ALUT.O6">
-					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDSE" out_port="ALUT.O6" />
-					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDRE" out_port="ALUT.O6" />
-					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDPE" out_port="ALUT.O6" />
-					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDCE" out_port="ALUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="ALUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="ALUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="ALUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="ALUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="ALUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="ALUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="ALUT.O6" />
+				  <mux input="A5LUT[1].out F6MUX.O" name="O6" output="LUT[0].O6">
+					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDSE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDRE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDPE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDCE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="LUT[0].O6" />
+					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="LUT[0].O6" />
+					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="LUT[0].O6" />
+					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="LUT[0].O6" />
 				  </mux>
 				  <direct input="A5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
 					<pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0" />
@@ -638,333 +638,15 @@
 					<pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1" />
 					<pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1" />
 				  </direct>
-				  <direct input="ALUT.A6" name="F6MUX_S" output="F6MUX.S" />
+				  <direct input="LUT[0].A6" name="F6MUX_S" output="F6MUX.S" />
 				</interconnect>
-				<metadata>
-				  <meta name="fasm_type">SPLIT_LUT</meta>
-				  <meta name="fasm_lut">
-		 ALUT.INIT[31:0] = A5LUT[0]
-		 ALUT.INIT[63:32] = A5LUT[1]
-				  </meta>
-				</metadata>
 			  </mode>
 			  <metadata>
 				<meta name="type">block</meta>
 				<meta name="subtype">ignore</meta>
 			  </metadata>
 			</pb_type>
-			<pb_type name="BLUT" num_pb="1">
-			  <input name="A1" num_pins="1" />
-			  <input name="A2" num_pins="1" />
-			  <input name="A3" num_pins="1" />
-			  <input name="A4" num_pins="1" />
-			  <input name="A5" num_pins="1" />
-			  <input name="A6" num_pins="1" />
-			  <output name="O5" num_pins="1" />
-			  <output name="O6" num_pins="1" />
-			  <mode name="BLUT-LUT5_MUX">
-				<pb_type blif_model=".names" class="lut" name="B5LUT" num_pb="2">
-				  <input name="in" num_pins="5" port_class="lut_in" />
-				  <output name="out" num_pins="1" port_class="lut_out" />
-				  <delay_matrix in_port="B5LUT.in" out_port="B5LUT.out" type="max">
-		1.5200000000000002e-10
-		1.5200000000000002e-10
-		1.5200000000000002e-10
-		1.5e-10
-		1.19e-10
-				  </delay_matrix>
-				  <delay_matrix in_port="B5LUT.in" out_port="B5LUT.out" type="min">
-		4.5e-11
-		4.3e-11
-		4.3e-11
-		4.5e-11
-		4.9000000000000005e-11
-				  </delay_matrix>
-				  <metadata>
-					<meta name="type">bel</meta>
-					<meta name="subtype">lut</meta>
-				  </metadata>
-				</pb_type>
-				<pb_type blif_model=".subckt MUXF6" name="F6MUX" num_pb="1">
-				  <input name="I0" num_pins="1" />
-				  <input name="I1" num_pins="1" />
-				  <input name="S" num_pins="1" />
-				  <output name="O" num_pins="1" />
-				  <delay_constant in_port="F6MUX.I0" max="10e-12" out_port="F6MUX.O" />
-				  <delay_constant in_port="F6MUX.I1" max="10e-12" out_port="F6MUX.O" />
-				  <delay_constant in_port="F6MUX.S" max="10e-12" out_port="F6MUX.O" />
-				  <metadata>
-					<meta name="type">bel</meta>
-					<meta name="subtype">mux</meta>
-				  </metadata>
-				</pb_type>
-				<interconnect>
-				  <!-- LUT5 (upper) -> O6 -->
-				  <!-- LUT5 (lower) -> O5 -->
-				  <!-- MUX used for LUT6 -->
-				  <!-- LUT outputs -->
-				  <direct input="BLUT.A1" name="BLUT_A1_0" output="B5LUT[0].in[0]" />
-				  <direct input="BLUT.A2" name="BLUT_A2_0" output="B5LUT[0].in[1]" />
-				  <direct input="BLUT.A3" name="BLUT_A3_0" output="B5LUT[0].in[2]" />
-				  <direct input="BLUT.A4" name="BLUT_A4_0" output="B5LUT[0].in[3]" />
-				  <direct input="BLUT.A5" name="BLUT_A5_0" output="B5LUT[0].in[4]" />
-				  <direct input="BLUT.A1" name="BLUT_A1_1" output="B5LUT[1].in[0]" />
-				  <direct input="BLUT.A2" name="BLUT_A2_1" output="B5LUT[1].in[1]" />
-				  <direct input="BLUT.A3" name="BLUT_A3_1" output="B5LUT[1].in[2]" />
-				  <direct input="BLUT.A4" name="BLUT_A4_1" output="B5LUT[1].in[3]" />
-				  <direct input="BLUT.A5" name="BLUT_A5_1" output="B5LUT[1].in[4]" />
-				  <direct input="B5LUT[0].out" name="O5" output="BLUT.O5">
-					<pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDSE" out_port="BLUT.O5" />
-					<pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDRE" out_port="BLUT.O5" />
-					<pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDCE" out_port="BLUT.O5" />
-					<pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDPE" out_port="BLUT.O5" />
-				  </direct>
-				  <mux input="B5LUT[1].out F6MUX.O" name="O6" output="BLUT.O6">
-					<pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDSE" out_port="BLUT.O6" />
-					<pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDRE" out_port="BLUT.O6" />
-					<pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDPE" out_port="BLUT.O6" />
-					<pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDCE" out_port="BLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="BLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="BLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="BLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="BLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="BLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="BLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="BLUT.O6" />
-				  </mux>
-				  <direct input="B5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
-					<pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0" />
-					<pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0" />
-					<pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0" />
-				  </direct>
-				  <direct input="B5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
-					<pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1" />
-					<pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1" />
-					<pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1" />
-				  </direct>
-				  <direct input="BLUT.A6" name="F6MUX_S" output="F6MUX.S" />
-				</interconnect>
-				<metadata>
-				  <meta name="fasm_type">SPLIT_LUT</meta>
-				  <meta name="fasm_lut">
-		 BLUT.INIT[31:0] = B5LUT[0]
-		 BLUT.INIT[63:32] = B5LUT[1]
-				  </meta>
-				</metadata>
-			  </mode>
-			  <metadata>
-				<meta name="type">block</meta>
-				<meta name="subtype">ignore</meta>
-			  </metadata>
-			</pb_type>
-			<pb_type name="CLUT" num_pb="1">
-			  <input name="A1" num_pins="1" />
-			  <input name="A2" num_pins="1" />
-			  <input name="A3" num_pins="1" />
-			  <input name="A4" num_pins="1" />
-			  <input name="A5" num_pins="1" />
-			  <input name="A6" num_pins="1" />
-			  <output name="O5" num_pins="1" />
-			  <output name="O6" num_pins="1" />
-			  <mode name="CLUT-LUT5_MUX">
-				<pb_type blif_model=".names" class="lut" name="C5LUT" num_pb="2">
-				  <input name="in" num_pins="5" port_class="lut_in" />
-				  <output name="out" num_pins="1" port_class="lut_out" />
-				  <delay_matrix in_port="C5LUT.in" out_port="C5LUT.out" type="max">
-		1.54e-10
-		1.54e-10
-		1.5300000000000001e-10
-		1.5300000000000001e-10
-		1.2e-10
-				  </delay_matrix>
-				  <delay_matrix in_port="C5LUT.in" out_port="C5LUT.out" type="min">
-		4.4e-11
-		4.3e-11
-		4.2000000000000004e-11
-		4.5e-11
-		5.1e-11
-				  </delay_matrix>
-				  <metadata>
-					<meta name="type">bel</meta>
-					<meta name="subtype">lut</meta>
-				  </metadata>
-				</pb_type>
-				<pb_type blif_model=".subckt MUXF6" name="F6MUX" num_pb="1">
-				  <input name="I0" num_pins="1" />
-				  <input name="I1" num_pins="1" />
-				  <input name="S" num_pins="1" />
-				  <output name="O" num_pins="1" />
-				  <delay_constant in_port="F6MUX.I0" max="10e-12" out_port="F6MUX.O" />
-				  <delay_constant in_port="F6MUX.I1" max="10e-12" out_port="F6MUX.O" />
-				  <delay_constant in_port="F6MUX.S" max="10e-12" out_port="F6MUX.O" />
-				  <metadata>
-					<meta name="type">bel</meta>
-					<meta name="subtype">mux</meta>
-				  </metadata>
-				</pb_type>
-				<interconnect>
-				  <!-- LUT5 (upper) -> O6 -->
-				  <!-- LUT5 (lower) -> O5 -->
-				  <!-- MUX used for LUT6 -->
-				  <!-- LUT outputs -->
-				  <direct input="CLUT.A1" name="CLUT_A1_0" output="C5LUT[0].in[0]" />
-				  <direct input="CLUT.A2" name="CLUT_A2_0" output="C5LUT[0].in[1]" />
-				  <direct input="CLUT.A3" name="CLUT_A3_0" output="C5LUT[0].in[2]" />
-				  <direct input="CLUT.A4" name="CLUT_A4_0" output="C5LUT[0].in[3]" />
-				  <direct input="CLUT.A5" name="CLUT_A5_0" output="C5LUT[0].in[4]" />
-				  <direct input="CLUT.A1" name="CLUT_A1_1" output="C5LUT[1].in[0]" />
-				  <direct input="CLUT.A2" name="CLUT_A2_1" output="C5LUT[1].in[1]" />
-				  <direct input="CLUT.A3" name="CLUT_A3_1" output="C5LUT[1].in[2]" />
-				  <direct input="CLUT.A4" name="CLUT_A4_1" output="C5LUT[1].in[3]" />
-				  <direct input="CLUT.A5" name="CLUT_A5_1" output="C5LUT[1].in[4]" />
-				  <direct input="C5LUT[0].out" name="O5" output="CLUT.O5">
-					<pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDSE" out_port="CLUT.O5" />
-					<pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDRE" out_port="CLUT.O5" />
-					<pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDCE" out_port="CLUT.O5" />
-					<pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDPE" out_port="CLUT.O5" />
-				  </direct>
-				  <mux input="C5LUT[1].out F6MUX.O" name="O6" output="CLUT.O6">
-					<pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDSE" out_port="CLUT.O6" />
-					<pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDRE" out_port="CLUT.O6" />
-					<pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDPE" out_port="CLUT.O6" />
-					<pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDCE" out_port="CLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="CLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="CLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="CLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="CLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="CLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="CLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="CLUT.O6" />
-				  </mux>
-				  <direct input="C5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
-					<pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0" />
-					<pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0" />
-					<pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0" />
-				  </direct>
-				  <direct input="C5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
-					<pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1" />
-					<pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1" />
-					<pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1" />
-				  </direct>
-				  <direct input="CLUT.A6" name="F6MUX_S" output="F6MUX.S" />
-				</interconnect>
-				<metadata>
-				  <meta name="fasm_type">SPLIT_LUT</meta>
-				  <meta name="fasm_lut">
-		 CLUT.INIT[31:0] = C5LUT[0]
-		 CLUT.INIT[63:32] = C5LUT[1]
-				  </meta>
-				</metadata>
-			  </mode>
-			  <metadata>
-				<meta name="type">block</meta>
-				<meta name="subtype">ignore</meta>
-			  </metadata>
-			</pb_type>
-			<pb_type name="DLUT" num_pb="1">
-			  <input name="A1" num_pins="1" />
-			  <input name="A2" num_pins="1" />
-			  <input name="A3" num_pins="1" />
-			  <input name="A4" num_pins="1" />
-			  <input name="A5" num_pins="1" />
-			  <input name="A6" num_pins="1" />
-			  <output name="O5" num_pins="1" />
-			  <output name="O6" num_pins="1" />
-			  <mode name="DLUT-LUT5_MUX">
-				<pb_type blif_model=".names" class="lut" name="D5LUT" num_pb="2">
-				  <input name="in" num_pins="5" port_class="lut_in" />
-				  <output name="out" num_pins="1" port_class="lut_out" />
-				  <delay_matrix in_port="D5LUT.in" out_port="D5LUT.out" type="max">
-		1.49e-10
-		1.5e-10
-		1.49e-10
-		1.49e-10
-		1.17e-10
-				  </delay_matrix>
-				  <delay_matrix in_port="D5LUT.in" out_port="D5LUT.out" type="min">
-		4.4e-11
-		4.3e-11
-		4.2000000000000004e-11
-		4.4e-11
-		4.9000000000000005e-11
-				  </delay_matrix>
-				  <metadata>
-					<meta name="type">bel</meta>
-					<meta name="subtype">lut</meta>
-				  </metadata>
-				</pb_type>
-				<pb_type blif_model=".subckt MUXF6" name="F6MUX" num_pb="1">
-				  <input name="I0" num_pins="1" />
-				  <input name="I1" num_pins="1" />
-				  <input name="S" num_pins="1" />
-				  <output name="O" num_pins="1" />
-				  <delay_constant in_port="F6MUX.I0" max="10e-12" out_port="F6MUX.O" />
-				  <delay_constant in_port="F6MUX.I1" max="10e-12" out_port="F6MUX.O" />
-				  <delay_constant in_port="F6MUX.S" max="10e-12" out_port="F6MUX.O" />
-				  <metadata>
-					<meta name="type">bel</meta>
-					<meta name="subtype">mux</meta>
-				  </metadata>
-				</pb_type>
-				<interconnect>
-				  <!-- LUT5 (upper) -> O6 -->
-				  <!-- LUT5 (lower) -> O5 -->
-				  <!-- MUX used for LUT6 -->
-				  <!-- LUT outputs -->
-				  <direct input="DLUT.A1" name="DLUT_A1_0" output="D5LUT[0].in[0]" />
-				  <direct input="DLUT.A2" name="DLUT_A2_0" output="D5LUT[0].in[1]" />
-				  <direct input="DLUT.A3" name="DLUT_A3_0" output="D5LUT[0].in[2]" />
-				  <direct input="DLUT.A4" name="DLUT_A4_0" output="D5LUT[0].in[3]" />
-				  <direct input="DLUT.A5" name="DLUT_A5_0" output="D5LUT[0].in[4]" />
-				  <direct input="DLUT.A1" name="DLUT_A1_1" output="D5LUT[1].in[0]" />
-				  <direct input="DLUT.A2" name="DLUT_A2_1" output="D5LUT[1].in[1]" />
-				  <direct input="DLUT.A3" name="DLUT_A3_1" output="D5LUT[1].in[2]" />
-				  <direct input="DLUT.A4" name="DLUT_A4_1" output="D5LUT[1].in[3]" />
-				  <direct input="DLUT.A5" name="DLUT_A5_1" output="D5LUT[1].in[4]" />
-				  <direct input="D5LUT[0].out" name="O5" output="DLUT.O5">
-					<pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDSE" out_port="DLUT.O5" />
-					<pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDRE" out_port="DLUT.O5" />
-					<pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDCE" out_port="DLUT.O5" />
-					<pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDPE" out_port="DLUT.O5" />
-				  </direct>
-				  <mux input="D5LUT[1].out F6MUX.O" name="O6" output="DLUT.O6">
-					<pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDSE" out_port="DLUT.O6" />
-					<pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDRE" out_port="DLUT.O6" />
-					<pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDPE" out_port="DLUT.O6" />
-					<pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDCE" out_port="DLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="DLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="DLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="DLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="DLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="DLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="DLUT.O6" />
-					<pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="DLUT.O6" />
-				  </mux>
-				  <direct input="D5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
-					<pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0" />
-					<pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0" />
-					<pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0" />
-				  </direct>
-				  <direct input="D5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
-					<pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1" />
-					<pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1" />
-					<pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1" />
-				  </direct>
-				  <direct input="DLUT.A6" name="F6MUX_S" output="F6MUX.S" />
-				</interconnect>
-				<metadata>
-				  <meta name="fasm_type">SPLIT_LUT</meta>
-				  <meta name="fasm_lut">
-		 DLUT.INIT[31:0] = D5LUT[0]
-		 DLUT.INIT[63:32] = D5LUT[1]
-				  </meta>
-				</metadata>
-			  </mode>
-			  <metadata>
-				<meta name="type">block</meta>
-				<meta name="subtype">ignore</meta>
-			  </metadata>
-			</pb_type>
+			
 			<pb_type blif_model=".subckt MUXF7" name="F7AMUX" num_pb="1">
 			  <input name="I0" num_pins="1" />
 			  <input name="I1" num_pins="1" />
@@ -1009,57 +691,57 @@
 			  <!-- F7AMUX inputs -->
 			  <!-- F7BMUX inputs -->
 			  <!-- F8MUX inputs -->
-			  <direct input="COMMON_LUT_AND_F78MUX.A1" name="A1" output="ALUT.A1" />
-			  <direct input="COMMON_LUT_AND_F78MUX.A2" name="A2" output="ALUT.A2" />
-			  <direct input="COMMON_LUT_AND_F78MUX.A3" name="A3" output="ALUT.A3" />
-			  <direct input="COMMON_LUT_AND_F78MUX.A4" name="A4" output="ALUT.A4" />
-			  <direct input="COMMON_LUT_AND_F78MUX.A5" name="A5" output="ALUT.A5" />
-			  <direct input="COMMON_LUT_AND_F78MUX.A6" name="A6" output="ALUT.A6" />
-			  <direct input="COMMON_LUT_AND_F78MUX.B1" name="B1" output="BLUT.A1" />
-			  <direct input="COMMON_LUT_AND_F78MUX.B2" name="B2" output="BLUT.A2" />
-			  <direct input="COMMON_LUT_AND_F78MUX.B3" name="B3" output="BLUT.A3" />
-			  <direct input="COMMON_LUT_AND_F78MUX.B4" name="B4" output="BLUT.A4" />
-			  <direct input="COMMON_LUT_AND_F78MUX.B5" name="B5" output="BLUT.A5" />
-			  <direct input="COMMON_LUT_AND_F78MUX.B6" name="B6" output="BLUT.A6" />
-			  <direct input="COMMON_LUT_AND_F78MUX.C1" name="C1" output="CLUT.A1" />
-			  <direct input="COMMON_LUT_AND_F78MUX.C2" name="C2" output="CLUT.A2" />
-			  <direct input="COMMON_LUT_AND_F78MUX.C3" name="C3" output="CLUT.A3" />
-			  <direct input="COMMON_LUT_AND_F78MUX.C4" name="C4" output="CLUT.A4" />
-			  <direct input="COMMON_LUT_AND_F78MUX.C5" name="C5" output="CLUT.A5" />
-			  <direct input="COMMON_LUT_AND_F78MUX.C6" name="C6" output="CLUT.A6" />
-			  <direct input="ALUT.O5" name="AO5" output="COMMON_LUT_AND_F78MUX.AO5" />
-			  <direct input="ALUT.O6" name="AO6" output="COMMON_LUT_AND_F78MUX.AO6" />
-			  <direct input="BLUT.O5" name="BO5" output="COMMON_LUT_AND_F78MUX.BO5" />
-			  <direct input="BLUT.O6" name="BO6" output="COMMON_LUT_AND_F78MUX.BO6" />
-			  <direct input="CLUT.O5" name="CO5" output="COMMON_LUT_AND_F78MUX.CO5" />
-			  <direct input="CLUT.O6" name="CO6" output="COMMON_LUT_AND_F78MUX.CO6" />
-			  <direct input="DLUT.O5" name="DO5" output="COMMON_LUT_AND_F78MUX.DO5" />
-			  <direct input="DLUT.O6" name="DO6" output="COMMON_LUT_AND_F78MUX.DO6" />
+			  <direct input="COMMON_LUT_AND_F78MUX.A1" name="A1" output="LUT[0].A1" />
+			  <direct input="COMMON_LUT_AND_F78MUX.A2" name="A2" output="LUT[0].A2" />
+			  <direct input="COMMON_LUT_AND_F78MUX.A3" name="A3" output="LUT[0].A3" />
+			  <direct input="COMMON_LUT_AND_F78MUX.A4" name="A4" output="LUT[0].A4" />
+			  <direct input="COMMON_LUT_AND_F78MUX.A5" name="A5" output="LUT[0].A5" />
+			  <direct input="COMMON_LUT_AND_F78MUX.A6" name="A6" output="LUT[0].A6" />
+			  <direct input="COMMON_LUT_AND_F78MUX.B1" name="B1" output="LUT[1].A1" />
+			  <direct input="COMMON_LUT_AND_F78MUX.B2" name="B2" output="LUT[1].A2" />
+			  <direct input="COMMON_LUT_AND_F78MUX.B3" name="B3" output="LUT[1].A3" />
+			  <direct input="COMMON_LUT_AND_F78MUX.B4" name="B4" output="LUT[1].A4" />
+			  <direct input="COMMON_LUT_AND_F78MUX.B5" name="B5" output="LUT[1].A5" />
+			  <direct input="COMMON_LUT_AND_F78MUX.B6" name="B6" output="LUT[1].A6" />
+			  <direct input="COMMON_LUT_AND_F78MUX.C1" name="C1" output="LUT[2].A1" />
+			  <direct input="COMMON_LUT_AND_F78MUX.C2" name="C2" output="LUT[2].A2" />
+			  <direct input="COMMON_LUT_AND_F78MUX.C3" name="C3" output="LUT[2].A3" />
+			  <direct input="COMMON_LUT_AND_F78MUX.C4" name="C4" output="LUT[2].A4" />
+			  <direct input="COMMON_LUT_AND_F78MUX.C5" name="C5" output="LUT[2].A5" />
+			  <direct input="COMMON_LUT_AND_F78MUX.C6" name="C6" output="LUT[2].A6" />
+			  <direct input="LUT[0].O5" name="AO5" output="COMMON_LUT_AND_F78MUX.AO5" />
+			  <direct input="LUT[0].O6" name="AO6" output="COMMON_LUT_AND_F78MUX.AO6" />
+			  <direct input="LUT[1].O5" name="BO5" output="COMMON_LUT_AND_F78MUX.BO5" />
+			  <direct input="LUT[1].O6" name="BO6" output="COMMON_LUT_AND_F78MUX.BO6" />
+			  <direct input="LUT[2].O5" name="CO5" output="COMMON_LUT_AND_F78MUX.CO5" />
+			  <direct input="LUT[2].O6" name="CO6" output="COMMON_LUT_AND_F78MUX.CO6" />
+			  <direct input="LUT[3].O5" name="DO5" output="COMMON_LUT_AND_F78MUX.DO5" />
+			  <direct input="LUT[3].O6" name="DO6" output="COMMON_LUT_AND_F78MUX.DO6" />
 			  <direct input="F7AMUX.O" name="F7AMUX_O" output="COMMON_LUT_AND_F78MUX.F7AMUX_O" />
 			  <direct input="F7BMUX.O" name="F7BMUX_O" output="COMMON_LUT_AND_F78MUX.F7BMUX_O" />
 			  <direct input="F8MUX.O" name="F8MUX_O" output="COMMON_LUT_AND_F78MUX.F8MUX_O" />
-			  <direct input="COMMON_LUT_AND_F78MUX.D1" name="D1" output="DLUT.A1" />
-			  <direct input="COMMON_LUT_AND_F78MUX.D2" name="D2" output="DLUT.A2" />
-			  <direct input="COMMON_LUT_AND_F78MUX.D3" name="D3" output="DLUT.A3" />
-			  <direct input="COMMON_LUT_AND_F78MUX.D4" name="D4" output="DLUT.A4" />
-			  <direct input="COMMON_LUT_AND_F78MUX.D5" name="D5" output="DLUT.A5" />
-			  <direct input="COMMON_LUT_AND_F78MUX.D6" name="D6" output="DLUT.A6" />
-			  <direct input="BLUT.O6" name="F7AMUX_I0" output="F7AMUX.I0">
-				<pack_pattern in_port="BLUT.O6" name="LUT5toLUT7" out_port="F7AMUX.I0" />
-				<pack_pattern in_port="BLUT.O6" name="LUT5toLUT8" out_port="F7AMUX.I0" />
+			  <direct input="COMMON_LUT_AND_F78MUX.D1" name="D1" output="LUT[3].A1" />
+			  <direct input="COMMON_LUT_AND_F78MUX.D2" name="D2" output="LUT[3].A2" />
+			  <direct input="COMMON_LUT_AND_F78MUX.D3" name="D3" output="LUT[3].A3" />
+			  <direct input="COMMON_LUT_AND_F78MUX.D4" name="D4" output="LUT[3].A4" />
+			  <direct input="COMMON_LUT_AND_F78MUX.D5" name="D5" output="LUT[3].A5" />
+			  <direct input="COMMON_LUT_AND_F78MUX.D6" name="D6" output="LUT[3].A6" />
+			  <direct input="LUT[1].O6" name="F7AMUX_I0" output="F7AMUX.I0">
+				<pack_pattern in_port="LUT[1].O6" name="LUT5toLUT7" out_port="F7AMUX.I0" />
+				<pack_pattern in_port="LUT[1].O6" name="LUT5toLUT8" out_port="F7AMUX.I0" />
 			  </direct>
-			  <direct input="ALUT.O6" name="F7AMUX_I1" output="F7AMUX.I1">
-				<pack_pattern in_port="ALUT.O6" name="LUT5toLUT7" out_port="F7AMUX.I1" />
-				<pack_pattern in_port="ALUT.O6" name="LUT5toLUT8" out_port="F7AMUX.I1" />
+			  <direct input="LUT[0].O6" name="F7AMUX_I1" output="F7AMUX.I1">
+				<pack_pattern in_port="LUT[0].O6" name="LUT5toLUT7" out_port="F7AMUX.I1" />
+				<pack_pattern in_port="LUT[0].O6" name="LUT5toLUT8" out_port="F7AMUX.I1" />
 			  </direct>
 			  <direct input="COMMON_LUT_AND_F78MUX.AX" name="F7AMUX_S" output="F7AMUX.S" />
-			  <direct input="DLUT.O6" name="F7BMUX_I0" output="F7BMUX.I0">
-				<pack_pattern in_port="DLUT.O6" name="LUT5toLUT7" out_port="F7BMUX.I0" />
-				<pack_pattern in_port="DLUT.O6" name="LUT5toLUT8" out_port="F7BMUX.I0" />
+			  <direct input="LUT[3].O6" name="F7BMUX_I0" output="F7BMUX.I0">
+				<pack_pattern in_port="LUT[3].O6" name="LUT5toLUT7" out_port="F7BMUX.I0" />
+				<pack_pattern in_port="LUT[3].O6" name="LUT5toLUT8" out_port="F7BMUX.I0" />
 			  </direct>
-			  <direct input="CLUT.O6" name="F7BMUX_I1" output="F7BMUX.I1">
-				<pack_pattern in_port="CLUT.O6" name="LUT5toLUT7" out_port="F7BMUX.I1" />
-				<pack_pattern in_port="CLUT.O6" name="LUT5toLUT8" out_port="F7BMUX.I1" />
+			  <direct input="LUT[2].O6" name="F7BMUX_I1" output="F7BMUX.I1">
+				<pack_pattern in_port="LUT[2].O6" name="LUT5toLUT7" out_port="F7BMUX.I1" />
+				<pack_pattern in_port="LUT[2].O6" name="LUT5toLUT8" out_port="F7BMUX.I1" />
 			  </direct>
 			  <direct input="COMMON_LUT_AND_F78MUX.CX" name="F7BMUX_S" output="F7BMUX.S" />
 			  <direct input="F7BMUX.O" name="F8MUX_I0" output="F8MUX.I0">
