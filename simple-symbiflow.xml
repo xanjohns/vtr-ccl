@@ -415,7 +415,6 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -432,7 +431,6 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -524,7 +522,6 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -541,7 +538,6 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -636,7 +632,6 @@
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -653,7 +648,6 @@
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLL_R_SLICEL_0.CLBLL_LL_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -745,7 +739,6 @@
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -762,7 +755,6 @@
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLL_R_SLICEL_1.CLBLL_L_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -857,7 +849,6 @@
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -874,7 +865,6 @@
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLM_L_SLICEL_0.CLBLM_L_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -1023,7 +1013,6 @@
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -1040,7 +1029,6 @@
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLM_L_SLICEM_1.CLBLM_M_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -1135,7 +1123,6 @@
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -1152,7 +1139,6 @@
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLM_R_SLICEL_0.CLBLM_L_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -1301,7 +1287,6 @@
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_CE" to="BLK-TL-SLICEL.CE"/>
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_CMUX" to="BLK-TL-SLICEL.CMUX"/>
@@ -1318,7 +1303,6 @@
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_DMUX" to="BLK-TL-SLICEL.DMUX"/>
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_DQ" to="BLK-TL-SLICEL.DQ"/>
             <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_DX" to="BLK-TL-SLICEL.DX"/>
-            <direct from="BLK-TL-CLBLM_R_SLICEM_1.CLBLM_M_SR" to="BLK-TL-SLICEL.SR"/>
           </site>
         </equivalent_sites>
       </sub_tile>
@@ -1334,7 +1318,7 @@
       <corners type="EMPTY" priority="101"/>
       <!--Fill with 'clb'-->
       <fill type="BLK-TL-CLBLL_L" priority="10"/>
-      <col type="BLK-TL-CLBLL_R" priority="11" startx="3" repeatx="2"/>
+      <!-- <col type="BLK-TL-CLBLL_R" priority="11" startx="3" repeatx="2"/> -->
     </auto_layout>
   </layout>
   <device>
@@ -1467,7 +1451,6 @@
       <input name="C4" num_pins="1"/>
       <input name="C5" num_pins="1"/>
       <input name="C6" num_pins="1"/>
-      <input name="CE" num_pins="1"/>
       <input name="CIN" num_pins="1"/>
       <input name="CX" num_pins="1"/>
       <input name="D1" num_pins="1"/>
@@ -1477,7 +1460,6 @@
       <input name="D5" num_pins="1"/>
       <input name="D6" num_pins="1"/>
       <input name="DX" num_pins="1"/>
-      <input name="SR" num_pins="1"/>
       <output name="A" num_pins="1"/>
       <output name="AMUX" num_pins="1"/>
       <output name="AQ" num_pins="1"/>
@@ -1513,7 +1495,6 @@
         <input name="C4" num_pins="1"/>
         <input name="C5" num_pins="1"/>
         <input name="C6" num_pins="1"/>
-        <input name="CE" num_pins="1"/>
         <input name="CIN" num_pins="1"/>
         <input name="CX" num_pins="1"/>
         <input name="D1" num_pins="1"/>
@@ -1523,7 +1504,6 @@
         <input name="D5" num_pins="1"/>
         <input name="D6" num_pins="1"/>
         <input name="DX" num_pins="1"/>
-        <input name="SR" num_pins="1"/>
         <output name="A" num_pins="1"/>
         <output name="AMUX" num_pins="1"/>
         <output name="AQ" num_pins="1"/>
@@ -1637,33 +1617,14 @@
                 <direct input="ALUT.A4" name="ALUT_A4_1" output="A5LUT[1].in[3]"/>
                 <direct input="ALUT.A5" name="ALUT_A5_1" output="A5LUT[1].in[4]"/>
                 <direct input="A5LUT[0].out" name="O5" output="ALUT.O5">
-                  <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDSE" out_port="ALUT.O5"/>
-                  <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDRE" out_port="ALUT.O5"/>
-                  <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDCE" out_port="ALUT.O5"/>
-                  <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDPE" out_port="ALUT.O5"/>
                 </direct>
                 <mux input="A5LUT[1].out F6MUX.O" name="O6" output="ALUT.O6">
-                  <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDSE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDRE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDPE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDCE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="ALUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="ALUT.O6"/>
                 </mux>
                 <direct input="A5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                   <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                 </direct>
                 <direct input="A5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                   <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                 </direct>
                 <direct input="ALUT.A6" name="F6MUX_S" output="F6MUX.S"/>
               </interconnect>
@@ -1741,33 +1702,14 @@
                 <direct input="BLUT.A4" name="BLUT_A4_1" output="B5LUT[1].in[3]"/>
                 <direct input="BLUT.A5" name="BLUT_A5_1" output="B5LUT[1].in[4]"/>
                 <direct input="B5LUT[0].out" name="O5" output="BLUT.O5">
-                  <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDSE" out_port="BLUT.O5"/>
-                  <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDRE" out_port="BLUT.O5"/>
-                  <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDCE" out_port="BLUT.O5"/>
-                  <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDPE" out_port="BLUT.O5"/>
                 </direct>
                 <mux input="B5LUT[1].out F6MUX.O" name="O6" output="BLUT.O6">
-                  <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDSE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDRE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDPE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDCE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="BLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="BLUT.O6"/>
                 </mux>
                 <direct input="B5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                   <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                 </direct>
                 <direct input="B5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                   <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                 </direct>
                 <direct input="BLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
               </interconnect>
@@ -1845,33 +1787,14 @@
                 <direct input="CLUT.A4" name="CLUT_A4_1" output="C5LUT[1].in[3]"/>
                 <direct input="CLUT.A5" name="CLUT_A5_1" output="C5LUT[1].in[4]"/>
                 <direct input="C5LUT[0].out" name="O5" output="CLUT.O5">
-                  <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDSE" out_port="CLUT.O5"/>
-                  <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDRE" out_port="CLUT.O5"/>
-                  <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDCE" out_port="CLUT.O5"/>
-                  <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDPE" out_port="CLUT.O5"/>
                 </direct>
                 <mux input="C5LUT[1].out F6MUX.O" name="O6" output="CLUT.O6">
-                  <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDSE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDRE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDPE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDCE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="CLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="CLUT.O6"/>
                 </mux>
                 <direct input="C5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                   <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                 </direct>
                 <direct input="C5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                   <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                 </direct>
                 <direct input="CLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
               </interconnect>
@@ -1949,33 +1872,14 @@
                 <direct input="DLUT.A4" name="DLUT_A4_1" output="D5LUT[1].in[3]"/>
                 <direct input="DLUT.A5" name="DLUT_A5_1" output="D5LUT[1].in[4]"/>
                 <direct input="D5LUT[0].out" name="O5" output="DLUT.O5">
-                  <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDSE" out_port="DLUT.O5"/>
-                  <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDRE" out_port="DLUT.O5"/>
-                  <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDCE" out_port="DLUT.O5"/>
-                  <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDPE" out_port="DLUT.O5"/>
                 </direct>
                 <mux input="D5LUT[1].out F6MUX.O" name="O6" output="DLUT.O6">
-                  <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDSE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDRE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDPE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDCE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="DLUT.O6"/>
-                  <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="DLUT.O6"/>
                 </mux>
                 <direct input="D5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                   <pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                  <pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                 </direct>
                 <direct input="D5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                   <pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                  <pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                 </direct>
                 <direct input="DLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
               </interconnect>
@@ -2072,28 +1976,18 @@
             <direct input="COMMON_LUT_AND_F78MUX.D5" name="D5" output="DLUT.A5"/>
             <direct input="COMMON_LUT_AND_F78MUX.D6" name="D6" output="DLUT.A6"/>
             <direct input="BLUT.O6" name="F7AMUX_I0" output="F7AMUX.I0">
-              <pack_pattern in_port="BLUT.O6" name="LUT5toLUT7" out_port="F7AMUX.I0"/>
-              <pack_pattern in_port="BLUT.O6" name="LUT5toLUT8" out_port="F7AMUX.I0"/>
             </direct>
             <direct input="ALUT.O6" name="F7AMUX_I1" output="F7AMUX.I1">
-              <pack_pattern in_port="ALUT.O6" name="LUT5toLUT7" out_port="F7AMUX.I1"/>
-              <pack_pattern in_port="ALUT.O6" name="LUT5toLUT8" out_port="F7AMUX.I1"/>
             </direct>
             <direct input="COMMON_LUT_AND_F78MUX.AX" name="F7AMUX_S" output="F7AMUX.S"/>
             <direct input="DLUT.O6" name="F7BMUX_I0" output="F7BMUX.I0">
-              <pack_pattern in_port="DLUT.O6" name="LUT5toLUT7" out_port="F7BMUX.I0"/>
-              <pack_pattern in_port="DLUT.O6" name="LUT5toLUT8" out_port="F7BMUX.I0"/>
             </direct>
             <direct input="CLUT.O6" name="F7BMUX_I1" output="F7BMUX.I1">
-              <pack_pattern in_port="CLUT.O6" name="LUT5toLUT7" out_port="F7BMUX.I1"/>
-              <pack_pattern in_port="CLUT.O6" name="LUT5toLUT8" out_port="F7BMUX.I1"/>
             </direct>
             <direct input="COMMON_LUT_AND_F78MUX.CX" name="F7BMUX_S" output="F7BMUX.S"/>
             <direct input="F7BMUX.O" name="F8MUX_I0" output="F8MUX.I0">
-              <pack_pattern in_port="F7BMUX.O" name="LUT5toLUT8" out_port="F8MUX.I0"/>
             </direct>
             <direct input="F7AMUX.O" name="F8MUX_I1" output="F8MUX.I1">
-              <pack_pattern in_port="F7AMUX.O" name="LUT5toLUT8" out_port="F8MUX.I1"/>
             </direct>
             <direct input="COMMON_LUT_AND_F78MUX.BX" name="F8MUX_S" output="F8MUX.S"/>
           </interconnect>
@@ -2111,7 +2005,6 @@
           <input name="BO5" num_pins="1"/>
           <input name="BO6" num_pins="1"/>
           <input name="BX" num_pins="1"/>
-          <input name="CE" num_pins="1"/>
           <input name="CIN" num_pins="1"/>
           <input name="CO5" num_pins="1"/>
           <input name="CO6" num_pins="1"/>
@@ -2122,7 +2015,6 @@
           <input name="F7AMUX_O" num_pins="1"/>
           <input name="F7BMUX_O" num_pins="1"/>
           <input name="F8MUX_O" num_pins="1"/>
-          <input name="SR" num_pins="1"/>
           <output name="A" num_pins="1"/>
           <output name="AMUX" num_pins="1"/>
           <output name="AQ" num_pins="1"/>
@@ -2136,187 +2028,6 @@
           <output name="D" num_pins="1"/>
           <output name="DMUX" num_pins="1"/>
           <output name="DQ" num_pins="1"/>
-          <pb_type blif_model=".subckt CARRY4_VPR" name="CARRY4_VPR" num_pb="1">
-            <input name="CIN" num_pins="1"/>
-            <input name="CYINIT" num_pins="1"/>
-            <input name="DI0" num_pins="1"/>
-            <input name="DI1" num_pins="1"/>
-            <input name="DI2" num_pins="1"/>
-            <input name="DI3" num_pins="1"/>
-            <input name="S0" num_pins="1"/>
-            <input name="S1" num_pins="1"/>
-            <input name="S2" num_pins="1"/>
-            <input name="S3" num_pins="1"/>
-            <output name="CO0" num_pins="1"/>
-            <output name="CO1" num_pins="1"/>
-            <output name="CO2" num_pins="1"/>
-            <output name="CO3" num_pins="1"/>
-            <output name="O0" num_pins="1"/>
-            <output name="O1" num_pins="1"/>
-            <output name="O2" num_pins="1"/>
-            <output name="O3" num_pins="1"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="2.7100000000000005e-10" out_port="CARRY4_VPR.CO0" min="7.600000000000001e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="5.360000000000001e-10" out_port="CARRY4_VPR.CO0" min="1.6500000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI0" max="3.2900000000000005e-10" out_port="CARRY4_VPR.CO0" min="8.500000000000002e-11"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="3.4000000000000007e-10" out_port="CARRY4_VPR.CO0" min="8.9e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="1.57e-10" out_port="CARRY4_VPR.CO1" min="4.5e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="4.940000000000001e-10" out_port="CARRY4_VPR.CO1" min="1.44e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI0" max="3.9600000000000003e-10" out_port="CARRY4_VPR.CO1" min="1.03e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI1" max="3.7600000000000005e-10" out_port="CARRY4_VPR.CO1" min="9.2e-11"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="4.33e-10" out_port="CARRY4_VPR.CO1" min="1.18e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S1" max="4.69e-10" out_port="CARRY4_VPR.CO1" min="1.26e-10"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="2.2800000000000001e-10" out_port="CARRY4_VPR.CO2" min="6.500000000000001e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="5.92e-10" out_port="CARRY4_VPR.CO2" min="1.69e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI0" max="4.74e-10" out_port="CARRY4_VPR.CO2" min="1.2900000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI1" max="4.5900000000000007e-10" out_port="CARRY4_VPR.CO2" min="1.18e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI2" max="2.89e-10" out_port="CARRY4_VPR.CO2" min="7.1e-11"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="5.120000000000001e-10" out_port="CARRY4_VPR.CO2" min="1.44e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S1" max="5.480000000000001e-10" out_port="CARRY4_VPR.CO2" min="1.5300000000000001e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S2" max="2.92e-10" out_port="CARRY4_VPR.CO2" min="7.2e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="1.1400000000000001e-10" out_port="CARRY4_VPR.CO3" min="3.9e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="5.8e-10" out_port="CARRY4_VPR.CO3" min="1.73e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI0" max="4.5600000000000003e-10" out_port="CARRY4_VPR.CO3" min="1.2900000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI1" max="4.5600000000000003e-10" out_port="CARRY4_VPR.CO3" min="1.2900000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI2" max="4.5600000000000003e-10" out_port="CARRY4_VPR.CO3" min="1.2900000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI3" max="4.5600000000000003e-10" out_port="CARRY4_VPR.CO3" min="1.2900000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="5.08e-10" out_port="CARRY4_VPR.CO3" min="1.42e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S1" max="5.28e-10" out_port="CARRY4_VPR.CO3" min="1.46e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S2" max="3.7600000000000005e-10" out_port="CARRY4_VPR.CO3" min="1.0600000000000001e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S3" max="3.8000000000000003e-10" out_port="CARRY4_VPR.CO3" min="1.0600000000000001e-10"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="2.22e-10" out_port="CARRY4_VPR.O0" min="5.4e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="4.82e-10" out_port="CARRY4_VPR.O0" min="1.47e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="2.23e-10" out_port="CARRY4_VPR.O0" min="6e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="3.3400000000000004e-10" out_port="CARRY4_VPR.O1" min="9.100000000000001e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="5.98e-10" out_port="CARRY4_VPR.O1" min="1.76e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI0" max="3.37e-10" out_port="CARRY4_VPR.O1" min="9.400000000000001e-11"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="4.0000000000000007e-10" out_port="CARRY4_VPR.O1" min="9.6e-11"/>
-            <delay_constant in_port="CARRY4_VPR.S1" max="2.05e-10" out_port="CARRY4_VPR.O1" min="5.600000000000001e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="2.39e-10" out_port="CARRY4_VPR.O2" min="6.500000000000001e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="5.84e-10" out_port="CARRY4_VPR.O2" min="1.6700000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI0" max="4.86e-10" out_port="CARRY4_VPR.O2" min="1.22e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI1" max="4.71e-10" out_port="CARRY4_VPR.O2" min="1.1000000000000001e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="5.230000000000001e-10" out_port="CARRY4_VPR.O2" min="1.3600000000000002e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S1" max="5.58e-10" out_port="CARRY4_VPR.O2" min="1.43e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S2" max="2.2600000000000002e-10" out_port="CARRY4_VPR.O2" min="5.7000000000000003e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CIN" max="3.13e-10" out_port="CARRY4_VPR.O3" min="9e-11"/>
-            <delay_constant in_port="CARRY4_VPR.CYINIT" max="3.13e-10" out_port="CARRY4_VPR.O3" min="9e-11"/>
-            <delay_constant in_port="CARRY4_VPR.DI0" max="5.450000000000001e-10" out_port="CARRY4_VPR.O3" min="1.43e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI1" max="5.32e-10" out_port="CARRY4_VPR.O3" min="1.31e-10"/>
-            <delay_constant in_port="CARRY4_VPR.DI2" max="3.72e-10" out_port="CARRY4_VPR.O3" min="9.800000000000001e-11"/>
-            <delay_constant in_port="CARRY4_VPR.S0" max="5.82e-10" out_port="CARRY4_VPR.O3" min="1.56e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S1" max="6.18e-10" out_port="CARRY4_VPR.O3" min="1.63e-10"/>
-            <delay_constant in_port="CARRY4_VPR.S2" max="3.3000000000000005e-10" out_port="CARRY4_VPR.O3" min="9e-11"/>
-            <delay_constant in_port="CARRY4_VPR.S3" max="2.2700000000000002e-10" out_port="CARRY4_VPR.O3" min="5.4e-11"/>
-            <metadata>
-              <meta name="fasm_params">
-      PRECYINIT.C0 = CYINIT_C0
-      PRECYINIT.C1 = CYINIT_C1
-    </meta>
-              <meta name="type">bel</meta>
-              <meta name="subtype">blackbox</meta>
-            </metadata>
-          </pb_type>
-          <pb_type blif_model=".subckt CARRY_COUT_PLUG" name="CARRY_COUT_PLUG" num_pb="1">
-            <input name="CIN" num_pins="1"/>
-            <output name="COUT" num_pins="1"/>
-            <delay_constant in_port="CARRY_COUT_PLUG.CIN" max="0" out_port="CARRY_COUT_PLUG.COUT"/>
-          </pb_type>
-          <pb_type name="CEUSEDMUX" num_pb="1">
-            <input name="CE" num_pins="1"/>
-            <output name="CE_OUT" num_pins="8"/>
-            <mode name="CE_VCC">
-              <pb_type blif_model=".subckt CE_VCC" name="CE_VCC" num_pb="8">
-                <output name="VCC" num_pins="1"/>
-              </pb_type>
-              <interconnect>
-                <direct input="CE_VCC[0].VCC" name="CE0" output="CEUSEDMUX.CE_OUT[0]">
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                  <pack_pattern in_port="CE_VCC[0].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[0]"/>
-                </direct>
-                <direct input="CE_VCC[1].VCC" name="CE1" output="CEUSEDMUX.CE_OUT[1]">
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                  <pack_pattern in_port="CE_VCC[1].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[1]"/>
-                </direct>
-                <direct input="CE_VCC[2].VCC" name="CE2" output="CEUSEDMUX.CE_OUT[2]">
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                  <pack_pattern in_port="CE_VCC[2].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[2]"/>
-                </direct>
-                <direct input="CE_VCC[3].VCC" name="CE3" output="CEUSEDMUX.CE_OUT[3]">
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                  <pack_pattern in_port="CE_VCC[3].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[3]"/>
-                </direct>
-                <direct input="CE_VCC[4].VCC" name="CE4" output="CEUSEDMUX.CE_OUT[4]">
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                  <pack_pattern in_port="CE_VCC[4].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[4]"/>
-                </direct>
-                <direct input="CE_VCC[5].VCC" name="CE5" output="CEUSEDMUX.CE_OUT[5]">
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                  <pack_pattern in_port="CE_VCC[5].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[5]"/>
-                </direct>
-                <direct input="CE_VCC[6].VCC" name="CE6" output="CEUSEDMUX.CE_OUT[6]">
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                  <pack_pattern in_port="CE_VCC[6].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[6]"/>
-                </direct>
-                <direct input="CE_VCC[7].VCC" name="CE7" output="CEUSEDMUX.CE_OUT[7]">
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CE_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CESR_FF_FDRE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CE_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CESR_FF_FDSE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CE_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CESR_FF_FDPE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CE_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                  <pack_pattern in_port="CE_VCC[7].VCC" name="CESR_FF_FDCE" out_port="CEUSEDMUX.CE_OUT[7]"/>
-                </direct>
-              </interconnect>
-            </mode>
-            <mode name="CEUSEDMUX">
-              <interconnect>
-                <complete input="CEUSEDMUX.CE" name="CE" output="CEUSEDMUX.CE_OUT"/>
-              </interconnect>
-            </mode>
-          </pb_type>
           <pb_type name="SLICE_FF" num_pb="1">
             <clock name="CK" num_pins="1"/>
             <input name="D" num_pins="4"/>
@@ -2355,102 +2066,6 @@
               <meta name="subtype">ignore</meta>
             </metadata>
           </pb_type>
-          <pb_type name="SRUSEDMUX" num_pb="1">
-            <input name="SR" num_pins="1"/>
-            <output name="SR_OUT" num_pins="8"/>
-            <mode name="SR_GND">
-              <pb_type blif_model=".subckt SR_GND" name="SR_GND" num_pb="8">
-                <output name="GND" num_pins="1"/>
-              </pb_type>
-              <interconnect>
-                <direct input="SR_GND[0].GND" name="SR0" output="SRUSEDMUX.SR_OUT[0]">
-                  <pack_pattern in_port="SR_GND[0].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                  <pack_pattern in_port="SR_GND[0].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                  <pack_pattern in_port="SR_GND[0].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                  <pack_pattern in_port="SR_GND[0].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                  <pack_pattern in_port="SR_GND[0].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                  <pack_pattern in_port="SR_GND[0].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                  <pack_pattern in_port="SR_GND[0].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                  <pack_pattern in_port="SR_GND[0].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[0]"/>
-                </direct>
-                <direct input="SR_GND[1].GND" name="SR1" output="SRUSEDMUX.SR_OUT[1]">
-                  <pack_pattern in_port="SR_GND[1].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                  <pack_pattern in_port="SR_GND[1].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                  <pack_pattern in_port="SR_GND[1].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                  <pack_pattern in_port="SR_GND[1].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                  <pack_pattern in_port="SR_GND[1].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                  <pack_pattern in_port="SR_GND[1].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                  <pack_pattern in_port="SR_GND[1].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                  <pack_pattern in_port="SR_GND[1].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[1]"/>
-                </direct>
-                <direct input="SR_GND[2].GND" name="SR2" output="SRUSEDMUX.SR_OUT[2]">
-                  <pack_pattern in_port="SR_GND[2].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                  <pack_pattern in_port="SR_GND[2].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                  <pack_pattern in_port="SR_GND[2].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                  <pack_pattern in_port="SR_GND[2].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                  <pack_pattern in_port="SR_GND[2].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                  <pack_pattern in_port="SR_GND[2].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                  <pack_pattern in_port="SR_GND[2].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                  <pack_pattern in_port="SR_GND[2].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[2]"/>
-                </direct>
-                <direct input="SR_GND[3].GND" name="SR3" output="SRUSEDMUX.SR_OUT[3]">
-                  <pack_pattern in_port="SR_GND[3].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                  <pack_pattern in_port="SR_GND[3].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                  <pack_pattern in_port="SR_GND[3].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                  <pack_pattern in_port="SR_GND[3].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                  <pack_pattern in_port="SR_GND[3].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                  <pack_pattern in_port="SR_GND[3].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                  <pack_pattern in_port="SR_GND[3].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                  <pack_pattern in_port="SR_GND[3].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[3]"/>
-                </direct>
-                <direct input="SR_GND[4].GND" name="SR4" output="SRUSEDMUX.SR_OUT[4]">
-                  <pack_pattern in_port="SR_GND[4].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                  <pack_pattern in_port="SR_GND[4].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                  <pack_pattern in_port="SR_GND[4].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                  <pack_pattern in_port="SR_GND[4].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                  <pack_pattern in_port="SR_GND[4].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                  <pack_pattern in_port="SR_GND[4].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                  <pack_pattern in_port="SR_GND[4].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                  <pack_pattern in_port="SR_GND[4].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[4]"/>
-                </direct>
-                <direct input="SR_GND[5].GND" name="SR5" output="SRUSEDMUX.SR_OUT[5]">
-                  <pack_pattern in_port="SR_GND[5].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                  <pack_pattern in_port="SR_GND[5].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                  <pack_pattern in_port="SR_GND[5].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                  <pack_pattern in_port="SR_GND[5].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                  <pack_pattern in_port="SR_GND[5].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                  <pack_pattern in_port="SR_GND[5].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                  <pack_pattern in_port="SR_GND[5].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                  <pack_pattern in_port="SR_GND[5].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[5]"/>
-                </direct>
-                <direct input="SR_GND[6].GND" name="SR6" output="SRUSEDMUX.SR_OUT[6]">
-                  <pack_pattern in_port="SR_GND[6].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                  <pack_pattern in_port="SR_GND[6].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                  <pack_pattern in_port="SR_GND[6].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                  <pack_pattern in_port="SR_GND[6].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                  <pack_pattern in_port="SR_GND[6].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                  <pack_pattern in_port="SR_GND[6].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                  <pack_pattern in_port="SR_GND[6].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                  <pack_pattern in_port="SR_GND[6].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[6]"/>
-                </direct>
-                <direct input="SR_GND[7].GND" name="SR7" output="SRUSEDMUX.SR_OUT[7]">
-                  <pack_pattern in_port="SR_GND[7].GND" name="SR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                  <pack_pattern in_port="SR_GND[7].GND" name="CESR_FF_FDSE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                  <pack_pattern in_port="SR_GND[7].GND" name="SR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                  <pack_pattern in_port="SR_GND[7].GND" name="CESR_FF_FDRE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                  <pack_pattern in_port="SR_GND[7].GND" name="SR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                  <pack_pattern in_port="SR_GND[7].GND" name="CESR_FF_FDPE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                  <pack_pattern in_port="SR_GND[7].GND" name="SR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                  <pack_pattern in_port="SR_GND[7].GND" name="CESR_FF_FDCE" out_port="SRUSEDMUX.SR_OUT[7]"/>
-                </direct>
-              </interconnect>
-            </mode>
-            <mode name="SRUSEDMUX">
-              <interconnect>
-                <complete input="SRUSEDMUX.SR" name="SR" output="SRUSEDMUX.SR_OUT"/>
-              </interconnect>
-            </mode>
-          </pb_type>
           <interconnect>
             <!-- 5FF MUXs -->
             <!-- [A-D]MUX -->
@@ -2462,333 +2077,40 @@
             <!-- Carry selects -->
             <!-- Carry MUXCY.DI -->
             <!-- Clock, Clock Enable and Reset -->
-            <direct input="COMMON_SLICE.CIN" name="CIN_TO_CARRY0" output="CARRY4_VPR.CIN">
-              <pack_pattern in_port="COMMON_SLICE.CIN" name="BLK-TL-SLICEL.SLICEL0.CARRYCHAIN" out_port="CARRY4_VPR.CIN"/>
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.CIN = PRECYINIT.CIN
-        </meta>
-              </metadata>
-            </direct>
-            <direct input="COMMON_SLICE.AX" name="PRECYINIT_MUX" output="CARRY4_VPR.CYINIT">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.AX = PRECYINIT.AX
-        </meta>
-              </metadata>
-            </direct>
-            <mux input="COMMON_SLICE.AO5 COMMON_SLICE.AX" name="CARRY_DI0" output="CARRY4_VPR.DI0">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.AO5 = CARRY4.ACY0
-          COMMON_SLICE.AX = NULL
-        </meta>
-              </metadata>
-              <delay_constant in_port="COMMON_SLICE.AX" max=".105e-9" out_port="CARRY4_VPR.DI0"/>
-            </mux>
-            <mux input="COMMON_SLICE.BO5 COMMON_SLICE.BX" name="CARRY_DI1" output="CARRY4_VPR.DI1">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.BO5 = CARRY4.BCY0
-          COMMON_SLICE.BX = NULL
-        </meta>
-              </metadata>
-              <delay_constant in_port="COMMON_SLICE.BX" max=".085e-9" out_port="CARRY4_VPR.DI1"/>
-            </mux>
-            <mux input="COMMON_SLICE.CO5 COMMON_SLICE.CX" name="CARRY_DI2" output="CARRY4_VPR.DI2">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.CO5 = CARRY4.CCY0
-          COMMON_SLICE.CX = NULL
-        </meta>
-              </metadata>
-              <delay_constant in_port="COMMON_SLICE.CX" max=".094e-9" out_port="CARRY4_VPR.DI2"/>
-            </mux>
-            <mux input="COMMON_SLICE.DO5 COMMON_SLICE.DX" name="CARRY_DI3" output="CARRY4_VPR.DI3">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.DO5 = CARRY4.DCY0
-          COMMON_SLICE.DX = NULL
-        </meta>
-              </metadata>
-              <delay_constant in_port="COMMON_SLICE.DX" max=".058e-9" out_port="CARRY4_VPR.DI3"/>
-            </mux>
-            <direct input="COMMON_SLICE.AO6" name="CARRY_S0" output="CARRY4_VPR.S0"/>
-            <direct input="COMMON_SLICE.BO6" name="CARRY_S1" output="CARRY4_VPR.S1"/>
-            <direct input="COMMON_SLICE.CO6" name="CARRY_S2" output="CARRY4_VPR.S2"/>
-            <direct input="COMMON_SLICE.DO6" name="CARRY_S3" output="CARRY4_VPR.S3"/>
-            <direct input="CARRY4_VPR.CO3" name="COUT_TO_PLUG" output="CARRY_COUT_PLUG.CIN">
-              <pack_pattern in_port="CARRY4_VPR.CO3" name="BLK-TL-SLICEL.SLICEL0.CARRYCHAIN" out_port="CARRY_COUT_PLUG.CIN"/>
-              <delay_constant in_port="CARRY4_VPR.CO3" max="0.0" out_port="CARRY_COUT_PLUG.CIN"/>
-            </direct>
-            <direct input="COMMON_SLICE.CE" name="CE" output="CEUSEDMUX.CE">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.CE = CEUSEDMUX
-        </meta>
-              </metadata>
-            </direct>
-            <mux input="SLICE_FF.Q5[0] CARRY4_VPR.O0 CARRY4_VPR.CO0 COMMON_SLICE.AO6 COMMON_SLICE.AO5 COMMON_SLICE.F7AMUX_O" name="AOUTMUX" output="COMMON_SLICE.AMUX">
-              <metadata>
-                <meta name="fasm_mux">
-          SLICE_FF.Q5[0] = AOUTMUX.A5Q
-          COMMON_SLICE.F7AMUX_O = AOUTMUX.F7
-          COMMON_SLICE.AO5 = AOUTMUX.O5
-          COMMON_SLICE.AO6 = AOUTMUX.O6
-          CARRY4_VPR.CO0 = AOUTMUX.CY
-          CARRY4_VPR.O0 = AOUTMUX.XOR
-        </meta>
-              </metadata>
-              <delay_constant in_port="SLICE_FF.Q5[0]" max="1.75e-10" out_port="COMMON_SLICE.AMUX"/>
-              <delay_constant in_port="CARRY4_VPR.O0" max="2.49e-10" out_port="COMMON_SLICE.AMUX"/>
-              <delay_constant in_port="CARRY4_VPR.CO0" max="1.75e-10" out_port="COMMON_SLICE.AMUX"/>
-              <delay_constant in_port="COMMON_SLICE.AO6" max="2.09e-10" out_port="COMMON_SLICE.AMUX"/>
-              <delay_constant in_port="COMMON_SLICE.AO5" max="2.0200000000000003e-10" out_port="COMMON_SLICE.AMUX"/>
-            </mux>
             <direct input="SLICE_FF.Q[0]" name="AFF" output="COMMON_SLICE.AQ"/>
             <direct input="COMMON_SLICE.AO6" name="COMMON_SLICE_AOUT" output="COMMON_SLICE.A">
               <delay_constant in_port="COMMON_SLICE.AO6" max="0.0" out_port="COMMON_SLICE.A"/>
             </direct>
-            <mux input="SLICE_FF.Q5[1] CARRY4_VPR.O1 CARRY4_VPR.CO1 COMMON_SLICE.BO6 COMMON_SLICE.BO5 COMMON_SLICE.F8MUX_O" name="BOUTMUX" output="COMMON_SLICE.BMUX">
-              <metadata>
-                <meta name="fasm_mux">
-          SLICE_FF.Q5[1] = BOUTMUX.B5Q
-          COMMON_SLICE.F8MUX_O = BOUTMUX.F8
-          COMMON_SLICE.BO5 = BOUTMUX.O5
-          COMMON_SLICE.BO6 = BOUTMUX.O6
-          CARRY4_VPR.CO1 = BOUTMUX.CY
-          CARRY4_VPR.O1 = BOUTMUX.XOR
-        </meta>
-              </metadata>
-              <delay_constant in_port="SLICE_FF.Q5[1]" max="1.72e-10" out_port="COMMON_SLICE.BMUX"/>
-              <delay_constant in_port="CARRY4_VPR.O1" max="2.05e-10" out_port="COMMON_SLICE.BMUX"/>
-              <delay_constant in_port="CARRY4_VPR.CO1" max="1.79e-10" out_port="COMMON_SLICE.BMUX"/>
-              <delay_constant in_port="COMMON_SLICE.BO6" max="2.08e-10" out_port="COMMON_SLICE.BMUX"/>
-              <delay_constant in_port="COMMON_SLICE.BO5" max="2.08e-10" out_port="COMMON_SLICE.BMUX"/>
-            </mux>
             <direct input="SLICE_FF.Q[1]" name="BFF" output="COMMON_SLICE.BQ"/>
             <direct input="COMMON_SLICE.BO6" name="COMMON_SLICE_BOUT" output="COMMON_SLICE.B">
               <delay_constant in_port="COMMON_SLICE.BO6" max="0.0" out_port="COMMON_SLICE.B"/>
-            </direct>
-            <mux input="SLICE_FF.Q5[2] CARRY4_VPR.O2 CARRY4_VPR.CO2 COMMON_SLICE.CO6 COMMON_SLICE.CO5 COMMON_SLICE.F7BMUX_O" name="COUTMUX" output="COMMON_SLICE.CMUX">
-              <metadata>
-                <meta name="fasm_mux">
-          SLICE_FF.Q5[2] = COUTMUX.C5Q
-          COMMON_SLICE.F7BMUX_O = COUTMUX.F7
-          COMMON_SLICE.CO5 = COUTMUX.O5
-          COMMON_SLICE.CO6 = COUTMUX.O6
-          CARRY4_VPR.CO2 = COUTMUX.CY
-          CARRY4_VPR.O2 = COUTMUX.XOR
-        </meta>
-              </metadata>
-              <delay_constant in_port="SLICE_FF.Q5[2]" max="1.73e-10" out_port="COMMON_SLICE.CMUX"/>
-              <delay_constant in_port="CARRY4_VPR.O2" max="1.8900000000000002e-10" out_port="COMMON_SLICE.CMUX"/>
-              <delay_constant in_port="CARRY4_VPR.CO2" max="1.78e-10" out_port="COMMON_SLICE.CMUX"/>
-              <delay_constant in_port="COMMON_SLICE.CO6" max="2.05e-10" out_port="COMMON_SLICE.CMUX"/>
-              <delay_constant in_port="COMMON_SLICE.CO5" max="2.0300000000000002e-10" out_port="COMMON_SLICE.CMUX"/>
-            </mux>
-            <direct input="CARRY_COUT_PLUG.COUT" name="COUT" output="COMMON_SLICE.COUT">
-              <pack_pattern in_port="CARRY_COUT_PLUG.COUT" name="BLK-TL-SLICEL.SLICEL0.CARRYCHAIN" out_port="COMMON_SLICE.COUT"/>
             </direct>
             <direct input="SLICE_FF.Q[2]" name="CFF" output="COMMON_SLICE.CQ"/>
             <direct input="COMMON_SLICE.CO6" name="COMMON_SLICE_COUT" output="COMMON_SLICE.C">
               <delay_constant in_port="COMMON_SLICE.CO6" max="0.0" out_port="COMMON_SLICE.C"/>
             </direct>
-            <mux input="COMMON_SLICE.AMC31 SLICE_FF.Q5[3] CARRY4_VPR.O3 CARRY4_VPR.CO3 COMMON_SLICE.DO6 COMMON_SLICE.DO5" name="DOUTMUX" output="COMMON_SLICE.DMUX">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.AMC31 = DOUTMUX.MC31
-          SLICE_FF.Q5[3] = DOUTMUX.D5Q
-          COMMON_SLICE.DO5 = DOUTMUX.O5
-          COMMON_SLICE.DO6 = DOUTMUX.O6
-          CARRY4_VPR.CO3 = DOUTMUX.CY
-          CARRY4_VPR.O3 = DOUTMUX.XOR
-        </meta>
-              </metadata>
-              <delay_constant in_port="SLICE_FF.Q5[3]" max="1.75e-10" out_port="COMMON_SLICE.DMUX"/>
-              <delay_constant in_port="CARRY4_VPR.O3" max="3.0500000000000003e-10" out_port="COMMON_SLICE.DMUX"/>
-              <delay_constant in_port="CARRY4_VPR.CO3" max="1.8200000000000002e-10" out_port="COMMON_SLICE.DMUX"/>
-              <delay_constant in_port="COMMON_SLICE.DO6" max="2.11e-10" out_port="COMMON_SLICE.DMUX"/>
-              <delay_constant in_port="COMMON_SLICE.DO5" max="2.08e-10" out_port="COMMON_SLICE.DMUX"/>
-            </mux>
             <direct input="SLICE_FF.Q[3]" name="DFF" output="COMMON_SLICE.DQ"/>
             <direct input="COMMON_SLICE.DO6" name="COMMON_SLICE_DOUT" output="COMMON_SLICE.D">
               <delay_constant in_port="COMMON_SLICE.DO6" max="0.0" out_port="COMMON_SLICE.D"/>
             </direct>
-            <!-- <direct input="CEUSEDMUX.CE_OUT" name="CE_OUT" output="SLICE_FF.CE"/> -->
             <direct input="COMMON_SLICE.CLK" name="CK" output="SLICE_FF.CK"/>
             <mux input="COMMON_SLICE.AX COMMON_SLICE.AO5" name="A5FFMUX" output="SLICE_FF.D5[0]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.AO5 = A5FFMUX.IN_A
-          COMMON_SLICE.AX = A5FFMUX.IN_B
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[0]"/>
               <delay_constant in_port="COMMON_SLICE.AX" max="2.0200000000000003e-10" out_port="SLICE_FF.D5[0]"/>
               <delay_constant in_port="COMMON_SLICE.AO5" max="1.07e-10" out_port="SLICE_FF.D5[0]"/>
             </mux>
             <mux input="COMMON_SLICE.BX COMMON_SLICE.BO5" name="B5FFMUX" output="SLICE_FF.D5[1]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.BO5 = B5FFMUX.IN_A
-          COMMON_SLICE.BX = B5FFMUX.IN_B
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[1]"/>
               <delay_constant in_port="COMMON_SLICE.BX" max="2.16e-10" out_port="SLICE_FF.D5[1]"/>
               <delay_constant in_port="COMMON_SLICE.BO5" max="1.07e-10" out_port="SLICE_FF.D5[1]"/>
             </mux>
             <mux input="COMMON_SLICE.CX COMMON_SLICE.CO5" name="C5FFMUX" output="SLICE_FF.D5[2]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.CO5 = C5FFMUX.IN_A
-          COMMON_SLICE.CX = C5FFMUX.IN_B
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[2]"/>
               <delay_constant in_port="COMMON_SLICE.CX" max="1.9600000000000002e-10" out_port="SLICE_FF.D5[2]"/>
               <delay_constant in_port="COMMON_SLICE.CO5" max="1.0900000000000001e-10" out_port="SLICE_FF.D5[2]"/>
             </mux>
             <mux input="COMMON_SLICE.DX COMMON_SLICE.DO5" name="D5FFMUX" output="SLICE_FF.D5[3]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.DO5 = D5FFMUX.IN_A
-          COMMON_SLICE.DX = D5FFMUX.IN_B
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[3]"/>
               <delay_constant in_port="COMMON_SLICE.DX" max="1.93e-10" out_port="SLICE_FF.D5[3]"/>
               <delay_constant in_port="COMMON_SLICE.DO5" max="1.0600000000000001e-10" out_port="SLICE_FF.D5[3]"/>
             </mux>
-            <mux input="CARRY4_VPR.O0 CARRY4_VPR.CO0 COMMON_SLICE.AO6 COMMON_SLICE.AO5 COMMON_SLICE.AX COMMON_SLICE.F7AMUX_O" name="AFFMUX" output="SLICE_FF.D[0]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.AX = AFFMUX.AX
-          COMMON_SLICE.F7AMUX_O = AFFMUX.F7
-          COMMON_SLICE.AO5 = AFFMUX.O5
-          COMMON_SLICE.AO6 = AFFMUX.O6
-          CARRY4_VPR.CO0 = AFFMUX.CY
-          CARRY4_VPR.O0 = AFFMUX.XOR
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[0]"/>
-              <delay_constant in_port="COMMON_SLICE.AX" max="2.05e-10" out_port="SLICE_FF.D[0]"/>
-              <delay_constant in_port="COMMON_SLICE.F7AMUX_O" max="7.4e-11" out_port="SLICE_FF.D[0]"/>
-              <delay_constant in_port="COMMON_SLICE.AO5" max="9.100000000000001e-11" out_port="SLICE_FF.D[0]"/>
-              <delay_constant in_port="COMMON_SLICE.AO6" max="1.0900000000000001e-10" out_port="SLICE_FF.D[0]"/>
-              <delay_constant in_port="CARRY4_VPR.CO0" max="9.2e-11" out_port="SLICE_FF.D[0]"/>
-              <delay_constant in_port="CARRY4_VPR.O0" max="7.600000000000001e-11" out_port="SLICE_FF.D[0]"/>
-            </mux>
-            <mux input="CARRY4_VPR.O1 CARRY4_VPR.CO1 COMMON_SLICE.BO6 COMMON_SLICE.BO5 COMMON_SLICE.BX COMMON_SLICE.F8MUX_O" name="BFFMUX" output="SLICE_FF.D[1]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.BX = BFFMUX.BX
-          COMMON_SLICE.F8MUX_O = BFFMUX.F8
-          COMMON_SLICE.BO5 = BFFMUX.O5
-          COMMON_SLICE.BO6 = BFFMUX.O6
-          CARRY4_VPR.CO1 = BFFMUX.CY
-          CARRY4_VPR.O1 = BFFMUX.XOR
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[1]"/>
-              <delay_constant in_port="COMMON_SLICE.BX" max="2.1900000000000002e-10" out_port="SLICE_FF.D[1]"/>
-              <delay_constant in_port="COMMON_SLICE.F8MUX_O" max="7.4e-11" out_port="SLICE_FF.D[1]"/>
-              <delay_constant in_port="COMMON_SLICE.BO5" max="9.100000000000001e-11" out_port="SLICE_FF.D[1]"/>
-              <delay_constant in_port="COMMON_SLICE.BO6" max="1.07e-10" out_port="SLICE_FF.D[1]"/>
-              <delay_constant in_port="CARRY4_VPR.CO1" max="9.2e-11" out_port="SLICE_FF.D[1]"/>
-              <delay_constant in_port="CARRY4_VPR.O1" max="7.600000000000001e-11" out_port="SLICE_FF.D[1]"/>
-            </mux>
-            <mux input="CARRY4_VPR.O2 CARRY4_VPR.CO2 COMMON_SLICE.CO6 COMMON_SLICE.CO5 COMMON_SLICE.CX COMMON_SLICE.F7BMUX_O" name="CFFMUX" output="SLICE_FF.D[2]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.CX = CFFMUX.CX
-          COMMON_SLICE.F7BMUX_O = CFFMUX.F7
-          COMMON_SLICE.CO5 = CFFMUX.O5
-          COMMON_SLICE.CO6 = CFFMUX.O6
-          CARRY4_VPR.CO2 = CFFMUX.CY
-          CARRY4_VPR.O2 = CFFMUX.XOR
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[2]"/>
-              <delay_constant in_port="COMMON_SLICE.CX" max="1.99e-10" out_port="SLICE_FF.D[2]"/>
-              <delay_constant in_port="COMMON_SLICE.F7BMUX_O" max="7.4e-11" out_port="SLICE_FF.D[2]"/>
-              <delay_constant in_port="COMMON_SLICE.CO5" max="9.3e-11" out_port="SLICE_FF.D[2]"/>
-              <delay_constant in_port="COMMON_SLICE.CO6" max="1.07e-10" out_port="SLICE_FF.D[2]"/>
-              <delay_constant in_port="CARRY4_VPR.CO2" max="9.2e-11" out_port="SLICE_FF.D[2]"/>
-              <delay_constant in_port="CARRY4_VPR.O2" max="7.600000000000001e-11" out_port="SLICE_FF.D[2]"/>
-            </mux>
-            <mux input="COMMON_SLICE.AMC31 CARRY4_VPR.O3 CARRY4_VPR.CO3 COMMON_SLICE.DO6 COMMON_SLICE.DO5 COMMON_SLICE.DX" name="DFFMUX" output="SLICE_FF.D[3]">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.AMC31 = DFFMUX.MC31
-          COMMON_SLICE.DX = DFFMUX.DX
-          COMMON_SLICE.DO5 = DFFMUX.O5
-          COMMON_SLICE.DO6 = DFFMUX.O6
-          CARRY4_VPR.CO3 = DFFMUX.CY
-          CARRY4_VPR.O3 = DFFMUX.XOR
-        </meta>
-              </metadata>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[3]"/>
-              <delay_constant in_port="COMMON_SLICE.DX" max="1.9600000000000002e-10" out_port="SLICE_FF.D[3]"/>
-              <delay_constant in_port="COMMON_SLICE.DO5" max="9e-11" out_port="SLICE_FF.D[3]"/>
-              <delay_constant in_port="COMMON_SLICE.DO6" max="1.0600000000000001e-10" out_port="SLICE_FF.D[3]"/>
-              <delay_constant in_port="CARRY4_VPR.CO3" max="3.3600000000000003e-10" out_port="SLICE_FF.D[3]"/>
-              <delay_constant in_port="CARRY4_VPR.O3" max="7.600000000000001e-11" out_port="SLICE_FF.D[3]"/>
-            </mux>
-            <!-- <direct input="SRUSEDMUX.SR_OUT" name="SR_OUT" output="SLICE_FF.SR"/> -->
-            <direct input="COMMON_SLICE.SR" name="SR" output="SRUSEDMUX.SR">
-              <metadata>
-                <meta name="fasm_mux">
-          COMMON_SLICE.SR = SRUSEDMUX
-        </meta>
-              </metadata>
-            </direct>
           </interconnect>
-          <metadata>
-            <meta name="type">block</meta>
-            <meta name="subtype">ignore</meta>
-          </metadata>
         </pb_type>
         <interconnect>
           <!-- LUT input pins -->
@@ -2831,7 +2153,6 @@
           <direct input="COMMON_LUT_AND_F78MUX.BO5" name="BO5" output="COMMON_SLICE.BO5"/>
           <direct input="COMMON_LUT_AND_F78MUX.BO6" name="BO6" output="COMMON_SLICE.BO6"/>
           <direct input="SLICEL0.BX" name="BX2" output="COMMON_SLICE.BX"/>
-          <direct input="SLICEL0.CE" name="CE" output="COMMON_SLICE.CE"/>
           <direct input="SLICEL0.CIN" name="CIN" output="COMMON_SLICE.CIN"/>
           <direct input="SLICEL0.CLK" name="CK" output="COMMON_SLICE.CLK"/>
           <direct input="COMMON_LUT_AND_F78MUX.CO5" name="CO5" output="COMMON_SLICE.CO5"/>
@@ -2843,7 +2164,6 @@
           <direct input="COMMON_LUT_AND_F78MUX.F7AMUX_O" name="F7AMUX_O" output="COMMON_SLICE.F7AMUX_O"/>
           <direct input="COMMON_LUT_AND_F78MUX.F7BMUX_O" name="F7BMUX_O" output="COMMON_SLICE.F7BMUX_O"/>
           <direct input="COMMON_LUT_AND_F78MUX.F8MUX_O" name="F8MUX_O" output="COMMON_SLICE.F8MUX_O"/>
-          <direct input="SLICEL0.SR" name="SR" output="COMMON_SLICE.SR"/>
           <direct input="COMMON_SLICE.AMUX" name="SLICEL_AMUX" output="SLICEL0.AMUX"/>
           <direct input="COMMON_SLICE.AQ" name="AQ" output="SLICEL0.AQ"/>
           <direct input="COMMON_SLICE.A" name="SLICEL_AOUT" output="SLICEL0.A"/>
@@ -2858,10 +2178,6 @@
           <direct input="COMMON_SLICE.DQ" name="DQ" output="SLICEL0.DQ"/>
           <direct input="COMMON_SLICE.D" name="SLICEL_DOUT" output="SLICEL0.D"/>
         </interconnect>
-        <metadata>
-          <meta name="type">block</meta>
-          <meta name="subtype">ignore</meta>
-        </metadata>
       </pb_type>
       <interconnect>
         <!-- Tile->Site -->
@@ -2899,7 +2215,6 @@
         <direct input="BLK-TL-SLICEL.C4" name="BLK-TL-SLICEL.C4_to_SLICEL0.C4" output="SLICEL0.C4"/>
         <direct input="BLK-TL-SLICEL.C5" name="BLK-TL-SLICEL.C5_to_SLICEL0.C5" output="SLICEL0.C5"/>
         <direct input="BLK-TL-SLICEL.C6" name="BLK-TL-SLICEL.C6_to_SLICEL0.C6" output="SLICEL0.C6"/>
-        <direct input="BLK-TL-SLICEL.CE" name="BLK-TL-SLICEL.CE_to_SLICEL0.CE" output="SLICEL0.CE"/>
         <direct input="BLK-TL-SLICEL.CIN" name="BLK-TL-SLICEL.CIN_to_SLICEL0.CIN" output="SLICEL0.CIN"/>
         <direct input="BLK-TL-SLICEL.CLK" name="BLK-TL-SLICEL.CLK_to_SLICEL0.CLK" output="SLICEL0.CLK"/>
         <direct input="BLK-TL-SLICEL.CX" name="BLK-TL-SLICEL.CX_to_SLICEL0.CX" output="SLICEL0.CX"/>
@@ -2910,9 +2225,7 @@
         <direct input="BLK-TL-SLICEL.D5" name="BLK-TL-SLICEL.D5_to_SLICEL0.D5" output="SLICEL0.D5"/>
         <direct input="BLK-TL-SLICEL.D6" name="BLK-TL-SLICEL.D6_to_SLICEL0.D6" output="SLICEL0.D6"/>
         <direct input="BLK-TL-SLICEL.DX" name="BLK-TL-SLICEL.DX_to_SLICEL0.DX" output="SLICEL0.DX"/>
-        <direct input="BLK-TL-SLICEL.SR" name="BLK-TL-SLICEL.SR_to_SLICEL0.SR" output="SLICEL0.SR"/>
       </interconnect>
-    
     </pb_type>
     <pb_type name="BLK-TL-SLICEM">
       <clock name="CLK" num_pins="1"/>
@@ -3287,7 +2600,6 @@
                     </direct>
                     <direct input="FF_FDSE_or_FDRE.C" name="C" output="FDSE.C"/>
                     <direct input="FF_FDSE_or_FDRE.D" name="D" output="FDSE.D">
-                      <pack_pattern in_port="FF_FDSE_or_FDRE.D" name="LUT_to_FF_FDSE" out_port="FDSE.D"/>
                     </direct>
                     <direct input="FF_FDSE_or_FDRE.SR" name="S" output="FDSE.S">
                       <pack_pattern in_port="FF_FDSE_or_FDRE.SR" name="SR_FF_FDSE" out_port="FDSE.S"/>
@@ -3326,7 +2638,6 @@
                     </direct>
                     <direct input="FF_FDSE_or_FDRE.C" name="C" output="FDRE.C"/>
                     <direct input="FF_FDSE_or_FDRE.D" name="D" output="FDRE.D">
-                      <pack_pattern in_port="FF_FDSE_or_FDRE.D" name="LUT_to_FF_FDRE" out_port="FDRE.D"/>
                     </direct>
                     <direct input="FF_FDSE_or_FDRE.SR" name="R" output="FDRE.R">
                       <pack_pattern in_port="FF_FDSE_or_FDRE.SR" name="SR_FF_FDRE" out_port="FDRE.R"/>
@@ -3376,8 +2687,6 @@
                     </direct>
                     <direct input="REG_FDSE_or_FDRE.C" name="C" output="FDSE.C"/>
                     <direct input="REG_FDSE_or_FDRE.D" name="D" output="FDSE.D">
-                      <pack_pattern in_port="REG_FDSE_or_FDRE.D" name="LUT_to_FF_FDSE" out_port="FDSE.D"/>
-                      <pack_pattern in_port="REG_FDSE_or_FDRE.D" name="F6MUX_to_FF_FDSE" out_port="FDSE.D"/>
                     </direct>
                     <direct input="REG_FDSE_or_FDRE.SR" name="S" output="FDSE.S">
                       <pack_pattern in_port="REG_FDSE_or_FDRE.SR" name="SR_FF_FDSE" out_port="FDSE.S"/>
@@ -3416,8 +2725,6 @@
                     </direct>
                     <direct input="REG_FDSE_or_FDRE.C" name="C" output="FDRE.C"/>
                     <direct input="REG_FDSE_or_FDRE.D" name="D" output="FDRE.D">
-                      <pack_pattern in_port="REG_FDSE_or_FDRE.D" name="LUT_to_FF_FDRE" out_port="FDRE.D"/>
-                      <pack_pattern in_port="REG_FDSE_or_FDRE.D" name="F6MUX_to_FF_FDRE" out_port="FDRE.D"/>
                     </direct>
                     <direct input="REG_FDSE_or_FDRE.SR" name="R" output="FDRE.R">
                       <pack_pattern in_port="REG_FDSE_or_FDRE.SR" name="SR_FF_FDRE" out_port="FDRE.R"/>
@@ -3484,7 +2791,6 @@
                     </direct>
                     <direct input="FF_FDPE_or_FDCE.C" name="C" output="FDPE.C"/>
                     <direct input="FF_FDPE_or_FDCE.D" name="D" output="FDPE.D">
-                      <pack_pattern in_port="FF_FDPE_or_FDCE.D" name="LUT_to_FF_FDPE" out_port="FDPE.D"/>
                     </direct>
                     <direct input="FF_FDPE_or_FDCE.SR" name="PRE" output="FDPE.PRE">
                       <pack_pattern in_port="FF_FDPE_or_FDCE.SR" name="SR_FF_FDPE" out_port="FDPE.PRE"/>
@@ -3527,7 +2833,6 @@
                     </direct>
                     <direct input="FF_FDPE_or_FDCE.C" name="C" output="FDCE.C"/>
                     <direct input="FF_FDPE_or_FDCE.D" name="D" output="FDCE.D">
-                      <pack_pattern in_port="FF_FDPE_or_FDCE.D" name="LUT_to_FF_FDCE" out_port="FDCE.D"/>
                     </direct>
                     <direct input="FDCE.Q" name="Q" output="FF_FDPE_or_FDCE.Q"/>
                   </interconnect>
@@ -3573,8 +2878,6 @@
                     </direct>
                     <direct input="REG_FDPE_or_FDCE.C" name="C" output="FDPE.C"/>
                     <direct input="REG_FDPE_or_FDCE.D" name="D" output="FDPE.D">
-                      <pack_pattern in_port="REG_FDPE_or_FDCE.D" name="LUT_to_FF_FDPE" out_port="FDPE.D"/>
-                      <pack_pattern in_port="REG_FDPE_or_FDCE.D" name="F6MUX_to_FF_FDPE" out_port="FDPE.D"/>
                     </direct>
                     <direct input="REG_FDPE_or_FDCE.SR" name="PRE" output="FDPE.PRE">
                       <pack_pattern in_port="REG_FDPE_or_FDCE.SR" name="SR_FF_FDPE" out_port="FDPE.PRE"/>
@@ -3617,8 +2920,6 @@
                     </direct>
                     <direct input="REG_FDPE_or_FDCE.C" name="C" output="FDCE.C"/>
                     <direct input="REG_FDPE_or_FDCE.D" name="D" output="FDCE.D">
-                      <pack_pattern in_port="REG_FDPE_or_FDCE.D" name="LUT_to_FF_FDCE" out_port="FDCE.D"/>
-                      <pack_pattern in_port="REG_FDPE_or_FDCE.D" name="F6MUX_to_FF_FDCE" out_port="FDCE.D"/>
                     </direct>
                     <direct input="FDCE.Q" name="Q" output="REG_FDPE_or_FDCE.Q"/>
                   </interconnect>
@@ -3997,10 +3298,6 @@
           COMMON_SLICE.AX = A5FFMUX.IN_B
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[0]"/>
               <delay_constant in_port="COMMON_SLICE.AX" max="2.0200000000000003e-10" out_port="SLICE_FF.D5[0]"/>
               <delay_constant in_port="COMMON_SLICE.AO5" max="1.07e-10" out_port="SLICE_FF.D5[0]"/>
             </mux>
@@ -4011,10 +3308,6 @@
           COMMON_SLICE.BX = B5FFMUX.IN_B
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[1]"/>
               <delay_constant in_port="COMMON_SLICE.BX" max="2.16e-10" out_port="SLICE_FF.D5[1]"/>
               <delay_constant in_port="COMMON_SLICE.BO5" max="1.08e-10" out_port="SLICE_FF.D5[1]"/>
             </mux>
@@ -4025,10 +3318,6 @@
           COMMON_SLICE.CX = C5FFMUX.IN_B
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[2]"/>
               <delay_constant in_port="COMMON_SLICE.CX" max="1.99e-10" out_port="SLICE_FF.D5[2]"/>
               <delay_constant in_port="COMMON_SLICE.CO5" max="1.0900000000000001e-10" out_port="SLICE_FF.D5[2]"/>
             </mux>
@@ -4039,10 +3328,6 @@
           COMMON_SLICE.DX = D5FFMUX.IN_B
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D5[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D5[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D5[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO5" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D5[3]"/>
               <delay_constant in_port="COMMON_SLICE.DX" max="1.99e-10" out_port="SLICE_FF.D5[3]"/>
               <delay_constant in_port="COMMON_SLICE.DO5" max="1.1300000000000001e-10" out_port="SLICE_FF.D5[3]"/>
             </mux>
@@ -4057,14 +3342,6 @@
           CARRY4_VPR.O0 = AFFMUX.XOR
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[0]"/>
-              <pack_pattern in_port="COMMON_SLICE.AO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[0]"/>
               <delay_constant in_port="COMMON_SLICE.AX" max="2.17e-10" out_port="SLICE_FF.D[0]"/>
               <delay_constant in_port="COMMON_SLICE.F7AMUX_O" max="7.3e-11" out_port="SLICE_FF.D[0]"/>
               <delay_constant in_port="COMMON_SLICE.AO5" max="9.400000000000001e-11" out_port="SLICE_FF.D[0]"/>
@@ -4083,14 +3360,6 @@
           CARRY4_VPR.O1 = BFFMUX.XOR
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[1]"/>
-              <pack_pattern in_port="COMMON_SLICE.BO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[1]"/>
               <delay_constant in_port="COMMON_SLICE.BX" max="2.3100000000000003e-10" out_port="SLICE_FF.D[1]"/>
               <delay_constant in_port="COMMON_SLICE.F8MUX_O" max="7.3e-11" out_port="SLICE_FF.D[1]"/>
               <delay_constant in_port="COMMON_SLICE.BO5" max="9.500000000000001e-11" out_port="SLICE_FF.D[1]"/>
@@ -4109,14 +3378,6 @@
           CARRY4_VPR.O2 = CFFMUX.XOR
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[2]"/>
-              <pack_pattern in_port="COMMON_SLICE.CO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[2]"/>
               <delay_constant in_port="COMMON_SLICE.CX" max="2.14e-10" out_port="SLICE_FF.D[2]"/>
               <delay_constant in_port="COMMON_SLICE.F7BMUX_O" max="7.3e-11" out_port="SLICE_FF.D[2]"/>
               <delay_constant in_port="COMMON_SLICE.CO5" max="9.6e-11" out_port="SLICE_FF.D[2]"/>
@@ -4135,14 +3396,6 @@
           CARRY4_VPR.O3 = DFFMUX.XOR
         </meta>
               </metadata>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDSE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDRE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDPE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="LUT_to_FF_FDCE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDSE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDRE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDPE" out_port="SLICE_FF.D[3]"/>
-              <pack_pattern in_port="COMMON_SLICE.DO6" name="F6MUX_to_FF_FDCE" out_port="SLICE_FF.D[3]"/>
               <delay_constant in_port="COMMON_SLICE.DX" max="2.14e-10" out_port="SLICE_FF.D[3]"/>
               <delay_constant in_port="COMMON_SLICE.DO5" max="1.0100000000000001e-10" out_port="SLICE_FF.D[3]"/>
               <delay_constant in_port="COMMON_SLICE.DO6" max="1.07e-10" out_port="SLICE_FF.D[3]"/>
@@ -4314,33 +3567,18 @@
                     <direct input="ALUT.A4" name="ALUT_A4_1" output="A5LUT[1].in[3]"/>
                     <direct input="ALUT.A5" name="ALUT_A5_1" output="A5LUT[1].in[4]"/>
                     <direct input="A5LUT[0].out" name="O5" output="ALUT.O5">
-                      <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDSE" out_port="ALUT.O5"/>
-                      <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDRE" out_port="ALUT.O5"/>
-                      <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDCE" out_port="ALUT.O5"/>
-                      <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDPE" out_port="ALUT.O5"/>
                     </direct>
                     <mux input="A5LUT[1].out F6MUX.O" name="O6" output="ALUT.O6">
-                      <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDSE" out_port="ALUT.O6"/>
-                      <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDRE" out_port="ALUT.O6"/>
-                      <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDPE" out_port="ALUT.O6"/>
-                      <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDCE" out_port="ALUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="ALUT.O6"/>
                       <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="ALUT.O6"/>
                       <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="ALUT.O6"/>
                       <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="ALUT.O6"/>
                       <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="ALUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="ALUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="ALUT.O6"/>
                     </mux>
                     <direct input="A5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                       <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                     </direct>
                     <direct input="A5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                       <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                     </direct>
                     <direct input="ALUT.A6" name="F6MUX_S" output="F6MUX.S"/>
                   </interconnect>
@@ -4418,33 +3656,14 @@
                     <direct input="BLUT.A4" name="BLUT_A4_1" output="B5LUT[1].in[3]"/>
                     <direct input="BLUT.A5" name="BLUT_A5_1" output="B5LUT[1].in[4]"/>
                     <direct input="B5LUT[0].out" name="O5" output="BLUT.O5">
-                      <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDSE" out_port="BLUT.O5"/>
-                      <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDRE" out_port="BLUT.O5"/>
-                      <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDCE" out_port="BLUT.O5"/>
-                      <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDPE" out_port="BLUT.O5"/>
                     </direct>
                     <mux input="B5LUT[1].out F6MUX.O" name="O6" output="BLUT.O6">
-                      <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDSE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDRE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDPE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDCE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="BLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="BLUT.O6"/>
                     </mux>
                     <direct input="B5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                       <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                     </direct>
                     <direct input="B5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                       <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                     </direct>
                     <direct input="BLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
                   </interconnect>
@@ -4522,33 +3741,14 @@
                     <direct input="CLUT.A4" name="CLUT_A4_1" output="C5LUT[1].in[3]"/>
                     <direct input="CLUT.A5" name="CLUT_A5_1" output="C5LUT[1].in[4]"/>
                     <direct input="C5LUT[0].out" name="O5" output="CLUT.O5">
-                      <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDSE" out_port="CLUT.O5"/>
-                      <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDRE" out_port="CLUT.O5"/>
-                      <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDCE" out_port="CLUT.O5"/>
-                      <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDPE" out_port="CLUT.O5"/>
                     </direct>
                     <mux input="C5LUT[1].out F6MUX.O" name="O6" output="CLUT.O6">
-                      <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDSE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDRE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDPE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDCE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="CLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="CLUT.O6"/>
                     </mux>
                     <direct input="C5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                       <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                     </direct>
                     <direct input="C5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                       <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                     </direct>
                     <direct input="CLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
                   </interconnect>
@@ -4626,33 +3826,14 @@
                     <direct input="DLUT.A4" name="DLUT_A4_1" output="D5LUT[1].in[3]"/>
                     <direct input="DLUT.A5" name="DLUT_A5_1" output="D5LUT[1].in[4]"/>
                     <direct input="D5LUT[0].out" name="O5" output="DLUT.O5">
-                      <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDSE" out_port="DLUT.O5"/>
-                      <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDRE" out_port="DLUT.O5"/>
-                      <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDCE" out_port="DLUT.O5"/>
-                      <pack_pattern in_port="D5LUT[0].out" name="LUT_to_FF_FDPE" out_port="DLUT.O5"/>
                     </direct>
                     <mux input="D5LUT[1].out F6MUX.O" name="O6" output="DLUT.O6">
-                      <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDSE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDRE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDPE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="D5LUT[1].out" name="LUT_to_FF_FDCE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="DLUT.O6"/>
-                      <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="DLUT.O6"/>
                     </mux>
                     <direct input="D5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                       <pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                      <pack_pattern in_port="D5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                     </direct>
                     <direct input="D5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                       <pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                      <pack_pattern in_port="D5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                     </direct>
                     <direct input="DLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
                   </interconnect>
@@ -4749,28 +3930,18 @@
                 <direct input="COMMON_LUT_AND_F78MUX.D5" name="D5" output="DLUT.A5"/>
                 <direct input="COMMON_LUT_AND_F78MUX.D6" name="D6" output="DLUT.A6"/>
                 <direct input="BLUT.O6" name="F7AMUX_I0" output="F7AMUX.I0">
-                  <pack_pattern in_port="BLUT.O6" name="LUT5toLUT7" out_port="F7AMUX.I0"/>
-                  <pack_pattern in_port="BLUT.O6" name="LUT5toLUT8" out_port="F7AMUX.I0"/>
                 </direct>
                 <direct input="ALUT.O6" name="F7AMUX_I1" output="F7AMUX.I1">
-                  <pack_pattern in_port="ALUT.O6" name="LUT5toLUT7" out_port="F7AMUX.I1"/>
-                  <pack_pattern in_port="ALUT.O6" name="LUT5toLUT8" out_port="F7AMUX.I1"/>
                 </direct>
                 <direct input="COMMON_LUT_AND_F78MUX.AX" name="F7AMUX_S" output="F7AMUX.S"/>
                 <direct input="DLUT.O6" name="F7BMUX_I0" output="F7BMUX.I0">
-                  <pack_pattern in_port="DLUT.O6" name="LUT5toLUT7" out_port="F7BMUX.I0"/>
-                  <pack_pattern in_port="DLUT.O6" name="LUT5toLUT8" out_port="F7BMUX.I0"/>
                 </direct>
                 <direct input="CLUT.O6" name="F7BMUX_I1" output="F7BMUX.I1">
-                  <pack_pattern in_port="CLUT.O6" name="LUT5toLUT7" out_port="F7BMUX.I1"/>
-                  <pack_pattern in_port="CLUT.O6" name="LUT5toLUT8" out_port="F7BMUX.I1"/>
                 </direct>
                 <direct input="COMMON_LUT_AND_F78MUX.CX" name="F7BMUX_S" output="F7BMUX.S"/>
                 <direct input="F7BMUX.O" name="F8MUX_I0" output="F8MUX.I0">
-                  <pack_pattern in_port="F7BMUX.O" name="LUT5toLUT8" out_port="F8MUX.I0"/>
                 </direct>
                 <direct input="F7AMUX.O" name="F8MUX_I1" output="F8MUX.I1">
-                  <pack_pattern in_port="F7AMUX.O" name="LUT5toLUT8" out_port="F8MUX.I1"/>
                 </direct>
                 <direct input="COMMON_LUT_AND_F78MUX.BX" name="F8MUX_S" output="F8MUX.S"/>
               </interconnect>
@@ -5978,33 +5149,14 @@
                       <direct input="CLUT.A4" name="CLUT_A4_1" output="C5LUT[1].in[3]"/>
                       <direct input="CLUT.A5" name="CLUT_A5_1" output="C5LUT[1].in[4]"/>
                       <direct input="C5LUT[0].out" name="O5" output="CLUT.O5">
-                        <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDSE" out_port="CLUT.O5"/>
-                        <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDRE" out_port="CLUT.O5"/>
-                        <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDCE" out_port="CLUT.O5"/>
-                        <pack_pattern in_port="C5LUT[0].out" name="LUT_to_FF_FDPE" out_port="CLUT.O5"/>
                       </direct>
                       <mux input="C5LUT[1].out F6MUX.O" name="O6" output="CLUT.O6">
-                        <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDSE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDRE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDPE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="C5LUT[1].out" name="LUT_to_FF_FDCE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="CLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="CLUT.O6"/>
                       </mux>
                       <direct input="C5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                         <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                        <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                        <pack_pattern in_port="C5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                       </direct>
                       <direct input="C5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                         <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                        <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                        <pack_pattern in_port="C5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                       </direct>
                       <direct input="CLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
                     </interconnect>
@@ -6368,33 +5520,14 @@
                       <direct input="BLUT.A4" name="BLUT_A4_1" output="B5LUT[1].in[3]"/>
                       <direct input="BLUT.A5" name="BLUT_A5_1" output="B5LUT[1].in[4]"/>
                       <direct input="B5LUT[0].out" name="O5" output="BLUT.O5">
-                        <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDSE" out_port="BLUT.O5"/>
-                        <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDRE" out_port="BLUT.O5"/>
-                        <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDCE" out_port="BLUT.O5"/>
-                        <pack_pattern in_port="B5LUT[0].out" name="LUT_to_FF_FDPE" out_port="BLUT.O5"/>
                       </direct>
                       <mux input="B5LUT[1].out F6MUX.O" name="O6" output="BLUT.O6">
-                        <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDSE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDRE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDPE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="B5LUT[1].out" name="LUT_to_FF_FDCE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="BLUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="BLUT.O6"/>
                       </mux>
                       <direct input="B5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                         <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                        <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                        <pack_pattern in_port="B5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                       </direct>
                       <direct input="B5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                         <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                        <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                        <pack_pattern in_port="B5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                       </direct>
                       <direct input="BLUT.A6" name="F6MUX_S" output="F6MUX.S"/>
                     </interconnect>
@@ -6756,33 +5889,14 @@
                       <direct input="ALUT.A4" name="ALUT_A4_1" output="A5LUT[1].in[3]"/>
                       <direct input="ALUT.A5" name="ALUT_A5_1" output="A5LUT[1].in[4]"/>
                       <direct input="A5LUT[0].out" name="O5" output="ALUT.O5">
-                        <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDSE" out_port="ALUT.O5"/>
-                        <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDRE" out_port="ALUT.O5"/>
-                        <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDCE" out_port="ALUT.O5"/>
-                        <pack_pattern in_port="A5LUT[0].out" name="LUT_to_FF_FDPE" out_port="ALUT.O5"/>
                       </direct>
                       <mux input="A5LUT[1].out F6MUX.O" name="O6" output="ALUT.O6">
-                        <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDSE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDRE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDPE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="A5LUT[1].out" name="LUT_to_FF_FDCE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDSE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDRE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDPE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="F6MUX_to_FF_FDCE" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT6" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT7" out_port="ALUT.O6"/>
-                        <pack_pattern in_port="F6MUX.O" name="LUT5toLUT8" out_port="ALUT.O6"/>
                       </mux>
                       <direct input="A5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
                         <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-                        <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT7" out_port="F6MUX.I0"/>
-                        <pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT8" out_port="F6MUX.I0"/>
                       </direct>
                       <direct input="A5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
                         <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-                        <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT7" out_port="F6MUX.I1"/>
-                        <pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT8" out_port="F6MUX.I1"/>
                       </direct>
                       <direct input="ALUT.A6" name="F6MUX_S" output="F6MUX.S"/>
                     </interconnect>
