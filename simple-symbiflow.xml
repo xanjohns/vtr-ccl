@@ -98,7 +98,6 @@
         <input name="CLBLL_LL_C5" num_pins="1"/>
         <input name="CLBLL_LL_C6" num_pins="1"/>
         <input name="CLBLL_LL_CE" num_pins="1"/>
-        <input name="CLBLL_LL_CIN" num_pins="1"/>
         <clock name="CLBLL_LL_CLK" num_pins="1"/>
         <input name="CLBLL_LL_CX" num_pins="1"/>
         <input name="CLBLL_LL_D1" num_pins="1"/>
@@ -118,21 +117,14 @@
         <output name="CLBLL_LL_BQ" num_pins="1"/>
         <output name="CLBLL_LL_C" num_pins="1"/>
         <output name="CLBLL_LL_CMUX" num_pins="1"/>
-        <output name="CLBLL_LL_COUT" num_pins="1"/>
         <output name="CLBLL_LL_CQ" num_pins="1"/>
         <output name="CLBLL_LL_D" num_pins="1"/>
         <output name="CLBLL_LL_DMUX" num_pins="1"/>
         <output name="CLBLL_LL_DQ" num_pins="1"/>
         <fc in_type="abs" in_val="2" out_type="abs" out_val="2">
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_LL_CIN"/>
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_L_COUT"/>
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_L_CIN"/>
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_LL_COUT"/>
         </fc>
         <pinlocations pattern="custom">
           <loc side="right">BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CE BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CQ BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A4 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C5 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CMUX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B5 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A3 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C4 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DQ BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C3 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AQ BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D1 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A5 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B2 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B6 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C1 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D4 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BQ BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CLK BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_SR BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D3 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B3 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A2 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C2 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A6 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BMUX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DMUX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D5 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C6 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B1 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B4 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D2 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A1 BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AMUX BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D6</loc>
-          <loc side="bottom">BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_COUT</loc>
-          <loc side="top">BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CIN</loc>
         </pinlocations>
         <equivalent_sites>
           <site pb_type="BLK-TL-SLICEL" pin_mapping="custom">
@@ -163,10 +155,8 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CMUX" to="BLK-TL-SLICEL.CMUX"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_COUT" to="BLK-TL-SLICEL.COUT"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CQ" to="BLK-TL-SLICEL.CQ"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CX" to="BLK-TL-SLICEL.CX"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D" to="BLK-TL-SLICEL.D"/>
@@ -182,8 +172,7 @@
           </site>
         </equivalent_sites>
       </sub_tile>
-      <sub_tile capacity="1" name="BLK-TL-CLBLL_L_SLICEL_1">
-        <!-- Sub Tile Inputs -->
+      <!-- <sub_tile capacity="1" name="BLK-TL-CLBLL_L_SLICEL_1">
         <input name="CLBLL_L_A1" num_pins="1"/>
         <input name="CLBLL_L_A2" num_pins="1"/>
         <input name="CLBLL_L_A3" num_pins="1"/>
@@ -205,7 +194,6 @@
         <input name="CLBLL_L_C5" num_pins="1"/>
         <input name="CLBLL_L_C6" num_pins="1"/>
         <input name="CLBLL_L_CE" num_pins="1"/>
-        <input name="CLBLL_L_CIN" num_pins="1"/>
         <clock name="CLBLL_L_CLK" num_pins="1"/>
         <input name="CLBLL_L_CX" num_pins="1"/>
         <input name="CLBLL_L_D1" num_pins="1"/>
@@ -216,7 +204,6 @@
         <input name="CLBLL_L_D6" num_pins="1"/>
         <input name="CLBLL_L_DX" num_pins="1"/>
         <input name="CLBLL_L_SR" num_pins="1"/>
-        <!-- Sub Tile Outputs -->
         <output name="CLBLL_L_A" num_pins="1"/>
         <output name="CLBLL_L_AMUX" num_pins="1"/>
         <output name="CLBLL_L_AQ" num_pins="1"/>
@@ -225,21 +212,14 @@
         <output name="CLBLL_L_BQ" num_pins="1"/>
         <output name="CLBLL_L_C" num_pins="1"/>
         <output name="CLBLL_L_CMUX" num_pins="1"/>
-        <output name="CLBLL_L_COUT" num_pins="1"/>
         <output name="CLBLL_L_CQ" num_pins="1"/>
         <output name="CLBLL_L_D" num_pins="1"/>
         <output name="CLBLL_L_DMUX" num_pins="1"/>
         <output name="CLBLL_L_DQ" num_pins="1"/>
         <fc in_type="abs" in_val="2" out_type="abs" out_val="2">
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_LL_CIN"/>
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_L_COUT"/>
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_L_CIN"/>
-          <fc_override fc_type="frac" fc_val="0.0" port_name="CLBLL_LL_COUT"/>
         </fc>
         <pinlocations pattern="custom">
           <loc side="right">BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C5 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_B BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_BMUX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_DX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D3 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D6 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_SR BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D2 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C4 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_A4 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_A5 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_B5 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_BQ BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_B4 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_DMUX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_A2 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_B2 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C2 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CQ BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D5 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_A BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_A6 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_DQ BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_A1 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_AX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_B6 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CE BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_B1 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_B3 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C1 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C6 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_BX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CLK BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D1 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_AMUX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C3 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CMUX BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D4 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_A3 BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_AQ</loc>
-          <loc side="top">BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CIN</loc>
-          <loc side="bottom">BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_COUT</loc>
         </pinlocations>
         <equivalent_sites>
           <site pb_type="BLK-TL-SLICEL" pin_mapping="custom">
@@ -270,10 +250,8 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C4" to="BLK-TL-SLICEL.C4"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C5" to="BLK-TL-SLICEL.C5"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_C6" to="BLK-TL-SLICEL.C6"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CIN" to="BLK-TL-SLICEL.CIN"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CLK" to="BLK-TL-SLICEL.CLK"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CMUX" to="BLK-TL-SLICEL.CMUX"/>
-            <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_COUT" to="BLK-TL-SLICEL.COUT"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CQ" to="BLK-TL-SLICEL.CQ"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_CX" to="BLK-TL-SLICEL.CX"/>
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_D" to="BLK-TL-SLICEL.D"/>
@@ -288,7 +266,7 @@
             <direct from="BLK-TL-CLBLL_L_SLICEL_1.CLBLL_L_DX" to="BLK-TL-SLICEL.DX"/>
           </site>
         </equivalent_sites>
-      </sub_tile>
+      </sub_tile> -->
       <switchblock_locations pattern="all"/>
     </tile>
   </tiles>
@@ -434,7 +412,6 @@
       <input name="C4" num_pins="1"/>
       <input name="C5" num_pins="1"/>
       <input name="C6" num_pins="1"/>
-      <input name="CIN" num_pins="1"/>
       <input name="CX" num_pins="1"/>
       <input name="D1" num_pins="1"/>
       <input name="D2" num_pins="1"/>
@@ -451,7 +428,6 @@
       <output name="BQ" num_pins="1"/>
       <output name="C" num_pins="1"/>
       <output name="CMUX" num_pins="1"/>
-      <output name="COUT" num_pins="1"/>
       <output name="CQ" num_pins="1"/>
       <output name="D" num_pins="1"/>
       <output name="DMUX" num_pins="1"/>
@@ -478,7 +454,6 @@
         <input name="C4" num_pins="1"/>
         <input name="C5" num_pins="1"/>
         <input name="C6" num_pins="1"/>
-        <input name="CIN" num_pins="1"/>
         <input name="CX" num_pins="1"/>
         <input name="D1" num_pins="1"/>
         <input name="D2" num_pins="1"/>
@@ -495,7 +470,6 @@
         <output name="BQ" num_pins="1"/>
         <output name="C" num_pins="1"/>
         <output name="CMUX" num_pins="1"/>
-        <output name="COUT" num_pins="1"/>
         <output name="CQ" num_pins="1"/>
         <output name="D" num_pins="1"/>
         <output name="DMUX" num_pins="1"/>
@@ -981,14 +955,12 @@
         </pb_type>
         <pb_type name="COMMON_SLICE" num_pb="1">
           <clock name="CLK" num_pins="1"/>
-          <input name="AMC31" num_pins="1"/>
           <input name="AO5" num_pins="1"/>
           <input name="AO6" num_pins="1"/>
           <input name="AX" num_pins="1"/>
           <input name="BO5" num_pins="1"/>
           <input name="BO6" num_pins="1"/>
           <input name="BX" num_pins="1"/>
-          <input name="CIN" num_pins="1"/>
           <input name="CO5" num_pins="1"/>
           <input name="CO6" num_pins="1"/>
           <input name="CX" num_pins="1"/>
@@ -1006,7 +978,6 @@
           <output name="BQ" num_pins="1"/>
           <output name="C" num_pins="1"/>
           <output name="CMUX" num_pins="1"/>
-          <output name="COUT" num_pins="1"/>
           <output name="CQ" num_pins="1"/>
           <output name="D" num_pins="1"/>
           <output name="DMUX" num_pins="1"/>
@@ -1087,7 +1058,7 @@
             <direct input="COMMON_SLICE.CO6" name="COMMON_SLICE_COUT" output="COMMON_SLICE.C">
               <delay_constant in_port="COMMON_SLICE.CO6" max="0.0" out_port="COMMON_SLICE.C"/>
             </direct>
-            <mux input="COMMON_SLICE.AMC31 SLICE_FF.Q5[3] COMMON_SLICE.DO6 COMMON_SLICE.DO5" name="DOUTMUX" output="COMMON_SLICE.DMUX">
+            <mux input="SLICE_FF.Q5[3] COMMON_SLICE.DO6 COMMON_SLICE.DO5" name="DOUTMUX" output="COMMON_SLICE.DMUX">
               <delay_constant in_port="SLICE_FF.Q5[3]" max="1.75e-10" out_port="COMMON_SLICE.DMUX"/>
               <delay_constant in_port="COMMON_SLICE.DO6" max="2.11e-10" out_port="COMMON_SLICE.DMUX"/>
               <delay_constant in_port="COMMON_SLICE.DO5" max="2.08e-10" out_port="COMMON_SLICE.DMUX"/>
@@ -1156,7 +1127,6 @@
           <direct input="COMMON_LUT_AND_F78MUX.BO5" name="BO5" output="COMMON_SLICE.BO5"/>
           <direct input="COMMON_LUT_AND_F78MUX.BO6" name="BO6" output="COMMON_SLICE.BO6"/>
           <direct input="SLICEL0.BX" name="BX2" output="COMMON_SLICE.BX"/>
-          <direct input="SLICEL0.CIN" name="CIN" output="COMMON_SLICE.CIN"/>
           <direct input="SLICEL0.CLK" name="CK" output="COMMON_SLICE.CLK"/>
           <direct input="COMMON_LUT_AND_F78MUX.CO5" name="CO5" output="COMMON_SLICE.CO5"/>
           <direct input="COMMON_LUT_AND_F78MUX.CO6" name="CO6" output="COMMON_SLICE.CO6"/>
@@ -1174,7 +1144,6 @@
           <direct input="COMMON_SLICE.BQ" name="BQ" output="SLICEL0.BQ"/>
           <direct input="COMMON_SLICE.B" name="SLICEL_BOUT" output="SLICEL0.B"/>
           <direct input="COMMON_SLICE.CMUX" name="SLICEL_CMUX" output="SLICEL0.CMUX"/>
-          <direct input="COMMON_SLICE.COUT" name="COUT" output="SLICEL0.COUT"/>
           <direct input="COMMON_SLICE.CQ" name="CQ" output="SLICEL0.CQ"/>
           <direct input="COMMON_SLICE.C" name="SLICEL_COUT" output="SLICEL0.C"/>
           <direct input="COMMON_SLICE.DMUX" name="SLICEL_DMUX" output="SLICEL0.DMUX"/>
@@ -1192,7 +1161,6 @@
         <direct input="SLICEL0.BQ" name="SLICEL0.BQ_to_BLK-TL-SLICEL.BQ" output="BLK-TL-SLICEL.BQ"/>
         <direct input="SLICEL0.B" name="SLICEL0.B_to_BLK-TL-SLICEL.B" output="BLK-TL-SLICEL.B"/>
         <direct input="SLICEL0.CMUX" name="SLICEL0.CMUX_to_BLK-TL-SLICEL.CMUX" output="BLK-TL-SLICEL.CMUX"/>
-        <direct input="SLICEL0.COUT" name="SLICEL0.COUT_to_BLK-TL-SLICEL.COUT" output="BLK-TL-SLICEL.COUT"/>
         <direct input="SLICEL0.CQ" name="SLICEL0.CQ_to_BLK-TL-SLICEL.CQ" output="BLK-TL-SLICEL.CQ"/>
         <direct input="SLICEL0.C" name="SLICEL0.C_to_BLK-TL-SLICEL.C" output="BLK-TL-SLICEL.C"/>
         <direct input="SLICEL0.DMUX" name="SLICEL0.DMUX_to_BLK-TL-SLICEL.DMUX" output="BLK-TL-SLICEL.DMUX"/>
@@ -1218,7 +1186,6 @@
         <direct input="BLK-TL-SLICEL.C4" name="BLK-TL-SLICEL.C4_to_SLICEL0.C4" output="SLICEL0.C4"/>
         <direct input="BLK-TL-SLICEL.C5" name="BLK-TL-SLICEL.C5_to_SLICEL0.C5" output="SLICEL0.C5"/>
         <direct input="BLK-TL-SLICEL.C6" name="BLK-TL-SLICEL.C6_to_SLICEL0.C6" output="SLICEL0.C6"/>
-        <direct input="BLK-TL-SLICEL.CIN" name="BLK-TL-SLICEL.CIN_to_SLICEL0.CIN" output="SLICEL0.CIN"/>
         <direct input="BLK-TL-SLICEL.CLK" name="BLK-TL-SLICEL.CLK_to_SLICEL0.CLK" output="SLICEL0.CLK"/>
         <direct input="BLK-TL-SLICEL.CX" name="BLK-TL-SLICEL.CX_to_SLICEL0.CX" output="SLICEL0.CX"/>
         <direct input="BLK-TL-SLICEL.D1" name="BLK-TL-SLICEL.D1_to_SLICEL0.D1" output="SLICEL0.D1"/>
