@@ -136,13 +136,13 @@
   <!-- Physical descriptions begin -->
   <layout>
     <!-- <auto_layout aspect_ratio="1.0"> -->
-      <fixed_layout name="string" width="10" height="10">
+      <auto_layout aspect_ratio="1.0">
       <!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
       <perimeter type="io" priority="100"/>
       <corners type="EMPTY" priority="101"/>
       <!--Fill with 'clb'-->
       <fill type="BLK-TL-CLBLL_L" priority="10"/>
-      </fixed_layout>
+      </auto_layout>
     <!-- </auto_layout> -->
   </layout>
   <device>
