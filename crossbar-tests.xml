@@ -397,10 +397,7 @@
 			<direct input="ALUT[2].O6" name="CO6" output="COMMON_LUT_AND_F78MUX.CO6"/>
 			<direct input="ALUT[3].O5" name="DO5" output="COMMON_LUT_AND_F78MUX.DO5"/>
 			<direct input="ALUT[3].O6" name="DO6" output="COMMON_LUT_AND_F78MUX.DO6"/>
-			<!-- Crossbar attempt -->
-			<complete name="crossbar" input="ALUT[3:0].O6" output="ALUT[3:0].A">
-			 <!-- add timing -->
-			</complete>
+			
 			<direct input="F7AMUX[0].O" name="F7AMUX_O" output="COMMON_LUT_AND_F78MUX.F7AMUX_O"/>
 			<direct input="F7AMUX[1].O" name="F7BMUX_O" output="COMMON_LUT_AND_F78MUX.F7BMUX_O"/>
 			<direct input="F8MUX.O" name="F8MUX_O" output="COMMON_LUT_AND_F78MUX.F8MUX_O"/>
@@ -491,13 +488,11 @@
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.DO6" max="2.11e-10" out_port="BLK-TL-SLICEL.DMUX"/>
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.DO5" max="2.08e-10" out_port="BLK-TL-SLICEL.DMUX"/>
           </mux>
-
-		  <!-- <mux input="COMMON_LUT_AND_F78MUX.AX COMMON_LUT_AND_F78MUX.AO5" name="A5FFMUX" output="SLICE_FF.D5[0]">
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.AX" max="2.0200000000000003e-10" out_port="SLICE_FF.D5[0]"/>
+			<!-- note: commenting this out gives a chanel width of 214 ???? -->
+		  <mux input="BLK-TL-SLICEL.AX COMMON_LUT_AND_F78MUX.AO5" name="A5FFMUX" output="SLICE_FF.D5[0]">
+            <delay_constant in_port="BLK-TL-SLICEL.AX" max="2.0200000000000003e-10" out_port="SLICE_FF.D5[0]"/>
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.AO5" max="1.07e-10" out_port="SLICE_FF.D5[0]"/>
-          </mux> -->
-
-		  <!-- <direct input="COMMON_LUT_AND_F78MUX.AX" name="Agb" output="SLICE_FF.D5[0]"/> -->
+          </mux>
 
 
 		  <mux input="BLK-TL-SLICEL.BX COMMON_LUT_AND_F78MUX.BO5" name="B5FFMUX" output="SLICE_FF.D5[1]">
@@ -535,6 +530,10 @@
 		  <direct input="COMMON_LUT_AND_F78MUX.DO6" name="SLICEL_DOUT" output="BLK-TL-SLICEL.D"/>
 
 		  <!-- All #O6 pins are tied to .# pins. check that this is right! -->
+
+
+		<complete name="crossbar" input="SLICE_FF.Q SLICE_FF.Q5" output="COMMON_LUT_AND_F78MUX.A COMMON_LUT_AND_F78MUX.B COMMON_LUT_AND_F78MUX.C COMMON_LUT_AND_F78MUX.D
+		COMMON_LUT_AND_F78MUX.AX COMMON_LUT_AND_F78MUX.BX COMMON_LUT_AND_F78MUX.CX"/>
 
 		</interconnect>
 	  </pb_type>
