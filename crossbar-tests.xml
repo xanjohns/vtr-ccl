@@ -500,16 +500,16 @@
 		  <!-- <direct input="COMMON_LUT_AND_F78MUX.AX" name="Agb" output="SLICE_FF.D5[0]"/> -->
 
 
-		  <mux input="COMMON_LUT_AND_F78MUX.BX COMMON_LUT_AND_F78MUX.BO5" name="B5FFMUX" output="SLICE_FF.D5[1]">
+		  <mux input="BLK-TL-SLICEL.BX COMMON_LUT_AND_F78MUX.BO5" name="B5FFMUX" output="SLICE_FF.D5[1]">
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.BX" max="2.16e-10" out_port="SLICE_FF.D5[1]"/>
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.BO5" max="1.07e-10" out_port="SLICE_FF.D5[1]"/>
           </mux>
-          <mux input="COMMON_LUT_AND_F78MUX.CX COMMON_LUT_AND_F78MUX.CO5" name="C5FFMUX" output="SLICE_FF.D5[2]">
+          <mux input="BLK-TL-SLICEL.CX COMMON_LUT_AND_F78MUX.CO5" name="C5FFMUX" output="SLICE_FF.D5[2]">
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.CX" max="1.9600000000000002e-10" out_port="SLICE_FF.D5[2]"/>
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.CO5" max="1.0900000000000001e-10" out_port="SLICE_FF.D5[2]"/>
           </mux>
-          <mux input="COMMON_LUT_AND_F78MUX.DX COMMON_LUT_AND_F78MUX.DO5" name="D5FFMUX" output="SLICE_FF.D5[3]">
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.DX" max="1.93e-10" out_port="SLICE_FF.D5[3]"/>
+          <mux input="BLK-TL-SLICEL.DX COMMON_LUT_AND_F78MUX.DO5" name="D5FFMUX" output="SLICE_FF.D5[3]">
+            <delay_constant in_port="BLK-TL-SLICEL.DX" max="1.93e-10" out_port="SLICE_FF.D5[3]"/>
             <delay_constant in_port="COMMON_LUT_AND_F78MUX.DO5" max="1.0600000000000001e-10" out_port="SLICE_FF.D5[3]"/>
           </mux>
 
