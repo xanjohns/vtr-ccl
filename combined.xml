@@ -435,15 +435,24 @@
             <delay_constant in_port="ALUT[3].O5" max="1.0600000000000001e-10" out_port="FDSE[3].D"/>
           </mux>
 
-		  <direct input="BLK-TL-SLICEL.A_in" name="A" output="ALUT[0].A"/>
+		  <!-- <direct input="BLK-TL-SLICEL.A_in" name="A" output="ALUT[0].A"/> -->
 		  <direct input="BLK-TL-SLICEL.AX" name="AX" output="F7AMUX[0].S"/>
-		  <direct input="BLK-TL-SLICEL.B_in" name="B" output="ALUT[1].A"/>
+		  <!-- <direct input="BLK-TL-SLICEL.B_in" name="B" output="ALUT[1].A"/> -->
 		  <direct input="BLK-TL-SLICEL.BX" name="BX" output="F8MUX.S"/>
-		  <direct input="BLK-TL-SLICEL.C_in" name="C" output="ALUT[2].A"/>
+		  <!-- <direct input="BLK-TL-SLICEL.C_in" name="C" output="ALUT[2].A"/> -->
 		  <direct input="BLK-TL-SLICEL.CX" name="CX" output="F7AMUX[1].S"/>
-		  <direct input="BLK-TL-SLICEL.D_in" name="D1" output="ALUT[3].A"/>
+		  <!-- <direct input="BLK-TL-SLICEL.D_in" name="D1" output="ALUT[3].A"/> -->
 
+		  <!-- switch blocks -->
+		  <complete input="FDSE[7:0].Q" name="FF_to_LUT" output="ALUT[3:0].A[5:0]"/> <!-- 250 chanels-->
+		  
+		  <complete input="BLK-TL-SLICEL.A_in" name="all_pin_to_pin1" output="ALUT[0].A"/> 
+		  <complete input="BLK-TL-SLICEL.B_in" name="all_pin_to_pin2" output="ALUT[1].A"/> 
+		  <complete input="BLK-TL-SLICEL.C_in" name="all_pin_to_pin3" output="ALUT[2].A"/> 
+		  <complete input="BLK-TL-SLICEL.D_in" name="all_pin_to_pin4" output="ALUT[3].A"/> 
 
+		  <complete input="ALUT.O5 ALUT.O6" name="LUT_to_LUT" output="ALUT.A"/> <!-- 190 chanels-->
+		  
 		  <complete input="BLK-TL-SLICEL.CLK" name="CK" output="FDSE.clk"/>
 
 
@@ -455,6 +464,7 @@
 		  <direct input="ALUT[2].O6" name="SLICEL_COUT" output="BLK-TL-SLICEL.C"/>
 		  <direct input="FDSE[7].Q" name="DQ" output="BLK-TL-SLICEL.DQ"/>
 		  <direct input="ALUT[3].O6" name="SLICEL_DOUT" output="BLK-TL-SLICEL.D"/>
+		  
 
 		  <!-- All #O6 pins are tied to .# pins. check that this is right! -->
 
