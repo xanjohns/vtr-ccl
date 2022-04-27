@@ -25,128 +25,118 @@
 		 that describe them.
 	-->
 	<models>
-	  <model name="MUXF6">
-		<input_ports>
-		  <port combinational_sink_ports="O" name="I0"/>
-		  <port combinational_sink_ports="O" name="I1"/>
-		  <port combinational_sink_ports="O" name="S"/>
-		</input_ports>
-		<output_ports>
-		  <port name="O"/>
-		</output_ports>
-	  </model>
-	  <model name="MUXF7">
-		<input_ports>
-		  <port combinational_sink_ports="O" name="I0"/>
-		  <port combinational_sink_ports="O" name="I1"/>
-		  <port combinational_sink_ports="O" name="S"/>
-		</input_ports>
-		<output_ports>
-		  <port name="O"/>
-		</output_ports>
-	  </model>
-	  <model name="MUXF8">
-		<input_ports>
-		  <port combinational_sink_ports="O" name="I0"/>
-		  <port combinational_sink_ports="O" name="I1"/>
-		  <port combinational_sink_ports="O" name="S"/>
-		</input_ports>
-		<output_ports>
-		  <port name="O"/>
-		</output_ports>
-	  </model>
+		<model name="MUXF7">
+			<input_ports>
+				<port combinational_sink_ports="O" name="I0"/>
+				<port combinational_sink_ports="O" name="I1"/>
+				<port combinational_sink_ports="O" name="S"/>
+			</input_ports>
+			<output_ports>
+				<port name="O"/>
+			</output_ports>
+		</model>
+		<model name="MUXF8">
+			<input_ports>
+				<port combinational_sink_ports="O" name="I0"/>
+				<port combinational_sink_ports="O" name="I1"/>
+				<port combinational_sink_ports="O" name="S"/>
+			</input_ports>
+			<output_ports>
+				<port name="O"/>
+			</output_ports>
+		</model>
 	</models>
 	<tiles>
-	  <tile name="io" area="0">
-		<sub_tile name="io" capacity="8">
-		  <equivalent_sites>
-			<site pb_type="io" pin_mapping="direct"/>
-		  </equivalent_sites>
-		  <input name="outpad" num_pins="1"/>
-		  <output name="inpad" num_pins="1"/>
-		  <clock name="clock" num_pins="1"/>
-		  <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
-		  <pinlocations pattern="custom">
-			<loc side="left">io.outpad io.inpad io.clock</loc>
-			<loc side="top">io.outpad io.inpad io.clock</loc>
-			<loc side="right">io.outpad io.inpad io.clock</loc>
-			<loc side="bottom">io.outpad io.inpad io.clock</loc>
-		  </pinlocations>
-		</sub_tile>
-	  </tile>
-	  <tile name="BLK-TL-CLBLL_L">
-		<sub_tile capacity="2" name="BLK-TL-CLBLL_L_SLICEL_0">
-		  <!-- Sub Tile Inputs -->
-		  <input name="CLBLL_LL_A_in" num_pins="6"/>
-		  <input name="CLBLL_LL_AX" num_pins="1"/>
-		  <input name="CLBLL_LL_B_in" num_pins="6"/>
-		  <input name="CLBLL_LL_BX" num_pins="1"/>
-		  <input name="CLBLL_LL_C_in" num_pins="6"/>
-		  <input name="CLBLL_LL_CE" num_pins="1"/>
-		  <clock name="CLBLL_LL_CLK" num_pins="1"/>
-		  <input name="CLBLL_LL_CX" num_pins="1"/>
-		  <input name="CLBLL_LL_D_in" num_pins="6"/>
-		  <input name="CLBLL_LL_DX" num_pins="1"/>
-		  <input name="CLBLL_LL_SR" num_pins="1"/>
-		  <!-- Sub Tile Outputs -->
-		  <output name="CLBLL_LL_A" num_pins="1"/>
-		  <output name="CLBLL_LL_AMUX" num_pins="1"/>
-		  <output name="CLBLL_LL_AQ" num_pins="1"/>
-		  <output name="CLBLL_LL_B" num_pins="1"/>
-		  <output name="CLBLL_LL_BMUX" num_pins="1"/>
-		  <output name="CLBLL_LL_BQ" num_pins="1"/>
-		  <output name="CLBLL_LL_C" num_pins="1"/>
-		  <output name="CLBLL_LL_CMUX" num_pins="1"/>
-		  <output name="CLBLL_LL_CQ" num_pins="1"/>
-		  <output name="CLBLL_LL_D" num_pins="1"/>
-		  <output name="CLBLL_LL_DMUX" num_pins="1"/>
-		  <output name="CLBLL_LL_DQ" num_pins="1"/>
-		  <fc in_type="abs" in_val="2" out_type="abs" out_val="2">
-		  </fc>
-		  <equivalent_sites>
-			<site pb_type="BLK-TL-SLICEL" pin_mapping="custom">
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A" to="BLK-TL-SLICEL.A"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A_in" to="BLK-TL-SLICEL.A_in"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AMUX" to="BLK-TL-SLICEL.AMUX"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AQ" to="BLK-TL-SLICEL.AQ"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AX" to="BLK-TL-SLICEL.AX"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B" to="BLK-TL-SLICEL.B"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B_in" to="BLK-TL-SLICEL.B_in"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BMUX" to="BLK-TL-SLICEL.BMUX"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BQ" to="BLK-TL-SLICEL.BQ"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BX" to="BLK-TL-SLICEL.BX"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C" to="BLK-TL-SLICEL.C"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C_in" to="BLK-TL-SLICEL.C_in"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CLK" to="BLK-TL-SLICEL.CLK"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CMUX" to="BLK-TL-SLICEL.CMUX"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CQ" to="BLK-TL-SLICEL.CQ"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CX" to="BLK-TL-SLICEL.CX"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D" to="BLK-TL-SLICEL.D"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D_in" to="BLK-TL-SLICEL.D_in"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DMUX" to="BLK-TL-SLICEL.DMUX"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DQ" to="BLK-TL-SLICEL.DQ"/>
-			  <direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DX" to="BLK-TL-SLICEL.DX"/>
-			</site>
-		  </equivalent_sites>
-		</sub_tile>
-		<switchblock_locations pattern="all"/>
-	  </tile>
+		<tile name="io" area="0">
+			<sub_tile name="io" capacity="8">
+				<equivalent_sites>
+					<site pb_type="io" pin_mapping="direct"/>
+				</equivalent_sites>
+				<input name="outpad" num_pins="1"/>
+				<output name="inpad" num_pins="1"/>
+				<clock name="clock" num_pins="1"/>
+				<fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+				<pinlocations pattern="custom">
+					<loc side="left">io.outpad io.inpad io.clock</loc>
+					<loc side="top">io.outpad io.inpad io.clock</loc>
+					<loc side="right">io.outpad io.inpad io.clock</loc>
+					<loc side="bottom">io.outpad io.inpad io.clock</loc>
+				</pinlocations>
+			</sub_tile>
+		</tile>
+		<tile name="BLK-TL-CLBLL_L">
+			<sub_tile capacity="2" name="BLK-TL-CLBLL_L_SLICEL_0">
+				<!-- Sub Tile Inputs -->
+				<input name="CLBLL_LL_A_in" num_pins="6"/>
+				<input name="CLBLL_LL_AX" num_pins="1"/>
+				<input name="CLBLL_LL_B_in" num_pins="6"/>
+				<input name="CLBLL_LL_BX" num_pins="1"/>
+				<input name="CLBLL_LL_C_in" num_pins="6"/>
+				<input name="CLBLL_LL_CE" num_pins="1"/>
+				<clock name="CLBLL_LL_CLK" num_pins="1"/>
+				<input name="CLBLL_LL_CX" num_pins="1"/>
+				<input name="CLBLL_LL_D_in" num_pins="6"/>
+				<input name="CLBLL_LL_DX" num_pins="1"/>
+				<input name="CLBLL_LL_SR" num_pins="1"/>
+				<!-- Sub Tile Outputs -->
+				<output name="CLBLL_LL_A" num_pins="1"/>
+				<output name="CLBLL_LL_AMUX" num_pins="1"/>
+				<output name="CLBLL_LL_AQ" num_pins="1"/>
+				<output name="CLBLL_LL_B" num_pins="1"/>
+				<output name="CLBLL_LL_BMUX" num_pins="1"/>
+				<output name="CLBLL_LL_BQ" num_pins="1"/>
+				<output name="CLBLL_LL_C" num_pins="1"/>
+				<output name="CLBLL_LL_CMUX" num_pins="1"/>
+				<output name="CLBLL_LL_CQ" num_pins="1"/>
+				<output name="CLBLL_LL_D" num_pins="1"/>
+				<output name="CLBLL_LL_DMUX" num_pins="1"/>
+				<output name="CLBLL_LL_DQ" num_pins="1"/>
+				<fc in_type="abs" in_val="2" out_type="abs" out_val="2">
+				</fc>
+				<equivalent_sites>
+					<site pb_type="BLK-TL-SLICEL" pin_mapping="custom">
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A" to="BLK-TL-SLICEL.A"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_A_in" to="BLK-TL-SLICEL.A_in"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AMUX" to="BLK-TL-SLICEL.AMUX"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AQ" to="BLK-TL-SLICEL.AQ"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_AX" to="BLK-TL-SLICEL.AX"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B" to="BLK-TL-SLICEL.B"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_B_in" to="BLK-TL-SLICEL.B_in"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BMUX" to="BLK-TL-SLICEL.BMUX"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BQ" to="BLK-TL-SLICEL.BQ"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_BX" to="BLK-TL-SLICEL.BX"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C" to="BLK-TL-SLICEL.C"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_C_in" to="BLK-TL-SLICEL.C_in"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CLK" to="BLK-TL-SLICEL.CLK"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CMUX" to="BLK-TL-SLICEL.CMUX"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CQ" to="BLK-TL-SLICEL.CQ"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_CX" to="BLK-TL-SLICEL.CX"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D" to="BLK-TL-SLICEL.D"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_D_in" to="BLK-TL-SLICEL.D_in"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DMUX" to="BLK-TL-SLICEL.DMUX"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DQ" to="BLK-TL-SLICEL.DQ"/>
+						<direct from="BLK-TL-CLBLL_L_SLICEL_0.CLBLL_LL_DX" to="BLK-TL-SLICEL.DX"/>
+					</site>
+				</equivalent_sites>
+			</sub_tile>
+			<switchblock_locations pattern="all"/>
+		</tile>
 	</tiles>
 	<!-- ODIN II specific config ends -->
 	<!-- Physical descriptions begin -->
 	<layout>
-	  <!-- <auto_layout aspect_ratio="1.0"> -->
+		<!-- <auto_layout aspect_ratio="1.0"> -->
 		<auto_layout aspect_ratio="1.0">
-		<!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
-		<perimeter type="io" priority="100"/>
-		<corners type="EMPTY" priority="101"/>
-		<!--Fill with 'clb'-->
-		<fill type="BLK-TL-CLBLL_L" priority="10"/>
+			<!--Perimeter of 'io' blocks with 'EMPTY' blocks at corners-->
+			<perimeter type="io" priority="100"/>
+			<corners type="EMPTY" priority="101"/>
+			<!--Fill with 'clb'-->
+			<fill type="BLK-TL-CLBLL_L" priority="10"/>
 		</auto_layout>
-	  <!-- </auto_layout> -->
+		<!-- </auto_layout> -->
 	</layout>
 	<device>
-	  <!-- VB & JL: Using Ian Kuon's transistor sizing and drive strength data for routing, at 40 nm. Ian used BPTM 
+		<!-- VB & JL: Using Ian Kuon's transistor sizing and drive strength data for routing, at 40 nm. Ian used BPTM 
 				   models. We are modifying the delay values however, to include metal C and R, which allows more architecture
 				   experimentation. We are also modifying the relative resistance of PMOS to be 1.8x that of NMOS
 				   (vs. Ian's 3x) as 1.8x lines up with Jeff G's data from a 45 nm process (and is more typical of 
@@ -161,20 +151,20 @@
 				   proposed FPGA, and which is also 40 nm 
 				   C_ipin_cblock: input capacitance of a track buffer, which VPR assumes is a single-stage
 				   4x minimum drive strength buffer. -->
-	  <sizing R_minW_nmos="8926" R_minW_pmos="16067"/>
-	  <!-- The grid_logic_tile_area below will be used for all blocks that do not explicitly set their own (non-routing)
+		<sizing R_minW_nmos="8926" R_minW_pmos="16067"/>
+		<!-- The grid_logic_tile_area below will be used for all blocks that do not explicitly set their own (non-routing)
 			 area; set to 0 since we explicitly set the area of all blocks currently in this architecture file.
 		-->
-	  <area grid_logic_tile_area="0"/>
-	  <chan_width_distr>
-		<x distr="uniform" peak="1.000000"/>
-		<y distr="uniform" peak="1.000000"/>
-	  </chan_width_distr>
-	  <switch_block type="wilton" fs="3"/>
-	  <connection_block input_switch_name="ipin_cblock"/>
+		<area grid_logic_tile_area="0"/>
+		<chan_width_distr>
+			<x distr="uniform" peak="1.000000"/>
+			<y distr="uniform" peak="1.000000"/>
+		</chan_width_distr>
+		<switch_block type="wilton" fs="3"/>
+		<connection_block input_switch_name="ipin_cblock"/>
 	</device>
 	<switchlist>
-	  <!-- VB: the mux_trans_size and buf_size data below is in minimum width transistor *areas*, assuming the purple
+		<!-- VB: the mux_trans_size and buf_size data below is in minimum width transistor *areas*, assuming the purple
 			 book area formula. This means the mux transistors are about 5x minimum drive strength.
 			 We assume the first stage of the buffer is 3x min drive strength to be reasonable given the large 
 			 mux transistors, and this gives a reasonable stage ratio of a bit over 5x to the second stage. We assume
@@ -187,64 +177,64 @@
 			 2.5x when looking up in Jeff's tables.
 			 Finally, we choose a switch delay (58 ps) that leads to length 4 wires having a delay equal to that of SIV of 126 ps.
 			 This also leads to the switch being 46% of the total wire delay, which is reasonable. -->
-	  <switch type="mux" name="0" R="551" Cin=".77e-15" Cout="4e-15" Tdel="58e-12" mux_trans_size="2.630740" buf_size="27.645901"/>
-	  <!--switch ipin_cblock resistance set to yeild for 4x minimum drive strength buffer-->
-	  <switch type="mux" name="ipin_cblock" R="2231.5" Cout="0." Cin="1.47e-15" Tdel="7.247000e-11" mux_trans_size="1.222260" buf_size="auto"/>
+		<switch type="mux" name="0" R="551" Cin=".77e-15" Cout="4e-15" Tdel="58e-12" mux_trans_size="2.630740" buf_size="27.645901"/>
+		<!--switch ipin_cblock resistance set to yeild for 4x minimum drive strength buffer-->
+		<switch type="mux" name="ipin_cblock" R="2231.5" Cout="0." Cin="1.47e-15" Tdel="7.247000e-11" mux_trans_size="1.222260" buf_size="auto"/>
 	</switchlist>
 	<segmentlist>
-	  <!--- VB & JL: using ITRS metal stack data, 96 nm half pitch wires, which are intermediate metal width/space.  
+		<!--- VB & JL: using ITRS metal stack data, 96 nm half pitch wires, which are intermediate metal width/space.  
 				   With the 96 nm half pitch, such wires would take 60 um of height, vs. a 90 nm high (approximated as square) Stratix IV tile so this seems
 				   reasonable. Using a tile length of 90 nm, corresponding to the length of a Stratix IV tile if it were square. -->
-	  <segment freq="1.000000" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
-		<mux name="0"/>
-		<sb type="pattern">1 1 1 1 1</sb>
-		<cb type="pattern">1 1 1 1</cb>
-	  </segment>
+		<segment freq="1.000000" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1</cb>
+		</segment>
 	</segmentlist>
 	<complexblocklist>
-	  <!-- Define I/O pads begin -->
-	  <!-- Capacity is a unique property of I/Os, it is the maximum number of I/Os that can be placed at the same (X,Y) location on the FPGA -->
-	  <!-- Not sure of the area of an I/O (varies widely), and it's not relevant to the design of the FPGA core, so we're setting it to 0. -->
-	  <pb_type name="io">
-		<input name="outpad" num_pins="1"/>
-		<output name="inpad" num_pins="1"/>
-		<clock name="clock" num_pins="1"/>
-		<!-- IOs can operate as either inputs or outputs.
+		<!-- Define I/O pads begin -->
+		<!-- Capacity is a unique property of I/Os, it is the maximum number of I/Os that can be placed at the same (X,Y) location on the FPGA -->
+		<!-- Not sure of the area of an I/O (varies widely), and it's not relevant to the design of the FPGA core, so we're setting it to 0. -->
+		<pb_type name="io">
+			<input name="outpad" num_pins="1"/>
+			<output name="inpad" num_pins="1"/>
+			<clock name="clock" num_pins="1"/>
+			<!-- IOs can operate as either inputs or outputs.
 		   Delays below come from Ian Kuon. They are small, so they should be interpreted as
 		   the delays to and from registers in the I/O (and generally I/Os are registered 
 		   today and that is when you timing analyze them.
 		   -->
-		<mode name="inpad">
-		  <pb_type name="inpad" blif_model=".input" num_pb="1">
-			<output name="inpad" num_pins="1"/>
-		  </pb_type>
-		  <interconnect>
-			<direct name="inpad" input="inpad.inpad" output="io.inpad">
-			  <delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io.inpad"/>
-			</direct>
-		  </interconnect>
-		</mode>
-		<mode name="outpad">
-		  <pb_type name="outpad" blif_model=".output" num_pb="1">
-			<input name="outpad" num_pins="1"/>
-		  </pb_type>
-		  <interconnect>
-			<direct name="outpad" input="io.outpad" output="outpad.outpad">
-			  <delay_constant max="1.394e-11" in_port="io.outpad" out_port="outpad.outpad"/>
-			</direct>
-		  </interconnect>
-		</mode>
-		<!-- Every input pin is driven by 15% of the tracks in a channel, every output pin is driven by 10% of the tracks in a channel -->
-		<!-- IOs go on the periphery of the FPGA, for consistency, 
+			<mode name="inpad">
+				<pb_type name="inpad" blif_model=".input" num_pb="1">
+					<output name="inpad" num_pins="1"/>
+				</pb_type>
+				<interconnect>
+					<direct name="inpad" input="inpad.inpad" output="io.inpad">
+						<delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io.inpad"/>
+					</direct>
+				</interconnect>
+			</mode>
+			<mode name="outpad">
+				<pb_type name="outpad" blif_model=".output" num_pb="1">
+					<input name="outpad" num_pins="1"/>
+				</pb_type>
+				<interconnect>
+					<direct name="outpad" input="io.outpad" output="outpad.outpad">
+						<delay_constant max="1.394e-11" in_port="io.outpad" out_port="outpad.outpad"/>
+					</direct>
+				</interconnect>
+			</mode>
+			<!-- Every input pin is driven by 15% of the tracks in a channel, every output pin is driven by 10% of the tracks in a channel -->
+			<!-- IOs go on the periphery of the FPGA, for consistency, 
 			make it physically equivalent on all sides so that only one definition of I/Os is needed.
 			If I do not make a physically equivalent definition, then I need to define 4 different I/Os, one for each side of the FPGA
 		  -->
-		<!-- Place I/Os on the sides of the FPGA -->
-		<power method="ignore"/>
-	  </pb_type>
-	  <!-- Define I/O pads ends -->
-	  <!-- Define general purpose logic block (CLB) begin -->
-	  <!--- Area calculation: Total Stratix IV tile area is about 8100 um^2, and a minimum width transistor 
+			<!-- Place I/Os on the sides of the FPGA -->
+			<power method="ignore"/>
+		</pb_type>
+		<!-- Define I/O pads ends -->
+		<!-- Define general purpose logic block (CLB) begin -->
+		<!--- Area calculation: Total Stratix IV tile area is about 8100 um^2, and a minimum width transistor 
 		 area is 60 L^2 yields a tile area of 84375 MWTAs.
 		 Routing at W=300 is 30481 MWTAs, leaving us with a total of 53000 MWTAs for logic block area 
 		 This means that only 37% of our area is in the general routing, and 63% is inside the logic
@@ -253,233 +243,262 @@
 		 assume, but note that the total routing area really includes the crossbar, which would push
 		 routing area up significantly, we estimate into the ~70% range. 
 		 -->
-	  <pb_type name="BLK-TL-SLICEL">
-		<clock name="CLK" num_pins="1"/>
-		<input name="A_in" num_pins="6"/>
-		<input name="AX" num_pins="1"/>
-		<input name="B_in" num_pins="6"/>
-		<input name="BX" num_pins="1"/>
-		<input name="C_in" num_pins="6"/>
-		<input name="CX" num_pins="1"/>
-		<input name="D_in" num_pins="6"/>
-		<input name="DX" num_pins="1"/>
-		<output name="A" num_pins="1"/>
-		<output name="AMUX" num_pins="1"/>
-		<output name="AQ" num_pins="1"/>
-		<output name="B" num_pins="1"/>
-		<output name="BMUX" num_pins="1"/>
-		<output name="BQ" num_pins="1"/>
-		<output name="C" num_pins="1"/>
-		<output name="CMUX" num_pins="1"/>
-		<output name="CQ" num_pins="1"/>
-		<output name="D" num_pins="1"/>
-		<output name="DMUX" num_pins="1"/>
-		<output name="DQ" num_pins="1"/>
-		  <pb_type name="ALUT" num_pb="4">
-			<input name="A" num_pins="6"/>
-			<output name="O5" num_pins="1"/>
-			<output name="O6" num_pins="1"/>
-			<pb_type blif_model=".names" class="lut" name="A5LUT" num_pb="2">
-			  <input name="in" num_pins="5" port_class="lut_in"/>
-			  <output name="out" num_pins="1" port_class="lut_out"/>
-			  <delay_matrix in_port="A5LUT.in" out_port="A5LUT.out" type="max">
-				  1.5200000000000002e-10
-				  1.5200000000000002e-10
-				  1.5e-10
-				  1.5e-10
-				  1.18e-10
-			  </delay_matrix>
-			  <delay_matrix in_port="A5LUT.in" out_port="A5LUT.out" type="min">
-				  4.4e-11
-				  4.4e-11
-				  4.2000000000000004e-11
-				  4.6e-11
-				  4.8e-11
-			  </delay_matrix>
-			  <metadata>
-				<meta name="type">bel</meta>
-				<meta name="subtype">lut</meta>
-			  </metadata>
-			</pb_type>
-			<pb_type blif_model=".subckt MUXF6" name="F6MUX" num_pb="1">
-			  <input name="I0" num_pins="1"/>
-			  <input name="I1" num_pins="1"/>
-			  <input name="S" num_pins="1"/>
-			  <output name="O" num_pins="1"/>
-			  <delay_constant in_port="F6MUX.I0" max="10e-12" out_port="F6MUX.O"/>
-			  <delay_constant in_port="F6MUX.I1" max="10e-12" out_port="F6MUX.O"/>
-			  <delay_constant in_port="F6MUX.S" max="10e-12" out_port="F6MUX.O"/>
-			  <metadata>
-				<meta name="type">bel</meta>
-				<meta name="subtype">mux</meta>
-			  </metadata>
-			</pb_type>
-			<interconnect>
-			  <!-- LUT5 (upper) -> O6 -->
-			  <!-- LUT5 (lower) -> O5 -->
-			  <!-- MUX used for LUT6 -->
-			  <!-- LUT outputs -->
-			  <direct input="ALUT.A[0:4]" name="ALUT_A1_0" output="A5LUT[0].in"/>
-			  <direct input="ALUT.A[0:4]" name="ALUT_A1_1" output="A5LUT[1].in"/>
-			  <direct input="A5LUT[0].out" name="O5" output="ALUT.O5">
-			  </direct>
-			  <mux input="A5LUT[1].out F6MUX.O" name="O6" output="ALUT.O6">
-			  </mux>
-			  <direct input="A5LUT[0].out" name="F6MUX_I0" output="F6MUX.I0">
-				<pack_pattern in_port="A5LUT[0].out" name="LUT5toLUT6" out_port="F6MUX.I0"/>
-			  </direct>
-			  <direct input="A5LUT[1].out" name="F6MUX_I1" output="F6MUX.I1">
-				<pack_pattern in_port="A5LUT[1].out" name="LUT5toLUT6" out_port="F6MUX.I1"/>
-			  </direct>
-			  <direct input="ALUT.A[5]" name="F6MUX_S" output="F6MUX.S"/>
-			</interconnect>
-		  </pb_type>
-			  
-		  <pb_type blif_model=".subckt MUXF7" name="F7AMUX" num_pb="2">
-			<input name="I0" num_pins="1"/>
-			<input name="I1" num_pins="1"/>
-			<input name="S" num_pins="1"/>
-			<output name="O" num_pins="1"/>
-			<delay_constant in_port="F7AMUX.I0" max="1.9000000000000002e-10" out_port="F7AMUX.O" min="5.3000000000000004e-11"/>
-			<delay_constant in_port="F7AMUX.I1" max="1.93e-10" out_port="F7AMUX.O" min="5.5000000000000004e-11"/>
-			<delay_constant in_port="F7AMUX.S" max="2.7600000000000003e-10" out_port="F7AMUX.O" min="8.500000000000002e-11"/>
-			<metadata>
-			  <meta name="type">bel</meta>
-			  <meta name="subtype">mux</meta>
-			</metadata>
-		  </pb_type>
-  
-		  <pb_type blif_model=".subckt MUXF8" name="F8MUX" num_pb="1">
-			<input name="I0" num_pins="1"/>
-			<input name="I1" num_pins="1"/>
-			<input name="S" num_pins="1"/>
-			<output name="O" num_pins="1"/>
-			<delay_constant in_port="F8MUX.I0" max="1.04e-10" out_port="F8MUX.O" min="2.3e-11"/>
-			<delay_constant in_port="F8MUX.I1" max="9.400000000000001e-11" out_port="F8MUX.O" min="1.9000000000000002e-11"/>
-			<delay_constant in_port="F8MUX.S" max="2.7300000000000004e-10" out_port="F8MUX.O" min="8.000000000000001e-11"/>
-			<metadata>
-			  <meta name="type">bel</meta>
-			  <meta name="subtype">mux</meta>
-			</metadata>
-		  </pb_type>
+		<pb_type name="BLK-TL-SLICEL">
+			<clock name="CLK" num_pins="1"/>
+			<input name="A_in" num_pins="6"/>
+			<input name="AX" num_pins="1"/>
+			<input name="B_in" num_pins="6"/>
+			<input name="BX" num_pins="1"/>
+			<input name="C_in" num_pins="6"/>
+			<input name="CX" num_pins="1"/>
+			<input name="D_in" num_pins="6"/>
+			<input name="DX" num_pins="1"/>
+			<output name="A" num_pins="1"/>
+			<output name="AMUX" num_pins="1"/>
+			<output name="AQ" num_pins="1"/>
+			<output name="B" num_pins="1"/>
+			<output name="BMUX" num_pins="1"/>
+			<output name="BQ" num_pins="1"/>
+			<output name="C" num_pins="1"/>
+			<output name="CMUX" num_pins="1"/>
+			<output name="CQ" num_pins="1"/>
+			<output name="D" num_pins="1"/>
+			<output name="DMUX" num_pins="1"/>
+			<output name="DQ" num_pins="1"/>
+			<pb_type name="ALUT" num_pb="4">
+				<input name="A" num_pins="6"/>
+				<output name="O5" num_pins="1"/>
+				<output name="O6" num_pins="1"/>
 
-		  <pb_type blif_model=".latch" name="FDSE" num_pb="8" class="flipflop">
-			  <clock name="clk" num_pins="1" port_class="clock"/>
-			  <input name="D" num_pins="1" port_class="D"/>
-			  <output name="Q" num_pins="1" port_class="Q"/>
-			  <T_setup clock="clk" port="FDSE.D" value="-4.6e-11"/>
-			  <!-- <T_setup clock="C" port="FDSE.S" value="3.58e-10"/> -->
-			  <T_hold clock="clk" port="FDSE.D" value="1.81e-10"/>
-			  <!-- <T_hold clock="C" port="FDSE.S" value="-3.0500000000000003e-10"/> -->
-			  <T_clock_to_Q clock="clk" max="3.03e-10" port="FDSE.Q" min="9.900000000000001e-11"/>
-			  <metadata>
-				<meta name="fasm_params">
+				<mode name="n2_lut5">
+					<pb_type name="lut5_mode" num_pb="2">
+						<input name="in" num_pins="5"/>
+						<output name="out" num_pins="1"/>
+
+							<pb_type name="lut5" blif_model=".names" num_pb="1" class="lut">
+								<input name="in" num_pins="5" port_class="lut_in"/>
+								<output name="out" num_pins="1" port_class="lut_out"/>
+								<!-- LUT timing using delay matrix -->
+								<!-- These are the physical delay inputs on a Stratix IV LUT but because VPR cannot do LUT rebalancing,
+									we instead take the average of these numbers to get more stable results
+								82e-12
+								173e-12
+								261e-12
+								263e-12
+								398e-12
+								-->
+								<delay_matrix type="max" in_port="lut5.in" out_port="lut5.out">
+									235e-12
+									235e-12
+									235e-12
+									235e-12
+									235e-12
+								</delay_matrix>
+							</pb_type>
+
+							<interconnect>
+								<direct name="direct1" input="lut5_mode.in" output="lut5[0:0].in"/>
+								<direct name="direct2" input="lut5[0:0].out" output="lut5_mode.out"/>
+							</interconnect>
+
+					</pb_type>
+						<interconnect>
+							<direct name="direct1" input="ALUT.A[4:0]" output="lut5_mode[0:0].in"/>
+							<direct name="direct2" input="lut5_mode[0:0].out" output="ALUT.O5"/>
+						</interconnect>
+					</mode>
+
+
+					<mode name="n1_lut6">
+					<pb_type name="lut6_mode" num_pb="1">
+						<input name="in" num_pins="6"/>
+						<output name="out" num_pins="1"/>
+
+							<pb_type name="lut6" blif_model=".names" num_pb="1" class="lut">
+								<input name="in" num_pins="6" port_class="lut_in"/>
+								<output name="out" num_pins="1" port_class="lut_out"/>
+								<!-- LUT timing using delay matrix -->
+								<!-- These are the physical delay inputs on a Stratix IV LUT but because VPR cannot do LUT rebalancing,
+									we instead take the average of these numbers to get more stable results
+								82e-12
+								173e-12
+								261e-12
+								263e-12
+								398e-12
+								-->
+								<delay_matrix type="max" in_port="lut6.in" out_port="lut6.out">
+									235e-12
+									235e-12
+									235e-12
+									235e-12
+									235e-12
+									235e-12
+								</delay_matrix>
+							</pb_type>
+
+							<interconnect>
+								<direct name="direct1" input="lut6_mode.in" output="lut6.in"/>
+								<direct name="direct2" input="lut6.out" output="lut6_mode.out"/>
+							</interconnect>
+
+					</pb_type>
+						<interconnect>
+							<direct name="direct1" input="ALUT.A" output="lut6_mode.in"/>
+							<direct name="direct2" input="lut6_mode.out" output="ALUT.O6"/>
+						</interconnect>
+					</mode>
+
+
+				</pb_type>
+
+
+				<pb_type blif_model=".subckt MUXF7" name="F7AMUX" num_pb="2">
+					<input name="I0" num_pins="1"/>
+					<input name="I1" num_pins="1"/>
+					<input name="S" num_pins="1"/>
+					<output name="O" num_pins="1"/>
+					<delay_constant in_port="F7AMUX.I0" max="1.9000000000000002e-10" out_port="F7AMUX.O" min="5.3000000000000004e-11"/>
+					<delay_constant in_port="F7AMUX.I1" max="1.93e-10" out_port="F7AMUX.O" min="5.5000000000000004e-11"/>
+					<delay_constant in_port="F7AMUX.S" max="2.7600000000000003e-10" out_port="F7AMUX.O" min="8.500000000000002e-11"/>
+					<metadata>
+						<meta name="type">bel</meta>
+						<meta name="subtype">mux</meta>
+					</metadata>
+				</pb_type>
+
+				<pb_type blif_model=".subckt MUXF8" name="F8MUX" num_pb="1">
+					<input name="I0" num_pins="1"/>
+					<input name="I1" num_pins="1"/>
+					<input name="S" num_pins="1"/>
+					<output name="O" num_pins="1"/>
+					<delay_constant in_port="F8MUX.I0" max="1.04e-10" out_port="F8MUX.O" min="2.3e-11"/>
+					<delay_constant in_port="F8MUX.I1" max="9.400000000000001e-11" out_port="F8MUX.O" min="1.9000000000000002e-11"/>
+					<delay_constant in_port="F8MUX.S" max="2.7300000000000004e-10" out_port="F8MUX.O" min="8.000000000000001e-11"/>
+					<metadata>
+						<meta name="type">bel</meta>
+						<meta name="subtype">mux</meta>
+					</metadata>
+				</pb_type>
+
+				<pb_type blif_model=".latch" name="FDSE" num_pb="8" class="flipflop">
+					<clock name="clk" num_pins="1" port_class="clock"/>
+					<input name="D" num_pins="1" port_class="D"/>
+					<output name="Q" num_pins="1" port_class="Q"/>
+					<T_setup clock="clk" port="FDSE.D" value="-4.6e-11"/>
+					<!-- <T_setup clock="C" port="FDSE.S" value="3.58e-10"/> -->
+					<T_hold clock="clk" port="FDSE.D" value="1.81e-10"/>
+					<!-- <T_hold clock="C" port="FDSE.S" value="-3.0500000000000003e-10"/> -->
+					<T_clock_to_Q clock="clk" max="3.03e-10" port="FDSE.Q" min="9.900000000000001e-11"/>
+					<metadata>
+						<meta name="fasm_params">
 		  			ZINI = ZINI
-				</meta>
-				<meta name="type">bel</meta>
-				<meta name="subtype">flipflop</meta>
-			  </metadata>
+						</meta>
+						<meta name="type">bel</meta>
+						<meta name="subtype">flipflop</meta>
+					</metadata>
+				</pb_type>
+
+				<interconnect>
+					<!-- LUT input pins -->
+					<!-- COMMON_SLICE inputs -->
+					<!-- [A-F]Q outputs -->
+					<!-- A-D output -->
+					<!-- AMUX-DMUX output -->
+					<!-- Carry -->
+					<!-- Clock, Clock Enable and Reset -->
+					<mux input="FDSE[0].Q ALUT[0].O6 ALUT[0].O5 F7AMUX[0].O" name="AOUTMUX" output="BLK-TL-SLICEL.AMUX">
+						<delay_constant in_port="FDSE[0].Q" max="1.75e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+						<delay_constant in_port="ALUT[0].O6" max="2.09e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+						<delay_constant in_port="ALUT[0].O5" max="2.0200000000000003e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+					</mux>
+
+					<mux input="FDSE[1].Q ALUT[1].O6 ALUT[1].O5 F8MUX.O" name="BOUTMUX" output="BLK-TL-SLICEL.BMUX">
+						<delay_constant in_port="FDSE[1].Q" max="1.72e-10" out_port="BLK-TL-SLICEL.BMUX"/>
+						<delay_constant in_port="ALUT[1].O6" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
+						<delay_constant in_port="ALUT[1].O5" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
+					</mux>
+
+					<mux input="FDSE[2].Q ALUT[2].O6 ALUT[2].O5 F7AMUX[1].O" name="COUTMUX" output="BLK-TL-SLICEL.CMUX">
+						<delay_constant in_port="FDSE[2].Q" max="1.73e-10" out_port="BLK-TL-SLICEL.CMUX"/>
+						<delay_constant in_port="ALUT[2].O6" max="2.05e-10" out_port="BLK-TL-SLICEL.CMUX"/>
+						<delay_constant in_port="ALUT[2].O5" max="2.0300000000000002e-10" out_port="BLK-TL-SLICEL.CMUX"/>
+					</mux>
+
+					<mux input="FDSE[3].Q ALUT[3].O6 ALUT[3].O5" name="DOUTMUX" output="BLK-TL-SLICEL.DMUX">
+						<delay_constant in_port="FDSE[3].Q" max="1.75e-10" out_port="BLK-TL-SLICEL.DMUX"/>
+						<delay_constant in_port="ALUT[3].O6" max="2.11e-10" out_port="BLK-TL-SLICEL.DMUX"/>
+						<delay_constant in_port="ALUT[3].O5" max="2.08e-10" out_port="BLK-TL-SLICEL.DMUX"/>
+					</mux>
+					<!-- note: commenting this out gives a chanel width of 214 ???? -->
+					<!-- this is in between fdse and the luts -->
+					<mux input="BLK-TL-SLICEL.AX ALUT[0].O5" name="A5FFMUX" output="FDSE[0].D">
+						<delay_constant in_port="BLK-TL-SLICEL.AX" max="2.0200000000000003e-10" out_port="FDSE[0].D"/>
+						<delay_constant in_port="ALUT[0].O5" max="1.07e-10" out_port="FDSE[0].D"/>
+					</mux>
+
+
+					<mux input="BLK-TL-SLICEL.BX ALUT[1].O5" name="B5FFMUX" output="FDSE[1].D">
+						<delay_constant in_port="BLK-TL-SLICEL.BX" max="2.16e-10" out_port="FDSE[1].D"/>
+						<delay_constant in_port="ALUT[1].O5" max="1.07e-10" out_port="FDSE[1].D"/>
+					</mux>
+
+					<mux input="BLK-TL-SLICEL.CX ALUT[2].O5" name="C5FFMUX" output="FDSE[2].D">
+						<delay_constant in_port="BLK-TL-SLICEL.CX" max="1.9600000000000002e-10" out_port="FDSE[2].D"/>
+						<delay_constant in_port="ALUT[2].O5" max="1.0900000000000001e-10" out_port="FDSE[2].D"/>
+					</mux>
+
+					<mux input="BLK-TL-SLICEL.DX ALUT[3].O5" name="D5FFMUX" output="FDSE[3].D">
+						<delay_constant in_port="BLK-TL-SLICEL.DX" max="1.93e-10" out_port="FDSE[3].D"/>
+						<delay_constant in_port="ALUT[3].O5" max="1.0600000000000001e-10" out_port="FDSE[3].D"/>
+					</mux>
+
+					<!-- <direct input="BLK-TL-SLICEL.A_in" name="A" output="ALUT[0].A"/> -->
+					<direct input="BLK-TL-SLICEL.AX" name="AX" output="F7AMUX[0].S"/>
+					<!-- <direct input="BLK-TL-SLICEL.B_in" name="B" output="ALUT[1].A"/> -->
+					<direct input="BLK-TL-SLICEL.BX" name="BX" output="F8MUX.S"/>
+					<!-- <direct input="BLK-TL-SLICEL.C_in" name="C" output="ALUT[2].A"/> -->
+					<direct input="BLK-TL-SLICEL.CX" name="CX" output="F7AMUX[1].S"/>
+					<!-- <direct input="BLK-TL-SLICEL.D_in" name="D1" output="ALUT[3].A"/> -->
+
+					<!-- switch blocks -->
+					<complete input="FDSE[7:0].Q" name="FF_to_LUT" output="ALUT[3:0].A[5:0]"/>
+					<!-- 250 chanels-->
+
+					<complete input="BLK-TL-SLICEL.A_in ALUT[0].O5 ALUT[0].O6" name="all_pin_to_pin1" output="ALUT[0].A"/>
+					<!-- 198 chanels ???-->
+					<complete input="BLK-TL-SLICEL.B_in ALUT[1].O5 ALUT[1].O6" name="all_pin_to_pin2" output="ALUT[1].A"/>
+					<complete input="BLK-TL-SLICEL.C_in ALUT[2].O5 ALUT[2].O6" name="all_pin_to_pin3" output="ALUT[2].A"/>
+					<complete input="BLK-TL-SLICEL.D_in ALUT[3].O5 ALUT[3].O6" name="all_pin_to_pin4" output="ALUT[3].A"/>
+
+					<!-- <complete input="ALUT.O5 ALUT.O6" name="LUT_to_LUT" output="ALUT.A"/>  -->
+
+					<complete input="BLK-TL-SLICEL.CLK" name="CK" output="FDSE.clk"/>
+
+
+					<direct input="FDSE[4].Q" name="AQ" output="BLK-TL-SLICEL.AQ"/>
+					<direct input="ALUT[0].O6" name="SLICEL_AOUT" output="BLK-TL-SLICEL.A"/>
+					<direct input="FDSE[5].Q" name="BQ" output="BLK-TL-SLICEL.BQ"/>
+					<direct input="ALUT[1].O6" name="SLICEL_BOUT" output="BLK-TL-SLICEL.B"/>
+					<direct input="FDSE[6].Q" name="CQ" output="BLK-TL-SLICEL.CQ"/>
+					<direct input="ALUT[2].O6" name="SLICEL_COUT" output="BLK-TL-SLICEL.C"/>
+					<direct input="FDSE[7].Q" name="DQ" output="BLK-TL-SLICEL.DQ"/>
+					<direct input="ALUT[3].O6" name="SLICEL_DOUT" output="BLK-TL-SLICEL.D"/>
+
+
+					<!-- All #O6 pins are tied to .# pins. check that this is right! -->
+
+				</interconnect>
 			</pb_type>
-		  
-		<interconnect>
-		  <!-- LUT input pins -->
-		  <!-- COMMON_SLICE inputs -->
-		  <!-- [A-F]Q outputs -->
-		  <!-- A-D output -->
-		  <!-- AMUX-DMUX output -->
-		  <!-- Carry -->
-		  <!-- Clock, Clock Enable and Reset -->
-		  <mux input="FDSE[0].Q ALUT[0].O6 ALUT[0].O5 F7AMUX[0].O" name="AOUTMUX" output="BLK-TL-SLICEL.AMUX">
-            <delay_constant in_port="FDSE[0].Q" max="1.75e-10" out_port="BLK-TL-SLICEL.AMUX"/>
-            <delay_constant in_port="ALUT[0].O6" max="2.09e-10" out_port="BLK-TL-SLICEL.AMUX"/>
-            <delay_constant in_port="ALUT[0].O5" max="2.0200000000000003e-10" out_port="BLK-TL-SLICEL.AMUX"/>
-          </mux>
-
-		  <mux input="FDSE[1].Q ALUT[1].O6 ALUT[1].O5 F8MUX.O" name="BOUTMUX" output="BLK-TL-SLICEL.BMUX">
-            <delay_constant in_port="FDSE[1].Q" max="1.72e-10" out_port="BLK-TL-SLICEL.BMUX"/>
-            <delay_constant in_port="ALUT[1].O6" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
-            <delay_constant in_port="ALUT[1].O5" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
-          </mux>
-
-		  <mux input="FDSE[2].Q ALUT[2].O6 ALUT[2].O5 F7AMUX[1].O" name="COUTMUX" output="BLK-TL-SLICEL.CMUX">
-            <delay_constant in_port="FDSE[2].Q" max="1.73e-10" out_port="BLK-TL-SLICEL.CMUX"/>
-            <delay_constant in_port="ALUT[2].O6" max="2.05e-10" out_port="BLK-TL-SLICEL.CMUX"/>
-            <delay_constant in_port="ALUT[2].O5" max="2.0300000000000002e-10" out_port="BLK-TL-SLICEL.CMUX"/>
-          </mux>
-
-		  <mux input="FDSE[3].Q ALUT[3].O6 ALUT[3].O5" name="DOUTMUX" output="BLK-TL-SLICEL.DMUX">
-            <delay_constant in_port="FDSE[3].Q" max="1.75e-10" out_port="BLK-TL-SLICEL.DMUX"/>
-            <delay_constant in_port="ALUT[3].O6" max="2.11e-10" out_port="BLK-TL-SLICEL.DMUX"/>
-            <delay_constant in_port="ALUT[3].O5" max="2.08e-10" out_port="BLK-TL-SLICEL.DMUX"/>
-          </mux>
-			<!-- note: commenting this out gives a chanel width of 214 ???? -->
-			<!-- this is in between fdse and the luts -->
-		  <mux input="BLK-TL-SLICEL.AX ALUT[0].O5" name="A5FFMUX" output="FDSE[0].D">
-            <delay_constant in_port="BLK-TL-SLICEL.AX" max="2.0200000000000003e-10" out_port="FDSE[0].D"/>
-            <delay_constant in_port="ALUT[0].O5" max="1.07e-10" out_port="FDSE[0].D"/>
-          </mux>
-
-
-		  <mux input="BLK-TL-SLICEL.BX ALUT[1].O5" name="B5FFMUX" output="FDSE[1].D">
-            <delay_constant in_port="BLK-TL-SLICEL.BX" max="2.16e-10" out_port="FDSE[1].D"/>
-            <delay_constant in_port="ALUT[1].O5" max="1.07e-10" out_port="FDSE[1].D"/>
-          </mux>
-
-          <mux input="BLK-TL-SLICEL.CX ALUT[2].O5" name="C5FFMUX" output="FDSE[2].D">
-            <delay_constant in_port="BLK-TL-SLICEL.CX" max="1.9600000000000002e-10" out_port="FDSE[2].D"/>
-            <delay_constant in_port="ALUT[2].O5" max="1.0900000000000001e-10" out_port="FDSE[2].D"/>
-          </mux>
-
-          <mux input="BLK-TL-SLICEL.DX ALUT[3].O5" name="D5FFMUX" output="FDSE[3].D">
-            <delay_constant in_port="BLK-TL-SLICEL.DX" max="1.93e-10" out_port="FDSE[3].D"/>
-            <delay_constant in_port="ALUT[3].O5" max="1.0600000000000001e-10" out_port="FDSE[3].D"/>
-          </mux>
-
-		  <!-- <direct input="BLK-TL-SLICEL.A_in" name="A" output="ALUT[0].A"/> -->
-		  <direct input="BLK-TL-SLICEL.AX" name="AX" output="F7AMUX[0].S"/>
-		  <!-- <direct input="BLK-TL-SLICEL.B_in" name="B" output="ALUT[1].A"/> -->
-		  <direct input="BLK-TL-SLICEL.BX" name="BX" output="F8MUX.S"/>
-		  <!-- <direct input="BLK-TL-SLICEL.C_in" name="C" output="ALUT[2].A"/> -->
-		  <direct input="BLK-TL-SLICEL.CX" name="CX" output="F7AMUX[1].S"/>
-		  <!-- <direct input="BLK-TL-SLICEL.D_in" name="D1" output="ALUT[3].A"/> -->
-
-		  <!-- switch blocks -->
-		  <complete input="FDSE[7:0].Q" name="FF_to_LUT" output="ALUT[3:0].A[5:0]"/> <!-- 250 chanels-->
-		  
-		  <complete input="BLK-TL-SLICEL.A_in" name="all_pin_to_pin1" output="ALUT[0].A"/> 
-		  <complete input="BLK-TL-SLICEL.B_in" name="all_pin_to_pin2" output="ALUT[1].A"/> 
-		  <complete input="BLK-TL-SLICEL.C_in" name="all_pin_to_pin3" output="ALUT[2].A"/> 
-		  <complete input="BLK-TL-SLICEL.D_in" name="all_pin_to_pin4" output="ALUT[3].A"/> 
-
-		  <complete input="ALUT.O5 ALUT.O6" name="LUT_to_LUT" output="ALUT.A"/> <!-- 190 chanels-->
-		  
-		  <complete input="BLK-TL-SLICEL.CLK" name="CK" output="FDSE.clk"/>
-
-
-		  <direct input="FDSE[4].Q" name="AQ" output="BLK-TL-SLICEL.AQ"/>
-		  <direct input="ALUT[0].O6" name="SLICEL_AOUT" output="BLK-TL-SLICEL.A"/>
-		  <direct input="FDSE[5].Q" name="BQ" output="BLK-TL-SLICEL.BQ"/>
-		  <direct input="ALUT[1].O6" name="SLICEL_BOUT" output="BLK-TL-SLICEL.B"/>
-		  <direct input="FDSE[6].Q" name="CQ" output="BLK-TL-SLICEL.CQ"/>
-		  <direct input="ALUT[2].O6" name="SLICEL_COUT" output="BLK-TL-SLICEL.C"/>
-		  <direct input="FDSE[7].Q" name="DQ" output="BLK-TL-SLICEL.DQ"/>
-		  <direct input="ALUT[3].O6" name="SLICEL_DOUT" output="BLK-TL-SLICEL.D"/>
-		  
-
-		  <!-- All #O6 pins are tied to .# pins. check that this is right! -->
-
-		</interconnect>
-	  </pb_type>
-	  <!-- Define general purpose logic block (CLB) ends -->
-	</complexblocklist>
-	<power>
-	  <local_interconnect C_wire="2.5e-10"/>
-	  <mux_transistor_size mux_transistor_size="3"/>
-	  <FF_size FF_size="4"/>
-	  <LUT_transistor_size LUT_transistor_size="4"/>
-	</power>
-	<clocks>
-	  <clock buffer_size="auto" C_wire="2.5e-10"/>
-	</clocks>
-  </architecture>
+			<!-- Define general purpose logic block (CLB) ends -->
+		</complexblocklist>
+		<power>
+			<local_interconnect C_wire="2.5e-10"/>
+			<mux_transistor_size mux_transistor_size="3"/>
+			<FF_size FF_size="4"/>
+			<LUT_transistor_size LUT_transistor_size="4"/>
+		</power>
+		<clocks>
+			<clock buffer_size="auto" C_wire="2.5e-10"/>
+		</clocks>
+	</architecture>
   
