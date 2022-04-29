@@ -25,7 +25,7 @@
        that describe them.
   -->
   <models>
-    <model name="MUXF6">
+    <!-- <model name="MUXF6">
       <input_ports>
         <port combinational_sink_ports="O" name="I0"/>
         <port combinational_sink_ports="O" name="I1"/>
@@ -34,7 +34,7 @@
       <output_ports>
         <port name="O"/>
       </output_ports>
-    </model>
+    </model> -->
   </models>
   <tiles>
     <tile name="io" area="0">
@@ -57,11 +57,11 @@
     <tile name="clb">
       <sub_tile capacity="2" name="SLICEL">
         <!-- Sub Tile Inputs -->
-        <input name="I" num_pins="29" equivalent="full"/>
+        <input name="I" num_pins="28" equivalent="full"/>
         <clock name="clk" num_pins="1"/>
         <!-- Sub Tile Outputs -->
         <output name="O" num_pins="12" equivalent="instance"/>
-        <fc in_type="abs" in_val="2" out_type="abs" out_val="2"/>
+        <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
         <equivalent_sites>
           <site pb_type="clb" pin_mapping="direct">
           </site>
@@ -192,7 +192,7 @@
 	   routing area up significantly, we estimate into the ~70% range. 
 	   -->
     <pb_type name="clb">
-      <input name="I" num_pins="29" equivalent="full"/>
+      <input name="I" num_pins="28" equivalent="full"/>
       <output name="O" num_pins="12" equivalent="instance"/>
       <clock name="clk" num_pins="1"/>
       <pb_type name="fle" num_pb="4">
@@ -204,7 +204,89 @@
           <input name="LUT6_in" num_pins="6"/>
           <output name="O5" num_pins="1"/>
           <output name="O6" num_pins="1"/>
-          <pb_type blif_model=".names" class="lut" name="LUT5" num_pb="2">
+
+          <mode name="n2_lut5">
+            <pb_type name="lut5_mode" num_pb="1">
+              <input name="in" num_pins="5"/>
+              <output name="out" num_pins="1"/>
+
+              <pb_type name="lut5" blif_model=".names" num_pb="1" class="lut">
+                <input name="in" num_pins="5" port_class="lut_in"/>
+                <output name="out" num_pins="1" port_class="lut_out"/>
+                <!-- LUT timing using delay matrix -->
+                <!-- These are the physical delay inputs on a Stratix IV LUT but because VPR cannot do LUT rebalancing,
+                    we instead take the average of these numbers to get more stable results
+                  82e-12
+                  173e-12
+                  261e-12
+                  263e-12
+                  398e-12
+                  -->
+                <delay_matrix type="max" in_port="lut5.in" out_port="lut5.out">
+                    235e-12
+                    235e-12
+                    235e-12
+                    235e-12
+                    235e-12
+                </delay_matrix>
+              </pb_type>
+
+              <interconnect>
+                <direct name="direct1" input="lut5_mode.in" output="lut5.in"/>
+                <direct name="direct2" input="lut5.out" output="lut5_mode.out"/>
+              </interconnect>
+
+            </pb_type>
+            <interconnect>
+              <direct name="direct1" input="LUT6.LUT6_in[4:0]" output="lut5_mode.in"/>
+              <!-- <direct name="direct2" input="ALUT.A[5]" output="HIGH"/> -->
+              <direct name="direct3" input="lut5_mode.out" output="LUT6.O5"/>
+              <!-- <direct name="direct4" input="lut5_mode.out" output="ALUT.O6"/> -->
+            </interconnect>
+          </mode>
+
+
+          <mode name="n1_lut6">
+            <pb_type name="lut6_mode" num_pb="1">
+              <input name="in" num_pins="6"/>
+              <output name="out" num_pins="1"/>
+
+              <pb_type name="lut6" blif_model=".names" num_pb="1" class="lut">
+                <input name="in" num_pins="6" port_class="lut_in"/>
+                <output name="out" num_pins="1" port_class="lut_out"/>
+                <!-- LUT timing using delay matrix -->
+                <!-- These are the physical delay inputs on a Stratix IV LUT but because VPR cannot do LUT rebalancing,
+                    we instead take the average of these numbers to get more stable results
+                  82e-12
+                  173e-12
+                  261e-12
+                  263e-12
+                  398e-12
+                  -->
+                <delay_matrix type="max" in_port="lut6.in" out_port="lut6.out">
+                    235e-12
+                    235e-12
+                    235e-12
+                    235e-12
+                    235e-12
+                    235e-12
+                </delay_matrix>
+              </pb_type>
+
+              <interconnect>
+                <direct name="direct1" input="lut6_mode.in" output="lut6.in"/>
+                <direct name="direct2" input="lut6.out" output="lut6_mode.out"/>
+              </interconnect>
+
+            </pb_type>
+            <interconnect>
+              <direct name="direct1" input="LUT6.LUT6_in" output="lut6_mode.in"/>
+              <direct name="direct2" input="lut6_mode.out" output="LUT6.O6"/>
+            </interconnect>
+          </mode>
+
+
+          <!-- <pb_type blif_model=".names" class="lut" name="LUT5" num_pb="2">
             <input name="in" num_pins="5" port_class="lut_in"/>
             <output name="out" num_pins="1" port_class="lut_out"/>
             <delay_matrix in_port="LUT5.in" out_port="LUT5.out" type="max">
@@ -230,8 +312,8 @@
             <delay_constant in_port="F6MUX.I0" max="10e-12" out_port="F6MUX.O"/>
             <delay_constant in_port="F6MUX.I1" max="10e-12" out_port="F6MUX.O"/>
             <delay_constant in_port="F6MUX.S" max="10e-12" out_port="F6MUX.O"/>
-          </pb_type>
-          <interconnect>
+          </pb_type> -->
+          <!-- <interconnect>
             <direct input="LUT6.LUT6_in[0:4]" name="direct1" output="LUT5[0].in"/>
             <direct input="LUT6.LUT6_in[0:4]" name="direct2" output="LUT5[1].in"/>
             <direct input="LUT5[0].out" name="O5" output="LUT6.O5"/>
@@ -239,7 +321,7 @@
             <direct input="LUT5[0].out" name="F6MUX_I0" output="F6MUX.I0"/>
             <direct input="LUT5[1].out" name="F6MUX_I1" output="F6MUX.I1"/>
             <direct input="LUT6.LUT6_in[5]" name="F6MUX_S" output="F6MUX.S"/>
-          </interconnect>
+          </interconnect> -->
         </pb_type>
         <pb_type name="ff" blif_model=".latch" num_pb="2" class="flipflop">
           <input name="D" num_pins="1" port_class="D"/>
