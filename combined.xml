@@ -365,63 +365,63 @@
 					<delay_constant in_port="ALUT[3].O6" max="2.11e-10" out_port="BLK-TL-SLICEL.DMUX"/>
 					<delay_constant in_port="ALUT[3].O5" max="2.08e-10" out_port="BLK-TL-SLICEL.DMUX"/>
 				</mux>
-				<!-- note: commenting this out gives a chanel width of 214 ???? -->
-
-				<!-- correct -->
+				<!-- correct Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.AX ALUT[0].O5" name="A5FFMUX" output="FDSE[0].D">
-					<delay_constant in_port="BLK-TL-SLICEL.BX" max="2.16e-10" out_port="FDSE[1].D"/>
-					<delay_constant in_port="ALUT[1].O5" max="1.07e-10" out_port="FDSE[1].D"/>
+					<delay_constant in_port="BLK-TL-SLICEL.AX" max="2.0200000000000003e-10" out_port="FDSE[1].D"/>
+					<delay_constant in_port="ALUT[0].O5" max="1.07e-10" out_port="FDSE[1].D"/>
 				</mux>
 
-				<!-- correct /FIXME:: timeing/-->
+				<!-- correct Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.BX ALUT[1].O5" name="B5FFMUX" output="FDSE[1].D">
-					<!-- <delay_constant in_port="BLK-TL-SLICEL.BX" max="2.16e-10" out_port="FDSE[1].D"/> -->
-					<!-- <delay_constant in_port="ALUT[1].O5" max="1.07e-10" out_port="FDSE[1].D"/> -->
+					<delay_constant in_port="BLK-TL-SLICEL.BX" max="2.1900000000000002e-10" out_port="FDSE[1].D"/> 
+				    <delay_constant in_port="ALUT[1].O5" max="9.100000000000001e-11" out_port="FDSE[1].D"/>
 				</mux>
 
-				<!-- correct -->
+				<!-- correct Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.CX ALUT[2].O5" name="C5FFMUX" output="FDSE[2].D">
 					<delay_constant in_port="BLK-TL-SLICEL.CX" max="1.9600000000000002e-10" out_port="FDSE[2].D"/>
 					<delay_constant in_port="ALUT[2].O5" max="1.0900000000000001e-10" out_port="FDSE[2].D"/>
 				</mux>
 
-				<!-- correct -->
+				<!-- correct Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.DX ALUT[3].O5" name="D5FFMUX" output="FDSE[3].D">
-					<delay_constant in_port="BLK-TL-SLICEL.DX" max="1.93e-10" out_port="FDSE[3].D"/>
-					<delay_constant in_port="ALUT[3].O5" max="1.0600000000000001e-10" out_port="FDSE[3].D"/>
+					<delay_constant in_port="BLK-TL-SLICEL.DX" max="1.9600000000000002e-10" out_port="FDSE[3].D"/>
+					<delay_constant in_port="ALUT[3].O5" max="9e-11" out_port="FDSE[3].D"/>
 				</mux>
 
 
-				<!-- issue:: missing muxes for FDSE[5-7] for D input! -->
-
-
-				<!-- Correct if no carry /TIMING/-->
+				<!-- Correct if no carry Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.AX ALUT[0].O5 ALUT[0].O6" name="A5DDMUX" output="FDSE[4].D">
-					<delay_constant in_port="BLK-TL-SLICEL.AX" max="2.0200000000000003e-10" out_port="FDSE[4].D"/>
-					<delay_constant in_port="ALUT[0].O5" max="1.07e-10" out_port="FDSE[4].D"/>
-					<delay_constant in_port="ALUT[0].O6" max="1.07e-10" out_port="FDSE[4].D"/>
+					<delay_constant in_port="BLK-TL-SLICEL.AX" max="2.17e-10" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[0].O5" max="9.400000000000001e-11" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[0].O6" max="1.0900000000000001e-10" out_port="FDSE[4].D"/>
 				</mux>
 
-				<!-- Correct if no carry /TIMING/-->
+				<!-- Correct if no carry Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.BX ALUT[1].O5 ALUT[2].O6" name="B5DDMUX" output="FDSE[5].D">
-
+					<delay_constant in_port="BLK-TL-SLICEL.BX" max="2.3100000000000003e-10" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[1].O5" max="9.500000000000001e-11" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[1].O6" max="1.05e-10" out_port="FDSE[4].D"/>
 				</mux>
 
-				<!-- Correct if no carry /TIMING/-->
+				<!-- Correct if no carry Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.CX ALUT[2].O5 ALUT[2].O6" name="C5DDMUX" output="FDSE[6].D">
-
+					<delay_constant in_port="BLK-TL-SLICEL.CX" max="2.14e-10" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[2].O5" max="9.6e-11" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[2].O6" max="1.07e-10" out_port="FDSE[4].D"/>
 				</mux>
 
-				<!-- Correct if no carry /TIMING/-->
+				<!-- Correct if no carry Timing = Verified-->
 				<mux input="BLK-TL-SLICEL.DX ALUT[3].O5 ALUT[3].O6" name="D5DDMUX" output="FDSE[7].D">
-
+					<delay_constant in_port="BLK-TL-SLICEL.DX" max="2.14e-10" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[3].O5" max="1.0100000000000001e-10" out_port="FDSE[4].D"/>
+					<delay_constant in_port="ALUT[3].O6" max="1.07e-10" out_port="FDSE[4].D"/>
 				</mux>
 
-				<!-- issue remidied save for timing. TODO:: next step = timing -->
 
 				
 
-				<!-- switch blocks clocks required for all switch blocks -->
+				<!-- switch blocks timeing required for all switch blocks -->
 
 				<!-- xilinx varified -->
 				<complete input="FDSE[7:0].Q" name="FF_to_LUT" output="ALUT[3:0].A[5:0]"/>
