@@ -122,6 +122,7 @@
 		<switch_block type="wilton" fs="3"/>
 		<connection_block input_switch_name="ipin_cblock"/>
 	</device>
+	<!-- FIXME: MUST give correct values -->
 	<switchlist>
 		<!-- VB: the mux_trans_size and buf_size data below is in minimum width transistor *areas*, assuming the purple
 			 book area formula. This means the mux transistors are about 5x minimum drive strength.
@@ -340,9 +341,9 @@
 				<!-- Clock, Clock Enable and Reset -->
 				<!-- correct if carry exclueded -->
 				<mux input="FDSE[0].Q ALUT[0].O6 ALUT[0].O5" name="AOUTMUX" output="BLK-TL-SLICEL.AMUX">
-					<delay_constant in_port="FDSE[0].Q" max="1.75e-10" out_port="BLK-TL-SLICEL.AMUX"/>
-					<delay_constant in_port="ALUT[0].O6" max="2.09e-10" out_port="BLK-TL-SLICEL.AMUX"/>
-					<delay_constant in_port="ALUT[0].O5" max="2.0200000000000003e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+					<delay_constant in_port="FDSE[0].Q" max="1.7100000000000003e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+					<delay_constant in_port="ALUT[0].O6" max="2.06e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+					<delay_constant in_port="ALUT[0].O5" max="2.04e-10" out_port="BLK-TL-SLICEL.AMUX"/>
 				</mux>
 
 				<!-- correct if carry exclueded -->
@@ -429,7 +430,7 @@
 
 				<!-- xilinx confirmed. Note: may need to find a way to get the BLK->ALUT things out. Trying to do a dirrect causes overused net errors 
 				this type of thing is in the Earch.xml though.-->
-				<complete input="BLK-TL-SLICEL.A_in BLK-TL-SLICEL.B_in BLK-TL-SLICEL.C_in BLK-TL-SLICEL.D_in ALUT[3:0].O5 ALUT[3:0].O6" name="all_pin_to_pin1" output="ALUT[3:0].A"/>
+				<complete input="BLK-TL-SLICEL.A_in BLK-TL-SLICEL.B_in BLK-TL-SLICEL.C_in BLK-TL-SLICEL.D_in ALUT[3:0].O5 ALUT[3:0].O6" name="LUT_out_to_in" output="ALUT[3:0].A"/>
 				
 				<!-- <complete input="BLK-TL-SLICEL.B_in ALUT[1].O5 ALUT[1].O6" name="all_pin_to_pin2" output="ALUT[1].A"/>
 				<complete input="BLK-TL-SLICEL.C_in ALUT[2].O5 ALUT[2].O6" name="all_pin_to_pin3" output="ALUT[2].A"/>
