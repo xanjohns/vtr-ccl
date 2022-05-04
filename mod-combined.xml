@@ -212,18 +212,18 @@
       <pb_type name="fle" num_pb="4">
         <input name="in" num_pins="6"/>
         <input name="inX" num_pins="1"/>
-        <output name="out" num_pins="3"/>
+        <output name="out" num_pins="1"/>
+        <output name="outMUX" num_pins="1"/>
+        <output name="outQ" num_pins="1"/>
         <clock name="clk" num_pins="1"/>
         <pb_type name="ALUT" num_pb="1">
           <input name="A" num_pins="6"/>
           <output name="O5" num_pins="1"/>
           <output name="O6" num_pins="1"/>
-
           <mode name="n2_lut5">
             <pb_type name="lut5_mode" num_pb="1">
               <input name="in" num_pins="5"/>
               <output name="out" num_pins="1"/>
-
               <pb_type name="lut5" blif_model=".names" num_pb="1" class="lut">
                 <input name="in" num_pins="5" port_class="lut_in"/>
                 <output name="out" num_pins="1" port_class="lut_out"/>
@@ -244,12 +244,10 @@
 									235e-12
                 </delay_matrix>
               </pb_type>
-
               <interconnect>
                 <direct name="direct1" input="lut5_mode.in" output="lut5.in"/>
                 <direct name="direct2" input="lut5.out" output="lut5_mode.out"/>
               </interconnect>
-
             </pb_type>
             <interconnect>
               <direct name="direct1" input="ALUT.A[4:0]" output="lut5_mode.in"/>
@@ -258,8 +256,6 @@
               <!-- <direct name="direct4" input="lut5_mode.out" output="ALUT.O6"/> -->
             </interconnect>
           </mode>
-
-
           <mode name="n1_lut6">
             <pb_type name="lut6_mode" num_pb="1">
               <input name="in" num_pins="6"/>
@@ -286,22 +282,19 @@
 									235e-12
                 </delay_matrix>
               </pb_type>
-
               <interconnect>
                 <direct name="direct1" input="lut6_mode.in" output="lut6.in"/>
                 <direct name="direct2" input="lut6.out" output="lut6_mode.out"/>
               </interconnect>
-
             </pb_type>
             <interconnect>
               <direct name="direct1" input="ALUT.A" output="lut6_mode.in"/>
               <direct name="direct2" input="lut6_mode.out" output="ALUT.O6"/>
             </interconnect>
           </mode>
-
         </pb_type>
 
-        <pb_type blif_model=".latch" name="FDSE" num_pb="8" class="flipflop">
+        <pb_type blif_model=".latch" name="FDSE" num_pb="2" class="flipflop">
           <clock name="clk" num_pins="1" port_class="clock"/>
           <input name="D" num_pins="1" port_class="D"/>
           <output name="Q" num_pins="1" port_class="Q"/>
@@ -318,6 +311,11 @@
             <meta name="subtype">flipflop</meta>
           </metadata>
         </pb_type>
+        <interconnect>
+          <direct name="inputs" input="fle.in" output="ALUT.A"/>
+          <mux name="AOUTMUX" input="ALUT.O5 ALUT.O6 FDSE[0].Q" output="fle.outMUX"/>
+          <mux name="A5FFMUX" input="ALUT.O5 ALUT.O6 fle.inX" output="FDSE[1].D"/>
+        </interconnect>
       </pb_type>
 
       <interconnect>
@@ -328,62 +326,6 @@
         <!-- AMUX-DMUX output -->
         <!-- Carry -->
         <!-- Clock, Clock Enable and Reset -->
-        <mux input="FDSE[0].Q ALUT[0].O6 ALUT[0].O5" name="AOUTMUX" output="clb.AMUX">
-          <delay_constant in_port="FDSE[0].Q" max="1.75e-10" out_port="clb.AMUX"/>
-          <delay_constant in_port="ALUT[0].O6" max="2.09e-10" out_port="clb.AMUX"/>
-          <delay_constant in_port="ALUT[0].O5" max="2.0200000000000003e-10" out_port="clb.AMUX"/>
-        </mux>
-
-        <mux input="FDSE[1].Q ALUT[1].O6 ALUT[1].O5" name="BOUTMUX" output="clb.BMUX">
-          <delay_constant in_port="FDSE[1].Q" max="1.72e-10" out_port="clb.BMUX"/>
-          <delay_constant in_port="ALUT[1].O6" max="2.08e-10" out_port="clb.BMUX"/>
-          <delay_constant in_port="ALUT[1].O5" max="2.08e-10" out_port="clb.BMUX"/>
-        </mux>
-
-        <mux input="FDSE[2].Q ALUT[2].O6 ALUT[2].O5" name="COUTMUX" output="clb.CMUX">
-          <delay_constant in_port="FDSE[2].Q" max="1.73e-10" out_port="clb.CMUX"/>
-          <delay_constant in_port="ALUT[2].O6" max="2.05e-10" out_port="clb.CMUX"/>
-          <delay_constant in_port="ALUT[2].O5" max="2.0300000000000002e-10" out_port="clb.CMUX"/>
-        </mux>
-
-        <mux input="FDSE[3].Q ALUT[3].O6 ALUT[3].O5" name="DOUTMUX" output="clb.DMUX">
-          <delay_constant in_port="FDSE[3].Q" max="1.75e-10" out_port="clb.DMUX"/>
-          <delay_constant in_port="ALUT[3].O6" max="2.11e-10" out_port="clb.DMUX"/>
-          <delay_constant in_port="ALUT[3].O5" max="2.08e-10" out_port="clb.DMUX"/>
-        </mux>
-        <!-- note: commenting this out gives a chanel width of 214 ???? -->
-
-        <mux input="clb.AX ALUT[0].O5 ALUT[0].O6" name="A5FFMUX" output="FDSE[0].D">
-          <delay_constant in_port="clb.AX" max="2.0200000000000003e-10" out_port="FDSE[0].D"/>
-          <delay_constant in_port="ALUT[0].O5" max="1.07e-10" out_port="FDSE[0].D"/>
-        </mux>
-
-
-        <mux input="clb.BX ALUT[1].O5" name="B5FFMUX" output="FDSE[1].D">
-          <delay_constant in_port="clb.BX" max="2.16e-10" out_port="FDSE[1].D"/>
-          <delay_constant in_port="ALUT[1].O5" max="1.07e-10" out_port="FDSE[1].D"/>
-        </mux>
-
-        <mux input="clb.CX ALUT[2].O5" name="C5FFMUX" output="FDSE[2].D">
-          <delay_constant in_port="clb.CX" max="1.9600000000000002e-10" out_port="FDSE[2].D"/>
-          <delay_constant in_port="ALUT[2].O5" max="1.0900000000000001e-10" out_port="FDSE[2].D"/>
-        </mux>
-
-        <mux input="clb.DX ALUT[3].O5" name="D5FFMUX" output="FDSE[3].D">
-          <delay_constant in_port="clb.DX" max="1.93e-10" out_port="FDSE[3].D"/>
-          <delay_constant in_port="ALUT[3].O5" max="1.0600000000000001e-10" out_port="FDSE[3].D"/>
-        </mux>
-
-        <!-- <direct input="clb.A_in" name="A" output="ALUT[0].A"/> -->
-        <!-- <direct input="clb.AX" name="AX" output="F7AMUX[0].S"/> -->
-        <!-- <direct input="clb.B_in" name="B" output="ALUT[1].A"/> -->
-        <!-- <direct input="clb.BX" name="BX" output="F8MUX.S"/> -->
-        <!-- <direct input="clb.C_in" name="C" output="ALUT[2].A"/> -->
-        <!-- <direct input="clb.CX" name="CX" output="F7AMUX[1].S"/> -->
-        <!-- <direct input="clb.D_in" name="D1" output="ALUT[3].A"/> -->
-
-        <!-- switch blocks -->
-        <!-- 250 chanels-->
 
         <complete input="clb.I fle[3:0].out" name="crossbar" output="fle[3:0].in fle[3:0].inX"/>
 
