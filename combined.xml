@@ -146,35 +146,62 @@
 				   With the 96 nm half pitch, such wires would take 60 um of height, vs. a 90 nm high (approximated as square) Stratix IV tile so this seems
 				   reasonable. Using a tile length of 90 nm, corresponding to the length of a Stratix IV tile if it were square. -->
 		
-		<segment freq="0.203822" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+		<segment axis="x" name="len1_x" freq="0.258064" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
 			<mux name="0"/>
 			<sb type="pattern">1 1</sb>
 			<cb type="pattern">1</cb>
 		</segment>
-		<segment freq="0.203822" length="2" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+		<segment axis="y" name="len1_y" freq="0.168421" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
 			<mux name="0"/>
-			<sb type="pattern">1 1 0</sb>
+			<sb type="pattern">1 1</sb>
+			<cb type="pattern">1</cb>
+		</segment>
+
+		<segment axis="x" name="len2_x" freq="0.258064" length="2" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1</sb>
 			<cb type="pattern">1 1</cb>
 		</segment>
-		<segment freq="0.305732" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+		<segment axis="y" name="len2_y" freq="0.084210" length="2" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1</sb>
+			<cb type="pattern">1 1</cb>
+		</segment>
+
+		<segment axis="x" name="len4_x" freq="0.258065" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
 			<mux name="0"/>
 			<sb type="pattern">1 1 1 1 1</sb>
 			<cb type="pattern">1 1 1 1</cb>
 		</segment>
-		<segment freq="0.152866" length="6" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+		<segment axis="y" name="len4_y" freq="0.336842" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
 			<mux name="0"/>
-			<sb type="pattern">1 1 1 1 1 0 1</sb>
+			<sb type="pattern">1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1</cb>
+		</segment>
+
+		<!-- No length 6 horizontal chanels -->
+		<segment axis="y" name="len6_y" freq="0.252631" length="6" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1 1 1</sb>
 			<cb type="pattern">1 1 1 1 1 1</cb>
 		</segment>
-		<segment freq="0.076434" length="12" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+
+		<segment axis="x" name="len12_x" freq="0.096774" length="12" type="unidir" Rmetal="101" Cmetal="22.5e-15">
 			<mux name="0"/>
-			<sb type="pattern">1 1 1 1 1 0 0 1 0 1 1 1 0</sb>
-			<cb type="pattern">1 1 1 1 0 0 1 0 1 1 1 0</cb>
+			<sb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1</cb>
 		</segment>
-		<segment freq="0.057324" length="18" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+		<segment axis="y" name="len12_y" freq="0.063158" length="12" type="unidir" Rmetal="101" Cmetal="22.5e-15">
 			<mux name="0"/>
-			<sb type="pattern">1 1 1 1 1 1 0 1 0 0 0 1 1 1 0 1 0 1 0</sb>
-			<cb type="pattern">1 1 1 1 1 1 0 1 0 0 0 1 1 1 0 1 0 1</cb>
+			<sb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1</cb>
+		</segment>
+
+		<!-- No length 18 horizontal chanels -->
+		<segment axis="y" name="len18_y" freq="0.094736" length="18" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</cb>
 		</segment>
 	</segmentlist>
 	<complexblocklist>
