@@ -145,10 +145,63 @@
 		<!--- VB & JL: using ITRS metal stack data, 96 nm half pitch wires, which are intermediate metal width/space.  
 				   With the 96 nm half pitch, such wires would take 60 um of height, vs. a 90 nm high (approximated as square) Stratix IV tile so this seems
 				   reasonable. Using a tile length of 90 nm, corresponding to the length of a Stratix IV tile if it were square. -->
-		<segment freq="1.000000" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+		
+		<segment axis="x" name="len1_x" freq="0.258064" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1</sb>
+			<cb type="pattern">1</cb>
+		</segment>
+		<segment axis="y" name="len1_y" freq="0.168421" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1</sb>
+			<cb type="pattern">1</cb>
+		</segment>
+
+		<segment axis="x" name="len2_x" freq="0.258064" length="2" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1</sb>
+			<cb type="pattern">1 1</cb>
+		</segment>
+		<segment axis="y" name="len2_y" freq="0.084210" length="2" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1</sb>
+			<cb type="pattern">1 1</cb>
+		</segment>
+
+		<segment axis="x" name="len4_x" freq="0.258065" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
 			<mux name="0"/>
 			<sb type="pattern">1 1 1 1 1</sb>
 			<cb type="pattern">1 1 1 1</cb>
+		</segment>
+		<segment axis="y" name="len4_y" freq="0.336842" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1</cb>
+		</segment>
+
+		<!-- No length 6 horizontal chanels -->
+		<segment axis="y" name="len6_y" freq="0.252631" length="6" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1 1 1</cb>
+		</segment>
+
+		<segment axis="x" name="len12_x" freq="0.096774" length="12" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1</cb>
+		</segment>
+		<segment axis="y" name="len12_y" freq="0.063158" length="12" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1</cb>
+		</segment>
+
+		<!-- No length 18 horizontal chanels -->
+		<segment axis="y" name="len18_y" freq="0.094736" length="18" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</sb>
+			<cb type="pattern">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</cb>
 		</segment>
 	</segmentlist>
 	<complexblocklist>
@@ -430,7 +483,7 @@
 
 				<!-- xilinx confirmed. Note: may need to find a way to get the BLK->ALUT things out. Trying to do a dirrect causes overused net errors 
 				this type of thing is in the Earch.xml though.-->
-				<complete input="BLK-TL-SLICEL.A_in BLK-TL-SLICEL.B_in BLK-TL-SLICEL.C_in BLK-TL-SLICEL.D_in ALUT[3:0].O5 ALUT[3:0].O6" name="LUT_out_to_in" output="ALUT[3:0].A"/>
+				<complete input="BLK-TL-SLICEL.A_in BLK-TL-SLICEL.B_in BLK-TL-SLICEL.C_in BLK-TL-SLICEL.D_in ALUT[3:0].O5 ALUT[3:0].O6" name="all_pin_to_pin1" output="ALUT[3:0].A"/>
 				
 				<!-- <complete input="BLK-TL-SLICEL.B_in ALUT[1].O5 ALUT[1].O6" name="all_pin_to_pin2" output="ALUT[1].A"/>
 				<complete input="BLK-TL-SLICEL.C_in ALUT[2].O5 ALUT[2].O6" name="all_pin_to_pin3" output="ALUT[2].A"/>
