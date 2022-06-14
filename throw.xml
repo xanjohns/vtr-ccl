@@ -1,0 +1,336 @@
+<architecture>
+  <!-- 
+         ODIN II specific config begins 
+         Describes the types of user-specified netlist blocks (in blif, this corresponds to 
+         ".model [type_of_block]") that this architecture supports.
+
+         Note: Basic LUTs, I/Os, and flip-flops are not included here as there are 
+         already special structures in blif (.names, .input, .output, and .latch) 
+         that describe them.
+    -->
+  <models>
+  </models>
+  <tiles>
+    <tile name="io" area="0">
+      <sub_tile name="io" capacity="8">
+        <equivalent_sites>
+          <site pb_type="io" pin_mapping="direct"/>
+        </equivalent_sites>
+        <input name="outpad" num_pins="1"/>
+        <output name="inpad" num_pins="1"/>
+        <clock name="clock" num_pins="1"/>
+        <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+        <pinlocations pattern="custom">
+          <loc side="left">io.outpad io.inpad io.clock</loc>
+          <loc side="top">io.outpad io.inpad io.clock</loc>
+          <loc side="right">io.outpad io.inpad io.clock</loc>
+          <loc side="bottom">io.outpad io.inpad io.clock</loc>
+        </pinlocations>
+      </sub_tile>
+    </tile>
+    <tile name="clb" area="53894">
+      <sub_tile name="clb">
+        <equivalent_sites>
+          <site pb_type="clb" pin_mapping="direct"/>
+        </equivalent_sites>
+        <input name="I" num_pins="40" equivalent="full"/>
+        <output name="O" num_pins="10" equivalent="instance"/>
+        <clock name="clk" num_pins="1"/>
+        <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10"/>
+        <pinlocations pattern="spread"/>
+      </sub_tile>
+    </tile>
+  </tiles>
+  <!-- ODIN II specific config ends -->
+  <layout>
+    <!-- Physical descriptions begin -->
+    <auto_layout aspect_ratio="1.0">
+      <perimeter type="io" priority="101"/>
+      <corners type="EMPTY" priority="102"/>
+      <fill type="clb" priority="10"/>
+    </auto_layout>
+
+  </layout>
+  <device>
+    <sizing R_minW_nmos="13090" R_minW_pmos="19086.83"/>
+    <area grid_logic_tile_area="0"/>
+    <chan_width_distr>
+      <x distr="uniform" peak="1.000000"/>
+      <y distr="uniform" peak="1.000000"/>
+    </chan_width_distr>
+    <switch_block type="custom"/>
+    <connection_block input_switch_name="ipin_cblock"/>
+  </device>
+  <switchlist>
+    <switch type="mux" name="L4_driver" R="0.0" Cin="0.0" Cout="0.0" Tdel="207.9e-12" mux_trans_size="2.377" buf_size="35.69"/>
+    <!-- Delay of L16 driver is scaled from L4 by a factor of 1.5x (based on numbers from the Titan Stratix IV architecture file)
+	 Area numbers will not be totally accurate because of the same buf_size -->
+    <switch type="mux" name="0" R="0.0" Cin="0.0" Cout="0.0" Tdel="312.9e-12" mux_trans_size="2.377" buf_size="35.69"/> 
+    <switch type="mux" name="ipin_cblock" R="0.0" Cout="0.0" Cin="0.0" Tdel="130e-12" mux_trans_size="1.508" buf_size="11.71"/>
+  </switchlist>
+  <segmentlist>
+    <!-- Normal length 3: -->
+    <segment axis="x" name="len3_x" freq="0.45" length="3" type="unidir" Rmetal="101" Cmetal="22.5e-15">  <!-- in netcracker H=39.490445% and V=60.5095541%-->
+			<mux name="0"/>
+			<sb type="pattern">1 1 1 1</sb>
+			<cb type="pattern">1 1 1</cb>
+		</segment>
+    <!-- diagonal length 1: -->
+    <!-- diagonal length 6: -->
+    <segment axis="x" name="len2D_x" freq="0.55" length="2" type="unidir" Rmetal="101" Cmetal="22.5e-15"> <!-- FYI this is still bairly off-->
+			<mux name="0"/>
+			<sb type="pattern">1 0 1</sb>
+			<cb type="pattern">1 1</cb>
+		</segment>
+		<segment axis="y" name="len4D_y" freq="40" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+			<mux name="0"/>
+			<sb type="pattern">1 0 0 0 1</sb>
+			<cb type="pattern">1 0 0 1</cb>
+		</segment>
+  </segmentlist>
+  
+  <complexblocklist>
+    <!-- Define I/O pads begin -->
+    <!-- Not sure of the area of an I/O (varies widely), and it's not relevant to the design of the FPGA core, so we're setting it to 0. -->
+    <pb_type name="io">
+      <input name="outpad" num_pins="1"/>
+      <output name="inpad" num_pins="1"/>
+      <clock name="clock" num_pins="1"/>
+      <!-- IOs can operate as either inputs or outputs.
+	     Delays below come from Ian Kuon. They are small, so they should be interpreted as
+	     the delays to and from registers in the I/O (and generally I/Os are registered 
+	     today and that is when you timing analyze them.
+	     -->
+      <mode name="inpad">
+        <pb_type name="inpad" blif_model=".input" num_pb="1">
+          <output name="inpad" num_pins="1"/>
+        </pb_type>
+        <interconnect>
+          <direct name="inpad" input="inpad.inpad" output="io.inpad">
+            <delay_constant max="4.243e-11" in_port="inpad.inpad" out_port="io.inpad"/>
+          </direct>
+        </interconnect>
+      </mode>
+      <mode name="outpad">
+        <pb_type name="outpad" blif_model=".output" num_pb="1">
+          <input name="outpad" num_pins="1"/>
+        </pb_type>
+        <interconnect>
+          <direct name="outpad" input="io.outpad" output="outpad.outpad">
+            <delay_constant max="1.394e-11" in_port="io.outpad" out_port="outpad.outpad"/>
+          </direct>
+        </interconnect>
+      </mode>
+      <!-- Every input pin is driven by 15% of the tracks in a channel, every output pin is driven by 10% of the tracks in a channel -->
+      <!-- IOs go on the periphery of the FPGA, for consistency, 
+          make it physically equivalent on all sides so that only one definition of I/Os is needed.
+          If I do not make a physically equivalent definition, then I need to define 4 different I/Os, one for each side of the FPGA
+        -->
+      <!-- Place I/Os on the sides of the FPGA -->
+      <power method="ignore"/>
+    </pb_type>
+    <!-- Define I/O pads ends -->
+    <!-- Define general purpose logic block (CLB) begin -->
+    <pb_type name="clb">
+      <input name="I" num_pins="40" equivalent="full"/>
+      <output name="O" num_pins="10" equivalent="instance"/>
+      <clock name="clk" num_pins="1"/>
+      <!-- Describe basic logic element.  
+             Each basic logic element has a 6-LUT that can be optionally registered
+        -->
+      <pb_type name="fle" num_pb="10">
+        <input name="in" num_pins="6"/>
+        <output name="out" num_pins="1"/>
+        <clock name="clk" num_pins="1"/>
+        <!-- 6-LUT mode definition begin -->
+        <mode name="n1_lut6">
+          <!-- Define 6-LUT mode -->
+          <pb_type name="ble6" num_pb="1">
+            <input name="in" num_pins="6"/>
+            <output name="out" num_pins="1"/>
+            <clock name="clk" num_pins="1"/>
+            <!-- Define LUT -->
+            <pb_type name="lut6" blif_model=".names" num_pb="1" class="lut">
+              <input name="in" num_pins="6" port_class="lut_in"/>
+              <output name="out" num_pins="1" port_class="lut_out"/>
+              <!-- LUT timing using delay matrix -->
+              <!-- These are the physical delay inputs on a Stratix IV LUT but because VPR cannot do LUT rebalancing,
+                       we instead take the average of these numbers to get more stable results
+                  82e-12
+                  173e-12
+                  261e-12
+                  263e-12
+                  398e-12
+                  397e-12
+                  -->
+              <delay_matrix type="max" in_port="lut6.in" out_port="lut6.out">
+                261e-12
+                261e-12
+                261e-12
+                261e-12
+                261e-12
+                261e-12
+              </delay_matrix>
+            </pb_type>
+            <!-- Define flip-flop -->
+            <pb_type name="ff" blif_model=".latch" num_pb="1" class="flipflop">
+              <input name="D" num_pins="1" port_class="D"/>
+              <output name="Q" num_pins="1" port_class="Q"/>
+              <clock name="clk" num_pins="1" port_class="clock"/>
+              <T_setup value="66e-12" port="ff.D" clock="clk"/>
+              <T_clock_to_Q max="124e-12" port="ff.Q" clock="clk"/>
+            </pb_type>
+            <interconnect>
+              <direct name="direct1" input="ble6.in" output="lut6[0:0].in"/>
+              <direct name="direct2" input="lut6.out" output="ff.D">
+                <!-- Advanced user option that tells CAD tool to find LUT+FF pairs in netlist -->
+                <pack_pattern name="ble6" in_port="lut6.out" out_port="ff.D"/>
+              </direct>
+              <direct name="direct3" input="ble6.clk" output="ff.clk"/>
+              <mux name="mux1" input="ff.Q lut6.out" output="ble6.out">
+                <!-- LUT to output is faster than FF to output on a Stratix IV -->
+                <delay_constant max="25e-12" in_port="lut6.out" out_port="ble6.out"/>
+                <delay_constant max="45e-12" in_port="ff.Q" out_port="ble6.out"/>
+              </mux>
+            </interconnect>
+          </pb_type>
+          <interconnect>
+            <direct name="direct1" input="fle.in" output="ble6.in"/>
+            <direct name="direct2" input="ble6.out" output="fle.out[0:0]"/>
+            <direct name="direct3" input="fle.clk" output="ble6.clk"/>
+          </interconnect>
+        </mode>
+        <!-- 6-LUT mode definition end -->
+      </pb_type>
+      <interconnect>
+        <!-- We use a full crossbar to get logical equivalence at inputs of CLB 
+		     The delays below come from Stratix IV. the delay through a connection block
+		     input mux + the crossbar in Stratix IV is 167 ps. We already have a 72 ps 
+		     delay on the connection block input mux (modeled by Ian Kuon), so the remaining
+		     delay within the crossbar is 95 ps. 
+		     The delays of cluster feedbacks in Stratix IV is 100 ps, when driven by a LUT.
+		     Since all our outputs LUT outputs go to a BLE output, and have a delay of 
+		     25 ps to do so, we subtract 25 ps from the 100 ps delay of a feedback
+		     to get the part that should be marked on the crossbar.	 -->
+        <complete name="crossbar" input="clb.I fle[9:0].out" output="fle[9:0].in">
+          <delay_constant max="95e-12" in_port="clb.I" out_port="fle[9:0].in"/>
+          <delay_constant max="75e-12" in_port="fle[9:0].out" out_port="fle[9:0].in"/>
+        </complete>
+        <complete name="clks" input="clb.clk" output="fle[9:0].clk">
+        </complete>
+        <!-- This way of specifying direct connection to clb outputs is important because this architecture uses automatic spreading of opins.  
+               By grouping to output pins in this fashion, if a logic block is completely filled by 6-LUTs, 
+               then the outputs those 6-LUTs take get evenly distributed across all four sides of the CLB instead of clumped on two sides (which is what happens with a more
+               naive specification).
+          -->
+        <direct name="clbouts1" input="fle[9:0].out" output="clb.O"/>
+      </interconnect>
+      <!-- Every input pin is driven by 15% of the tracks in a channel, every output pin is driven by 10% of the tracks in a channel -->
+      <!-- Place this general purpose logic block in any unspecified column -->
+    </pb_type>
+    <!-- Define general purpose logic block (CLB) ends -->
+
+
+    <!-- Define fracturable memory end -->
+  </complexblocklist>
+
+  <switchblocklist>
+    <switchblock name="wilton_turn_clockwise_core" type="unidir">
+      <switchblock_location type="EVERYWHERE"/>
+      <switchfuncs>
+        <!-- Clock-wise turns -->
+        <func type="tl" formula="W-t-1"/>
+        <!-- top to left -->
+        <func type="rt" formula="t"/>
+        <!-- right to top -->
+        <func type="br" formula="W-t-1"/>
+        <!-- bottom to right -->
+        <func type="lb" formula="t"/>
+        <!-- left to bottom -->
+      </switchfuncs>
+      <!-- L16 drivers -->
+      <wireconn num_conns="min(from,to)" from_type="len4D_y" from_switchpoint="0" to_type="len2D_x" to_switchpoint="0"/>
+      <!-- <wireconn num_conns="1*to" from_type="L16" from_switchpoint="0" to_type="L4" to_switchpoint="0"/> -->
+      <!-- <wireconn num_conns="10*to" from_type="L4" from_switchpoint="0" to_type="L16" to_switchpoint="0"/> -->
+      <!-- L4 drivers 
+
+               Driving from L16 (few) to L4 (many) preferr driving from end-point of L16, although since there are many they will
+               all be multiply connected.
+               
+               Driving from L4 (many) to L4 (many) shuffle the switchpoints so the L4's are driven from a variety of switchpoints.
+               Since the actual number L4s starting/ending are equal, using 'fixed' from_order would mean only switchpoint 0 -> 0
+               connections. A 'shuffled' order will mix-up the from switchpoints for more diversity.
+               -->
+      <!-- <wireconn num_conns="2*to" from_order="shuffled">
+        <from type="L16" switchpoint="0,12,8,4"/>
+        <to type="L4" switchpoint="0"/>
+      </wireconn> -->
+    </switchblock>
+    <switchblock name="wilton_turn_c_clockwise_core" type="unidir">
+      <switchblock_location type="EVERYWHERE"/>
+      <switchfuncs>
+        <!-- Clock-wise turns -->
+        <func type="lt" formula="W-t-1"/>
+        <!-- top to left -->
+        <func type="tr" formula="t"/>
+        <!-- right to top -->
+        <func type="rb" formula="W-t-1"/>
+        <!-- bottom to right -->
+        <func type="bl" formula="t"/>
+        <!-- left to bottom -->
+      </switchfuncs>
+      <!-- L16 drivers -->
+      <wireconn num_conns="min(from,to)" from_type="len2D_x" from_switchpoint="0" to_type="len4D_y" to_switchpoint="0"/>
+      <!-- <wireconn num_conns="1*to" from_type="L16" from_switchpoint="0" to_type="L4" to_switchpoint="0"/> -->
+      <!-- <wireconn num_conns="10*to" from_type="L4" from_switchpoint="0" to_type="L16" to_switchpoint="0"/> -->
+      <!-- L4 drivers 
+
+               Driving from L16 (few) to L4 (many) preferr driving from end-point of L16, although since there are many they will
+               all be multiply connected.
+               
+               Driving from L4 (many) to L4 (many) shuffle the switchpoints so the L4's are driven from a variety of switchpoints.
+               Since the actual number L4s starting/ending are equal, using 'fixed' from_order would mean only switchpoint 0 -> 0
+               connections. A 'shuffled' order will mix-up the from switchpoints for more diversity.
+               -->
+      <!-- <wireconn num_conns="2*to" from_order="shuffled">
+        <from type="L16" switchpoint="0,12,8,4"/>
+        <to type="L4" switchpoint="0"/>
+      </wireconn> -->
+    </switchblock>
+   <!-- just do strait lines for len3 -->
+    <switchblock name="len3_shorts" type="unidir">
+      <switchblock_location type="EVERYWHERE"/>
+      <switchfuncs>
+      </switchfuncs>
+      <!-- L16 drivers -->
+      <wireconn num_conns="min(from,to)" from_type="len3_x" from_switchpoint="0" to_type="len3_x" to_switchpoint="0"/>
+      <!-- <wireconn num_conns="1*to" from_type="L16" from_switchpoint="0" to_type="L4" to_switchpoint="0"/> -->
+      <!-- <wireconn num_conns="10*to" from_type="L4" from_switchpoint="0" to_type="L16" to_switchpoint="0"/> -->
+      <!-- L4 drivers 
+
+               Driving from L16 (few) to L4 (many) preferr driving from end-point of L16, although since there are many they will
+               all be multiply connected.
+               
+               Driving from L4 (many) to L4 (many) shuffle the switchpoints so the L4's are driven from a variety of switchpoints.
+               Since the actual number L4s starting/ending are equal, using 'fixed' from_order would mean only switchpoint 0 -> 0
+               connections. A 'shuffled' order will mix-up the from switchpoints for more diversity.
+               -->
+      <!-- <wireconn num_conns="2*to" from_order="shuffled">
+        <from type="L16" switchpoint="0,12,8,4"/>
+        <to type="L4" switchpoint="0"/>
+      </wireconn> -->
+    </switchblock>
+
+  </switchblocklist>
+
+  <power>
+    <local_interconnect C_wire="2.5e-10"/>
+    <mux_transistor_size mux_transistor_size="3"/>
+    <FF_size FF_size="4"/>
+    <LUT_transistor_size LUT_transistor_size="4"/>
+  </power>
+  <clocks>
+    <clock buffer_size="auto" C_wire="2.5e-10"/>
+  </clocks>
+</architecture>
+
