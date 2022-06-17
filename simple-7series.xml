@@ -100,12 +100,12 @@
     <!-- TODO: For proper timing, Xilinx specific values for Rmetal and Cmetal are required.
     For now we approximate using the values given in the k6_N10_40nm arch -->
 
-        <segment axis="x" name="len1_x" freq="0.258064" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+        <segment axis="x" name="len1_x" freq="0.112903" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
             <mux name="0"/>
             <sb type="pattern">1 1</sb>
             <cb type="pattern">1</cb>
         </segment>
-        <segment axis="y" name="len1_y" freq="0.168421" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+        <segment axis="y" name="len1_y" freq="0.073684" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
             <mux name="0"/>
             <sb type="pattern">1 1</sb>
             <cb type="pattern">1</cb>
@@ -197,7 +197,7 @@
   Xilinx routing is excluded. -->
 
   <!-- all length 4 vertical wires are part of diagonal components. We split the vertical contribution of length 4 
-  wires into four separate parts so that all intercardinal directions may be specified without conflict. 
+  wires into four separate parts so that all intercardinal directions may be specified without conflict when SB unions occur. 
   The same thing is done to length 2 wires-->
   <segment axis="y" name="1len4D_y" freq="0.084211" length="4" type="unidir" Rmetal="101" Cmetal="22.5e-15">
       <mux name="0"/>
@@ -242,7 +242,50 @@
       <cb type="pattern">1 0</cb>
     </segment>
 
+    <!-- L1->L1 diagonals -->
+    <segment axis="y" name="len1D_y" freq="0.023684" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+      <mux name="0"/>
+      <sb type="pattern">1 1</sb>
+      <cb type="pattern">1</cb>
+  </segment>
+  <segment axis="y" name="2len1D_y" freq="0.023684" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+      <mux name="0"/>
+      <sb type="pattern">1 1</sb>
+      <cb type="pattern">1</cb>
+  </segment>
+  <segment axis="y" name="3len1D_y" freq="0.023684" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+    <mux name="0"/>
+    <sb type="pattern">1 1</sb>
+    <cb type="pattern">1</cb>
+</segment>
+<segment axis="y" name="4len1D_y" freq="0.023684" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+    <mux name="0"/>
+    <sb type="pattern">1 1</sb>
+    <cb type="pattern">1</cb>
+</segment>
 
+  <segment axis="x" name="len1D_x" freq="0.036290" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+    <mux name="0"/>
+    <sb type="pattern">1 1</sb>
+    <cb type="pattern">1</cb>
+</segment>
+<segment axis="x" name="2len1D_x" freq="0.036290" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+    <mux name="0"/>
+    <sb type="pattern">1 1</sb>
+    <cb type="pattern">1</cb>
+</segment>
+<segment axis="x" name="3len1D_x" freq="0.036290" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+  <mux name="0"/>
+  <sb type="pattern">1 1</sb>
+  <cb type="pattern">1</cb>
+</segment>
+<segment axis="x" name="4len1D_x" freq="0.036290" length="1" type="unidir" Rmetal="101" Cmetal="22.5e-15">
+  <mux name="0"/>
+  <sb type="pattern">1 1</sb>
+  <cb type="pattern">1</cb>
+</segment>
+
+<!--!!! BUG: If you misspell axsis nothing happens (no error)  -->
 
     </segmentlist>
   <complexblocklist>
@@ -512,7 +555,9 @@
             <!-- left to bottom -->
           </switchfuncs>
           <wireconn num_conns="min(from,to)" from_type="1len4D_y" from_switchpoint="0" to_type="1len2D_x" to_switchpoint="0" switch_override="electrical_short2"/>  <!-- technichly we could do diagonal wires by just creating a switch override in side wireconn -->
-          <wireconn num_conns="min(from,to)" from_type="3len2D_x" from_switchpoint="0" to_type="3len4D_y" to_switchpoint="0" switch_override="electrical_short2"/>
+          <wireconn num_conns="min(from,to)" from_type="3len2D_x" from_switchpoint="0" to_type="3len4D_y" to_switchpoint="0" switch_override="electrical_short2"/>\
+          <wireconn num_conns="min(from,to)" from_type="len1D_y" from_switchpoint="0" to_type="len1D_x" to_switchpoint="0" switch_override="electrical_short2"/>
+          <wireconn num_conns="min(from,to)" from_type="3len1D_x" from_switchpoint="0" to_type="3len1D_y" to_switchpoint="0" switch_override="electrical_short2"/>
       </switchblock>
 
       <switchblock name="diagonal_ccw_turns" type="unidir">
@@ -525,6 +570,8 @@
           </switchfuncs>
           <wireconn num_conns="min(from,to)" from_type="2len4D_y" from_switchpoint="0" to_type="2len2D_x" to_switchpoint="0" switch_override="electrical_short2"/>
           <wireconn num_conns="min(from,to)" from_type="4len2D_x" from_switchpoint="0" to_type="4len4D_y" to_switchpoint="0" switch_override="electrical_short2"/>
+          <wireconn num_conns="min(from,to)" from_type="2len1D_y" from_switchpoint="0" to_type="2len1D_x" to_switchpoint="0" switch_override="electrical_short2"/>
+          <wireconn num_conns="min(from,to)" from_type="4len1D_x" from_switchpoint="0" to_type="4len1D_y" to_switchpoint="0" switch_override="electrical_short2"/>
       </switchblock>
       <!-- End custom SBs used to create diagonal wires --> 
 
@@ -571,6 +618,15 @@
       </switchfuncs>
       <wireconn num_conns="min(from,to)" from_type="3len4D_y,4len4D_y,len1_y,len2_y,len6_y,len6_stub,len12_y,len18_y" from_switchpoint="0" to_type="len1_y,len2_y,len6_y,len6_stub,len12_y,len18_y,3len2D_x,4len2D_x,len1_x,len2_x,len4_x,len4_stub,len12_x,len18_x" to_switchpoint="0"/>
       <wireconn num_conns="min(from,to)" from_type="len6_stub" from_switchpoint="1" to_type="len1_y,len2_y,len6_y,len6_stub,len12_y,len18_y,3len2D_x,4len2D_x,len1_x,len2_x,len4_x,len4_stub,len12_x,len18_x" to_switchpoint="0"/>
+    </switchblock>
+
+    <switchblock name="fringe" type="unidir">
+      <switchblock_location type="FRINGE"/>
+      <switchfuncs>
+         <!-- Clock-wise turns -->
+          <func type="bb" formula="W-t"/>
+      </switchfuncs>
+      <wireconn num_conns="min(from,to)" from_type="3len4D_y,4len4D_y,len1_y,len2_y,len6_y,len6_stub,len12_y,len18_y" from_switchpoint="0" to_type="3len4D_y,4len4D_y,len1_y,len2_y,len6_y,len6_stub,len12_y,len18_y" to_switchpoint="0"/>
     </switchblock>
 
   </switchblocklist>
