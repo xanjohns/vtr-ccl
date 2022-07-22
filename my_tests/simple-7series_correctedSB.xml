@@ -43,8 +43,35 @@
         <clock name="CLK" num_pins="1"/>
         <input name="I" num_pins="56"/>
         <output name="O" num_pins="24"/>
-        <fc in_type="frac" in_val="0.15" out_type="frac" out_val="0.10">
-          <fc_override port_name="cout" fc_type="frac" fc_val="0"/>
+
+        <!-- ~1/5 wires connect to global routing for clb inputs. exactly 1/4 connect to global routing for outputs. -->
+        <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25">
+          <fc_override port_name="cout" fc_type="frac" fc_val="0"/> 
+          <!-- !! fc_in -->
+          <!-- len4 wires only occur for outputs -->
+          <fc_override port_name="clb.I" segment_name="len4_x" fc_type="frac" fc_val="0"/> 
+          <fc_override port_name="clb.I" segment_name="len4_stub" fc_type="frac" fc_val="0"/> 
+
+          <!-- all len6 diagonals only occur for clb.O -->
+          <fc_override port_name="clb.I" segment_name="1len4D_y" fc_type="frac" fc_val="0"/> 
+          <fc_override port_name="clb.I" segment_name="2len4D_y" fc_type="frac" fc_val="0"/> 
+          <fc_override port_name="clb.I" segment_name="3len4D_y" fc_type="frac" fc_val="0"/> 
+          <fc_override port_name="clb.I" segment_name="4len4D_y" fc_type="frac" fc_val="0"/> 
+
+          <fc_override port_name="clb.I" segment_name="1len2D_x" fc_type="frac" fc_val="0"/> 
+          <fc_override port_name="clb.I" segment_name="2len2D_x" fc_type="frac" fc_val="0"/> 
+          <fc_override port_name="clb.I" segment_name="3len2D_x" fc_type="frac" fc_val="0"/> 
+          <fc_override port_name="clb.I" segment_name="4len2D_x" fc_type="frac" fc_val="0"/> 
+
+          <!-- CLB ports never connect to len18, len12, or cardinal len6 wires -->
+          <fc_override segment_name="len6_y" fc_type="frac" fc_val="0"/> 
+          <fc_override segment_name="len6_stub" fc_type="frac" fc_val="0"/> 
+
+          <fc_override segment_name="len12_x" fc_type="frac" fc_val="0"/> 
+          <fc_override segment_name="len12_y" fc_type="frac" fc_val="0"/> 
+
+          <fc_override segment_name="len18_y" fc_type="frac" fc_val="0"/> 
+
         </fc>
         <equivalent_sites>
           <site pb_type="clb" pin_mapping="direct">
