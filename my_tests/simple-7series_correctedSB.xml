@@ -37,12 +37,12 @@
         </pinlocations>
       </sub_tile>
     </tile>
-    <tile name="clb">
+    <tile name="clb" area="53894">
       <sub_tile capacity="1" name="clb">
         <!-- Sub Tile Inputs -->
         <clock name="CLK" num_pins="1"/>
-        <input name="I" num_pins="56"/>
-        <output name="O" num_pins="24"/>
+        <input name="I" num_pins="56" equivalent="full"/>
+        <output name="O" num_pins="24" equivalent="instance"/>
 
         <!-- ~1/5 wires connect to global routing for clb inputs. exactly 1/4 connect to global routing for outputs. -->
         <fc in_type="frac" in_val="0.20" out_type="frac" out_val="0.25">
@@ -371,9 +371,11 @@
     <!-- Define I/O pads ends -->
 
     <pb_type name="clb">
-      <clock name="CLK" num_pins="1"/>
-      <input name="I" num_pins="56"/>
-      <output name="O" num_pins="24"/>
+      <clock name="CLK" num_pins="1" />
+      <!-- The pins of the luts are logicaly equivelent because any of the 4 luts may be used to perform the same
+      logic functions. This is done for real arches such as coffe and stratix. -->
+      <input name="I" num_pins="56" equivalent="full"/>
+      <output name="O" num_pins="24" equivalent="instance"/> <!-- note that there are 81 ports and 81 internal cb connections.-->
       <pb_type name="slice" num_pb="2">
         <clock name="CLK" num_pins="1"/>
         <input name="I" num_pins="28" />
@@ -516,8 +518,10 @@
       <!-- Partial Crossbar with each input to the slice connected to 3 outputs from the same slice.
       Values are taken from prjxray-db/artix7/tile_int_l -->
       <interconnect>
-        <direct name="top_slice" input="clb.I[27:0]" output="slice[0].I"/>
-        <direct name="bottom_slice" input="clb.I[55:28]" output="slice[1].I"/>
+        <complete name="top_slice" input="clb.I" output="slice[0:1].I"/> <!-- this is needed to avoid errors-->
+        <!-- the above is correct because:
+        1) in xilinx one wire may connect to multiple lut inputs in either slice.
+        2) Every slice input has access to the same wire types -->
         <direct name="top_slice_O" input="slice[0].O" output="clb.O[0:11]"/>
         <direct name="bottom_slice_O" input="slice[1].O" output="clb.O[12:23]"/>
         <complete name="CLK" input="clb.CLK" output="slice.CLK"/>
