@@ -1,0 +1,90 @@
+--------------------------------------------------------------
+Clusters
+--------------------------------------------------------------
+
+Cluster simpleOR^o_led~0 Id: 0 
+	Atoms in cluster: 
+	 simpleOR^o_led~0 
+Cluster simpleOR^o_led~1 Id: 1 
+	Atoms in cluster: 
+	 simpleOR^o_led~1 
+Cluster simpleOR^o_led~2 Id: 2 
+	Atoms in cluster: 
+	 simpleOR^o_led~2 
+Cluster simpleOR^o_led~3 Id: 3 
+	Atoms in cluster: 
+	 simpleOR^o_led~3 
+Cluster simpleOR^o_led~4 Id: 4 
+	Atoms in cluster: 
+	 simpleOR^o_led~4 
+Cluster simpleOR^o_led~5 Id: 5 
+	Atoms in cluster: 
+	 simpleOR^o_led~5 
+Cluster simpleOR^o_led~6 Id: 6 
+	Atoms in cluster: 
+	 simpleOR^o_led~6 
+Cluster out:simpleOR^o_led~0 Id: 7 
+	Atoms in cluster: 
+	 out:simpleOR^o_led~0 
+Cluster out:simpleOR^o_led~1 Id: 8 
+	Atoms in cluster: 
+	 out:simpleOR^o_led~1 
+Cluster out:simpleOR^o_led~2 Id: 9 
+	Atoms in cluster: 
+	 out:simpleOR^o_led~2 
+Cluster out:simpleOR^o_led~3 Id: 10 
+	Atoms in cluster: 
+	 out:simpleOR^o_led~3 
+Cluster out:simpleOR^o_led~4 Id: 11 
+	Atoms in cluster: 
+	 out:simpleOR^o_led~4 
+Cluster out:simpleOR^o_led~5 Id: 12 
+	Atoms in cluster: 
+	 out:simpleOR^o_led~5 
+Cluster out:simpleOR^o_led~6 Id: 13 
+	Atoms in cluster: 
+	 out:simpleOR^o_led~6 
+Cluster simpleOR^in~0 Id: 14 
+	Atoms in cluster: 
+	 simpleOR^in~0 
+Cluster simpleOR^in~1 Id: 15 
+	Atoms in cluster: 
+	 simpleOR^in~1 
+Cluster simpleOR^in~2 Id: 16 
+	Atoms in cluster: 
+	 simpleOR^in~2 
+Cluster simpleOR^in~3 Id: 17 
+	Atoms in cluster: 
+	 simpleOR^in~3 
+Cluster simpleOR^in~4 Id: 18 
+	Atoms in cluster: 
+	 simpleOR^in~4 
+Cluster simpleOR^in~5 Id: 19 
+	Atoms in cluster: 
+	 simpleOR^in~5 
+Cluster simpleOR^in~6 Id: 20 
+	Atoms in cluster: 
+	 simpleOR^in~6 
+Cluster simpleOR^in~7 Id: 21 
+	Atoms in cluster: 
+	 simpleOR^in~7 
+Cluster simpleOR^in~8 Id: 22 
+	Atoms in cluster: 
+	 simpleOR^in~8 
+Cluster simpleOR^in~9 Id: 23 
+	Atoms in cluster: 
+	 simpleOR^in~9 
+Cluster simpleOR^in~10 Id: 24 
+	Atoms in cluster: 
+	 simpleOR^in~10 
+Cluster simpleOR^in~11 Id: 25 
+	Atoms in cluster: 
+	 simpleOR^in~11 
+Cluster simpleOR^in~12 Id: 26 
+	Atoms in cluster: 
+	 simpleOR^in~12 
+Cluster simpleOR^in~13 Id: 27 
+	Atoms in cluster: 
+	 simpleOR^in~13 
+
+Cluster Floorplanning Constraints:

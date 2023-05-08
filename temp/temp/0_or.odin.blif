@@ -1,0 +1,90 @@
+
+.model simpleOR 
+
+.inputs simpleOR^in~0 simpleOR^in~1 simpleOR^in~2 simpleOR^in~3 simpleOR^in~4 simpleOR^in~5 simpleOR^in~6 simpleOR^in~7 \
+ simpleOR^in~8 simpleOR^in~9 simpleOR^in~10 simpleOR^in~11 simpleOR^in~12 simpleOR^in~13 simpleOR^clk 
+
+.outputs simpleOR^o_led~0 simpleOR^o_led~1 simpleOR^o_led~2 simpleOR^o_led~3 simpleOR^o_led~4 simpleOR^o_led~5 \
+ simpleOR^o_led~6 
+
+
+.names gnd 
+
+.names unconn 
+
+.names vcc 
+1 
+
+
+.names simpleOR^in~0 simpleOR^in~1 simpleOR^bOR~0^lOR~14 
+1- 1 
+-1 1 
+
+
+.names simpleOR^in~2 simpleOR^in~3 simpleOR^bOR~1^lOR~15 
+1- 1 
+-1 1 
+
+
+.names simpleOR^in~4 simpleOR^in~5 simpleOR^bOR~2^lOR~16 
+1- 1 
+-1 1 
+
+
+.names simpleOR^in~6 simpleOR^in~7 simpleOR^bOR~3^lOR~17 
+1- 1 
+-1 1 
+
+
+.names simpleOR^in~8 simpleOR^in~9 simpleOR^bOR~4^lOR~18 
+1- 1 
+-1 1 
+
+
+.names simpleOR^in~10 simpleOR^in~11 simpleOR^bOR~5^lOR~19 
+1- 1 
+-1 1 
+
+
+.names simpleOR^in~12 simpleOR^in~13 simpleOR^bOR~6^lOR~20 
+1- 1 
+-1 1 
+
+
+.names simpleOR^bOR~0^lOR~14 simpleOR^o_led~0 
+1 1 
+
+
+.names simpleOR^bOR~1^lOR~15 simpleOR^o_led~1 
+1 1 
+
+
+.names simpleOR^bOR~2^lOR~16 simpleOR^o_led~2 
+1 1 
+
+
+.names simpleOR^bOR~3^lOR~17 simpleOR^o_led~3 
+1 1 
+
+
+.names simpleOR^bOR~4^lOR~18 simpleOR^o_led~4 
+1 1 
+
+
+.names simpleOR^bOR~5^lOR~19 simpleOR^o_led~5 
+1 1 
+
+
+.names simpleOR^bOR~6^lOR~20 simpleOR^o_led~6 
+1 1 
+
+
+
+.end 
+
+
+.model CLOCK_GATING
+.inputs I
+.blackbox
+.end
+

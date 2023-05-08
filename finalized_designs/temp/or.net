@@ -1,0 +1,1000 @@
+<?xml version="1.0"?>
+<block name="or.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:af1f4d7fd1f70e236e20624073ee64e8811e5629aad50633d870a33fa264dc67" atom_netlist_id="SHA256:30921c70a4a9100f7d2b36ebcb8c133b33e6379387821a49ea09d25a2feda5e5">
+	<inputs>simpleOR^in~0 simpleOR^in~1 simpleOR^in~2 simpleOR^in~3 simpleOR^in~4 simpleOR^in~5 simpleOR^in~6 simpleOR^in~7 simpleOR^in~8 simpleOR^in~9 simpleOR^in~10 simpleOR^in~11 simpleOR^in~12 simpleOR^in~13</inputs>
+	<outputs>out:simpleOR^o_led~0 out:simpleOR^o_led~1 out:simpleOR^o_led~2 out:simpleOR^o_led~3 out:simpleOR^o_led~4 out:simpleOR^o_led~5 out:simpleOR^o_led~6</outputs>
+	<clocks></clocks>
+	<block name="simpleOR^o_led~0" instance="clb[0]" mode="default">
+		<inputs>
+			<port name="I">simpleOR^in~1 simpleOR^in~0 open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open slice[1].O[9]-&gt;bottom_slice_O open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="open" instance="slice[0]" />
+		<block name="simpleOR^o_led~0" instance="slice[1]" mode="default">
+			<inputs>
+				<port name="I">open open open open open open open open open open open open open open open open open open open open open clb.I[0]-&gt;top_slice open open open clb.I[1]-&gt;top_slice open open</port>
+			</inputs>
+			<outputs>
+				<port name="O">open open open open open open open open open fle[3].outMUX[0]-&gt;dir10 open open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="open" instance="fle[0]" />
+			<block name="open" instance="fle[1]" />
+			<block name="open" instance="fle[2]" />
+			<block name="simpleOR^o_led~0" instance="fle[3]" mode="default">
+				<inputs>
+					<port name="in">slice.I[21]-&gt;inD open open open slice.I[25]-&gt;inD open</port>
+					<port name="inX">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open</port>
+					<port name="outMUX">ALUT[0].O5[0]-&gt;AOUTMUX</port>
+					<port name="outQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="simpleOR^o_led~0" instance="ALUT[0]" mode="n2_lut5">
+					<inputs>
+						<port name="A">fle.in[0]-&gt;inputs open open open fle.in[4]-&gt;inputs open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">lut5_mode[0].out[0]-&gt;direct3</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks />
+					<block name="simpleOR^o_led~0" instance="lut5_mode[0]" mode="default">
+						<inputs>
+							<port name="in">ALUT.A[0]-&gt;direct1 open open open ALUT.A[4]-&gt;direct1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;direct2</port>
+						</outputs>
+						<clocks />
+						<block name="simpleOR^o_led~0" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">lut5_mode.in[0]-&gt;direct1 open open open lut5_mode.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="simpleOR^o_led~0" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">simpleOR^o_led~0</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="FDSE[0]" />
+				<block name="open" instance="FDSE[1]" />
+			</block>
+		</block>
+	</block>
+	<block name="simpleOR^o_led~1" instance="clb[1]" mode="default">
+		<inputs>
+			<port name="I">simpleOR^in~3 simpleOR^in~2 open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open slice[1].O[9]-&gt;bottom_slice_O open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="open" instance="slice[0]" />
+		<block name="simpleOR^o_led~1" instance="slice[1]" mode="default">
+			<inputs>
+				<port name="I">open open open open open open open open open open open open open open open open open open open open open clb.I[0]-&gt;top_slice open open open clb.I[1]-&gt;top_slice open open</port>
+			</inputs>
+			<outputs>
+				<port name="O">open open open open open open open open open fle[3].outMUX[0]-&gt;dir10 open open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="open" instance="fle[0]" />
+			<block name="open" instance="fle[1]" />
+			<block name="open" instance="fle[2]" />
+			<block name="simpleOR^o_led~1" instance="fle[3]" mode="default">
+				<inputs>
+					<port name="in">slice.I[21]-&gt;inD open open open slice.I[25]-&gt;inD open</port>
+					<port name="inX">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open</port>
+					<port name="outMUX">ALUT[0].O5[0]-&gt;AOUTMUX</port>
+					<port name="outQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="simpleOR^o_led~1" instance="ALUT[0]" mode="n2_lut5">
+					<inputs>
+						<port name="A">fle.in[0]-&gt;inputs open open open fle.in[4]-&gt;inputs open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">lut5_mode[0].out[0]-&gt;direct3</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks />
+					<block name="simpleOR^o_led~1" instance="lut5_mode[0]" mode="default">
+						<inputs>
+							<port name="in">ALUT.A[0]-&gt;direct1 open open open ALUT.A[4]-&gt;direct1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;direct2</port>
+						</outputs>
+						<clocks />
+						<block name="simpleOR^o_led~1" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">lut5_mode.in[0]-&gt;direct1 open open open lut5_mode.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="simpleOR^o_led~1" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">simpleOR^o_led~1</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="FDSE[0]" />
+				<block name="open" instance="FDSE[1]" />
+			</block>
+		</block>
+	</block>
+	<block name="simpleOR^o_led~2" instance="clb[2]" mode="default">
+		<inputs>
+			<port name="I">simpleOR^in~5 simpleOR^in~4 open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open slice[1].O[9]-&gt;bottom_slice_O open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="open" instance="slice[0]" />
+		<block name="simpleOR^o_led~2" instance="slice[1]" mode="default">
+			<inputs>
+				<port name="I">open open open open open open open open open open open open open open open open open open open open open clb.I[0]-&gt;top_slice open open open clb.I[1]-&gt;top_slice open open</port>
+			</inputs>
+			<outputs>
+				<port name="O">open open open open open open open open open fle[3].outMUX[0]-&gt;dir10 open open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="open" instance="fle[0]" />
+			<block name="open" instance="fle[1]" />
+			<block name="open" instance="fle[2]" />
+			<block name="simpleOR^o_led~2" instance="fle[3]" mode="default">
+				<inputs>
+					<port name="in">slice.I[21]-&gt;inD open open open slice.I[25]-&gt;inD open</port>
+					<port name="inX">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open</port>
+					<port name="outMUX">ALUT[0].O5[0]-&gt;AOUTMUX</port>
+					<port name="outQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="simpleOR^o_led~2" instance="ALUT[0]" mode="n2_lut5">
+					<inputs>
+						<port name="A">fle.in[0]-&gt;inputs open open open fle.in[4]-&gt;inputs open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">lut5_mode[0].out[0]-&gt;direct3</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks />
+					<block name="simpleOR^o_led~2" instance="lut5_mode[0]" mode="default">
+						<inputs>
+							<port name="in">ALUT.A[0]-&gt;direct1 open open open ALUT.A[4]-&gt;direct1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;direct2</port>
+						</outputs>
+						<clocks />
+						<block name="simpleOR^o_led~2" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">lut5_mode.in[0]-&gt;direct1 open open open lut5_mode.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="simpleOR^o_led~2" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">simpleOR^o_led~2</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="FDSE[0]" />
+				<block name="open" instance="FDSE[1]" />
+			</block>
+		</block>
+	</block>
+	<block name="simpleOR^o_led~3" instance="clb[3]" mode="default">
+		<inputs>
+			<port name="I">simpleOR^in~7 simpleOR^in~6 open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open slice[1].O[9]-&gt;bottom_slice_O open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="open" instance="slice[0]" />
+		<block name="simpleOR^o_led~3" instance="slice[1]" mode="default">
+			<inputs>
+				<port name="I">open open open open open open open open open open open open open open open open open open open open open clb.I[0]-&gt;top_slice open open open clb.I[1]-&gt;top_slice open open</port>
+			</inputs>
+			<outputs>
+				<port name="O">open open open open open open open open open fle[3].outMUX[0]-&gt;dir10 open open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="open" instance="fle[0]" />
+			<block name="open" instance="fle[1]" />
+			<block name="open" instance="fle[2]" />
+			<block name="simpleOR^o_led~3" instance="fle[3]" mode="default">
+				<inputs>
+					<port name="in">slice.I[21]-&gt;inD open open open slice.I[25]-&gt;inD open</port>
+					<port name="inX">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open</port>
+					<port name="outMUX">ALUT[0].O5[0]-&gt;AOUTMUX</port>
+					<port name="outQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="simpleOR^o_led~3" instance="ALUT[0]" mode="n2_lut5">
+					<inputs>
+						<port name="A">fle.in[0]-&gt;inputs open open open fle.in[4]-&gt;inputs open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">lut5_mode[0].out[0]-&gt;direct3</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks />
+					<block name="simpleOR^o_led~3" instance="lut5_mode[0]" mode="default">
+						<inputs>
+							<port name="in">ALUT.A[0]-&gt;direct1 open open open ALUT.A[4]-&gt;direct1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;direct2</port>
+						</outputs>
+						<clocks />
+						<block name="simpleOR^o_led~3" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">lut5_mode.in[0]-&gt;direct1 open open open lut5_mode.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="simpleOR^o_led~3" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">simpleOR^o_led~3</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="FDSE[0]" />
+				<block name="open" instance="FDSE[1]" />
+			</block>
+		</block>
+	</block>
+	<block name="simpleOR^o_led~4" instance="clb[4]" mode="default">
+		<inputs>
+			<port name="I">simpleOR^in~9 simpleOR^in~8 open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open slice[1].O[9]-&gt;bottom_slice_O open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="open" instance="slice[0]" />
+		<block name="simpleOR^o_led~4" instance="slice[1]" mode="default">
+			<inputs>
+				<port name="I">open open open open open open open open open open open open open open open open open open open open open clb.I[0]-&gt;top_slice open open open clb.I[1]-&gt;top_slice open open</port>
+			</inputs>
+			<outputs>
+				<port name="O">open open open open open open open open open fle[3].outMUX[0]-&gt;dir10 open open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="open" instance="fle[0]" />
+			<block name="open" instance="fle[1]" />
+			<block name="open" instance="fle[2]" />
+			<block name="simpleOR^o_led~4" instance="fle[3]" mode="default">
+				<inputs>
+					<port name="in">slice.I[21]-&gt;inD open open open slice.I[25]-&gt;inD open</port>
+					<port name="inX">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open</port>
+					<port name="outMUX">ALUT[0].O5[0]-&gt;AOUTMUX</port>
+					<port name="outQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="simpleOR^o_led~4" instance="ALUT[0]" mode="n2_lut5">
+					<inputs>
+						<port name="A">fle.in[0]-&gt;inputs open open open fle.in[4]-&gt;inputs open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">lut5_mode[0].out[0]-&gt;direct3</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks />
+					<block name="simpleOR^o_led~4" instance="lut5_mode[0]" mode="default">
+						<inputs>
+							<port name="in">ALUT.A[0]-&gt;direct1 open open open ALUT.A[4]-&gt;direct1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;direct2</port>
+						</outputs>
+						<clocks />
+						<block name="simpleOR^o_led~4" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">lut5_mode.in[0]-&gt;direct1 open open open lut5_mode.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="simpleOR^o_led~4" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">simpleOR^o_led~4</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="FDSE[0]" />
+				<block name="open" instance="FDSE[1]" />
+			</block>
+		</block>
+	</block>
+	<block name="simpleOR^o_led~5" instance="clb[5]" mode="default">
+		<inputs>
+			<port name="I">simpleOR^in~11 simpleOR^in~10 open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open slice[1].O[9]-&gt;bottom_slice_O open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="open" instance="slice[0]" />
+		<block name="simpleOR^o_led~5" instance="slice[1]" mode="default">
+			<inputs>
+				<port name="I">open open open open open open open open open open open open open open open open open open open open open clb.I[0]-&gt;top_slice open open open clb.I[1]-&gt;top_slice open open</port>
+			</inputs>
+			<outputs>
+				<port name="O">open open open open open open open open open fle[3].outMUX[0]-&gt;dir10 open open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="open" instance="fle[0]" />
+			<block name="open" instance="fle[1]" />
+			<block name="open" instance="fle[2]" />
+			<block name="simpleOR^o_led~5" instance="fle[3]" mode="default">
+				<inputs>
+					<port name="in">slice.I[21]-&gt;inD open open open slice.I[25]-&gt;inD open</port>
+					<port name="inX">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open</port>
+					<port name="outMUX">ALUT[0].O5[0]-&gt;AOUTMUX</port>
+					<port name="outQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="simpleOR^o_led~5" instance="ALUT[0]" mode="n2_lut5">
+					<inputs>
+						<port name="A">fle.in[0]-&gt;inputs open open open fle.in[4]-&gt;inputs open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">lut5_mode[0].out[0]-&gt;direct3</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks />
+					<block name="simpleOR^o_led~5" instance="lut5_mode[0]" mode="default">
+						<inputs>
+							<port name="in">ALUT.A[0]-&gt;direct1 open open open ALUT.A[4]-&gt;direct1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;direct2</port>
+						</outputs>
+						<clocks />
+						<block name="simpleOR^o_led~5" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">lut5_mode.in[0]-&gt;direct1 open open open lut5_mode.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="simpleOR^o_led~5" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">simpleOR^o_led~5</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="FDSE[0]" />
+				<block name="open" instance="FDSE[1]" />
+			</block>
+		</block>
+	</block>
+	<block name="simpleOR^o_led~6" instance="clb[6]" mode="default">
+		<inputs>
+			<port name="I">simpleOR^in~13 simpleOR^in~12 open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open open</port>
+		</inputs>
+		<outputs>
+			<port name="O">open open open open open open open open open open open open open open slice[1].O[9]-&gt;bottom_slice_O open open open open open open open open open</port>
+		</outputs>
+		<clocks>
+			<port name="CLK">open</port>
+		</clocks>
+		<block name="open" instance="slice[0]" />
+		<block name="simpleOR^o_led~6" instance="slice[1]" mode="default">
+			<inputs>
+				<port name="I">open open open open open open open open open open open open open open open open open open open open open clb.I[0]-&gt;top_slice open open open clb.I[1]-&gt;top_slice open open</port>
+			</inputs>
+			<outputs>
+				<port name="O">open open open open open open open open open fle[3].outMUX[0]-&gt;dir10 open open</port>
+			</outputs>
+			<clocks>
+				<port name="CLK">open</port>
+			</clocks>
+			<block name="open" instance="fle[0]" />
+			<block name="open" instance="fle[1]" />
+			<block name="open" instance="fle[2]" />
+			<block name="simpleOR^o_led~6" instance="fle[3]" mode="default">
+				<inputs>
+					<port name="in">slice.I[21]-&gt;inD open open open slice.I[25]-&gt;inD open</port>
+					<port name="inX">open</port>
+				</inputs>
+				<outputs>
+					<port name="out">open</port>
+					<port name="outMUX">ALUT[0].O5[0]-&gt;AOUTMUX</port>
+					<port name="outQ">open</port>
+				</outputs>
+				<clocks>
+					<port name="clk">open</port>
+				</clocks>
+				<block name="simpleOR^o_led~6" instance="ALUT[0]" mode="n2_lut5">
+					<inputs>
+						<port name="A">fle.in[0]-&gt;inputs open open open fle.in[4]-&gt;inputs open</port>
+					</inputs>
+					<outputs>
+						<port name="O5">lut5_mode[0].out[0]-&gt;direct3</port>
+						<port name="O6">open</port>
+					</outputs>
+					<clocks />
+					<block name="simpleOR^o_led~6" instance="lut5_mode[0]" mode="default">
+						<inputs>
+							<port name="in">ALUT.A[0]-&gt;direct1 open open open ALUT.A[4]-&gt;direct1</port>
+						</inputs>
+						<outputs>
+							<port name="out">lut5[0].out[0]-&gt;direct2</port>
+						</outputs>
+						<clocks />
+						<block name="simpleOR^o_led~6" instance="lut5[0]" mode="lut5">
+							<inputs>
+								<port name="in">lut5_mode.in[0]-&gt;direct1 open open open lut5_mode.in[4]-&gt;direct1</port>
+							</inputs>
+							<outputs>
+								<port name="out">lut[0].out[0]-&gt;direct:lut5</port>
+							</outputs>
+							<clocks />
+							<block name="simpleOR^o_led~6" instance="lut[0]">
+								<attributes />
+								<parameters />
+								<inputs>
+									<port name="in">lut5.in[0]-&gt;direct:lut5 open open open lut5.in[4]-&gt;direct:lut5</port>
+									<port_rotation_map name="in">1 open open open 0</port_rotation_map>
+								</inputs>
+								<outputs>
+									<port name="out">simpleOR^o_led~6</port>
+								</outputs>
+								<clocks />
+							</block>
+						</block>
+					</block>
+				</block>
+				<block name="open" instance="FDSE[0]" />
+				<block name="open" instance="FDSE[1]" />
+			</block>
+		</block>
+	</block>
+	<block name="out:simpleOR^o_led~0" instance="io[7]" mode="outpad">
+		<inputs>
+			<port name="outpad">simpleOR^o_led~0</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:simpleOR^o_led~0" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:simpleOR^o_led~1" instance="io[8]" mode="outpad">
+		<inputs>
+			<port name="outpad">simpleOR^o_led~1</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:simpleOR^o_led~1" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:simpleOR^o_led~2" instance="io[9]" mode="outpad">
+		<inputs>
+			<port name="outpad">simpleOR^o_led~2</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:simpleOR^o_led~2" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:simpleOR^o_led~3" instance="io[10]" mode="outpad">
+		<inputs>
+			<port name="outpad">simpleOR^o_led~3</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:simpleOR^o_led~3" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:simpleOR^o_led~4" instance="io[11]" mode="outpad">
+		<inputs>
+			<port name="outpad">simpleOR^o_led~4</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:simpleOR^o_led~4" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:simpleOR^o_led~5" instance="io[12]" mode="outpad">
+		<inputs>
+			<port name="outpad">simpleOR^o_led~5</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:simpleOR^o_led~5" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:simpleOR^o_led~6" instance="io[13]" mode="outpad">
+		<inputs>
+			<port name="outpad">simpleOR^o_led~6</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:simpleOR^o_led~6" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~0" instance="io[14]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~0" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~0</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~1" instance="io[15]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~1" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~1</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~2" instance="io[16]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~2" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~2</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~3" instance="io[17]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~3" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~3</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~4" instance="io[18]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~4" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~4</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~5" instance="io[19]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~5" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~5</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~6" instance="io[20]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~6" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~6</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~7" instance="io[21]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~7" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~7</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~8" instance="io[22]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~8" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~8</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~9" instance="io[23]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~9" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~9</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~10" instance="io[24]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~10" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~10</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~11" instance="io[25]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~11" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~11</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~12" instance="io[26]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~12" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~12</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="simpleOR^in~13" instance="io[27]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="simpleOR^in~13" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">simpleOR^in~13</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+</block>

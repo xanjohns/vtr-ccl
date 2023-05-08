@@ -1,0 +1,1729 @@
+/usr/bin/env time -v /home/chem3000/GitClones/vtr_ccl/vtr-verilog-to-routing/vpr/vpr simple-7series_correctedSB.xml or --circuit_file or.pre-vpr.blif --route_chan_width 190 --disp on --max_router_iterations 150
+VPR FPGA Placement and Routing.
+Version: 8.1.0-dev+b1967b2a8-dirty
+Revision: v8.0.0-6643-gb1967b2a8-dirty
+Compiled: 2022-11-11T18:50:33
+Compiler: GNU 9.4.0 on Linux-5.4.0-122-generic x86_64
+Build Info: release IPO VTR_ASSERT_LEVEL=2
+
+University of Toronto
+verilogtorouting.org
+vtr-users@googlegroups.com
+This is free open source code under MIT license.
+
+VPR was run with the following command-line:
+/home/chem3000/GitClones/vtr_ccl/vtr-verilog-to-routing/vpr/vpr simple-7series_correctedSB.xml or --circuit_file or.pre-vpr.blif --route_chan_width 190 --disp on --max_router_iterations 150
+
+
+Architecture file: simple-7series_correctedSB.xml
+Circuit name: or
+
+# Loading Architecture Description
+# Loading Architecture Description took 0.00 seconds (max_rss 15.8 MiB, delta_rss +1.2 MiB)
+
+Timing analysis: ON
+Circuit netlist file: or.net
+Circuit placement file: or.place
+Circuit routing file: or.route
+Circuit SDC file: or.sdc
+Vpr floorplanning constraints file: not specified
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+Analysis: ENABLED
+
+VPR was run with the following options:
+
+NetlistOpts.abosrb_buffer_luts            : true
+NetlistOpts.sweep_dangling_primary_ios    : true
+NetlistOpts.sweep_dangling_nets           : true
+NetlistOpts.sweep_dangling_blocks         : true
+NetlistOpts.sweep_constant_primary_outputs: false
+NetlistOpts.netlist_verbosity             : 1
+NetlistOpts.const_gen_inference           : COMB_SEQ
+
+PackerOpts.allow_unrelated_clustering: auto
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.cluster_seed_type: BLEND2
+PackerOpts.connection_driven: true
+PackerOpts.global_clocks: true
+PackerOpts.hill_climbing_flag: false
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.timing_driven: true
+PackerOpts.target_external_pin_util: auto
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: CRITICALITY_TIMING_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.constraints_file: No constraints file given
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.place_chan_width: 190
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlacerOpts.delay_offset: 0.000000
+PlacerOpts.delay_ramp_delta_threshold: -1
+PlacerOpts.delay_ramp_slope: 0.000000
+PlacerOpts.tsu_rel_margin: 1.000000
+PlacerOpts.tsu_abs_margin: 0.000000
+PlacerOpts.post_place_timing_report_file: 
+PlacerOpts.allowed_tiles_for_delay_model: 
+PlacerOpts.delay_model_reducer: MIN
+PlacerOpts.delay_model_type: DELTA
+PlacerOpts.rlim_escape_fraction: 0.000000
+PlacerOpts.move_stats_file: 
+PlacerOpts.placement_saves_per_temperature: 0
+PlacerOpts.effort_scaling: CIRCUIT
+PlacerOpts.place_delta_delay_matrix_calculation_method: ASTAR_ROUTE
+PlaceOpts.seed: 0
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 0.500000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.flat_routing: false
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED_LENGTH
+RouterOpts.fixed_channel_width: 190
+RouterOpts.check_route: FULL
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.000000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 150
+RouterOpts.min_incremental_reroute_fanout: 16
+RouterOpts.do_check_rr_graph: true
+RouterOpts.verify_binary_search: false
+RouterOpts.min_channel_width_hint: 0
+RouterOpts.read_rr_edge_metadata: false
+RouterOpts.exit_after_first_routing_iteration: false
+RouterOpts.astar_fac: 1.200000
+RouterOpts.router_profiler_astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+RouterOpts.init_wirelength_abort_threshold: 0.850000
+RouterOpts.save_routing_per_iteration: false
+RouterOpts.congested_routing_iteration_threshold_frac: 1.000000
+RouterOpts.high_fanout_threshold: 64
+RouterOpts.router_debug_net: -2
+RouterOpts.router_debug_sink_rr: -2
+RouterOpts.router_debug_iteration: -2
+RouterOpts.max_convergence_count: 1
+RouterOpts.reconvergence_cpd_threshold: 0.990000
+RouterOpts.update_lower_bound_delays: true
+RouterOpts.first_iteration_timing_report_file: 
+RouterOpts.incr_reroute_delay_ripup: AUTO
+RouterOpts.route_bb_update: DYNAMIC
+RouterOpts.lookahead_type: MAP
+RouterOpts.initial_timing: LOOKAHEAD
+RouterOpts.router_heap: BINARY_HEAP
+RouterOpts.routing_failure_predictor = SAFE
+RouterOpts.routing_budgets_algorithm = DISABLE
+
+AnalysisOpts.gen_post_synthesis_netlist: false
+AnalysisOpts.timing_report_npaths: 100
+AnalysisOpts.timing_report_skew: false
+AnalysisOpts.echo_dot_timing_graph_node: -1
+AnalysisOpts.timing_report_detail: NETLIST
+AnalysisOpts.post_synth_netlist_unconn_input_handling: UNCONNECTED
+AnalysisOpts.post_synth_netlist_unconn_output_handling: UNCONNECTED
+
+# Building complex block graph
+Warning 1: io[0].clock[0] unconnected pin in architecture.
+Warning 2: slice[0].I[6] unconnected pin in architecture.
+Warning 3: slice[0].I[13] unconnected pin in architecture.
+Warning 4: slice[0].I[20] unconnected pin in architecture.
+Warning 5: slice[0].I[27] unconnected pin in architecture.
+Warning 6: slice[1].I[6] unconnected pin in architecture.
+Warning 7: slice[1].I[13] unconnected pin in architecture.
+Warning 8: slice[1].I[20] unconnected pin in architecture.
+Warning 9: slice[1].I[27] unconnected pin in architecture.
+# Building complex block graph took 0.00 seconds (max_rss 17.7 MiB, delta_rss +1.9 MiB)
+Circuit file: or.pre-vpr.blif
+# Load circuit
+# Load circuit took 0.00 seconds (max_rss 17.7 MiB, delta_rss +0.0 MiB)
+# Clean circuit
+Absorbed 0 LUT buffers
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Inferred    0 additional primitive pins as constant generators since they have no combinationally connected inputs
+Inferred    0 additional primitive pins as constant generators due to constant inputs
+Swept input(s)      : 1
+Swept output(s)     : 0 (0 dangling, 0 constant)
+Swept net(s)        : 1
+Swept block(s)      : 0
+Constant Pins Marked: 0
+# Clean circuit took 0.00 seconds (max_rss 17.7 MiB, delta_rss +0.0 MiB)
+# Compress circuit
+# Compress circuit took 0.00 seconds (max_rss 17.7 MiB, delta_rss +0.0 MiB)
+# Verify circuit
+# Verify circuit took 0.00 seconds (max_rss 17.7 MiB, delta_rss +0.0 MiB)
+Circuit Statistics:
+  Blocks: 28
+    .input :      14
+    .output:       7
+    6-LUT  :       7
+  Nets  : 21
+    Avg Fanout:     1.0
+    Max Fanout:     1.0
+    Min Fanout:     1.0
+  Netlist Clocks: 0
+# Build Timing Graph
+  Timing Graph Nodes: 42
+  Timing Graph Edges: 35
+  Timing Graph Levels: 4
+# Build Timing Graph took 0.00 seconds (max_rss 17.7 MiB, delta_rss +0.0 MiB)
+Netlist contains 0 clocks
+# Load Timing Constraints
+
+SDC file 'or.sdc' not found
+Setting default timing constraints:
+   * constrain all primay inputs and primary outputs on a virtual external clock 'virtual_io_clock'
+   * optimize virtual clock to run as fast as possible
+Timing constraints created 1 clocks
+  Constrained Clock 'virtual_io_clock' (Virtual Clock)
+
+# Load Timing Constraints took 0.00 seconds (max_rss 17.7 MiB, delta_rss +0.0 MiB)
+# Packing
+Begin packing 'or.pre-vpr.blif'.
+
+After removing unused inputs...
+	total blocks: 28, total nets: 21, total inputs: 14, total outputs: 7
+Begin prepacking.
+0 attraction groups were created during prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.33777e-09
+Packing with pin utilization targets: io:1,1 clb:0.8,1
+Packing with high fanout thresholds: io:128 clb:32
+Starting Clustering - Clustering Progress: 
+-------------------   --------------------------   ---------
+Molecules processed   Number of clusters created   FPGA size
+-------------------   --------------------------   ---------
+     1/28        3%                            0    10 x 15    
+     2/28        7%                            1    10 x 15    
+     3/28       10%                            2    10 x 15    
+     4/28       14%                            3    10 x 15    
+     5/28       17%                            4    10 x 15    
+     6/28       21%                            5    10 x 15    
+     7/28       25%                            6    10 x 15    
+     8/28       28%                            7    10 x 15    
+     9/28       32%                            8    10 x 15    
+    10/28       35%                            9    10 x 15    
+    11/28       39%                           10    10 x 15    
+    12/28       42%                           11    10 x 15    
+    13/28       46%                           12    10 x 15    
+    14/28       50%                           13    10 x 15    
+    15/28       53%                           14    10 x 15    
+    16/28       57%                           15    10 x 15    
+    17/28       60%                           16    10 x 15    
+    18/28       64%                           17    10 x 15    
+    19/28       67%                           18    10 x 15    
+    20/28       71%                           19    10 x 15    
+    21/28       75%                           20    10 x 15    
+    22/28       78%                           21    10 x 15    
+    23/28       82%                           22    10 x 15    
+    24/28       85%                           23    10 x 15    
+    25/28       89%                           24    10 x 15    
+    26/28       92%                           25    10 x 15    
+    27/28       96%                           26    10 x 15    
+    28/28      100%                           27    10 x 15    
+
+Logic Element (slice) detailed count:
+  Total number of Logic Elements used : 7
+  LEs used for logic and registers    : 0
+  LEs used for logic only             : 7
+  LEs used for registers only         : 0
+
+Incr Slack updates 1 in 1.308e-06 sec
+Full Max Req/Worst Slack updates 1 in 8.38e-07 sec
+Incr Max Req/Worst Slack updates 0 in 0 sec
+Incr Criticality updates 0 in 0 sec
+Full Criticality updates 1 in 1.293e-06 sec
+FPGA sized to 10 x 15 (correct_xilinx)
+Device Utilization: 0.06 (target 1.00)
+	Block Utilization: 0.06 Type: io
+	Block Utilization: 0.07 Type: clb
+
+Final Clustering Statistics: 
+----------   --------   ------------------------------------   --------------------------
+Block Type   # Blocks   Avg. # of input clocks and pins used   Avg. # of output pins used
+----------   --------   ------------------------------------   --------------------------
+     EMPTY          0                                      0                            0   
+        io         21                               0.333333                     0.666667   
+       clb          7                                      2                            1   
+Absorbed logical nets 0 out of 21 nets, 21 nets not absorbed.
+
+Netlist conversion complete.
+
+# Packing took 0.00 seconds (max_rss 17.7 MiB, delta_rss +0.0 MiB)
+# Load packing
+Begin loading packed FPGA netlist file.
+Netlist generated from file 'or.net'.
+Detected 0 constant generators (to see names run with higher pack verbosity)
+Finished loading packed FPGA netlist file (took 0.014127 seconds).
+Warning 10: Treated 0 constant nets as global which will not be routed (to see net names increase packer verbosity).
+# Load packing took 0.01 seconds (max_rss 56.2 MiB, delta_rss +38.5 MiB)
+Warning 11: Netlist contains 0 global net to non-global architecture pin connections
+Cluster level netlist and block usage statistics
+Netlist num_nets: 21
+Netlist num_blocks: 28
+Netlist EMPTY blocks: 0.
+Netlist io blocks: 21.
+Netlist clb blocks: 7.
+Netlist inputs pins: 14
+Netlist output pins: 7
+
+Pb types usage...
+  io              : 21
+   inpad          : 14
+   outpad         : 7
+  clb             : 7
+   slice          : 7
+    fle           : 7
+     ALUT         : 7
+      lut5_mode   : 7
+       lut5       : 7
+        lut       : 7
+
+# Create Device
+## Build Device Grid
+FPGA sized to 10 x 15: 150 grid tiles (correct_xilinx)
+
+Resource usage...
+	Netlist
+		21	blocks of type: io
+	Architecture
+		336	blocks of type: io
+	Netlist
+		7	blocks of type: clb
+	Architecture
+		104	blocks of type: clb
+
+Device Utilization: 0.06 (target 1.00)
+	Physical Tile io:
+	Block Utilization: 0.06 Logical Block: io
+	Physical Tile clb:
+	Block Utilization: 0.07 Logical Block: clb
+
+## Build Device Grid took 0.00 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+## Build routing resource graph
+SOURCE->OPIN and IPIN->SINK edge count:9432
+OPIN->CHANX/CHANY edge count before creating direct connections: 49570
+OPIN->CHANX/CHANY edge count after creating direct connections: 49570
+CHAN->CHAN type edge count:261044
+Warning 12: Node: 10826 with RR_type: CHANX  at Location:CHANX:10826 1len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 13: Node: 10827 with RR_type: CHANX  at Location:CHANX:10827 1len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 14: Node: 10828 with RR_type: CHANX  at Location:CHANX:10828 1len2D_x length:2 (1,0)->(2,0), had no out-going switches
+Warning 15: Node: 10829 with RR_type: CHANX  at Location:CHANX:10829 1len2D_x length:2 (2,0)->(1,0), had no out-going switches
+Warning 16: Node: 10830 with RR_type: CHANX  at Location:CHANX:10830 1len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 17: Node: 10831 with RR_type: CHANX  at Location:CHANX:10831 1len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 18: Node: 10832 with RR_type: CHANX  at Location:CHANX:10832 1len2D_x length:2 (1,0)->(2,0), had no out-going switches
+Warning 19: Node: 10833 with RR_type: CHANX  at Location:CHANX:10833 1len2D_x length:2 (2,0)->(1,0), had no out-going switches
+Warning 20: Node: 10834 with RR_type: CHANX  at Location:CHANX:10834 2len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 21: Node: 10835 with RR_type: CHANX  at Location:CHANX:10835 2len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 22: Node: 10836 with RR_type: CHANX  at Location:CHANX:10836 2len2D_x length:2 (1,0)->(2,0), had no out-going switches
+Warning 23: Node: 10837 with RR_type: CHANX  at Location:CHANX:10837 2len2D_x length:2 (2,0)->(1,0), had no out-going switches
+Warning 24: Node: 10838 with RR_type: CHANX  at Location:CHANX:10838 2len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 25: Node: 10839 with RR_type: CHANX  at Location:CHANX:10839 2len2D_x length:1 (1,0)->(1,0), had no out-going switches
+Warning 26: Node: 10840 with RR_type: CHANX  at Location:CHANX:10840 2len2D_x length:2 (1,0)->(2,0), had no out-going switches
+Warning 27: Node: 10841 with RR_type: CHANX  at Location:CHANX:10841 2len2D_x length:2 (2,0)->(1,0), had no out-going switches
+Warning 28: Node: 10906 with RR_type: CHANX  at Location:CHANX:10906 1len2D_x length:2 (2,0)->(3,0), had no out-going switches
+Warning 29: Node: 10907 with RR_type: CHANX  at Location:CHANX:10907 1len2D_x length:2 (3,0)->(2,0), had no out-going switches
+Warning 30: Node: 10909 with RR_type: CHANX  at Location:CHANX:10909 1len2D_x length:2 (3,0)->(2,0), had no out-going switches
+Warning 31: Node: 10910 with RR_type: CHANX  at Location:CHANX:10910 2len2D_x length:2 (2,0)->(3,0), had no out-going switches
+Warning 32: Node: 10911 with RR_type: CHANX  at Location:CHANX:10911 2len2D_x length:2 (3,0)->(2,0), had no out-going switches
+Warning 33: Node: 10912 with RR_type: CHANX  at Location:CHANX:10912 2len2D_x length:2 (2,0)->(3,0), had no out-going switches
+Warning 34: Node: 10913 with RR_type: CHANX  at Location:CHANX:10913 2len2D_x length:2 (3,0)->(2,0), had no out-going switches
+Warning 35: Node: 10971 with RR_type: CHANX  at Location:CHANX:10971 1len2D_x length:2 (4,0)->(3,0), had no out-going switches
+Warning 36: Node: 10973 with RR_type: CHANX  at Location:CHANX:10973 1len2D_x length:2 (4,0)->(3,0), had no out-going switches
+Warning 37: Node: 10974 with RR_type: CHANX  at Location:CHANX:10974 2len2D_x length:2 (3,0)->(4,0), had no out-going switches
+Warning 38: Node: 10975 with RR_type: CHANX  at Location:CHANX:10975 2len2D_x length:2 (4,0)->(3,0), had no out-going switches
+Warning 39: Node: 10976 with RR_type: CHANX  at Location:CHANX:10976 2len2D_x length:2 (3,0)->(4,0), had no out-going switches
+Warning 40: Node: 10977 with RR_type: CHANX  at Location:CHANX:10977 2len2D_x length:2 (4,0)->(3,0), had no out-going switches
+Warning 41: Node: 11035 with RR_type: CHANX  at Location:CHANX:11035 1len2D_x length:2 (5,0)->(4,0), had no out-going switches
+Warning 42: Node: 11037 with RR_type: CHANX  at Location:CHANX:11037 1len2D_x length:2 (5,0)->(4,0), had no out-going switches
+Warning 43: Node: 11038 with RR_type: CHANX  at Location:CHANX:11038 2len2D_x length:2 (4,0)->(5,0), had no out-going switches
+Warning 44: Node: 11039 with RR_type: CHANX  at Location:CHANX:11039 2len2D_x length:2 (5,0)->(4,0), had no out-going switches
+Warning 45: Node: 11040 with RR_type: CHANX  at Location:CHANX:11040 2len2D_x length:2 (4,0)->(5,0), had no out-going switches
+Warning 46: Node: 11041 with RR_type: CHANX  at Location:CHANX:11041 2len2D_x length:2 (5,0)->(4,0), had no out-going switches
+Warning 47: Node: 11099 with RR_type: CHANX  at Location:CHANX:11099 1len2D_x length:2 (6,0)->(5,0), had no out-going switches
+Warning 48: Node: 11101 with RR_type: CHANX  at Location:CHANX:11101 1len2D_x length:2 (6,0)->(5,0), had no out-going switches
+Warning 49: Node: 11102 with RR_type: CHANX  at Location:CHANX:11102 2len2D_x length:2 (5,0)->(6,0), had no out-going switches
+Warning 50: Node: 11103 with RR_type: CHANX  at Location:CHANX:11103 2len2D_x length:2 (6,0)->(5,0), had no out-going switches
+Warning 51: Node: 11104 with RR_type: CHANX  at Location:CHANX:11104 2len2D_x length:2 (5,0)->(6,0), had no out-going switches
+Warning 52: Node: 11105 with RR_type: CHANX  at Location:CHANX:11105 2len2D_x length:2 (6,0)->(5,0), had no out-going switches
+Warning 53: Node: 11163 with RR_type: CHANX  at Location:CHANX:11163 1len2D_x length:2 (7,0)->(6,0), had no out-going switches
+Warning 54: Node: 11164 with RR_type: CHANX  at Location:CHANX:11164 1len2D_x length:2 (6,0)->(7,0), had no out-going switches
+Warning 55: Node: 11165 with RR_type: CHANX  at Location:CHANX:11165 1len2D_x length:2 (7,0)->(6,0), had no out-going switches
+Warning 56: Node: 11166 with RR_type: CHANX  at Location:CHANX:11166 2len2D_x length:2 (6,0)->(7,0), had no out-going switches
+Warning 57: Node: 11167 with RR_type: CHANX  at Location:CHANX:11167 2len2D_x length:2 (7,0)->(6,0), had no out-going switches
+Warning 58: Node: 11168 with RR_type: CHANX  at Location:CHANX:11168 2len2D_x length:2 (6,0)->(7,0), had no out-going switches
+Warning 59: Node: 11169 with RR_type: CHANX  at Location:CHANX:11169 2len2D_x length:2 (7,0)->(6,0), had no out-going switches
+Warning 60: Node: 11227 with RR_type: CHANX  at Location:CHANX:11227 1len2D_x length:2 (8,0)->(7,0), had no out-going switches
+Warning 61: Node: 11229 with RR_type: CHANX  at Location:CHANX:11229 1len2D_x length:2 (8,0)->(7,0), had no out-going switches
+Warning 62: Node: 11230 with RR_type: CHANX  at Location:CHANX:11230 2len2D_x length:2 (7,0)->(8,0), had no out-going switches
+Warning 63: Node: 11231 with RR_type: CHANX  at Location:CHANX:11231 2len2D_x length:2 (8,0)->(7,0), had no out-going switches
+Warning 64: Node: 11232 with RR_type: CHANX  at Location:CHANX:11232 2len2D_x length:2 (7,0)->(8,0), had no out-going switches
+Warning 65: Node: 11233 with RR_type: CHANX  at Location:CHANX:11233 2len2D_x length:2 (8,0)->(7,0), had no out-going switches
+Warning 66: Node: 11293 with RR_type: CHANX  at Location:CHANX:11293 1len2D_x length:1 (8,0)->(8,0), had no out-going switches
+Warning 67: Node: 11295 with RR_type: CHANX  at Location:CHANX:11295 1len2D_x length:1 (8,0)->(8,0), had no out-going switches
+Warning 68: Node: 11296 with RR_type: CHANX  at Location:CHANX:11296 2len2D_x length:1 (8,0)->(8,0), had no out-going switches
+Warning 69: Node: 11297 with RR_type: CHANX  at Location:CHANX:11297 2len2D_x length:1 (8,0)->(8,0), had no out-going switches
+Warning 70: Node: 11298 with RR_type: CHANX  at Location:CHANX:11298 2len2D_x length:1 (8,0)->(8,0), had no out-going switches
+Warning 71: Node: 11299 with RR_type: CHANX  at Location:CHANX:11299 2len2D_x length:1 (8,0)->(8,0), had no out-going switches
+Warning 72: Node: 11400 with RR_type: CHANX  at Location:CHANX:11400 1len2D_x length:2 (1,1)->(2,1), had no out-going switches
+Warning 73: Node: 11401 with RR_type: CHANX  at Location:CHANX:11401 1len2D_x length:2 (2,1)->(1,1), had no out-going switches
+Warning 74: Node: 11402 with RR_type: CHANX  at Location:CHANX:11402 1len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 75: Node: 11403 with RR_type: CHANX  at Location:CHANX:11403 1len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 76: Node: 11404 with RR_type: CHANX  at Location:CHANX:11404 1len2D_x length:2 (1,1)->(2,1), had no out-going switches
+Warning 77: Node: 11405 with RR_type: CHANX  at Location:CHANX:11405 1len2D_x length:2 (2,1)->(1,1), had no out-going switches
+Warning 78: Node: 11406 with RR_type: CHANX  at Location:CHANX:11406 1len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 79: Node: 11407 with RR_type: CHANX  at Location:CHANX:11407 1len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 80: Node: 11408 with RR_type: CHANX  at Location:CHANX:11408 2len2D_x length:2 (1,1)->(2,1), had no out-going switches
+Warning 81: Node: 11409 with RR_type: CHANX  at Location:CHANX:11409 2len2D_x length:2 (2,1)->(1,1), had no out-going switches
+Warning 82: Node: 11410 with RR_type: CHANX  at Location:CHANX:11410 2len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 83: Node: 11411 with RR_type: CHANX  at Location:CHANX:11411 2len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 84: Node: 11412 with RR_type: CHANX  at Location:CHANX:11412 2len2D_x length:2 (1,1)->(2,1), had no out-going switches
+Warning 85: Node: 11413 with RR_type: CHANX  at Location:CHANX:11413 2len2D_x length:2 (2,1)->(1,1), had no out-going switches
+Warning 86: Node: 11414 with RR_type: CHANX  at Location:CHANX:11414 2len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 87: Node: 11415 with RR_type: CHANX  at Location:CHANX:11415 2len2D_x length:1 (1,1)->(1,1), had no out-going switches
+Warning 88: Node: 11480 with RR_type: CHANX  at Location:CHANX:11480 1len2D_x length:2 (2,1)->(3,1), had no out-going switches
+Warning 89: Node: 11481 with RR_type: CHANX  at Location:CHANX:11481 1len2D_x length:2 (3,1)->(2,1), had no out-going switches
+Warning 90: Node: 11483 with RR_type: CHANX  at Location:CHANX:11483 1len2D_x length:2 (3,1)->(2,1), had no out-going switches
+Warning 91: Node: 11484 with RR_type: CHANX  at Location:CHANX:11484 2len2D_x length:2 (2,1)->(3,1), had no out-going switches
+Warning 92: Node: 11485 with RR_type: CHANX  at Location:CHANX:11485 2len2D_x length:2 (3,1)->(2,1), had no out-going switches
+Warning 93: Node: 11486 with RR_type: CHANX  at Location:CHANX:11486 2len2D_x length:2 (2,1)->(3,1), had no out-going switches
+Warning 94: Node: 11487 with RR_type: CHANX  at Location:CHANX:11487 2len2D_x length:2 (3,1)->(2,1), had no out-going switches
+Warning 95: Node: 11545 with RR_type: CHANX  at Location:CHANX:11545 1len2D_x length:2 (4,1)->(3,1), had no out-going switches
+Warning 96: Node: 11547 with RR_type: CHANX  at Location:CHANX:11547 1len2D_x length:2 (4,1)->(3,1), had no out-going switches
+Warning 97: Node: 11548 with RR_type: CHANX  at Location:CHANX:11548 2len2D_x length:2 (3,1)->(4,1), had no out-going switches
+Warning 98: Node: 11549 with RR_type: CHANX  at Location:CHANX:11549 2len2D_x length:2 (4,1)->(3,1), had no out-going switches
+Warning 99: Node: 11550 with RR_type: CHANX  at Location:CHANX:11550 2len2D_x length:2 (3,1)->(4,1), had no out-going switches
+Warning 100: Node: 11551 with RR_type: CHANX  at Location:CHANX:11551 2len2D_x length:2 (4,1)->(3,1), had no out-going switches
+Warning 101: Node: 11609 with RR_type: CHANX  at Location:CHANX:11609 1len2D_x length:2 (5,1)->(4,1), had no out-going switches
+Warning 102: Node: 11611 with RR_type: CHANX  at Location:CHANX:11611 1len2D_x length:2 (5,1)->(4,1), had no out-going switches
+Warning 103: Node: 11612 with RR_type: CHANX  at Location:CHANX:11612 2len2D_x length:2 (4,1)->(5,1), had no out-going switches
+Warning 104: Node: 11613 with RR_type: CHANX  at Location:CHANX:11613 2len2D_x length:2 (5,1)->(4,1), had no out-going switches
+Warning 105: Node: 11614 with RR_type: CHANX  at Location:CHANX:11614 2len2D_x length:2 (4,1)->(5,1), had no out-going switches
+Warning 106: Node: 11615 with RR_type: CHANX  at Location:CHANX:11615 2len2D_x length:2 (5,1)->(4,1), had no out-going switches
+Warning 107: Node: 11673 with RR_type: CHANX  at Location:CHANX:11673 1len2D_x length:2 (6,1)->(5,1), had no out-going switches
+Warning 108: Node: 11675 with RR_type: CHANX  at Location:CHANX:11675 1len2D_x length:2 (6,1)->(5,1), had no out-going switches
+Warning 109: Node: 11676 with RR_type: CHANX  at Location:CHANX:11676 2len2D_x length:2 (5,1)->(6,1), had no out-going switches
+Warning 110: Node: 11677 with RR_type: CHANX  at Location:CHANX:11677 2len2D_x length:2 (6,1)->(5,1), had no out-going switches
+Warning 111: Node: 11678 with RR_type: CHANX  at Location:CHANX:11678 2len2D_x length:2 (5,1)->(6,1), had no out-going switches
+Warning 112: Node: 11679 with RR_type: CHANX  at Location:CHANX:11679 2len2D_x length:2 (6,1)->(5,1), had no out-going switches
+Warning 113: Node: 11737 with RR_type: CHANX  at Location:CHANX:11737 1len2D_x length:2 (7,1)->(6,1), had no out-going switches
+Warning 114: Node: 11738 with RR_type: CHANX  at Location:CHANX:11738 1len2D_x length:2 (6,1)->(7,1), had no out-going switches
+Warning 115: Node: 11739 with RR_type: CHANX  at Location:CHANX:11739 1len2D_x length:2 (7,1)->(6,1), had no out-going switches
+Warning 116: Node: 11740 with RR_type: CHANX  at Location:CHANX:11740 2len2D_x length:2 (6,1)->(7,1), had no out-going switches
+Warning 117: Node: 11741 with RR_type: CHANX  at Location:CHANX:11741 2len2D_x length:2 (7,1)->(6,1), had no out-going switches
+Warning 118: Node: 11742 with RR_type: CHANX  at Location:CHANX:11742 2len2D_x length:2 (6,1)->(7,1), had no out-going switches
+Warning 119: Node: 11743 with RR_type: CHANX  at Location:CHANX:11743 2len2D_x length:2 (7,1)->(6,1), had no out-going switches
+Warning 120: Node: 11803 with RR_type: CHANX  at Location:CHANX:11803 1len2D_x length:2 (8,1)->(7,1), had no out-going switches
+Warning 121: Node: 11805 with RR_type: CHANX  at Location:CHANX:11805 1len2D_x length:2 (8,1)->(7,1), had no out-going switches
+Warning 122: Node: 11806 with RR_type: CHANX  at Location:CHANX:11806 2len2D_x length:2 (7,1)->(8,1), had no out-going switches
+Warning 123: Node: 11807 with RR_type: CHANX  at Location:CHANX:11807 2len2D_x length:2 (8,1)->(7,1), had no out-going switches
+Warning 124: Node: 11808 with RR_type: CHANX  at Location:CHANX:11808 2len2D_x length:2 (7,1)->(8,1), had no out-going switches
+Warning 125: Node: 11809 with RR_type: CHANX  at Location:CHANX:11809 2len2D_x length:2 (8,1)->(7,1), had no out-going switches
+Warning 126: Node: 11869 with RR_type: CHANX  at Location:CHANX:11869 1len2D_x length:1 (8,1)->(8,1), had no out-going switches
+Warning 127: Node: 11871 with RR_type: CHANX  at Location:CHANX:11871 1len2D_x length:1 (8,1)->(8,1), had no out-going switches
+Warning 128: Node: 11872 with RR_type: CHANX  at Location:CHANX:11872 2len2D_x length:1 (8,1)->(8,1), had no out-going switches
+Warning 129: Node: 11873 with RR_type: CHANX  at Location:CHANX:11873 2len2D_x length:1 (8,1)->(8,1), had no out-going switches
+Warning 130: Node: 11874 with RR_type: CHANX  at Location:CHANX:11874 2len2D_x length:1 (8,1)->(8,1), had no out-going switches
+Warning 131: Node: 11875 with RR_type: CHANX  at Location:CHANX:11875 2len2D_x length:1 (8,1)->(8,1), had no out-going switches
+Warning 132: Node: 11976 with RR_type: CHANX  at Location:CHANX:11976 1len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 133: Node: 11977 with RR_type: CHANX  at Location:CHANX:11977 1len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 134: Node: 11978 with RR_type: CHANX  at Location:CHANX:11978 1len2D_x length:2 (1,2)->(2,2), had no out-going switches
+Warning 135: Node: 11979 with RR_type: CHANX  at Location:CHANX:11979 1len2D_x length:2 (2,2)->(1,2), had no out-going switches
+Warning 136: Node: 11980 with RR_type: CHANX  at Location:CHANX:11980 1len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 137: Node: 11981 with RR_type: CHANX  at Location:CHANX:11981 1len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 138: Node: 11982 with RR_type: CHANX  at Location:CHANX:11982 1len2D_x length:2 (1,2)->(2,2), had no out-going switches
+Warning 139: Node: 11983 with RR_type: CHANX  at Location:CHANX:11983 1len2D_x length:2 (2,2)->(1,2), had no out-going switches
+Warning 140: Node: 11984 with RR_type: CHANX  at Location:CHANX:11984 2len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 141: Node: 11985 with RR_type: CHANX  at Location:CHANX:11985 2len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 142: Node: 11986 with RR_type: CHANX  at Location:CHANX:11986 2len2D_x length:2 (1,2)->(2,2), had no out-going switches
+Warning 143: Node: 11987 with RR_type: CHANX  at Location:CHANX:11987 2len2D_x length:2 (2,2)->(1,2), had no out-going switches
+Warning 144: Node: 11988 with RR_type: CHANX  at Location:CHANX:11988 2len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 145: Node: 11989 with RR_type: CHANX  at Location:CHANX:11989 2len2D_x length:1 (1,2)->(1,2), had no out-going switches
+Warning 146: Node: 11990 with RR_type: CHANX  at Location:CHANX:11990 2len2D_x length:2 (1,2)->(2,2), had no out-going switches
+Warning 147: Node: 11991 with RR_type: CHANX  at Location:CHANX:11991 2len2D_x length:2 (2,2)->(1,2), had no out-going switches
+Warning 148: Node: 12057 with RR_type: CHANX  at Location:CHANX:12057 1len2D_x length:2 (3,2)->(2,2), had no out-going switches
+Warning 149: Node: 12059 with RR_type: CHANX  at Location:CHANX:12059 1len2D_x length:2 (3,2)->(2,2), had no out-going switches
+Warning 150: Node: 12060 with RR_type: CHANX  at Location:CHANX:12060 2len2D_x length:2 (2,2)->(3,2), had no out-going switches
+Warning 151: Node: 12061 with RR_type: CHANX  at Location:CHANX:12061 2len2D_x length:2 (3,2)->(2,2), had no out-going switches
+Warning 152: Node: 12062 with RR_type: CHANX  at Location:CHANX:12062 2len2D_x length:2 (2,2)->(3,2), had no out-going switches
+Warning 153: Node: 12063 with RR_type: CHANX  at Location:CHANX:12063 2len2D_x length:2 (3,2)->(2,2), had no out-going switches
+Warning 154: Node: 12121 with RR_type: CHANX  at Location:CHANX:12121 1len2D_x length:2 (4,2)->(3,2), had no out-going switches
+Warning 155: Node: 12123 with RR_type: CHANX  at Location:CHANX:12123 1len2D_x length:2 (4,2)->(3,2), had no out-going switches
+Warning 156: Node: 12124 with RR_type: CHANX  at Location:CHANX:12124 2len2D_x length:2 (3,2)->(4,2), had no out-going switches
+Warning 157: Node: 12125 with RR_type: CHANX  at Location:CHANX:12125 2len2D_x length:2 (4,2)->(3,2), had no out-going switches
+Warning 158: Node: 12126 with RR_type: CHANX  at Location:CHANX:12126 2len2D_x length:2 (3,2)->(4,2), had no out-going switches
+Warning 159: Node: 12127 with RR_type: CHANX  at Location:CHANX:12127 2len2D_x length:2 (4,2)->(3,2), had no out-going switches
+Warning 160: Node: 12185 with RR_type: CHANX  at Location:CHANX:12185 1len2D_x length:2 (5,2)->(4,2), had no out-going switches
+Warning 161: Node: 12187 with RR_type: CHANX  at Location:CHANX:12187 1len2D_x length:2 (5,2)->(4,2), had no out-going switches
+Warning 162: Node: 12188 with RR_type: CHANX  at Location:CHANX:12188 2len2D_x length:2 (4,2)->(5,2), had no out-going switches
+Warning 163: Node: 12189 with RR_type: CHANX  at Location:CHANX:12189 2len2D_x length:2 (5,2)->(4,2), had no out-going switches
+Warning 164: Node: 12190 with RR_type: CHANX  at Location:CHANX:12190 2len2D_x length:2 (4,2)->(5,2), had no out-going switches
+Warning 165: Node: 12191 with RR_type: CHANX  at Location:CHANX:12191 2len2D_x length:2 (5,2)->(4,2), had no out-going switches
+Warning 166: Node: 12249 with RR_type: CHANX  at Location:CHANX:12249 1len2D_x length:2 (6,2)->(5,2), had no out-going switches
+Warning 167: Node: 12250 with RR_type: CHANX  at Location:CHANX:12250 1len2D_x length:2 (5,2)->(6,2), had no out-going switches
+Warning 168: Node: 12251 with RR_type: CHANX  at Location:CHANX:12251 1len2D_x length:2 (6,2)->(5,2), had no out-going switches
+Warning 169: Node: 12252 with RR_type: CHANX  at Location:CHANX:12252 2len2D_x length:2 (5,2)->(6,2), had no out-going switches
+Warning 170: Node: 12253 with RR_type: CHANX  at Location:CHANX:12253 2len2D_x length:2 (6,2)->(5,2), had no out-going switches
+Warning 171: Node: 12254 with RR_type: CHANX  at Location:CHANX:12254 2len2D_x length:2 (5,2)->(6,2), had no out-going switches
+Warning 172: Node: 12255 with RR_type: CHANX  at Location:CHANX:12255 2len2D_x length:2 (6,2)->(5,2), had no out-going switches
+Warning 173: Node: 12315 with RR_type: CHANX  at Location:CHANX:12315 1len2D_x length:2 (7,2)->(6,2), had no out-going switches
+Warning 174: Node: 12317 with RR_type: CHANX  at Location:CHANX:12317 1len2D_x length:2 (7,2)->(6,2), had no out-going switches
+Warning 175: Node: 12318 with RR_type: CHANX  at Location:CHANX:12318 2len2D_x length:2 (6,2)->(7,2), had no out-going switches
+Warning 176: Node: 12319 with RR_type: CHANX  at Location:CHANX:12319 2len2D_x length:2 (7,2)->(6,2), had no out-going switches
+Warning 177: Node: 12320 with RR_type: CHANX  at Location:CHANX:12320 2len2D_x length:2 (6,2)->(7,2), had no out-going switches
+Warning 178: Node: 12321 with RR_type: CHANX  at Location:CHANX:12321 2len2D_x length:2 (7,2)->(6,2), had no out-going switches
+Warning 179: Node: 12381 with RR_type: CHANX  at Location:CHANX:12381 1len2D_x length:2 (8,2)->(7,2), had no out-going switches
+Warning 180: Node: 12383 with RR_type: CHANX  at Location:CHANX:12383 1len2D_x length:2 (8,2)->(7,2), had no out-going switches
+Warning 181: Node: 12384 with RR_type: CHANX  at Location:CHANX:12384 2len2D_x length:2 (7,2)->(8,2), had no out-going switches
+Warning 182: Node: 12385 with RR_type: CHANX  at Location:CHANX:12385 2len2D_x length:2 (8,2)->(7,2), had no out-going switches
+Warning 183: Node: 12386 with RR_type: CHANX  at Location:CHANX:12386 2len2D_x length:2 (7,2)->(8,2), had no out-going switches
+Warning 184: Node: 12387 with RR_type: CHANX  at Location:CHANX:12387 2len2D_x length:2 (8,2)->(7,2), had no out-going switches
+Warning 185: Node: 12447 with RR_type: CHANX  at Location:CHANX:12447 1len2D_x length:1 (8,2)->(8,2), had no out-going switches
+Warning 186: Node: 12449 with RR_type: CHANX  at Location:CHANX:12449 1len2D_x length:1 (8,2)->(8,2), had no out-going switches
+Warning 187: Node: 12450 with RR_type: CHANX  at Location:CHANX:12450 2len2D_x length:1 (8,2)->(8,2), had no out-going switches
+Warning 188: Node: 12451 with RR_type: CHANX  at Location:CHANX:12451 2len2D_x length:1 (8,2)->(8,2), had no out-going switches
+Warning 189: Node: 12452 with RR_type: CHANX  at Location:CHANX:12452 2len2D_x length:1 (8,2)->(8,2), had no out-going switches
+Warning 190: Node: 12453 with RR_type: CHANX  at Location:CHANX:12453 2len2D_x length:1 (8,2)->(8,2), had no out-going switches
+Warning 191: Node: 12554 with RR_type: CHANX  at Location:CHANX:12554 1len2D_x length:2 (1,3)->(2,3), had no out-going switches
+Warning 192: Node: 12555 with RR_type: CHANX  at Location:CHANX:12555 1len2D_x length:2 (2,3)->(1,3), had no out-going switches
+Warning 193: Node: 12556 with RR_type: CHANX  at Location:CHANX:12556 1len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 194: Node: 12557 with RR_type: CHANX  at Location:CHANX:12557 1len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 195: Node: 12558 with RR_type: CHANX  at Location:CHANX:12558 1len2D_x length:2 (1,3)->(2,3), had no out-going switches
+Warning 196: Node: 12559 with RR_type: CHANX  at Location:CHANX:12559 1len2D_x length:2 (2,3)->(1,3), had no out-going switches
+Warning 197: Node: 12560 with RR_type: CHANX  at Location:CHANX:12560 1len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 198: Node: 12561 with RR_type: CHANX  at Location:CHANX:12561 1len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 199: Node: 12562 with RR_type: CHANX  at Location:CHANX:12562 2len2D_x length:2 (1,3)->(2,3), had no out-going switches
+Warning 200: Node: 12563 with RR_type: CHANX  at Location:CHANX:12563 2len2D_x length:2 (2,3)->(1,3), had no out-going switches
+Warning 201: Node: 12564 with RR_type: CHANX  at Location:CHANX:12564 2len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 202: Node: 12565 with RR_type: CHANX  at Location:CHANX:12565 2len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 203: Node: 12566 with RR_type: CHANX  at Location:CHANX:12566 2len2D_x length:2 (1,3)->(2,3), had no out-going switches
+Warning 204: Node: 12567 with RR_type: CHANX  at Location:CHANX:12567 2len2D_x length:2 (2,3)->(1,3), had no out-going switches
+Warning 205: Node: 12568 with RR_type: CHANX  at Location:CHANX:12568 2len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 206: Node: 12569 with RR_type: CHANX  at Location:CHANX:12569 2len2D_x length:1 (1,3)->(1,3), had no out-going switches
+Warning 207: Node: 12635 with RR_type: CHANX  at Location:CHANX:12635 1len2D_x length:2 (3,3)->(2,3), had no out-going switches
+Warning 208: Node: 12637 with RR_type: CHANX  at Location:CHANX:12637 1len2D_x length:2 (3,3)->(2,3), had no out-going switches
+Warning 209: Node: 12638 with RR_type: CHANX  at Location:CHANX:12638 2len2D_x length:2 (2,3)->(3,3), had no out-going switches
+Warning 210: Node: 12639 with RR_type: CHANX  at Location:CHANX:12639 2len2D_x length:2 (3,3)->(2,3), had no out-going switches
+Warning 211: Node: 12640 with RR_type: CHANX  at Location:CHANX:12640 2len2D_x length:2 (2,3)->(3,3), had no out-going switches
+Warning 212: Node: 12641 with RR_type: CHANX  at Location:CHANX:12641 2len2D_x length:2 (3,3)->(2,3), had no out-going switches
+Warning 213: Node: 12699 with RR_type: CHANX  at Location:CHANX:12699 1len2D_x length:2 (4,3)->(3,3), had no out-going switches
+Warning 214: Node: 12701 with RR_type: CHANX  at Location:CHANX:12701 1len2D_x length:2 (4,3)->(3,3), had no out-going switches
+Warning 215: Node: 12702 with RR_type: CHANX  at Location:CHANX:12702 2len2D_x length:2 (3,3)->(4,3), had no out-going switches
+Warning 216: Node: 12703 with RR_type: CHANX  at Location:CHANX:12703 2len2D_x length:2 (4,3)->(3,3), had no out-going switches
+Warning 217: Node: 12704 with RR_type: CHANX  at Location:CHANX:12704 2len2D_x length:2 (3,3)->(4,3), had no out-going switches
+Warning 218: Node: 12705 with RR_type: CHANX  at Location:CHANX:12705 2len2D_x length:2 (4,3)->(3,3), had no out-going switches
+Warning 219: Node: 12763 with RR_type: CHANX  at Location:CHANX:12763 1len2D_x length:2 (5,3)->(4,3), had no out-going switches
+Warning 220: Node: 12765 with RR_type: CHANX  at Location:CHANX:12765 1len2D_x length:2 (5,3)->(4,3), had no out-going switches
+Warning 221: Node: 12766 with RR_type: CHANX  at Location:CHANX:12766 2len2D_x length:2 (4,3)->(5,3), had no out-going switches
+Warning 222: Node: 12767 with RR_type: CHANX  at Location:CHANX:12767 2len2D_x length:2 (5,3)->(4,3), had no out-going switches
+Warning 223: Node: 12768 with RR_type: CHANX  at Location:CHANX:12768 2len2D_x length:2 (4,3)->(5,3), had no out-going switches
+Warning 224: Node: 12769 with RR_type: CHANX  at Location:CHANX:12769 2len2D_x length:2 (5,3)->(4,3), had no out-going switches
+Warning 225: Node: 12829 with RR_type: CHANX  at Location:CHANX:12829 1len2D_x length:2 (6,3)->(5,3), had no out-going switches
+Warning 226: Node: 12831 with RR_type: CHANX  at Location:CHANX:12831 1len2D_x length:2 (6,3)->(5,3), had no out-going switches
+Warning 227: Node: 12832 with RR_type: CHANX  at Location:CHANX:12832 2len2D_x length:2 (5,3)->(6,3), had no out-going switches
+Warning 228: Node: 12833 with RR_type: CHANX  at Location:CHANX:12833 2len2D_x length:2 (6,3)->(5,3), had no out-going switches
+Warning 229: Node: 12834 with RR_type: CHANX  at Location:CHANX:12834 2len2D_x length:2 (5,3)->(6,3), had no out-going switches
+Warning 230: Node: 12835 with RR_type: CHANX  at Location:CHANX:12835 2len2D_x length:2 (6,3)->(5,3), had no out-going switches
+Warning 231: Node: 12895 with RR_type: CHANX  at Location:CHANX:12895 1len2D_x length:2 (7,3)->(6,3), had no out-going switches
+Warning 232: Node: 12897 with RR_type: CHANX  at Location:CHANX:12897 1len2D_x length:2 (7,3)->(6,3), had no out-going switches
+Warning 233: Node: 12898 with RR_type: CHANX  at Location:CHANX:12898 2len2D_x length:2 (6,3)->(7,3), had no out-going switches
+Warning 234: Node: 12899 with RR_type: CHANX  at Location:CHANX:12899 2len2D_x length:2 (7,3)->(6,3), had no out-going switches
+Warning 235: Node: 12900 with RR_type: CHANX  at Location:CHANX:12900 2len2D_x length:2 (6,3)->(7,3), had no out-going switches
+Warning 236: Node: 12901 with RR_type: CHANX  at Location:CHANX:12901 2len2D_x length:2 (7,3)->(6,3), had no out-going switches
+Warning 237: Node: 12961 with RR_type: CHANX  at Location:CHANX:12961 1len2D_x length:2 (8,3)->(7,3), had no out-going switches
+Warning 238: Node: 12963 with RR_type: CHANX  at Location:CHANX:12963 1len2D_x length:2 (8,3)->(7,3), had no out-going switches
+Warning 239: Node: 12964 with RR_type: CHANX  at Location:CHANX:12964 2len2D_x length:2 (7,3)->(8,3), had no out-going switches
+Warning 240: Node: 12965 with RR_type: CHANX  at Location:CHANX:12965 2len2D_x length:2 (8,3)->(7,3), had no out-going switches
+Warning 241: Node: 12966 with RR_type: CHANX  at Location:CHANX:12966 2len2D_x length:2 (7,3)->(8,3), had no out-going switches
+Warning 242: Node: 12967 with RR_type: CHANX  at Location:CHANX:12967 2len2D_x length:2 (8,3)->(7,3), had no out-going switches
+Warning 243: Node: 13027 with RR_type: CHANX  at Location:CHANX:13027 1len2D_x length:1 (8,3)->(8,3), had no out-going switches
+Warning 244: Node: 13029 with RR_type: CHANX  at Location:CHANX:13029 1len2D_x length:1 (8,3)->(8,3), had no out-going switches
+Warning 245: Node: 13030 with RR_type: CHANX  at Location:CHANX:13030 2len2D_x length:1 (8,3)->(8,3), had no out-going switches
+Warning 246: Node: 13031 with RR_type: CHANX  at Location:CHANX:13031 2len2D_x length:1 (8,3)->(8,3), had no out-going switches
+Warning 247: Node: 13032 with RR_type: CHANX  at Location:CHANX:13032 2len2D_x length:1 (8,3)->(8,3), had no out-going switches
+Warning 248: Node: 13033 with RR_type: CHANX  at Location:CHANX:13033 2len2D_x length:1 (8,3)->(8,3), had no out-going switches
+Warning 249: Node: 13134 with RR_type: CHANX  at Location:CHANX:13134 1len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 250: Node: 13135 with RR_type: CHANX  at Location:CHANX:13135 1len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 251: Node: 13136 with RR_type: CHANX  at Location:CHANX:13136 1len2D_x length:2 (1,4)->(2,4), had no out-going switches
+Warning 252: Node: 13137 with RR_type: CHANX  at Location:CHANX:13137 1len2D_x length:2 (2,4)->(1,4), had no out-going switches
+Warning 253: Node: 13138 with RR_type: CHANX  at Location:CHANX:13138 1len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 254: Node: 13139 with RR_type: CHANX  at Location:CHANX:13139 1len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 255: Node: 13140 with RR_type: CHANX  at Location:CHANX:13140 1len2D_x length:2 (1,4)->(2,4), had no out-going switches
+Warning 256: Node: 13141 with RR_type: CHANX  at Location:CHANX:13141 1len2D_x length:2 (2,4)->(1,4), had no out-going switches
+Warning 257: Node: 13142 with RR_type: CHANX  at Location:CHANX:13142 2len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 258: Node: 13143 with RR_type: CHANX  at Location:CHANX:13143 2len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 259: Node: 13144 with RR_type: CHANX  at Location:CHANX:13144 2len2D_x length:2 (1,4)->(2,4), had no out-going switches
+Warning 260: Node: 13145 with RR_type: CHANX  at Location:CHANX:13145 2len2D_x length:2 (2,4)->(1,4), had no out-going switches
+Warning 261: Node: 13146 with RR_type: CHANX  at Location:CHANX:13146 2len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 262: Node: 13147 with RR_type: CHANX  at Location:CHANX:13147 2len2D_x length:1 (1,4)->(1,4), had no out-going switches
+Warning 263: Node: 13148 with RR_type: CHANX  at Location:CHANX:13148 2len2D_x length:2 (1,4)->(2,4), had no out-going switches
+Warning 264: Node: 13149 with RR_type: CHANX  at Location:CHANX:13149 2len2D_x length:2 (2,4)->(1,4), had no out-going switches
+Warning 265: Node: 13215 with RR_type: CHANX  at Location:CHANX:13215 1len2D_x length:2 (3,4)->(2,4), had no out-going switches
+Warning 266: Node: 13217 with RR_type: CHANX  at Location:CHANX:13217 1len2D_x length:2 (3,4)->(2,4), had no out-going switches
+Warning 267: Node: 13218 with RR_type: CHANX  at Location:CHANX:13218 2len2D_x length:2 (2,4)->(3,4), had no out-going switches
+Warning 268: Node: 13219 with RR_type: CHANX  at Location:CHANX:13219 2len2D_x length:2 (3,4)->(2,4), had no out-going switches
+Warning 269: Node: 13220 with RR_type: CHANX  at Location:CHANX:13220 2len2D_x length:2 (2,4)->(3,4), had no out-going switches
+Warning 270: Node: 13221 with RR_type: CHANX  at Location:CHANX:13221 2len2D_x length:2 (3,4)->(2,4), had no out-going switches
+Warning 271: Node: 13279 with RR_type: CHANX  at Location:CHANX:13279 1len2D_x length:2 (4,4)->(3,4), had no out-going switches
+Warning 272: Node: 13281 with RR_type: CHANX  at Location:CHANX:13281 1len2D_x length:2 (4,4)->(3,4), had no out-going switches
+Warning 273: Node: 13282 with RR_type: CHANX  at Location:CHANX:13282 2len2D_x length:2 (3,4)->(4,4), had no out-going switches
+Warning 274: Node: 13283 with RR_type: CHANX  at Location:CHANX:13283 2len2D_x length:2 (4,4)->(3,4), had no out-going switches
+Warning 275: Node: 13284 with RR_type: CHANX  at Location:CHANX:13284 2len2D_x length:2 (3,4)->(4,4), had no out-going switches
+Warning 276: Node: 13285 with RR_type: CHANX  at Location:CHANX:13285 2len2D_x length:2 (4,4)->(3,4), had no out-going switches
+Warning 277: Node: 13344 with RR_type: CHANX  at Location:CHANX:13344 1len2D_x length:2 (4,4)->(5,4), had no out-going switches
+Warning 278: Node: 13345 with RR_type: CHANX  at Location:CHANX:13345 1len2D_x length:2 (5,4)->(4,4), had no out-going switches
+Warning 279: Node: 13347 with RR_type: CHANX  at Location:CHANX:13347 1len2D_x length:2 (5,4)->(4,4), had no out-going switches
+Warning 280: Node: 13348 with RR_type: CHANX  at Location:CHANX:13348 2len2D_x length:2 (4,4)->(5,4), had no out-going switches
+Warning 281: Node: 13349 with RR_type: CHANX  at Location:CHANX:13349 2len2D_x length:2 (5,4)->(4,4), had no out-going switches
+Warning 282: Node: 13350 with RR_type: CHANX  at Location:CHANX:13350 2len2D_x length:2 (4,4)->(5,4), had no out-going switches
+Warning 283: Node: 13351 with RR_type: CHANX  at Location:CHANX:13351 2len2D_x length:2 (5,4)->(4,4), had no out-going switches
+Warning 284: Node: 13411 with RR_type: CHANX  at Location:CHANX:13411 1len2D_x length:2 (6,4)->(5,4), had no out-going switches
+Warning 285: Node: 13413 with RR_type: CHANX  at Location:CHANX:13413 1len2D_x length:2 (6,4)->(5,4), had no out-going switches
+Warning 286: Node: 13414 with RR_type: CHANX  at Location:CHANX:13414 2len2D_x length:2 (5,4)->(6,4), had no out-going switches
+Warning 287: Node: 13415 with RR_type: CHANX  at Location:CHANX:13415 2len2D_x length:2 (6,4)->(5,4), had no out-going switches
+Warning 288: Node: 13416 with RR_type: CHANX  at Location:CHANX:13416 2len2D_x length:2 (5,4)->(6,4), had no out-going switches
+Warning 289: Node: 13417 with RR_type: CHANX  at Location:CHANX:13417 2len2D_x length:2 (6,4)->(5,4), had no out-going switches
+Warning 290: Node: 13477 with RR_type: CHANX  at Location:CHANX:13477 1len2D_x length:2 (7,4)->(6,4), had no out-going switches
+Warning 291: Node: 13479 with RR_type: CHANX  at Location:CHANX:13479 1len2D_x length:2 (7,4)->(6,4), had no out-going switches
+Warning 292: Node: 13480 with RR_type: CHANX  at Location:CHANX:13480 2len2D_x length:2 (6,4)->(7,4), had no out-going switches
+Warning 293: Node: 13481 with RR_type: CHANX  at Location:CHANX:13481 2len2D_x length:2 (7,4)->(6,4), had no out-going switches
+Warning 294: Node: 13482 with RR_type: CHANX  at Location:CHANX:13482 2len2D_x length:2 (6,4)->(7,4), had no out-going switches
+Warning 295: Node: 13483 with RR_type: CHANX  at Location:CHANX:13483 2len2D_x length:2 (7,4)->(6,4), had no out-going switches
+Warning 296: Node: 13542 with RR_type: CHANX  at Location:CHANX:13542 1len2D_x length:2 (7,4)->(8,4), had no out-going switches
+Warning 297: Node: 13543 with RR_type: CHANX  at Location:CHANX:13543 1len2D_x length:2 (8,4)->(7,4), had no out-going switches
+Warning 298: Node: 13545 with RR_type: CHANX  at Location:CHANX:13545 1len2D_x length:2 (8,4)->(7,4), had no out-going switches
+Warning 299: Node: 13546 with RR_type: CHANX  at Location:CHANX:13546 2len2D_x length:2 (7,4)->(8,4), had no out-going switches
+Warning 300: Node: 13547 with RR_type: CHANX  at Location:CHANX:13547 2len2D_x length:2 (8,4)->(7,4), had no out-going switches
+Warning 301: Node: 13548 with RR_type: CHANX  at Location:CHANX:13548 2len2D_x length:2 (7,4)->(8,4), had no out-going switches
+Warning 302: Node: 13549 with RR_type: CHANX  at Location:CHANX:13549 2len2D_x length:2 (8,4)->(7,4), had no out-going switches
+Warning 303: Node: 13609 with RR_type: CHANX  at Location:CHANX:13609 1len2D_x length:1 (8,4)->(8,4), had no out-going switches
+Warning 304: Node: 13611 with RR_type: CHANX  at Location:CHANX:13611 1len2D_x length:1 (8,4)->(8,4), had no out-going switches
+Warning 305: Node: 13612 with RR_type: CHANX  at Location:CHANX:13612 2len2D_x length:1 (8,4)->(8,4), had no out-going switches
+Warning 306: Node: 13613 with RR_type: CHANX  at Location:CHANX:13613 2len2D_x length:1 (8,4)->(8,4), had no out-going switches
+Warning 307: Node: 13614 with RR_type: CHANX  at Location:CHANX:13614 2len2D_x length:1 (8,4)->(8,4), had no out-going switches
+Warning 308: Node: 13615 with RR_type: CHANX  at Location:CHANX:13615 2len2D_x length:1 (8,4)->(8,4), had no out-going switches
+Warning 309: Node: 13716 with RR_type: CHANX  at Location:CHANX:13716 1len2D_x length:2 (1,5)->(2,5), had no out-going switches
+Warning 310: Node: 13717 with RR_type: CHANX  at Location:CHANX:13717 1len2D_x length:2 (2,5)->(1,5), had no out-going switches
+Warning 311: Node: 13718 with RR_type: CHANX  at Location:CHANX:13718 1len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 312: Node: 13719 with RR_type: CHANX  at Location:CHANX:13719 1len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 313: Node: 13720 with RR_type: CHANX  at Location:CHANX:13720 1len2D_x length:2 (1,5)->(2,5), had no out-going switches
+Warning 314: Node: 13721 with RR_type: CHANX  at Location:CHANX:13721 1len2D_x length:2 (2,5)->(1,5), had no out-going switches
+Warning 315: Node: 13722 with RR_type: CHANX  at Location:CHANX:13722 1len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 316: Node: 13723 with RR_type: CHANX  at Location:CHANX:13723 1len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 317: Node: 13724 with RR_type: CHANX  at Location:CHANX:13724 2len2D_x length:2 (1,5)->(2,5), had no out-going switches
+Warning 318: Node: 13725 with RR_type: CHANX  at Location:CHANX:13725 2len2D_x length:2 (2,5)->(1,5), had no out-going switches
+Warning 319: Node: 13726 with RR_type: CHANX  at Location:CHANX:13726 2len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 320: Node: 13727 with RR_type: CHANX  at Location:CHANX:13727 2len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 321: Node: 13728 with RR_type: CHANX  at Location:CHANX:13728 2len2D_x length:2 (1,5)->(2,5), had no out-going switches
+Warning 322: Node: 13729 with RR_type: CHANX  at Location:CHANX:13729 2len2D_x length:2 (2,5)->(1,5), had no out-going switches
+Warning 323: Node: 13730 with RR_type: CHANX  at Location:CHANX:13730 2len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 324: Node: 13731 with RR_type: CHANX  at Location:CHANX:13731 2len2D_x length:1 (1,5)->(1,5), had no out-going switches
+Warning 325: Node: 13797 with RR_type: CHANX  at Location:CHANX:13797 1len2D_x length:2 (3,5)->(2,5), had no out-going switches
+Warning 326: Node: 13799 with RR_type: CHANX  at Location:CHANX:13799 1len2D_x length:2 (3,5)->(2,5), had no out-going switches
+Warning 327: Node: 13800 with RR_type: CHANX  at Location:CHANX:13800 2len2D_x length:2 (2,5)->(3,5), had no out-going switches
+Warning 328: Node: 13801 with RR_type: CHANX  at Location:CHANX:13801 2len2D_x length:2 (3,5)->(2,5), had no out-going switches
+Warning 329: Node: 13802 with RR_type: CHANX  at Location:CHANX:13802 2len2D_x length:2 (2,5)->(3,5), had no out-going switches
+Warning 330: Node: 13803 with RR_type: CHANX  at Location:CHANX:13803 2len2D_x length:2 (3,5)->(2,5), had no out-going switches
+Warning 331: Node: 13863 with RR_type: CHANX  at Location:CHANX:13863 1len2D_x length:2 (4,5)->(3,5), had no out-going switches
+Warning 332: Node: 13864 with RR_type: CHANX  at Location:CHANX:13864 1len2D_x length:2 (3,5)->(4,5), had no out-going switches
+Warning 333: Node: 13865 with RR_type: CHANX  at Location:CHANX:13865 1len2D_x length:2 (4,5)->(3,5), had no out-going switches
+Warning 334: Node: 13866 with RR_type: CHANX  at Location:CHANX:13866 2len2D_x length:2 (3,5)->(4,5), had no out-going switches
+Warning 335: Node: 13867 with RR_type: CHANX  at Location:CHANX:13867 2len2D_x length:2 (4,5)->(3,5), had no out-going switches
+Warning 336: Node: 13868 with RR_type: CHANX  at Location:CHANX:13868 2len2D_x length:2 (3,5)->(4,5), had no out-going switches
+Warning 337: Node: 13869 with RR_type: CHANX  at Location:CHANX:13869 2len2D_x length:2 (4,5)->(3,5), had no out-going switches
+Warning 338: Node: 13929 with RR_type: CHANX  at Location:CHANX:13929 1len2D_x length:2 (5,5)->(4,5), had no out-going switches
+Warning 339: Node: 13931 with RR_type: CHANX  at Location:CHANX:13931 1len2D_x length:2 (5,5)->(4,5), had no out-going switches
+Warning 340: Node: 13932 with RR_type: CHANX  at Location:CHANX:13932 2len2D_x length:2 (4,5)->(5,5), had no out-going switches
+Warning 341: Node: 13933 with RR_type: CHANX  at Location:CHANX:13933 2len2D_x length:2 (5,5)->(4,5), had no out-going switches
+Warning 342: Node: 13934 with RR_type: CHANX  at Location:CHANX:13934 2len2D_x length:2 (4,5)->(5,5), had no out-going switches
+Warning 343: Node: 13935 with RR_type: CHANX  at Location:CHANX:13935 2len2D_x length:2 (5,5)->(4,5), had no out-going switches
+Warning 344: Node: 13995 with RR_type: CHANX  at Location:CHANX:13995 1len2D_x length:2 (6,5)->(5,5), had no out-going switches
+Warning 345: Node: 13997 with RR_type: CHANX  at Location:CHANX:13997 1len2D_x length:2 (6,5)->(5,5), had no out-going switches
+Warning 346: Node: 13998 with RR_type: CHANX  at Location:CHANX:13998 2len2D_x length:2 (5,5)->(6,5), had no out-going switches
+Warning 347: Node: 13999 with RR_type: CHANX  at Location:CHANX:13999 2len2D_x length:2 (6,5)->(5,5), had no out-going switches
+Warning 348: Node: 14000 with RR_type: CHANX  at Location:CHANX:14000 2len2D_x length:2 (5,5)->(6,5), had no out-going switches
+Warning 349: Node: 14001 with RR_type: CHANX  at Location:CHANX:14001 2len2D_x length:2 (6,5)->(5,5), had no out-going switches
+Warning 350: Node: 14061 with RR_type: CHANX  at Location:CHANX:14061 1len2D_x length:2 (7,5)->(6,5), had no out-going switches
+Warning 351: Node: 14063 with RR_type: CHANX  at Location:CHANX:14063 1len2D_x length:2 (7,5)->(6,5), had no out-going switches
+Warning 352: Node: 14064 with RR_type: CHANX  at Location:CHANX:14064 2len2D_x length:2 (6,5)->(7,5), had no out-going switches
+Warning 353: Node: 14065 with RR_type: CHANX  at Location:CHANX:14065 2len2D_x length:2 (7,5)->(6,5), had no out-going switches
+Warning 354: Node: 14066 with RR_type: CHANX  at Location:CHANX:14066 2len2D_x length:2 (6,5)->(7,5), had no out-going switches
+Warning 355: Node: 14067 with RR_type: CHANX  at Location:CHANX:14067 2len2D_x length:2 (7,5)->(6,5), had no out-going switches
+Warning 356: Node: 14127 with RR_type: CHANX  at Location:CHANX:14127 1len2D_x length:2 (8,5)->(7,5), had no out-going switches
+Warning 357: Node: 14129 with RR_type: CHANX  at Location:CHANX:14129 1len2D_x length:2 (8,5)->(7,5), had no out-going switches
+Warning 358: Node: 14130 with RR_type: CHANX  at Location:CHANX:14130 2len2D_x length:2 (7,5)->(8,5), had no out-going switches
+Warning 359: Node: 14131 with RR_type: CHANX  at Location:CHANX:14131 2len2D_x length:2 (8,5)->(7,5), had no out-going switches
+Warning 360: Node: 14132 with RR_type: CHANX  at Location:CHANX:14132 2len2D_x length:2 (7,5)->(8,5), had no out-going switches
+Warning 361: Node: 14133 with RR_type: CHANX  at Location:CHANX:14133 2len2D_x length:2 (8,5)->(7,5), had no out-going switches
+Warning 362: Node: 14193 with RR_type: CHANX  at Location:CHANX:14193 1len2D_x length:1 (8,5)->(8,5), had no out-going switches
+Warning 363: Node: 14195 with RR_type: CHANX  at Location:CHANX:14195 1len2D_x length:1 (8,5)->(8,5), had no out-going switches
+Warning 364: Node: 14196 with RR_type: CHANX  at Location:CHANX:14196 2len2D_x length:1 (8,5)->(8,5), had no out-going switches
+Warning 365: Node: 14197 with RR_type: CHANX  at Location:CHANX:14197 2len2D_x length:1 (8,5)->(8,5), had no out-going switches
+Warning 366: Node: 14198 with RR_type: CHANX  at Location:CHANX:14198 2len2D_x length:1 (8,5)->(8,5), had no out-going switches
+Warning 367: Node: 14199 with RR_type: CHANX  at Location:CHANX:14199 2len2D_x length:1 (8,5)->(8,5), had no out-going switches
+Warning 368: Node: 14300 with RR_type: CHANX  at Location:CHANX:14300 1len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 369: Node: 14301 with RR_type: CHANX  at Location:CHANX:14301 1len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 370: Node: 14302 with RR_type: CHANX  at Location:CHANX:14302 1len2D_x length:2 (1,6)->(2,6), had no out-going switches
+Warning 371: Node: 14303 with RR_type: CHANX  at Location:CHANX:14303 1len2D_x length:2 (2,6)->(1,6), had no out-going switches
+Warning 372: Node: 14304 with RR_type: CHANX  at Location:CHANX:14304 1len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 373: Node: 14305 with RR_type: CHANX  at Location:CHANX:14305 1len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 374: Node: 14306 with RR_type: CHANX  at Location:CHANX:14306 1len2D_x length:2 (1,6)->(2,6), had no out-going switches
+Warning 375: Node: 14307 with RR_type: CHANX  at Location:CHANX:14307 1len2D_x length:2 (2,6)->(1,6), had no out-going switches
+Warning 376: Node: 14308 with RR_type: CHANX  at Location:CHANX:14308 2len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 377: Node: 14309 with RR_type: CHANX  at Location:CHANX:14309 2len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 378: Node: 14310 with RR_type: CHANX  at Location:CHANX:14310 2len2D_x length:2 (1,6)->(2,6), had no out-going switches
+Warning 379: Node: 14311 with RR_type: CHANX  at Location:CHANX:14311 2len2D_x length:2 (2,6)->(1,6), had no out-going switches
+Warning 380: Node: 14312 with RR_type: CHANX  at Location:CHANX:14312 2len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 381: Node: 14313 with RR_type: CHANX  at Location:CHANX:14313 2len2D_x length:1 (1,6)->(1,6), had no out-going switches
+Warning 382: Node: 14314 with RR_type: CHANX  at Location:CHANX:14314 2len2D_x length:2 (1,6)->(2,6), had no out-going switches
+Warning 383: Node: 14315 with RR_type: CHANX  at Location:CHANX:14315 2len2D_x length:2 (2,6)->(1,6), had no out-going switches
+Warning 384: Node: 14383 with RR_type: CHANX  at Location:CHANX:14383 1len2D_x length:2 (3,6)->(2,6), had no out-going switches
+Warning 385: Node: 14385 with RR_type: CHANX  at Location:CHANX:14385 1len2D_x length:2 (3,6)->(2,6), had no out-going switches
+Warning 386: Node: 14386 with RR_type: CHANX  at Location:CHANX:14386 2len2D_x length:2 (2,6)->(3,6), had no out-going switches
+Warning 387: Node: 14387 with RR_type: CHANX  at Location:CHANX:14387 2len2D_x length:2 (3,6)->(2,6), had no out-going switches
+Warning 388: Node: 14388 with RR_type: CHANX  at Location:CHANX:14388 2len2D_x length:2 (2,6)->(3,6), had no out-going switches
+Warning 389: Node: 14389 with RR_type: CHANX  at Location:CHANX:14389 2len2D_x length:2 (3,6)->(2,6), had no out-going switches
+Warning 390: Node: 14448 with RR_type: CHANX  at Location:CHANX:14448 1len2D_x length:2 (3,6)->(4,6), had no out-going switches
+Warning 391: Node: 14449 with RR_type: CHANX  at Location:CHANX:14449 1len2D_x length:2 (4,6)->(3,6), had no out-going switches
+Warning 392: Node: 14451 with RR_type: CHANX  at Location:CHANX:14451 1len2D_x length:2 (4,6)->(3,6), had no out-going switches
+Warning 393: Node: 14452 with RR_type: CHANX  at Location:CHANX:14452 2len2D_x length:2 (3,6)->(4,6), had no out-going switches
+Warning 394: Node: 14453 with RR_type: CHANX  at Location:CHANX:14453 2len2D_x length:2 (4,6)->(3,6), had no out-going switches
+Warning 395: Node: 14454 with RR_type: CHANX  at Location:CHANX:14454 2len2D_x length:2 (3,6)->(4,6), had no out-going switches
+Warning 396: Node: 14455 with RR_type: CHANX  at Location:CHANX:14455 2len2D_x length:2 (4,6)->(3,6), had no out-going switches
+Warning 397: Node: 14515 with RR_type: CHANX  at Location:CHANX:14515 1len2D_x length:2 (5,6)->(4,6), had no out-going switches
+Warning 398: Node: 14517 with RR_type: CHANX  at Location:CHANX:14517 1len2D_x length:2 (5,6)->(4,6), had no out-going switches
+Warning 399: Node: 14518 with RR_type: CHANX  at Location:CHANX:14518 2len2D_x length:2 (4,6)->(5,6), had no out-going switches
+Warning 400: Node: 14519 with RR_type: CHANX  at Location:CHANX:14519 2len2D_x length:2 (5,6)->(4,6), had no out-going switches
+Warning 401: Node: 14520 with RR_type: CHANX  at Location:CHANX:14520 2len2D_x length:2 (4,6)->(5,6), had no out-going switches
+Warning 402: Node: 14521 with RR_type: CHANX  at Location:CHANX:14521 2len2D_x length:2 (5,6)->(4,6), had no out-going switches
+Warning 403: Node: 14581 with RR_type: CHANX  at Location:CHANX:14581 1len2D_x length:2 (6,6)->(5,6), had no out-going switches
+Warning 404: Node: 14583 with RR_type: CHANX  at Location:CHANX:14583 1len2D_x length:2 (6,6)->(5,6), had no out-going switches
+Warning 405: Node: 14584 with RR_type: CHANX  at Location:CHANX:14584 2len2D_x length:2 (5,6)->(6,6), had no out-going switches
+Warning 406: Node: 14585 with RR_type: CHANX  at Location:CHANX:14585 2len2D_x length:2 (6,6)->(5,6), had no out-going switches
+Warning 407: Node: 14586 with RR_type: CHANX  at Location:CHANX:14586 2len2D_x length:2 (5,6)->(6,6), had no out-going switches
+Warning 408: Node: 14587 with RR_type: CHANX  at Location:CHANX:14587 2len2D_x length:2 (6,6)->(5,6), had no out-going switches
+Warning 409: Node: 14647 with RR_type: CHANX  at Location:CHANX:14647 1len2D_x length:2 (7,6)->(6,6), had no out-going switches
+Warning 410: Node: 14649 with RR_type: CHANX  at Location:CHANX:14649 1len2D_x length:2 (7,6)->(6,6), had no out-going switches
+Warning 411: Node: 14650 with RR_type: CHANX  at Location:CHANX:14650 2len2D_x length:2 (6,6)->(7,6), had no out-going switches
+Warning 412: Node: 14651 with RR_type: CHANX  at Location:CHANX:14651 2len2D_x length:2 (7,6)->(6,6), had no out-going switches
+Warning 413: Node: 14652 with RR_type: CHANX  at Location:CHANX:14652 2len2D_x length:2 (6,6)->(7,6), had no out-going switches
+Warning 414: Node: 14653 with RR_type: CHANX  at Location:CHANX:14653 2len2D_x length:2 (7,6)->(6,6), had no out-going switches
+Warning 415: Node: 14713 with RR_type: CHANX  at Location:CHANX:14713 1len2D_x length:2 (8,6)->(7,6), had no out-going switches
+Warning 416: Node: 14715 with RR_type: CHANX  at Location:CHANX:14715 1len2D_x length:2 (8,6)->(7,6), had no out-going switches
+Warning 417: Node: 14716 with RR_type: CHANX  at Location:CHANX:14716 2len2D_x length:2 (7,6)->(8,6), had no out-going switches
+Warning 418: Node: 14717 with RR_type: CHANX  at Location:CHANX:14717 2len2D_x length:2 (8,6)->(7,6), had no out-going switches
+Warning 419: Node: 14718 with RR_type: CHANX  at Location:CHANX:14718 2len2D_x length:2 (7,6)->(8,6), had no out-going switches
+Warning 420: Node: 14719 with RR_type: CHANX  at Location:CHANX:14719 2len2D_x length:2 (8,6)->(7,6), had no out-going switches
+Warning 421: Node: 14777 with RR_type: CHANX  at Location:CHANX:14777 1len2D_x length:1 (8,6)->(8,6), had no out-going switches
+Warning 422: Node: 14779 with RR_type: CHANX  at Location:CHANX:14779 1len2D_x length:1 (8,6)->(8,6), had no out-going switches
+Warning 423: Node: 14780 with RR_type: CHANX  at Location:CHANX:14780 2len2D_x length:1 (8,6)->(8,6), had no out-going switches
+Warning 424: Node: 14781 with RR_type: CHANX  at Location:CHANX:14781 2len2D_x length:1 (8,6)->(8,6), had no out-going switches
+Warning 425: Node: 14782 with RR_type: CHANX  at Location:CHANX:14782 2len2D_x length:1 (8,6)->(8,6), had no out-going switches
+Warning 426: Node: 14783 with RR_type: CHANX  at Location:CHANX:14783 2len2D_x length:1 (8,6)->(8,6), had no out-going switches
+Warning 427: Node: 14884 with RR_type: CHANX  at Location:CHANX:14884 1len2D_x length:2 (1,7)->(2,7), had no out-going switches
+Warning 428: Node: 14885 with RR_type: CHANX  at Location:CHANX:14885 1len2D_x length:2 (2,7)->(1,7), had no out-going switches
+Warning 429: Node: 14886 with RR_type: CHANX  at Location:CHANX:14886 1len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 430: Node: 14887 with RR_type: CHANX  at Location:CHANX:14887 1len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 431: Node: 14888 with RR_type: CHANX  at Location:CHANX:14888 1len2D_x length:2 (1,7)->(2,7), had no out-going switches
+Warning 432: Node: 14889 with RR_type: CHANX  at Location:CHANX:14889 1len2D_x length:2 (2,7)->(1,7), had no out-going switches
+Warning 433: Node: 14890 with RR_type: CHANX  at Location:CHANX:14890 1len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 434: Node: 14891 with RR_type: CHANX  at Location:CHANX:14891 1len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 435: Node: 14892 with RR_type: CHANX  at Location:CHANX:14892 2len2D_x length:2 (1,7)->(2,7), had no out-going switches
+Warning 436: Node: 14893 with RR_type: CHANX  at Location:CHANX:14893 2len2D_x length:2 (2,7)->(1,7), had no out-going switches
+Warning 437: Node: 14894 with RR_type: CHANX  at Location:CHANX:14894 2len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 438: Node: 14895 with RR_type: CHANX  at Location:CHANX:14895 2len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 439: Node: 14896 with RR_type: CHANX  at Location:CHANX:14896 2len2D_x length:2 (1,7)->(2,7), had no out-going switches
+Warning 440: Node: 14897 with RR_type: CHANX  at Location:CHANX:14897 2len2D_x length:2 (2,7)->(1,7), had no out-going switches
+Warning 441: Node: 14898 with RR_type: CHANX  at Location:CHANX:14898 2len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 442: Node: 14899 with RR_type: CHANX  at Location:CHANX:14899 2len2D_x length:1 (1,7)->(1,7), had no out-going switches
+Warning 443: Node: 14967 with RR_type: CHANX  at Location:CHANX:14967 1len2D_x length:2 (3,7)->(2,7), had no out-going switches
+Warning 444: Node: 14968 with RR_type: CHANX  at Location:CHANX:14968 1len2D_x length:2 (2,7)->(3,7), had no out-going switches
+Warning 445: Node: 14969 with RR_type: CHANX  at Location:CHANX:14969 1len2D_x length:2 (3,7)->(2,7), had no out-going switches
+Warning 446: Node: 14970 with RR_type: CHANX  at Location:CHANX:14970 2len2D_x length:2 (2,7)->(3,7), had no out-going switches
+Warning 447: Node: 14971 with RR_type: CHANX  at Location:CHANX:14971 2len2D_x length:2 (3,7)->(2,7), had no out-going switches
+Warning 448: Node: 14972 with RR_type: CHANX  at Location:CHANX:14972 2len2D_x length:2 (2,7)->(3,7), had no out-going switches
+Warning 449: Node: 14973 with RR_type: CHANX  at Location:CHANX:14973 2len2D_x length:2 (3,7)->(2,7), had no out-going switches
+Warning 450: Node: 15033 with RR_type: CHANX  at Location:CHANX:15033 1len2D_x length:2 (4,7)->(3,7), had no out-going switches
+Warning 451: Node: 15035 with RR_type: CHANX  at Location:CHANX:15035 1len2D_x length:2 (4,7)->(3,7), had no out-going switches
+Warning 452: Node: 15036 with RR_type: CHANX  at Location:CHANX:15036 2len2D_x length:2 (3,7)->(4,7), had no out-going switches
+Warning 453: Node: 15037 with RR_type: CHANX  at Location:CHANX:15037 2len2D_x length:2 (4,7)->(3,7), had no out-going switches
+Warning 454: Node: 15038 with RR_type: CHANX  at Location:CHANX:15038 2len2D_x length:2 (3,7)->(4,7), had no out-going switches
+Warning 455: Node: 15039 with RR_type: CHANX  at Location:CHANX:15039 2len2D_x length:2 (4,7)->(3,7), had no out-going switches
+Warning 456: Node: 15099 with RR_type: CHANX  at Location:CHANX:15099 1len2D_x length:2 (5,7)->(4,7), had no out-going switches
+Warning 457: Node: 15101 with RR_type: CHANX  at Location:CHANX:15101 1len2D_x length:2 (5,7)->(4,7), had no out-going switches
+Warning 458: Node: 15102 with RR_type: CHANX  at Location:CHANX:15102 2len2D_x length:2 (4,7)->(5,7), had no out-going switches
+Warning 459: Node: 15103 with RR_type: CHANX  at Location:CHANX:15103 2len2D_x length:2 (5,7)->(4,7), had no out-going switches
+Warning 460: Node: 15104 with RR_type: CHANX  at Location:CHANX:15104 2len2D_x length:2 (4,7)->(5,7), had no out-going switches
+Warning 461: Node: 15105 with RR_type: CHANX  at Location:CHANX:15105 2len2D_x length:2 (5,7)->(4,7), had no out-going switches
+Warning 462: Node: 15165 with RR_type: CHANX  at Location:CHANX:15165 1len2D_x length:2 (6,7)->(5,7), had no out-going switches
+Warning 463: Node: 15167 with RR_type: CHANX  at Location:CHANX:15167 1len2D_x length:2 (6,7)->(5,7), had no out-going switches
+Warning 464: Node: 15168 with RR_type: CHANX  at Location:CHANX:15168 2len2D_x length:2 (5,7)->(6,7), had no out-going switches
+Warning 465: Node: 15169 with RR_type: CHANX  at Location:CHANX:15169 2len2D_x length:2 (6,7)->(5,7), had no out-going switches
+Warning 466: Node: 15170 with RR_type: CHANX  at Location:CHANX:15170 2len2D_x length:2 (5,7)->(6,7), had no out-going switches
+Warning 467: Node: 15171 with RR_type: CHANX  at Location:CHANX:15171 2len2D_x length:2 (6,7)->(5,7), had no out-going switches
+Warning 468: Node: 15230 with RR_type: CHANX  at Location:CHANX:15230 1len2D_x length:2 (6,7)->(7,7), had no out-going switches
+Warning 469: Node: 15231 with RR_type: CHANX  at Location:CHANX:15231 1len2D_x length:2 (7,7)->(6,7), had no out-going switches
+Warning 470: Node: 15233 with RR_type: CHANX  at Location:CHANX:15233 1len2D_x length:2 (7,7)->(6,7), had no out-going switches
+Warning 471: Node: 15234 with RR_type: CHANX  at Location:CHANX:15234 2len2D_x length:2 (6,7)->(7,7), had no out-going switches
+Warning 472: Node: 15235 with RR_type: CHANX  at Location:CHANX:15235 2len2D_x length:2 (7,7)->(6,7), had no out-going switches
+Warning 473: Node: 15236 with RR_type: CHANX  at Location:CHANX:15236 2len2D_x length:2 (6,7)->(7,7), had no out-going switches
+Warning 474: Node: 15237 with RR_type: CHANX  at Location:CHANX:15237 2len2D_x length:2 (7,7)->(6,7), had no out-going switches
+Warning 475: Node: 15295 with RR_type: CHANX  at Location:CHANX:15295 1len2D_x length:2 (8,7)->(7,7), had no out-going switches
+Warning 476: Node: 15297 with RR_type: CHANX  at Location:CHANX:15297 1len2D_x length:2 (8,7)->(7,7), had no out-going switches
+Warning 477: Node: 15298 with RR_type: CHANX  at Location:CHANX:15298 2len2D_x length:2 (7,7)->(8,7), had no out-going switches
+Warning 478: Node: 15299 with RR_type: CHANX  at Location:CHANX:15299 2len2D_x length:2 (8,7)->(7,7), had no out-going switches
+Warning 479: Node: 15300 with RR_type: CHANX  at Location:CHANX:15300 2len2D_x length:2 (7,7)->(8,7), had no out-going switches
+Warning 480: Node: 15301 with RR_type: CHANX  at Location:CHANX:15301 2len2D_x length:2 (8,7)->(7,7), had no out-going switches
+Warning 481: Node: 15359 with RR_type: CHANX  at Location:CHANX:15359 1len2D_x length:1 (8,7)->(8,7), had no out-going switches
+Warning 482: Node: 15361 with RR_type: CHANX  at Location:CHANX:15361 1len2D_x length:1 (8,7)->(8,7), had no out-going switches
+Warning 483: Node: 15362 with RR_type: CHANX  at Location:CHANX:15362 2len2D_x length:1 (8,7)->(8,7), had no out-going switches
+Warning 484: Node: 15363 with RR_type: CHANX  at Location:CHANX:15363 2len2D_x length:1 (8,7)->(8,7), had no out-going switches
+Warning 485: Node: 15364 with RR_type: CHANX  at Location:CHANX:15364 2len2D_x length:1 (8,7)->(8,7), had no out-going switches
+Warning 486: Node: 15365 with RR_type: CHANX  at Location:CHANX:15365 2len2D_x length:1 (8,7)->(8,7), had no out-going switches
+Warning 487: Node: 15466 with RR_type: CHANX  at Location:CHANX:15466 1len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 488: Node: 15467 with RR_type: CHANX  at Location:CHANX:15467 1len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 489: Node: 15468 with RR_type: CHANX  at Location:CHANX:15468 1len2D_x length:2 (1,8)->(2,8), had no out-going switches
+Warning 490: Node: 15469 with RR_type: CHANX  at Location:CHANX:15469 1len2D_x length:2 (2,8)->(1,8), had no out-going switches
+Warning 491: Node: 15470 with RR_type: CHANX  at Location:CHANX:15470 1len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 492: Node: 15471 with RR_type: CHANX  at Location:CHANX:15471 1len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 493: Node: 15472 with RR_type: CHANX  at Location:CHANX:15472 1len2D_x length:2 (1,8)->(2,8), had no out-going switches
+Warning 494: Node: 15473 with RR_type: CHANX  at Location:CHANX:15473 1len2D_x length:2 (2,8)->(1,8), had no out-going switches
+Warning 495: Node: 15474 with RR_type: CHANX  at Location:CHANX:15474 2len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 496: Node: 15475 with RR_type: CHANX  at Location:CHANX:15475 2len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 497: Node: 15476 with RR_type: CHANX  at Location:CHANX:15476 2len2D_x length:2 (1,8)->(2,8), had no out-going switches
+Warning 498: Node: 15477 with RR_type: CHANX  at Location:CHANX:15477 2len2D_x length:2 (2,8)->(1,8), had no out-going switches
+Warning 499: Node: 15478 with RR_type: CHANX  at Location:CHANX:15478 2len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 500: Node: 15479 with RR_type: CHANX  at Location:CHANX:15479 2len2D_x length:1 (1,8)->(1,8), had no out-going switches
+Warning 501: Node: 15480 with RR_type: CHANX  at Location:CHANX:15480 2len2D_x length:2 (1,8)->(2,8), had no out-going switches
+Warning 502: Node: 15481 with RR_type: CHANX  at Location:CHANX:15481 2len2D_x length:2 (2,8)->(1,8), had no out-going switches
+Warning 503: Node: 15549 with RR_type: CHANX  at Location:CHANX:15549 1len2D_x length:2 (3,8)->(2,8), had no out-going switches
+Warning 504: Node: 15551 with RR_type: CHANX  at Location:CHANX:15551 1len2D_x length:2 (3,8)->(2,8), had no out-going switches
+Warning 505: Node: 15552 with RR_type: CHANX  at Location:CHANX:15552 2len2D_x length:2 (2,8)->(3,8), had no out-going switches
+Warning 506: Node: 15553 with RR_type: CHANX  at Location:CHANX:15553 2len2D_x length:2 (3,8)->(2,8), had no out-going switches
+Warning 507: Node: 15554 with RR_type: CHANX  at Location:CHANX:15554 2len2D_x length:2 (2,8)->(3,8), had no out-going switches
+Warning 508: Node: 15555 with RR_type: CHANX  at Location:CHANX:15555 2len2D_x length:2 (3,8)->(2,8), had no out-going switches
+Warning 509: Node: 15615 with RR_type: CHANX  at Location:CHANX:15615 1len2D_x length:2 (4,8)->(3,8), had no out-going switches
+Warning 510: Node: 15617 with RR_type: CHANX  at Location:CHANX:15617 1len2D_x length:2 (4,8)->(3,8), had no out-going switches
+Warning 511: Node: 15618 with RR_type: CHANX  at Location:CHANX:15618 2len2D_x length:2 (3,8)->(4,8), had no out-going switches
+Warning 512: Node: 15619 with RR_type: CHANX  at Location:CHANX:15619 2len2D_x length:2 (4,8)->(3,8), had no out-going switches
+Warning 513: Node: 15620 with RR_type: CHANX  at Location:CHANX:15620 2len2D_x length:2 (3,8)->(4,8), had no out-going switches
+Warning 514: Node: 15621 with RR_type: CHANX  at Location:CHANX:15621 2len2D_x length:2 (4,8)->(3,8), had no out-going switches
+Warning 515: Node: 15680 with RR_type: CHANX  at Location:CHANX:15680 1len2D_x length:2 (4,8)->(5,8), had no out-going switches
+Warning 516: Node: 15681 with RR_type: CHANX  at Location:CHANX:15681 1len2D_x length:2 (5,8)->(4,8), had no out-going switches
+Warning 517: Node: 15683 with RR_type: CHANX  at Location:CHANX:15683 1len2D_x length:2 (5,8)->(4,8), had no out-going switches
+Warning 518: Node: 15684 with RR_type: CHANX  at Location:CHANX:15684 2len2D_x length:2 (4,8)->(5,8), had no out-going switches
+Warning 519: Node: 15685 with RR_type: CHANX  at Location:CHANX:15685 2len2D_x length:2 (5,8)->(4,8), had no out-going switches
+Warning 520: Node: 15686 with RR_type: CHANX  at Location:CHANX:15686 2len2D_x length:2 (4,8)->(5,8), had no out-going switches
+Warning 521: Node: 15687 with RR_type: CHANX  at Location:CHANX:15687 2len2D_x length:2 (5,8)->(4,8), had no out-going switches
+Warning 522: Node: 15747 with RR_type: CHANX  at Location:CHANX:15747 1len2D_x length:2 (6,8)->(5,8), had no out-going switches
+Warning 523: Node: 15749 with RR_type: CHANX  at Location:CHANX:15749 1len2D_x length:2 (6,8)->(5,8), had no out-going switches
+Warning 524: Node: 15750 with RR_type: CHANX  at Location:CHANX:15750 2len2D_x length:2 (5,8)->(6,8), had no out-going switches
+Warning 525: Node: 15751 with RR_type: CHANX  at Location:CHANX:15751 2len2D_x length:2 (6,8)->(5,8), had no out-going switches
+Warning 526: Node: 15752 with RR_type: CHANX  at Location:CHANX:15752 2len2D_x length:2 (5,8)->(6,8), had no out-going switches
+Warning 527: Node: 15753 with RR_type: CHANX  at Location:CHANX:15753 2len2D_x length:2 (6,8)->(5,8), had no out-going switches
+Warning 528: Node: 15811 with RR_type: CHANX  at Location:CHANX:15811 1len2D_x length:2 (7,8)->(6,8), had no out-going switches
+Warning 529: Node: 15813 with RR_type: CHANX  at Location:CHANX:15813 1len2D_x length:2 (7,8)->(6,8), had no out-going switches
+Warning 530: Node: 15814 with RR_type: CHANX  at Location:CHANX:15814 2len2D_x length:2 (6,8)->(7,8), had no out-going switches
+Warning 531: Node: 15815 with RR_type: CHANX  at Location:CHANX:15815 2len2D_x length:2 (7,8)->(6,8), had no out-going switches
+Warning 532: Node: 15816 with RR_type: CHANX  at Location:CHANX:15816 2len2D_x length:2 (6,8)->(7,8), had no out-going switches
+Warning 533: Node: 15817 with RR_type: CHANX  at Location:CHANX:15817 2len2D_x length:2 (7,8)->(6,8), had no out-going switches
+Warning 534: Node: 15875 with RR_type: CHANX  at Location:CHANX:15875 1len2D_x length:2 (8,8)->(7,8), had no out-going switches
+Warning 535: Node: 15877 with RR_type: CHANX  at Location:CHANX:15877 1len2D_x length:2 (8,8)->(7,8), had no out-going switches
+Warning 536: Node: 15878 with RR_type: CHANX  at Location:CHANX:15878 2len2D_x length:2 (7,8)->(8,8), had no out-going switches
+Warning 537: Node: 15879 with RR_type: CHANX  at Location:CHANX:15879 2len2D_x length:2 (8,8)->(7,8), had no out-going switches
+Warning 538: Node: 15880 with RR_type: CHANX  at Location:CHANX:15880 2len2D_x length:2 (7,8)->(8,8), had no out-going switches
+Warning 539: Node: 15881 with RR_type: CHANX  at Location:CHANX:15881 2len2D_x length:2 (8,8)->(7,8), had no out-going switches
+Warning 540: Node: 15938 with RR_type: CHANX  at Location:CHANX:15938 1len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 541: Node: 15939 with RR_type: CHANX  at Location:CHANX:15939 1len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 542: Node: 15940 with RR_type: CHANX  at Location:CHANX:15940 1len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 543: Node: 15941 with RR_type: CHANX  at Location:CHANX:15941 1len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 544: Node: 15942 with RR_type: CHANX  at Location:CHANX:15942 2len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 545: Node: 15943 with RR_type: CHANX  at Location:CHANX:15943 2len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 546: Node: 15944 with RR_type: CHANX  at Location:CHANX:15944 2len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 547: Node: 15945 with RR_type: CHANX  at Location:CHANX:15945 2len2D_x length:1 (8,8)->(8,8), had no out-going switches
+Warning 548: Node: 16046 with RR_type: CHANX  at Location:CHANX:16046 1len2D_x length:2 (1,9)->(2,9), had no out-going switches
+Warning 549: Node: 16047 with RR_type: CHANX  at Location:CHANX:16047 1len2D_x length:2 (2,9)->(1,9), had no out-going switches
+Warning 550: Node: 16048 with RR_type: CHANX  at Location:CHANX:16048 1len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 551: Node: 16049 with RR_type: CHANX  at Location:CHANX:16049 1len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 552: Node: 16050 with RR_type: CHANX  at Location:CHANX:16050 1len2D_x length:2 (1,9)->(2,9), had no out-going switches
+Warning 553: Node: 16051 with RR_type: CHANX  at Location:CHANX:16051 1len2D_x length:2 (2,9)->(1,9), had no out-going switches
+Warning 554: Node: 16052 with RR_type: CHANX  at Location:CHANX:16052 1len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 555: Node: 16053 with RR_type: CHANX  at Location:CHANX:16053 1len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 556: Node: 16054 with RR_type: CHANX  at Location:CHANX:16054 2len2D_x length:2 (1,9)->(2,9), had no out-going switches
+Warning 557: Node: 16055 with RR_type: CHANX  at Location:CHANX:16055 2len2D_x length:2 (2,9)->(1,9), had no out-going switches
+Warning 558: Node: 16056 with RR_type: CHANX  at Location:CHANX:16056 2len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 559: Node: 16057 with RR_type: CHANX  at Location:CHANX:16057 2len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 560: Node: 16058 with RR_type: CHANX  at Location:CHANX:16058 2len2D_x length:2 (1,9)->(2,9), had no out-going switches
+Warning 561: Node: 16059 with RR_type: CHANX  at Location:CHANX:16059 2len2D_x length:2 (2,9)->(1,9), had no out-going switches
+Warning 562: Node: 16060 with RR_type: CHANX  at Location:CHANX:16060 2len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 563: Node: 16061 with RR_type: CHANX  at Location:CHANX:16061 2len2D_x length:1 (1,9)->(1,9), had no out-going switches
+Warning 564: Node: 16129 with RR_type: CHANX  at Location:CHANX:16129 1len2D_x length:2 (3,9)->(2,9), had no out-going switches
+Warning 565: Node: 16131 with RR_type: CHANX  at Location:CHANX:16131 1len2D_x length:2 (3,9)->(2,9), had no out-going switches
+Warning 566: Node: 16132 with RR_type: CHANX  at Location:CHANX:16132 2len2D_x length:2 (2,9)->(3,9), had no out-going switches
+Warning 567: Node: 16133 with RR_type: CHANX  at Location:CHANX:16133 2len2D_x length:2 (3,9)->(2,9), had no out-going switches
+Warning 568: Node: 16134 with RR_type: CHANX  at Location:CHANX:16134 2len2D_x length:2 (2,9)->(3,9), had no out-going switches
+Warning 569: Node: 16135 with RR_type: CHANX  at Location:CHANX:16135 2len2D_x length:2 (3,9)->(2,9), had no out-going switches
+Warning 570: Node: 16195 with RR_type: CHANX  at Location:CHANX:16195 1len2D_x length:2 (4,9)->(3,9), had no out-going switches
+Warning 571: Node: 16196 with RR_type: CHANX  at Location:CHANX:16196 1len2D_x length:2 (3,9)->(4,9), had no out-going switches
+Warning 572: Node: 16197 with RR_type: CHANX  at Location:CHANX:16197 1len2D_x length:2 (4,9)->(3,9), had no out-going switches
+Warning 573: Node: 16198 with RR_type: CHANX  at Location:CHANX:16198 2len2D_x length:2 (3,9)->(4,9), had no out-going switches
+Warning 574: Node: 16199 with RR_type: CHANX  at Location:CHANX:16199 2len2D_x length:2 (4,9)->(3,9), had no out-going switches
+Warning 575: Node: 16200 with RR_type: CHANX  at Location:CHANX:16200 2len2D_x length:2 (3,9)->(4,9), had no out-going switches
+Warning 576: Node: 16201 with RR_type: CHANX  at Location:CHANX:16201 2len2D_x length:2 (4,9)->(3,9), had no out-going switches
+Warning 577: Node: 16261 with RR_type: CHANX  at Location:CHANX:16261 1len2D_x length:2 (5,9)->(4,9), had no out-going switches
+Warning 578: Node: 16263 with RR_type: CHANX  at Location:CHANX:16263 1len2D_x length:2 (5,9)->(4,9), had no out-going switches
+Warning 579: Node: 16264 with RR_type: CHANX  at Location:CHANX:16264 2len2D_x length:2 (4,9)->(5,9), had no out-going switches
+Warning 580: Node: 16265 with RR_type: CHANX  at Location:CHANX:16265 2len2D_x length:2 (5,9)->(4,9), had no out-going switches
+Warning 581: Node: 16266 with RR_type: CHANX  at Location:CHANX:16266 2len2D_x length:2 (4,9)->(5,9), had no out-going switches
+Warning 582: Node: 16267 with RR_type: CHANX  at Location:CHANX:16267 2len2D_x length:2 (5,9)->(4,9), had no out-going switches
+Warning 583: Node: 16325 with RR_type: CHANX  at Location:CHANX:16325 1len2D_x length:2 (6,9)->(5,9), had no out-going switches
+Warning 584: Node: 16326 with RR_type: CHANX  at Location:CHANX:16326 1len2D_x length:2 (5,9)->(6,9), had no out-going switches
+Warning 585: Node: 16327 with RR_type: CHANX  at Location:CHANX:16327 1len2D_x length:2 (6,9)->(5,9), had no out-going switches
+Warning 586: Node: 16328 with RR_type: CHANX  at Location:CHANX:16328 2len2D_x length:2 (5,9)->(6,9), had no out-going switches
+Warning 587: Node: 16329 with RR_type: CHANX  at Location:CHANX:16329 2len2D_x length:2 (6,9)->(5,9), had no out-going switches
+Warning 588: Node: 16330 with RR_type: CHANX  at Location:CHANX:16330 2len2D_x length:2 (5,9)->(6,9), had no out-going switches
+Warning 589: Node: 16331 with RR_type: CHANX  at Location:CHANX:16331 2len2D_x length:2 (6,9)->(5,9), had no out-going switches
+Warning 590: Node: 16389 with RR_type: CHANX  at Location:CHANX:16389 1len2D_x length:2 (7,9)->(6,9), had no out-going switches
+Warning 591: Node: 16391 with RR_type: CHANX  at Location:CHANX:16391 1len2D_x length:2 (7,9)->(6,9), had no out-going switches
+Warning 592: Node: 16392 with RR_type: CHANX  at Location:CHANX:16392 2len2D_x length:2 (6,9)->(7,9), had no out-going switches
+Warning 593: Node: 16393 with RR_type: CHANX  at Location:CHANX:16393 2len2D_x length:2 (7,9)->(6,9), had no out-going switches
+Warning 594: Node: 16394 with RR_type: CHANX  at Location:CHANX:16394 2len2D_x length:2 (6,9)->(7,9), had no out-going switches
+Warning 595: Node: 16395 with RR_type: CHANX  at Location:CHANX:16395 2len2D_x length:2 (7,9)->(6,9), had no out-going switches
+Warning 596: Node: 16453 with RR_type: CHANX  at Location:CHANX:16453 1len2D_x length:2 (8,9)->(7,9), had no out-going switches
+Warning 597: Node: 16455 with RR_type: CHANX  at Location:CHANX:16455 1len2D_x length:2 (8,9)->(7,9), had no out-going switches
+Warning 598: Node: 16456 with RR_type: CHANX  at Location:CHANX:16456 2len2D_x length:2 (7,9)->(8,9), had no out-going switches
+Warning 599: Node: 16457 with RR_type: CHANX  at Location:CHANX:16457 2len2D_x length:2 (8,9)->(7,9), had no out-going switches
+Warning 600: Node: 16458 with RR_type: CHANX  at Location:CHANX:16458 2len2D_x length:2 (7,9)->(8,9), had no out-going switches
+Warning 601: Node: 16459 with RR_type: CHANX  at Location:CHANX:16459 2len2D_x length:2 (8,9)->(7,9), had no out-going switches
+Warning 602: Node: 16517 with RR_type: CHANX  at Location:CHANX:16517 1len2D_x length:1 (8,9)->(8,9), had no out-going switches
+Warning 603: Node: 16519 with RR_type: CHANX  at Location:CHANX:16519 1len2D_x length:1 (8,9)->(8,9), had no out-going switches
+Warning 604: Node: 16520 with RR_type: CHANX  at Location:CHANX:16520 2len2D_x length:1 (8,9)->(8,9), had no out-going switches
+Warning 605: Node: 16521 with RR_type: CHANX  at Location:CHANX:16521 2len2D_x length:1 (8,9)->(8,9), had no out-going switches
+Warning 606: Node: 16522 with RR_type: CHANX  at Location:CHANX:16522 2len2D_x length:1 (8,9)->(8,9), had no out-going switches
+Warning 607: Node: 16523 with RR_type: CHANX  at Location:CHANX:16523 2len2D_x length:1 (8,9)->(8,9), had no out-going switches
+Warning 608: Node: 16624 with RR_type: CHANX  at Location:CHANX:16624 1len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 609: Node: 16625 with RR_type: CHANX  at Location:CHANX:16625 1len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 610: Node: 16626 with RR_type: CHANX  at Location:CHANX:16626 1len2D_x length:2 (1,10)->(2,10), had no out-going switches
+Warning 611: Node: 16627 with RR_type: CHANX  at Location:CHANX:16627 1len2D_x length:2 (2,10)->(1,10), had no out-going switches
+Warning 612: Node: 16628 with RR_type: CHANX  at Location:CHANX:16628 1len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 613: Node: 16629 with RR_type: CHANX  at Location:CHANX:16629 1len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 614: Node: 16630 with RR_type: CHANX  at Location:CHANX:16630 1len2D_x length:2 (1,10)->(2,10), had no out-going switches
+Warning 615: Node: 16631 with RR_type: CHANX  at Location:CHANX:16631 1len2D_x length:2 (2,10)->(1,10), had no out-going switches
+Warning 616: Node: 16632 with RR_type: CHANX  at Location:CHANX:16632 2len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 617: Node: 16633 with RR_type: CHANX  at Location:CHANX:16633 2len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 618: Node: 16634 with RR_type: CHANX  at Location:CHANX:16634 2len2D_x length:2 (1,10)->(2,10), had no out-going switches
+Warning 619: Node: 16635 with RR_type: CHANX  at Location:CHANX:16635 2len2D_x length:2 (2,10)->(1,10), had no out-going switches
+Warning 620: Node: 16636 with RR_type: CHANX  at Location:CHANX:16636 2len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 621: Node: 16637 with RR_type: CHANX  at Location:CHANX:16637 2len2D_x length:1 (1,10)->(1,10), had no out-going switches
+Warning 622: Node: 16638 with RR_type: CHANX  at Location:CHANX:16638 2len2D_x length:2 (1,10)->(2,10), had no out-going switches
+Warning 623: Node: 16639 with RR_type: CHANX  at Location:CHANX:16639 2len2D_x length:2 (2,10)->(1,10), had no out-going switches
+Warning 624: Node: 16707 with RR_type: CHANX  at Location:CHANX:16707 1len2D_x length:2 (3,10)->(2,10), had no out-going switches
+Warning 625: Node: 16709 with RR_type: CHANX  at Location:CHANX:16709 1len2D_x length:2 (3,10)->(2,10), had no out-going switches
+Warning 626: Node: 16710 with RR_type: CHANX  at Location:CHANX:16710 2len2D_x length:2 (2,10)->(3,10), had no out-going switches
+Warning 627: Node: 16711 with RR_type: CHANX  at Location:CHANX:16711 2len2D_x length:2 (3,10)->(2,10), had no out-going switches
+Warning 628: Node: 16712 with RR_type: CHANX  at Location:CHANX:16712 2len2D_x length:2 (2,10)->(3,10), had no out-going switches
+Warning 629: Node: 16713 with RR_type: CHANX  at Location:CHANX:16713 2len2D_x length:2 (3,10)->(2,10), had no out-going switches
+Warning 630: Node: 16773 with RR_type: CHANX  at Location:CHANX:16773 1len2D_x length:2 (4,10)->(3,10), had no out-going switches
+Warning 631: Node: 16775 with RR_type: CHANX  at Location:CHANX:16775 1len2D_x length:2 (4,10)->(3,10), had no out-going switches
+Warning 632: Node: 16776 with RR_type: CHANX  at Location:CHANX:16776 2len2D_x length:2 (3,10)->(4,10), had no out-going switches
+Warning 633: Node: 16777 with RR_type: CHANX  at Location:CHANX:16777 2len2D_x length:2 (4,10)->(3,10), had no out-going switches
+Warning 634: Node: 16778 with RR_type: CHANX  at Location:CHANX:16778 2len2D_x length:2 (3,10)->(4,10), had no out-going switches
+Warning 635: Node: 16779 with RR_type: CHANX  at Location:CHANX:16779 2len2D_x length:2 (4,10)->(3,10), had no out-going switches
+Warning 636: Node: 16837 with RR_type: CHANX  at Location:CHANX:16837 1len2D_x length:2 (5,10)->(4,10), had no out-going switches
+Warning 637: Node: 16839 with RR_type: CHANX  at Location:CHANX:16839 1len2D_x length:2 (5,10)->(4,10), had no out-going switches
+Warning 638: Node: 16840 with RR_type: CHANX  at Location:CHANX:16840 2len2D_x length:2 (4,10)->(5,10), had no out-going switches
+Warning 639: Node: 16841 with RR_type: CHANX  at Location:CHANX:16841 2len2D_x length:2 (5,10)->(4,10), had no out-going switches
+Warning 640: Node: 16842 with RR_type: CHANX  at Location:CHANX:16842 2len2D_x length:2 (4,10)->(5,10), had no out-going switches
+Warning 641: Node: 16843 with RR_type: CHANX  at Location:CHANX:16843 2len2D_x length:2 (5,10)->(4,10), had no out-going switches
+Warning 642: Node: 16901 with RR_type: CHANX  at Location:CHANX:16901 1len2D_x length:2 (6,10)->(5,10), had no out-going switches
+Warning 643: Node: 16903 with RR_type: CHANX  at Location:CHANX:16903 1len2D_x length:2 (6,10)->(5,10), had no out-going switches
+Warning 644: Node: 16904 with RR_type: CHANX  at Location:CHANX:16904 2len2D_x length:2 (5,10)->(6,10), had no out-going switches
+Warning 645: Node: 16905 with RR_type: CHANX  at Location:CHANX:16905 2len2D_x length:2 (6,10)->(5,10), had no out-going switches
+Warning 646: Node: 16906 with RR_type: CHANX  at Location:CHANX:16906 2len2D_x length:2 (5,10)->(6,10), had no out-going switches
+Warning 647: Node: 16907 with RR_type: CHANX  at Location:CHANX:16907 2len2D_x length:2 (6,10)->(5,10), had no out-going switches
+Warning 648: Node: 16965 with RR_type: CHANX  at Location:CHANX:16965 1len2D_x length:2 (7,10)->(6,10), had no out-going switches
+Warning 649: Node: 16967 with RR_type: CHANX  at Location:CHANX:16967 1len2D_x length:2 (7,10)->(6,10), had no out-going switches
+Warning 650: Node: 16968 with RR_type: CHANX  at Location:CHANX:16968 2len2D_x length:2 (6,10)->(7,10), had no out-going switches
+Warning 651: Node: 16969 with RR_type: CHANX  at Location:CHANX:16969 2len2D_x length:2 (7,10)->(6,10), had no out-going switches
+Warning 652: Node: 16970 with RR_type: CHANX  at Location:CHANX:16970 2len2D_x length:2 (6,10)->(7,10), had no out-going switches
+Warning 653: Node: 16971 with RR_type: CHANX  at Location:CHANX:16971 2len2D_x length:2 (7,10)->(6,10), had no out-going switches
+Warning 654: Node: 17029 with RR_type: CHANX  at Location:CHANX:17029 1len2D_x length:2 (8,10)->(7,10), had no out-going switches
+Warning 655: Node: 17031 with RR_type: CHANX  at Location:CHANX:17031 1len2D_x length:2 (8,10)->(7,10), had no out-going switches
+Warning 656: Node: 17032 with RR_type: CHANX  at Location:CHANX:17032 2len2D_x length:2 (7,10)->(8,10), had no out-going switches
+Warning 657: Node: 17033 with RR_type: CHANX  at Location:CHANX:17033 2len2D_x length:2 (8,10)->(7,10), had no out-going switches
+Warning 658: Node: 17034 with RR_type: CHANX  at Location:CHANX:17034 2len2D_x length:2 (7,10)->(8,10), had no out-going switches
+Warning 659: Node: 17035 with RR_type: CHANX  at Location:CHANX:17035 2len2D_x length:2 (8,10)->(7,10), had no out-going switches
+Warning 660: Node: 17093 with RR_type: CHANX  at Location:CHANX:17093 1len2D_x length:1 (8,10)->(8,10), had no out-going switches
+Warning 661: Node: 17094 with RR_type: CHANX  at Location:CHANX:17094 1len2D_x length:1 (8,10)->(8,10), had no out-going switches
+Warning 662: Node: 17095 with RR_type: CHANX  at Location:CHANX:17095 1len2D_x length:1 (8,10)->(8,10), had no out-going switches
+Warning 663: Node: 17096 with RR_type: CHANX  at Location:CHANX:17096 2len2D_x length:1 (8,10)->(8,10), had no out-going switches
+Warning 664: Node: 17097 with RR_type: CHANX  at Location:CHANX:17097 2len2D_x length:1 (8,10)->(8,10), had no out-going switches
+Warning 665: Node: 17098 with RR_type: CHANX  at Location:CHANX:17098 2len2D_x length:1 (8,10)->(8,10), had no out-going switches
+Warning 666: Node: 17099 with RR_type: CHANX  at Location:CHANX:17099 2len2D_x length:1 (8,10)->(8,10), had no out-going switches
+Warning 667: Node: 17200 with RR_type: CHANX  at Location:CHANX:17200 1len2D_x length:2 (1,11)->(2,11), had no out-going switches
+Warning 668: Node: 17201 with RR_type: CHANX  at Location:CHANX:17201 1len2D_x length:2 (2,11)->(1,11), had no out-going switches
+Warning 669: Node: 17202 with RR_type: CHANX  at Location:CHANX:17202 1len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 670: Node: 17203 with RR_type: CHANX  at Location:CHANX:17203 1len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 671: Node: 17204 with RR_type: CHANX  at Location:CHANX:17204 1len2D_x length:2 (1,11)->(2,11), had no out-going switches
+Warning 672: Node: 17205 with RR_type: CHANX  at Location:CHANX:17205 1len2D_x length:2 (2,11)->(1,11), had no out-going switches
+Warning 673: Node: 17206 with RR_type: CHANX  at Location:CHANX:17206 1len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 674: Node: 17207 with RR_type: CHANX  at Location:CHANX:17207 1len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 675: Node: 17208 with RR_type: CHANX  at Location:CHANX:17208 2len2D_x length:2 (1,11)->(2,11), had no out-going switches
+Warning 676: Node: 17209 with RR_type: CHANX  at Location:CHANX:17209 2len2D_x length:2 (2,11)->(1,11), had no out-going switches
+Warning 677: Node: 17210 with RR_type: CHANX  at Location:CHANX:17210 2len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 678: Node: 17211 with RR_type: CHANX  at Location:CHANX:17211 2len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 679: Node: 17212 with RR_type: CHANX  at Location:CHANX:17212 2len2D_x length:2 (1,11)->(2,11), had no out-going switches
+Warning 680: Node: 17213 with RR_type: CHANX  at Location:CHANX:17213 2len2D_x length:2 (2,11)->(1,11), had no out-going switches
+Warning 681: Node: 17214 with RR_type: CHANX  at Location:CHANX:17214 2len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 682: Node: 17215 with RR_type: CHANX  at Location:CHANX:17215 2len2D_x length:1 (1,11)->(1,11), had no out-going switches
+Warning 683: Node: 17283 with RR_type: CHANX  at Location:CHANX:17283 1len2D_x length:2 (3,11)->(2,11), had no out-going switches
+Warning 684: Node: 17285 with RR_type: CHANX  at Location:CHANX:17285 1len2D_x length:2 (3,11)->(2,11), had no out-going switches
+Warning 685: Node: 17286 with RR_type: CHANX  at Location:CHANX:17286 2len2D_x length:2 (2,11)->(3,11), had no out-going switches
+Warning 686: Node: 17287 with RR_type: CHANX  at Location:CHANX:17287 2len2D_x length:2 (3,11)->(2,11), had no out-going switches
+Warning 687: Node: 17288 with RR_type: CHANX  at Location:CHANX:17288 2len2D_x length:2 (2,11)->(3,11), had no out-going switches
+Warning 688: Node: 17289 with RR_type: CHANX  at Location:CHANX:17289 2len2D_x length:2 (3,11)->(2,11), had no out-going switches
+Warning 689: Node: 17347 with RR_type: CHANX  at Location:CHANX:17347 1len2D_x length:2 (4,11)->(3,11), had no out-going switches
+Warning 690: Node: 17349 with RR_type: CHANX  at Location:CHANX:17349 1len2D_x length:2 (4,11)->(3,11), had no out-going switches
+Warning 691: Node: 17350 with RR_type: CHANX  at Location:CHANX:17350 2len2D_x length:2 (3,11)->(4,11), had no out-going switches
+Warning 692: Node: 17351 with RR_type: CHANX  at Location:CHANX:17351 2len2D_x length:2 (4,11)->(3,11), had no out-going switches
+Warning 693: Node: 17352 with RR_type: CHANX  at Location:CHANX:17352 2len2D_x length:2 (3,11)->(4,11), had no out-going switches
+Warning 694: Node: 17353 with RR_type: CHANX  at Location:CHANX:17353 2len2D_x length:2 (4,11)->(3,11), had no out-going switches
+Warning 695: Node: 17411 with RR_type: CHANX  at Location:CHANX:17411 1len2D_x length:2 (5,11)->(4,11), had no out-going switches
+Warning 696: Node: 17413 with RR_type: CHANX  at Location:CHANX:17413 1len2D_x length:2 (5,11)->(4,11), had no out-going switches
+Warning 697: Node: 17414 with RR_type: CHANX  at Location:CHANX:17414 2len2D_x length:2 (4,11)->(5,11), had no out-going switches
+Warning 698: Node: 17415 with RR_type: CHANX  at Location:CHANX:17415 2len2D_x length:2 (5,11)->(4,11), had no out-going switches
+Warning 699: Node: 17416 with RR_type: CHANX  at Location:CHANX:17416 2len2D_x length:2 (4,11)->(5,11), had no out-going switches
+Warning 700: Node: 17417 with RR_type: CHANX  at Location:CHANX:17417 2len2D_x length:2 (5,11)->(4,11), had no out-going switches
+Warning 701: Node: 17475 with RR_type: CHANX  at Location:CHANX:17475 1len2D_x length:2 (6,11)->(5,11), had no out-going switches
+Warning 702: Node: 17477 with RR_type: CHANX  at Location:CHANX:17477 1len2D_x length:2 (6,11)->(5,11), had no out-going switches
+Warning 703: Node: 17478 with RR_type: CHANX  at Location:CHANX:17478 2len2D_x length:2 (5,11)->(6,11), had no out-going switches
+Warning 704: Node: 17479 with RR_type: CHANX  at Location:CHANX:17479 2len2D_x length:2 (6,11)->(5,11), had no out-going switches
+Warning 705: Node: 17480 with RR_type: CHANX  at Location:CHANX:17480 2len2D_x length:2 (5,11)->(6,11), had no out-going switches
+Warning 706: Node: 17481 with RR_type: CHANX  at Location:CHANX:17481 2len2D_x length:2 (6,11)->(5,11), had no out-going switches
+Warning 707: Node: 17539 with RR_type: CHANX  at Location:CHANX:17539 1len2D_x length:2 (7,11)->(6,11), had no out-going switches
+Warning 708: Node: 17541 with RR_type: CHANX  at Location:CHANX:17541 1len2D_x length:2 (7,11)->(6,11), had no out-going switches
+Warning 709: Node: 17542 with RR_type: CHANX  at Location:CHANX:17542 2len2D_x length:2 (6,11)->(7,11), had no out-going switches
+Warning 710: Node: 17543 with RR_type: CHANX  at Location:CHANX:17543 2len2D_x length:2 (7,11)->(6,11), had no out-going switches
+Warning 711: Node: 17544 with RR_type: CHANX  at Location:CHANX:17544 2len2D_x length:2 (6,11)->(7,11), had no out-going switches
+Warning 712: Node: 17545 with RR_type: CHANX  at Location:CHANX:17545 2len2D_x length:2 (7,11)->(6,11), had no out-going switches
+Warning 713: Node: 17603 with RR_type: CHANX  at Location:CHANX:17603 1len2D_x length:2 (8,11)->(7,11), had no out-going switches
+Warning 714: Node: 17605 with RR_type: CHANX  at Location:CHANX:17605 1len2D_x length:2 (8,11)->(7,11), had no out-going switches
+Warning 715: Node: 17606 with RR_type: CHANX  at Location:CHANX:17606 2len2D_x length:2 (7,11)->(8,11), had no out-going switches
+Warning 716: Node: 17607 with RR_type: CHANX  at Location:CHANX:17607 2len2D_x length:2 (8,11)->(7,11), had no out-going switches
+Warning 717: Node: 17608 with RR_type: CHANX  at Location:CHANX:17608 2len2D_x length:2 (7,11)->(8,11), had no out-going switches
+Warning 718: Node: 17609 with RR_type: CHANX  at Location:CHANX:17609 2len2D_x length:2 (8,11)->(7,11), had no out-going switches
+Warning 719: Node: 17667 with RR_type: CHANX  at Location:CHANX:17667 1len2D_x length:1 (8,11)->(8,11), had no out-going switches
+Warning 720: Node: 17668 with RR_type: CHANX  at Location:CHANX:17668 1len2D_x length:1 (8,11)->(8,11), had no out-going switches
+Warning 721: Node: 17669 with RR_type: CHANX  at Location:CHANX:17669 1len2D_x length:1 (8,11)->(8,11), had no out-going switches
+Warning 722: Node: 17670 with RR_type: CHANX  at Location:CHANX:17670 2len2D_x length:1 (8,11)->(8,11), had no out-going switches
+Warning 723: Node: 17671 with RR_type: CHANX  at Location:CHANX:17671 2len2D_x length:1 (8,11)->(8,11), had no out-going switches
+Warning 724: Node: 17672 with RR_type: CHANX  at Location:CHANX:17672 2len2D_x length:1 (8,11)->(8,11), had no out-going switches
+Warning 725: Node: 17673 with RR_type: CHANX  at Location:CHANX:17673 2len2D_x length:1 (8,11)->(8,11), had no out-going switches
+Warning 726: Node: 17774 with RR_type: CHANX  at Location:CHANX:17774 1len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 727: Node: 17775 with RR_type: CHANX  at Location:CHANX:17775 1len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 728: Node: 17776 with RR_type: CHANX  at Location:CHANX:17776 1len2D_x length:2 (1,12)->(2,12), had no out-going switches
+Warning 729: Node: 17777 with RR_type: CHANX  at Location:CHANX:17777 1len2D_x length:2 (2,12)->(1,12), had no out-going switches
+Warning 730: Node: 17778 with RR_type: CHANX  at Location:CHANX:17778 1len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 731: Node: 17779 with RR_type: CHANX  at Location:CHANX:17779 1len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 732: Node: 17780 with RR_type: CHANX  at Location:CHANX:17780 1len2D_x length:2 (1,12)->(2,12), had no out-going switches
+Warning 733: Node: 17781 with RR_type: CHANX  at Location:CHANX:17781 1len2D_x length:2 (2,12)->(1,12), had no out-going switches
+Warning 734: Node: 17782 with RR_type: CHANX  at Location:CHANX:17782 2len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 735: Node: 17783 with RR_type: CHANX  at Location:CHANX:17783 2len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 736: Node: 17784 with RR_type: CHANX  at Location:CHANX:17784 2len2D_x length:2 (1,12)->(2,12), had no out-going switches
+Warning 737: Node: 17785 with RR_type: CHANX  at Location:CHANX:17785 2len2D_x length:2 (2,12)->(1,12), had no out-going switches
+Warning 738: Node: 17786 with RR_type: CHANX  at Location:CHANX:17786 2len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 739: Node: 17787 with RR_type: CHANX  at Location:CHANX:17787 2len2D_x length:1 (1,12)->(1,12), had no out-going switches
+Warning 740: Node: 17788 with RR_type: CHANX  at Location:CHANX:17788 2len2D_x length:2 (1,12)->(2,12), had no out-going switches
+Warning 741: Node: 17789 with RR_type: CHANX  at Location:CHANX:17789 2len2D_x length:2 (2,12)->(1,12), had no out-going switches
+Warning 742: Node: 17855 with RR_type: CHANX  at Location:CHANX:17855 1len2D_x length:2 (3,12)->(2,12), had no out-going switches
+Warning 743: Node: 17857 with RR_type: CHANX  at Location:CHANX:17857 1len2D_x length:2 (3,12)->(2,12), had no out-going switches
+Warning 744: Node: 17858 with RR_type: CHANX  at Location:CHANX:17858 2len2D_x length:2 (2,12)->(3,12), had no out-going switches
+Warning 745: Node: 17859 with RR_type: CHANX  at Location:CHANX:17859 2len2D_x length:2 (3,12)->(2,12), had no out-going switches
+Warning 746: Node: 17860 with RR_type: CHANX  at Location:CHANX:17860 2len2D_x length:2 (2,12)->(3,12), had no out-going switches
+Warning 747: Node: 17861 with RR_type: CHANX  at Location:CHANX:17861 2len2D_x length:2 (3,12)->(2,12), had no out-going switches
+Warning 748: Node: 17919 with RR_type: CHANX  at Location:CHANX:17919 1len2D_x length:2 (4,12)->(3,12), had no out-going switches
+Warning 749: Node: 17921 with RR_type: CHANX  at Location:CHANX:17921 1len2D_x length:2 (4,12)->(3,12), had no out-going switches
+Warning 750: Node: 17922 with RR_type: CHANX  at Location:CHANX:17922 2len2D_x length:2 (3,12)->(4,12), had no out-going switches
+Warning 751: Node: 17923 with RR_type: CHANX  at Location:CHANX:17923 2len2D_x length:2 (4,12)->(3,12), had no out-going switches
+Warning 752: Node: 17924 with RR_type: CHANX  at Location:CHANX:17924 2len2D_x length:2 (3,12)->(4,12), had no out-going switches
+Warning 753: Node: 17925 with RR_type: CHANX  at Location:CHANX:17925 2len2D_x length:2 (4,12)->(3,12), had no out-going switches
+Warning 754: Node: 17983 with RR_type: CHANX  at Location:CHANX:17983 1len2D_x length:2 (5,12)->(4,12), had no out-going switches
+Warning 755: Node: 17984 with RR_type: CHANX  at Location:CHANX:17984 1len2D_x length:2 (4,12)->(5,12), had no out-going switches
+Warning 756: Node: 17985 with RR_type: CHANX  at Location:CHANX:17985 1len2D_x length:2 (5,12)->(4,12), had no out-going switches
+Warning 757: Node: 17986 with RR_type: CHANX  at Location:CHANX:17986 2len2D_x length:2 (4,12)->(5,12), had no out-going switches
+Warning 758: Node: 17987 with RR_type: CHANX  at Location:CHANX:17987 2len2D_x length:2 (5,12)->(4,12), had no out-going switches
+Warning 759: Node: 17988 with RR_type: CHANX  at Location:CHANX:17988 2len2D_x length:2 (4,12)->(5,12), had no out-going switches
+Warning 760: Node: 17989 with RR_type: CHANX  at Location:CHANX:17989 2len2D_x length:2 (5,12)->(4,12), had no out-going switches
+Warning 761: Node: 18046 with RR_type: CHANX  at Location:CHANX:18046 1len2D_x length:2 (5,12)->(6,12), had no out-going switches
+Warning 762: Node: 18047 with RR_type: CHANX  at Location:CHANX:18047 1len2D_x length:2 (6,12)->(5,12), had no out-going switches
+Warning 763: Node: 18049 with RR_type: CHANX  at Location:CHANX:18049 1len2D_x length:2 (6,12)->(5,12), had no out-going switches
+Warning 764: Node: 18050 with RR_type: CHANX  at Location:CHANX:18050 2len2D_x length:2 (5,12)->(6,12), had no out-going switches
+Warning 765: Node: 18051 with RR_type: CHANX  at Location:CHANX:18051 2len2D_x length:2 (6,12)->(5,12), had no out-going switches
+Warning 766: Node: 18052 with RR_type: CHANX  at Location:CHANX:18052 2len2D_x length:2 (5,12)->(6,12), had no out-going switches
+Warning 767: Node: 18053 with RR_type: CHANX  at Location:CHANX:18053 2len2D_x length:2 (6,12)->(5,12), had no out-going switches
+Warning 768: Node: 18111 with RR_type: CHANX  at Location:CHANX:18111 1len2D_x length:2 (7,12)->(6,12), had no out-going switches
+Warning 769: Node: 18113 with RR_type: CHANX  at Location:CHANX:18113 1len2D_x length:2 (7,12)->(6,12), had no out-going switches
+Warning 770: Node: 18114 with RR_type: CHANX  at Location:CHANX:18114 2len2D_x length:2 (6,12)->(7,12), had no out-going switches
+Warning 771: Node: 18115 with RR_type: CHANX  at Location:CHANX:18115 2len2D_x length:2 (7,12)->(6,12), had no out-going switches
+Warning 772: Node: 18116 with RR_type: CHANX  at Location:CHANX:18116 2len2D_x length:2 (6,12)->(7,12), had no out-going switches
+Warning 773: Node: 18117 with RR_type: CHANX  at Location:CHANX:18117 2len2D_x length:2 (7,12)->(6,12), had no out-going switches
+Warning 774: Node: 18174 with RR_type: CHANX  at Location:CHANX:18174 1len2D_x length:2 (7,12)->(8,12), had no out-going switches
+Warning 775: Node: 18175 with RR_type: CHANX  at Location:CHANX:18175 1len2D_x length:2 (8,12)->(7,12), had no out-going switches
+Warning 776: Node: 18177 with RR_type: CHANX  at Location:CHANX:18177 1len2D_x length:2 (8,12)->(7,12), had no out-going switches
+Warning 777: Node: 18178 with RR_type: CHANX  at Location:CHANX:18178 2len2D_x length:2 (7,12)->(8,12), had no out-going switches
+Warning 778: Node: 18179 with RR_type: CHANX  at Location:CHANX:18179 2len2D_x length:2 (8,12)->(7,12), had no out-going switches
+Warning 779: Node: 18180 with RR_type: CHANX  at Location:CHANX:18180 2len2D_x length:2 (7,12)->(8,12), had no out-going switches
+Warning 780: Node: 18181 with RR_type: CHANX  at Location:CHANX:18181 2len2D_x length:2 (8,12)->(7,12), had no out-going switches
+Warning 781: Node: 18241 with RR_type: CHANX  at Location:CHANX:18241 1len2D_x length:1 (8,12)->(8,12), had no out-going switches
+Warning 782: Node: 18243 with RR_type: CHANX  at Location:CHANX:18243 1len2D_x length:1 (8,12)->(8,12), had no out-going switches
+Warning 783: Node: 18244 with RR_type: CHANX  at Location:CHANX:18244 2len2D_x length:1 (8,12)->(8,12), had no out-going switches
+Warning 784: Node: 18245 with RR_type: CHANX  at Location:CHANX:18245 2len2D_x length:1 (8,12)->(8,12), had no out-going switches
+Warning 785: Node: 18246 with RR_type: CHANX  at Location:CHANX:18246 2len2D_x length:1 (8,12)->(8,12), had no out-going switches
+Warning 786: Node: 18247 with RR_type: CHANX  at Location:CHANX:18247 2len2D_x length:1 (8,12)->(8,12), had no out-going switches
+Warning 787: Node: 18348 with RR_type: CHANX  at Location:CHANX:18348 1len2D_x length:2 (1,13)->(2,13), had no out-going switches
+Warning 788: Node: 18349 with RR_type: CHANX  at Location:CHANX:18349 1len2D_x length:2 (2,13)->(1,13), had no out-going switches
+Warning 789: Node: 18350 with RR_type: CHANX  at Location:CHANX:18350 1len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 790: Node: 18351 with RR_type: CHANX  at Location:CHANX:18351 1len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 791: Node: 18352 with RR_type: CHANX  at Location:CHANX:18352 1len2D_x length:2 (1,13)->(2,13), had no out-going switches
+Warning 792: Node: 18353 with RR_type: CHANX  at Location:CHANX:18353 1len2D_x length:2 (2,13)->(1,13), had no out-going switches
+Warning 793: Node: 18354 with RR_type: CHANX  at Location:CHANX:18354 1len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 794: Node: 18355 with RR_type: CHANX  at Location:CHANX:18355 1len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 795: Node: 18356 with RR_type: CHANX  at Location:CHANX:18356 2len2D_x length:2 (1,13)->(2,13), had no out-going switches
+Warning 796: Node: 18357 with RR_type: CHANX  at Location:CHANX:18357 2len2D_x length:2 (2,13)->(1,13), had no out-going switches
+Warning 797: Node: 18358 with RR_type: CHANX  at Location:CHANX:18358 2len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 798: Node: 18359 with RR_type: CHANX  at Location:CHANX:18359 2len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 799: Node: 18360 with RR_type: CHANX  at Location:CHANX:18360 2len2D_x length:2 (1,13)->(2,13), had no out-going switches
+Warning 800: Node: 18361 with RR_type: CHANX  at Location:CHANX:18361 2len2D_x length:2 (2,13)->(1,13), had no out-going switches
+Warning 801: Node: 18362 with RR_type: CHANX  at Location:CHANX:18362 2len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 802: Node: 18363 with RR_type: CHANX  at Location:CHANX:18363 2len2D_x length:1 (1,13)->(1,13), had no out-going switches
+Warning 803: Node: 18429 with RR_type: CHANX  at Location:CHANX:18429 1len2D_x length:2 (3,13)->(2,13), had no out-going switches
+Warning 804: Node: 18431 with RR_type: CHANX  at Location:CHANX:18431 1len2D_x length:2 (3,13)->(2,13), had no out-going switches
+Warning 805: Node: 18432 with RR_type: CHANX  at Location:CHANX:18432 2len2D_x length:2 (2,13)->(3,13), had no out-going switches
+Warning 806: Node: 18433 with RR_type: CHANX  at Location:CHANX:18433 2len2D_x length:2 (3,13)->(2,13), had no out-going switches
+Warning 807: Node: 18434 with RR_type: CHANX  at Location:CHANX:18434 2len2D_x length:2 (2,13)->(3,13), had no out-going switches
+Warning 808: Node: 18435 with RR_type: CHANX  at Location:CHANX:18435 2len2D_x length:2 (3,13)->(2,13), had no out-going switches
+Warning 809: Node: 18493 with RR_type: CHANX  at Location:CHANX:18493 1len2D_x length:2 (4,13)->(3,13), had no out-going switches
+Warning 810: Node: 18495 with RR_type: CHANX  at Location:CHANX:18495 1len2D_x length:2 (4,13)->(3,13), had no out-going switches
+Warning 811: Node: 18496 with RR_type: CHANX  at Location:CHANX:18496 2len2D_x length:2 (3,13)->(4,13), had no out-going switches
+Warning 812: Node: 18497 with RR_type: CHANX  at Location:CHANX:18497 2len2D_x length:2 (4,13)->(3,13), had no out-going switches
+Warning 813: Node: 18498 with RR_type: CHANX  at Location:CHANX:18498 2len2D_x length:2 (3,13)->(4,13), had no out-going switches
+Warning 814: Node: 18499 with RR_type: CHANX  at Location:CHANX:18499 2len2D_x length:2 (4,13)->(3,13), had no out-going switches
+Warning 815: Node: 18557 with RR_type: CHANX  at Location:CHANX:18557 1len2D_x length:2 (5,13)->(4,13), had no out-going switches
+Warning 816: Node: 18559 with RR_type: CHANX  at Location:CHANX:18559 1len2D_x length:2 (5,13)->(4,13), had no out-going switches
+Warning 817: Node: 18560 with RR_type: CHANX  at Location:CHANX:18560 2len2D_x length:2 (4,13)->(5,13), had no out-going switches
+Warning 818: Node: 18561 with RR_type: CHANX  at Location:CHANX:18561 2len2D_x length:2 (5,13)->(4,13), had no out-going switches
+Warning 819: Node: 18562 with RR_type: CHANX  at Location:CHANX:18562 2len2D_x length:2 (4,13)->(5,13), had no out-going switches
+Warning 820: Node: 18563 with RR_type: CHANX  at Location:CHANX:18563 2len2D_x length:2 (5,13)->(4,13), had no out-going switches
+Warning 821: Node: 18621 with RR_type: CHANX  at Location:CHANX:18621 1len2D_x length:2 (6,13)->(5,13), had no out-going switches
+Warning 822: Node: 18623 with RR_type: CHANX  at Location:CHANX:18623 1len2D_x length:2 (6,13)->(5,13), had no out-going switches
+Warning 823: Node: 18624 with RR_type: CHANX  at Location:CHANX:18624 2len2D_x length:2 (5,13)->(6,13), had no out-going switches
+Warning 824: Node: 18625 with RR_type: CHANX  at Location:CHANX:18625 2len2D_x length:2 (6,13)->(5,13), had no out-going switches
+Warning 825: Node: 18626 with RR_type: CHANX  at Location:CHANX:18626 2len2D_x length:2 (5,13)->(6,13), had no out-going switches
+Warning 826: Node: 18627 with RR_type: CHANX  at Location:CHANX:18627 2len2D_x Error 1: in check_rr_graph: node 1992 (IPIN) at (2,2) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 2: in check_rr_graph: node 1994 (IPIN) at (2,2) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 3: in check_rr_graph: node 1996 (IPIN) at (2,2) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 4: in check_rr_graph: node 1998 (IPIN) at (2,2) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 5: in check_rr_graph: node 2000 (IPIN) at (2,2) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 6: in check_rr_graph: node 2002 (IPIN) at (2,2) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 7: in check_rr_graph: node 2076 (IPIN) at (2,3) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 8: in check_rr_graph: node 2078 (IPIN) at (2,3) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 9: in check_rr_graph: node 2080 (IPIN) at (2,3) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 10: in check_rr_graph: node 2082 (IPIN) at (2,3) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 11: in check_rr_graph: node 2084 (IPIN) at (2,3) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 12: in check_rr_graph: node 2086 (IPIN) at (2,3) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 13: in check_rr_graph: node 2160 (IPIN) at (2,4) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 14: in check_rr_graph: node 2162 (IPIN) at (2,4) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 15: in check_rr_graph: node 2164 (IPIN) at (2,4) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 16: in check_rr_graph: node 2166 (IPIN) at (2,4) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 17: in check_rr_graph: node 2168 (IPIN) at (2,4) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 18: in check_rr_graph: node 2170 (IPIN) at (2,4) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 19: in check_rr_graph: node 2244 (IPIN) at (2,5) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 20: in check_rr_graph: node 2246 (IPIN) at (2,5) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 21: in check_rr_graph: node 2248 (IPIN) at (2,5) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 22: in check_rr_graph: node 2250 (IPIN) at (2,5) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 23: in check_rr_graph: node 2252 (IPIN) at (2,5) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 24: in check_rr_graph: node 2254 (IPIN) at (2,5) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 25: in check_rr_graph: node 2328 (IPIN) at (2,6) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 26: in check_rr_graph: node 2330 (IPIN) at (2,6) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 27: in check_rr_graph: node 2332 (IPIN) at (2,6) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 28: in check_rr_graph: node 2334 (IPIN) at (2,6) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 29: in check_rr_graph: node 2336 (IPIN) at (2,6) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 30: in check_rr_graph: node 2338 (IPIN) at (2,6) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 31: in check_rr_graph: node 2412 (IPIN) at (2,7) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 32: in check_rr_graph: node 2414 (IPIN) at (2,7) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 33: in check_rr_graph: node 2416 (IPIN) at (2,7) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 34: in check_rr_graph: node 2418 (IPIN) at (2,7) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 35: in check_rr_graph: node 2420 (IPIN) at (2,7) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 36: in check_rr_graph: node 2422 (IPIN) at (2,7) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 37: in check_rr_graph: node 2496 (IPIN) at (2,8) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 38: in check_rr_graph: node 2498 (IPIN) at (2,8) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 39: in check_rr_graph: node 2500 (IPIN) at (2,8) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 40: in check_rr_graph: node 2502 (IPIN) at (2,8) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 41: in check_rr_graph: node 2504 (IPIN) at (2,8) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 42: in check_rr_graph: node 2506 (IPIN) at (2,8) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 43: in check_rr_graph: node 2580 (IPIN) at (2,9) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 44: in check_rr_graph: node 2582 (IPIN) at (2,9) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 45: in check_rr_graph: node 2584 (IPIN) at (2,9) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 46: in check_rr_graph: node 2586 (IPIN) at (2,9) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 47: in check_rr_graph: node 2588 (IPIN) at (2,9) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 48: in check_rr_graph: node 2590 (IPIN) at (2,9) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 49: in check_rr_graph: node 2664 (IPIN) at (2,10) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 50: in check_rr_graph: node 2666 (IPIN) at (2,10) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 51: in check_rr_graph: node 2668 (IPIN) at (2,10) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 52: in check_rr_graph: node 2670 (IPIN) at (2,10) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 53: in check_rr_graph: node 2672 (IPIN) at (2,10) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 54: in check_rr_graph: node 2674 (IPIN) at (2,10) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 55: in check_rr_graph: node 2748 (IPIN) at (2,11) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 56: in check_rr_graph: node 2750 (IPIN) at (2,11) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 57: in check_rr_graph: node 2752 (IPIN) at (2,11) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 58: in check_rr_graph: node 2754 (IPIN) at (2,11) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 59: in check_rr_graph: node 2756 (IPIN) at (2,11) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 60: in check_rr_graph: node 2758 (IPIN) at (2,11) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 61: in check_rr_graph: node 2832 (IPIN) at (2,12) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 62: in check_rr_graph: node 2834 (IPIN) at (2,12) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 63: in check_rr_graph: node 2836 (IPIN) at (2,12) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 64: in check_rr_graph: node 2838 (IPIN) at (2,12) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 65: in check_rr_graph: node 2840 (IPIN) at (2,12) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 66: in check_rr_graph: node 2842 (IPIN) at (2,12) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 67: in check_rr_graph: node 3180 (IPIN) at (3,2) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 68: in check_rr_graph: node 3182 (IPIN) at (3,2) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 69: in check_rr_graph: node 3184 (IPIN) at (3,2) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 70: in check_rr_graph: node 3186 (IPIN) at (3,2) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 71: in check_rr_graph: node 3188 (IPIN) at (3,2) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 72: in check_rr_graph: node 3190 (IPIN) at (3,2) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 73: in check_rr_graph: node 3264 (IPIN) at (3,3) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 74: in check_rr_graph: node 3266 (IPIN) at (3,3) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 75: in check_rr_graph: node 3268 (IPIN) at (3,3) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 76: in check_rr_graph: node 3270 (IPIN) at (3,3) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 77: in check_rr_graph: node 3272 (IPIN) at (3,3) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 78: in check_rr_graph: node 3274 (IPIN) at (3,3) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 79: in check_rr_graph: node 3348 (IPIN) at (3,4) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 80: in check_rr_graph: node 3350 (IPIN) at (3,4) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 81: in check_rr_graph: node 3352 (IPIN) at (3,4) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 82: in check_rr_graph: node 3354 (IPIN) at (3,4) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 83: in check_rr_graph: node 3356 (IPIN) at (3,4) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 84: in check_rr_graph: node 3358 (IPIN) at (3,4) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 85: in check_rr_graph: node 3432 (IPIN) at (3,5) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 86: in check_rr_graph: node 3434 (IPIN) at (3,5) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 87: in check_rr_graph: node 3436 (IPIN) at (3,5) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 88: in check_rr_graph: node 3438 (IPIN) at (3,5) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 89: in check_rr_graph: node 3440 (IPIN) at (3,5) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 90: in check_rr_graph: node 3442 (IPIN) at (3,5) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 91: in check_rr_graph: node 3516 (IPIN) at (3,6) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 92: in check_rr_graph: node 3518 (IPIN) at (3,6) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 93: in check_rr_graph: node 3520 (IPIN) at (3,6) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 94: in check_rr_graph: node 3522 (IPIN) at (3,6) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 95: in check_rr_graph: node 3524 (IPIN) at (3,6) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 96: in check_rr_graph: node 3526 (IPIN) at (3,6) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 97: in check_rr_graph: node 3600 (IPIN) at (3,7) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 98: in check_rr_graph: node 3602 (IPIN) at (3,7) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 99: in check_rr_graph: node 3604 (IPIN) at (3,7) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 100: in check_rr_graph: node 3606 (IPIN) at (3,7) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 101: in check_rr_graph: node 3608 (IPIN) at (3,7) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 102: in check_rr_graph: node 3610 (IPIN) at (3,7) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 103: in check_rr_graph: node 3684 (IPIN) at (3,8) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 104: in check_rr_graph: node 3686 (IPIN) at (3,8) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 105: in check_rr_graph: node 3688 (IPIN) at (3,8) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 106: in check_rr_graph: node 3690 (IPIN) at (3,8) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 107: in check_rr_graph: node 3692 (IPIN) at (3,8) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 108: in check_rr_graph: node 3694 (IPIN) at (3,8) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 109: in check_rr_graph: node 3768 (IPIN) at (3,9) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 110: in check_rr_graph: node 3770 (IPIN) at (3,9) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 111: in check_rr_graph: node 3772 (IPIN) at (3,9) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 112: in check_rr_graph: node 3774 (IPIN) at (3,9) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 113: in check_rr_graph: node 3776 (IPIN) at (3,9) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 114: in check_rr_graph: node 3778 (IPIN) at (3,9) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 115: in check_rr_graph: node 3852 (IPIN) at (3,10) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 116: in check_rr_graph: node 3854 (IPIN) at (3,10) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 117: in check_rr_graph: node 3856 (IPIN) at (3,10) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 118: in check_rr_graph: node 3858 (IPIN) at (3,10) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 119: in check_rr_graph: node 3860 (IPIN) at (3,10) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 120: in check_rr_graph: node 3862 (IPIN) at (3,10) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 121: in check_rr_graph: node 3936 (IPIN) at (3,11) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 122: in check_rr_graph: node 3938 (IPIN) at (3,11) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 123: in check_rr_graph: node 3940 (IPIN) at (3,11) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 124: in check_rr_graph: node 3942 (IPIN) at (3,11) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 125: in check_rr_graph: node 3944 (IPIN) at (3,11) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 126: in check_rr_graph: node 3946 (IPIN) at (3,11) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 127: in check_rr_graph: node 4020 (IPIN) at (3,12) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 128: in check_rr_graph: node 4022 (IPIN) at (3,12) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 129: in check_rr_graph: node 4024 (IPIN) at (3,12) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 130: in check_rr_graph: node 4026 (IPIN) at (3,12) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 131: in check_rr_graph: node 4028 (IPIN) at (3,12) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 132: in check_rr_graph: node 4030 (IPIN) at (3,12) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 133: in check_rr_graph: node 4368 (IPIN) at (4,2) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 134: in check_rr_graph: node 4370 (IPIN) at (4,2) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 135: in check_rr_graph: node 4372 (IPIN) at (4,2) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 136: in check_rr_graph: node 4374 (IPIN) at (4,2) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 137: in check_rr_graph: node 4376 (IPIN) at (4,2) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 138: in check_rr_graph: node 4378 (IPIN) at (4,2) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 139: in check_rr_graph: node 4452 (IPIN) at (4,3) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 140: in check_rr_graph: node 4454 (IPIN) at (4,3) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 141: in check_rr_graph: node 4456 (IPIN) at (4,3) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 142: in check_rr_graph: node 4458 (IPIN) at (4,3) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 143: in check_rr_graph: node 4460 (IPIN) at (4,3) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 144: in check_rr_graph: node 4462 (IPIN) at (4,3) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 145: in check_rr_graph: node 4536 (IPIN) at (4,4) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 146: in check_rr_graph: node 4538 (IPIN) at (4,4) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 147: in check_rr_graph: node 4540 (IPIN) at (4,4) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 148: in check_rr_graph: node 4542 (IPIN) at (4,4) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 149: in check_rr_graph: node 4544 (IPIN) at (4,4) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 150: in check_rr_graph: node 4546 (IPIN) at (4,4) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 151: in check_rr_graph: node 4620 (IPIN) at (4,5) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 152: in check_rr_graph: node 4622 (IPIN) at (4,5) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 153: in check_rr_graph: node 4624 (IPIN) at (4,5) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 154: in check_rr_graph: node 4626 (IPIN) at (4,5) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 155: in check_rr_graph: node 4628 (IPIN) at (4,5) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 156: in check_rr_graph: node 4630 (IPIN) at (4,5) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 157: in check_rr_graph: node 4704 (IPIN) at (4,6) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 158: in check_rr_graph: node 4706 (IPIN) at (4,6) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 159: in check_rr_graph: node 4708 (IPIN) at (4,6) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 160: in check_rr_graph: node 4710 (IPIN) at (4,6) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 161: in check_rr_graph: node 4712 (IPIN) at (4,6) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 162: in check_rr_graph: node 4714 (IPIN) at (4,6) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 163: in check_rr_graph: node 4788 (IPIN) at (4,7) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 164: in check_rr_graph: node 4790 (IPIN) at (4,7) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 165: in check_rr_graph: node 4792 (IPIN) at (4,7) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 166: in check_rr_graph: node 4794 (IPIN) at (4,7) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 167: in check_rr_graph: node 4796 (IPIN) at (4,7) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 168: in check_rr_graph: node 4798 (IPIN) at (4,7) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 169: in check_rr_graph: node 4872 (IPIN) at (4,8) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 170: in check_rr_graph: node 4874 (IPIN) at (4,8) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 171: in check_rr_graph: node 4876 (IPIN) at (4,8) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 172: in check_rr_graph: node 4878 (IPIN) at (4,8) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 173: in check_rr_graph: node 4880 (IPIN) at (4,8) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 174: in check_rr_graph: node 4882 (IPIN) at (4,8) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 175: in check_rr_graph: node 4956 (IPIN) at (4,9) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 176: in check_rr_graph: node 4958 (IPIN) at (4,9) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 177: in check_rr_graph: node 4960 (IPIN) at (4,9) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 178: in check_rr_graph: node 4962 (IPIN) at (4,9) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 179: in check_rr_graph: node 4964 (IPIN) at (4,9) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 180: in check_rr_graph: node 4966 (IPIN) at (4,9) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 181: in check_rr_graph: node 5040 (IPIN) at (4,10) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 182: in check_rr_graph: node 5042 (IPIN) at (4,10) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 183: in check_rr_graph: node 5044 (IPIN) at (4,10) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 184: in check_rr_graph: node 5046 (IPIN) at (4,10) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 185: in check_rr_graph: node 5048 (IPIN) at (4,10) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 186: in check_rr_graph: node 5050 (IPIN) at (4,10) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 187: in check_rr_graph: node 5124 (IPIN) at (4,11) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 188: in check_rr_graph: node 5126 (IPIN) at (4,11) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 189: in check_rr_graph: node 5128 (IPIN) at (4,11) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 190: in check_rr_graph: node 5130 (IPIN) at (4,11) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 191: in check_rr_graph: node 5132 (IPIN) at (4,11) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 192: in check_rr_graph: node 5134 (IPIN) at (4,11) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 193: in check_rr_graph: node 5208 (IPIN) at (4,12) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 194: in check_rr_graph: node 5210 (IPIN) at (4,12) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 195: in check_rr_graph: node 5212 (IPIN) at (4,12) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 196: in check_rr_graph: node 5214 (IPIN) at (4,12) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 197: in check_rr_graph: node 5216 (IPIN) at (4,12) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 198: in check_rr_graph: node 5218 (IPIN) at (4,12) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 199: in check_rr_graph: node 5556 (IPIN) at (5,2) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 200: in check_rr_graph: node 5558 (IPIN) at (5,2) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 201: in check_rr_graph: node 5560 (IPIN) at (5,2) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 202: in check_rr_graph: node 5562 (IPIN) at (5,2) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 203: in check_rr_graph: node 5564 (IPIN) at (5,2) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 204: in check_rr_graph: node 5566 (IPIN) at (5,2) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 205: in check_rr_graph: node 5640 (IPIN) at (5,3) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 206: in check_rr_graph: node 5642 (IPIN) at (5,3) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 207: in check_rr_graph: node 5644 (IPIN) at (5,3) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 208: in check_rr_graph: node 5646 (IPIN) at (5,3) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 209: in check_rr_graph: node 5648 (IPIN) at (5,3) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 210: in check_rr_graph: node 5650 (IPIN) at (5,3) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 211: in check_rr_graph: node 5724 (IPIN) at (5,4) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 212: in check_rr_graph: node 5726 (IPIN) at (5,4) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 213: in check_rr_graph: node 5728 (IPIN) at (5,4) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 214: in check_rr_graph: node 5730 (IPIN) at (5,4) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 215: in check_rr_graph: node 5732 (IPIN) at (5,4) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 216: in check_rr_graph: node 5734 (IPIN) at (5,4) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 217: in check_rr_graph: node 5808 (IPIN) at (5,5) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 218: in check_rr_graph: node 5810 (IPIN) at (5,5) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 219: in check_rr_graph: node 5812 (IPIN) at (5,5) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 220: in check_rr_graph: node 5814 (IPIN) at (5,5) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 221: in check_rr_graph: node 5816 (IPIN) at (5,5) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 222: in check_rr_graph: node 5818 (IPIN) at (5,5) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 223: in check_rr_graph: node 5892 (IPIN) at (5,6) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 224: in check_rr_graph: node 5894 (IPIN) at (5,6) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 225: in check_rr_graph: node 5896 (IPIN) at (5,6) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 226: in check_rr_graph: node 5898 (IPIN) at (5,6) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 227: in check_rr_graph: node 5900 (IPIN) at (5,6) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 228: in check_rr_graph: node 5902 (IPIN) at (5,6) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 229: in check_rr_graph: node 5976 (IPIN) at (5,7) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 230: in check_rr_graph: node 5978 (IPIN) at (5,7) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 231: in check_rr_graph: node 5980 (IPIN) at (5,7) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 232: in check_rr_graph: node 5982 (IPIN) at (5,7) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 233: in check_rr_graph: node 5984 (IPIN) at (5,7) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 234: in check_rr_graph: node 5986 (IPIN) at (5,7) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 235: in check_rr_graph: node 6060 (IPIN) at (5,8) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 236: in check_rr_graph: node 6062 (IPIN) at (5,8) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 237: in check_rr_graph: node 6064 (IPIN) at (5,8) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 238: in check_rr_graph: node 6066 (IPIN) at (5,8) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 239: in check_rr_graph: node 6068 (IPIN) at (5,8) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 240: in check_rr_graph: node 6070 (IPIN) at (5,8) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 241: in check_rr_graph: node 6144 (IPIN) at (5,9) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 242: in check_rr_graph: node 6146 (IPIN) at (5,9) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 243: in check_rr_graph: node 6148 (IPIN) at (5,9) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 244: in check_rr_graph: node 6150 (IPIN) at (5,9) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 245: in check_rr_graph: node 6152 (IPIN) at (5,9) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 246: in check_rr_graph: node 6154 (IPIN) at (5,9) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 247: in check_rr_graph: node 6228 (IPIN) at (5,10) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 248: in check_rr_graph: node 6230 (IPIN) at (5,10) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 249: in check_rr_graph: node 6232 (IPIN) at (5,10) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 250: in check_rr_graph: node 6234 (IPIN) at (5,10) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 251: in check_rr_graph: node 6236 (IPIN) at (5,10) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 252: in check_rr_graph: node 6238 (IPIN) at (5,10) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 253: in check_rr_graph: node 6312 (IPIN) at (5,11) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 254: in check_rr_graph: node 6314 (IPIN) at (5,11) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 255: in check_rr_graph: node 6316 (IPIN) at (5,11) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 256: in check_rr_graph: node 6318 (IPIN) at (5,11) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 257: in check_rr_graph: node 6320 (IPIN) at (5,11) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 258: in check_rr_graph: node 6322 (IPIN) at (5,11) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 259: in check_rr_graph: node 6396 (IPIN) at (5,12) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 260: in check_rr_graph: node 6398 (IPIN) at (5,12) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 261: in check_rr_graph: node 6400 (IPIN) at (5,12) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 262: in check_rr_graph: node 6402 (IPIN) at (5,12) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 263: in check_rr_graph: node 6404 (IPIN) at (5,12) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 264: in check_rr_graph: node 6406 (IPIN) at (5,12) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 265: in check_rr_graph: node 6744 (IPIN) at (6,2) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 266: in check_rr_graph: node 6746 (IPIN) at (6,2) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 267: in check_rr_graph: node 6748 (IPIN) at (6,2) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 268: in check_rr_graph: node 6750 (IPIN) at (6,2) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 269: in check_rr_graph: node 6752 (IPIN) at (6,2) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 270: in check_rr_graph: node 6754 (IPIN) at (6,2) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 271: in check_rr_graph: node 6828 (IPIN) at (6,3) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 272: in check_rr_graph: node 6830 (IPIN) at (6,3) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 273: in check_rr_graph: node 6832 (IPIN) at (6,3) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 274: in check_rr_graph: node 6834 (IPIN) at (6,3) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 275: in check_rr_graph: node 6836 (IPIN) at (6,3) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 276: in check_rr_graph: node 6838 (IPIN) at (6,3) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 277: in check_rr_graph: node 6912 (IPIN) at (6,4) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 278: in check_rr_graph: node 6914 (IPIN) at (6,4) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 279: in check_rr_graph: node 6916 (IPIN) at (6,4) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 280: in check_rr_graph: node 6918 (IPIN) at (6,4) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 281: in check_rr_graph: node 6920 (IPIN) at (6,4) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 282: in check_rr_graph: node 6922 (IPIN) at (6,4) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 283: in check_rr_graph: node 6996 (IPIN) at (6,5) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 284: in check_rr_graph: node 6998 (IPIN) at (6,5) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 285: in check_rr_graph: node 7000 (IPIN) at (6,5) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 286: in check_rr_graph: node 7002 (IPIN) at (6,5) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 287: in check_rr_graph: node 7004 (IPIN) at (6,5) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 288: in check_rr_graph: node 7006 (IPIN) at (6,5) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 289: in check_rr_graph: node 7080 (IPIN) at (6,6) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 290: in check_rr_graph: node 7082 (IPIN) at (6,6) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 291: in check_rr_graph: node 7084 (IPIN) at (6,6) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 292: in check_rr_graph: node 7086 (IPIN) at (6,6) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 293: in check_rr_graph: node 7088 (IPIN) at (6,6) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 294: in check_rr_graph: node 7090 (IPIN) at (6,6) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 295: in check_rr_graph: node 7164 (IPIN) at (6,7) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 296: in check_rr_graph: node 7166 (IPIN) at (6,7) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 297: in check_rr_graph: node 7168 (IPIN) at (6,7) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 298: in check_rr_graph: node 7170 (IPIN) at (6,7) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 299: in check_rr_graph: node 7172 (IPIN) at (6,7) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 300: in check_rr_graph: node 7174 (IPIN) at (6,7) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 301: in check_rr_graph: node 7248 (IPIN) at (6,8) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 302: in check_rr_graph: node 7250 (IPIN) at (6,8) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 303: in check_rr_graph: node 7252 (IPIN) at (6,8) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 304: in check_rr_graph: node 7254 (IPIN) at (6,8) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 305: in check_rr_graph: node 7256 (IPIN) at (6,8) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 306: in check_rr_graph: node 7258 (IPIN) at (6,8) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 307: in check_rr_graph: node 7332 (IPIN) at (6,9) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 308: in check_rr_graph: node 7334 (IPIN) at (6,9) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 309: in check_rr_graph: node 7336 (IPIN) at (6,9) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 310: in check_rr_graph: node 7338 (IPIN) at (6,9) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 311: in check_rr_graph: node 7340 (IPIN) at (6,9) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 312: in check_rr_graph: node 7342 (IPIN) at (6,9) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 313: in check_rr_graph: node 7416 (IPIN) at (6,10) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 314: in check_rr_graph: node 7418 (IPIN) at (6,10) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 315: in check_rr_graph: node 7420 (IPIN) at (6,10) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 316: in check_rr_graph: node 7422 (IPIN) at (6,10) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 317: in check_rr_graph: node 7424 (IPIN) at (6,10) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 318: in check_rr_graph: node 7426 (IPIN) at (6,10) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 319: in check_rr_graph: node 7500 (IPIN) at (6,11) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 320: in check_rr_graph: node 7502 (IPIN) at (6,11) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 321: in check_rr_graph: node 7504 (IPIN) at (6,11) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 322: in check_rr_graph: node 7506 (IPIN) at (6,11) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 323: in check_rr_graph: node 7508 (IPIN) at (6,11) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 324: in check_rr_graph: node 7510 (IPIN) at (6,11) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 325: in check_rr_graph: node 7584 (IPIN) at (6,12) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 326: in check_rr_graph: node 7586 (IPIN) at (6,12) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 327: in check_rr_graph: node 7588 (IPIN) at (6,12) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 328: in check_rr_graph: node 7590 (IPIN) at (6,12) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 329: in check_rr_graph: node 7592 (IPIN) at (6,12) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 330: in check_rr_graph: node 7594 (IPIN) at (6,12) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 331: in check_rr_graph: node 7932 (IPIN) at (7,2) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 332: in check_rr_graph: node 7934 (IPIN) at (7,2) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 333: in check_rr_graph: node 7936 (IPIN) at (7,2) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 334: in check_rr_graph: node 7938 (IPIN) at (7,2) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 335: in check_rr_graph: node 7940 (IPIN) at (7,2) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 336: in check_rr_graph: node 7942 (IPIN) at (7,2) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 337: in check_rr_graph: node 8016 (IPIN) at (7,3) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 338: in check_rr_graph: node 8018 (IPIN) at (7,3) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 339: in check_rr_graph: node 8020 (IPIN) at (7,3) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 340: in check_rr_graph: node 8022 (IPIN) at (7,3) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 341: in check_rr_graph: node 8024 (IPIN) at (7,3) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 342: in check_rr_graph: node 8026 (IPIN) at (7,3) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 343: in check_rr_graph: node 8100 (IPIN) at (7,4) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 344: in check_rr_graph: node 8102 (IPIN) at (7,4) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 345: in check_rr_graph: node 8104 (IPIN) at (7,4) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 346: in check_rr_graph: node 8106 (IPIN) at (7,4) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 347: in check_rr_graph: node 8108 (IPIN) at (7,4) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 348: in check_rr_graph: node 8110 (IPIN) at (7,4) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 349: in check_rr_graph: node 8184 (IPIN) at (7,5) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 350: in check_rr_graph: node 8186 (IPIN) at (7,5) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 351: in check_rr_graph: node 8188 (IPIN) at (7,5) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 352: in check_rr_graph: node 8190 (IPIN) at (7,5) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 353: in check_rr_graph: node 8192 (IPIN) at (7,5) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 354: in check_rr_graph: node 8194 (IPIN) at (7,5) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 355: in check_rr_graph: node 8268 (IPIN) at (7,6) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 356: in check_rr_graph: node 8270 (IPIN) at (7,6) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 357: in check_rr_graph: node 8272 (IPIN) at (7,6) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 358: in check_rr_graph: node 8274 (IPIN) at (7,6) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 359: in check_rr_graph: node 8276 (IPIN) at (7,6) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 360: in check_rr_graph: node 8278 (IPIN) at (7,6) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 361: in check_rr_graph: node 8352 (IPIN) at (7,7) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 362: in check_rr_graph: node 8354 (IPIN) at (7,7) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 363: in check_rr_graph: node 8356 (IPIN) at (7,7) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 364: in check_rr_graph: node 8358 (IPIN) at (7,7) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 365: in check_rr_graph: node 8360 (IPIN) at (7,7) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 366: in check_rr_graph: node 8362 (IPIN) at (7,7) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 367: in check_rr_graph: node 8436 (IPIN) at (7,8) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 368: in check_rr_graph: node 8438 (IPIN) at (7,8) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 369: in check_rr_graph: node 8440 (IPIN) at (7,8) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 370: in check_rr_graph: node 8442 (IPIN) at (7,8) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 371: in check_rr_graph: node 8444 (IPIN) at (7,8) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 372: in check_rr_graph: node 8446 (IPIN) at (7,8) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 373: in check_rr_graph: node 8520 (IPIN) at (7,9) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 374: in check_rr_graph: node 8522 (IPIN) at (7,9) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 375: in check_rr_graph: node 8524 (IPIN) at (7,9) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 376: in check_rr_graph: node 8526 (IPIN) at (7,9) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 377: in check_rr_graph: node 8528 (IPIN) at (7,9) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 378: in check_rr_graph: node 8530 (IPIN) at (7,9) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 379: in check_rr_graph: node 8604 (IPIN) at (7,10) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 380: in check_rr_graph: node 8606 (IPIN) at (7,10) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 381: in check_rr_graph: node 8608 (IPIN) at (7,10) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 382: in check_rr_graph: node 8610 (IPIN) at (7,10) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 383: in check_rr_graph: node 8612 (IPIN) at (7,10) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 384: in check_rr_graph: node 8614 (IPIN) at (7,10) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 385: in check_rr_graph: node 8688 (IPIN) at (7,11) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 386: in check_rr_graph: node 8690 (IPIN) at (7,11) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 387: in check_rr_graph: node 8692 (IPIN) at (7,11) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 388: in check_rr_graph: node 8694 (IPIN) at (7,11) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 389: in check_rr_graph: node 8696 (IPIN) at (7,11) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 390: in check_rr_graph: node 8698 (IPIN) at (7,11) block=clb side=LEFT pin=clb.I[55] has no fanin.
+Error 391: in check_rr_graph: node 8772 (IPIN) at (7,12) block=clb side=RIGHT pin=clb.I[45] has no fanin.
+Error 392: in check_rr_graph: node 8774 (IPIN) at (7,12) block=clb side=LEFT pin=clb.I[47] has no fanin.
+Error 393: in check_rr_graph: node 8776 (IPIN) at (7,12) block=clb side=RIGHT pin=clb.I[49] has no fanin.
+Error 394: in check_rr_graph: node 8778 (IPIN) at (7,12) block=clb side=LEFT pin=clb.I[51] has no fanin.
+Error 395: in check_rr_graph: node 8780 (IPIN) at (7,12) block=clb side=RIGHT pin=clb.I[53] has no fanin.
+Error 396: in check_rr_graph: node 8782 (IPIN) at (7,12) block=clb side=LEFT pin=clb.I[55] has no fanin.
+length:2 (6,13)->(5,13), had no out-going switches
+Warning 827: Node: 18685 with RR_type: CHANX  at Location:CHANX:18685 1len2D_x length:2 (7,13)->(6,13), had no out-going switches
+Warning 828: Node: 18687 with RR_type: CHANX  at Location:CHANX:18687 1len2D_x length:2 (7,13)->(6,13), had no out-going switches
+Warning 829: Node: 18688 with RR_type: CHANX  at Location:CHANX:18688 2len2D_x length:2 (6,13)->(7,13), had no out-going switches
+Warning 830: Node: 18689 with RR_type: CHANX  at Location:CHANX:18689 2len2D_x length:2 (7,13)->(6,13), had no out-going switches
+Warning 831: Node: 18690 with RR_type: CHANX  at Location:CHANX:18690 2len2D_x length:2 (6,13)->(7,13), had no out-going switches
+Warning 832: Node: 18691 with RR_type: CHANX  at Location:CHANX:18691 2len2D_x length:2 (7,13)->(6,13), had no out-going switches
+Warning 833: Node: 18751 with RR_type: CHANX  at Location:CHANX:18751 1len2D_x length:2 (8,13)->(7,13), had no out-going switches
+Warning 834: Node: 18753 with RR_type: CHANX  at Location:CHANX:18753 1len2D_x length:2 (8,13)->(7,13), had no out-going switches
+Warning 835: Node: 18754 with RR_type: CHANX  at Location:CHANX:18754 2len2D_x length:2 (7,13)->(8,13), had no out-going switches
+Warning 836: Node: 18755 with RR_type: CHANX  at Location:CHANX:18755 2len2D_x length:2 (8,13)->(7,13), had no out-going switches
+Warning 837: Node: 18756 with RR_type: CHANX  at Location:CHANX:18756 2len2D_x length:2 (7,13)->(8,13), had no out-going switches
+Warning 838: Node: 18757 with RR_type: CHANX  at Location:CHANX:18757 2len2D_x length:2 (8,13)->(7,13), had no out-going switches
+Warning 839: Node: 18817 with RR_type: CHANX  at Location:CHANX:18817 1len2D_x length:1 (8,13)->(8,13), had no out-going switches
+Warning 840: Node: 18819 with RR_type: CHANX  at Location:CHANX:18819 1len2D_x length:1 (8,13)->(8,13), had no out-going switches
+Warning 841: Node: 18820 with RR_type: CHANX  at Location:CHANX:18820 2len2D_x length:1 (8,13)->(8,13), had no out-going switches
+Warning 842: Node: 18821 with RR_type: CHANX  at Location:CHANX:18821 2len2D_x length:1 (8,13)->(8,13), had no out-going switches
+Warning 843: Node: 18822 with RR_type: CHANX  at Location:CHANX:18822 2len2D_x length:1 (8,13)->(8,13), had no out-going switches
+Warning 844: Node: 18823 with RR_type: CHANX  at Location:CHANX:18823 2len2D_x length:1 (8,13)->(8,13), had no out-going switches
+Warning 845: Found no instances of RR node with cost index 5
+Warning 846: Found no instances of RR node with cost index 9
+Warning 847: Found no instances of RR node with cost index 11
+Warning 848: Found no instances of RR node with cost index 13
+Warning 849: Found no instances of RR node with cost index 23
+Warning 850: in check_rr_graph: fringe node 720 IPIN at (1,1) has no fanin.
+	 This is possible on a fringe node based on low Fc_out, N, and certain lengths.
+## Build routing resource graph took 0.25 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+  RR Graph Nodes: 28794
+  RR Graph Edges: 320046
+# Create Device took 0.26 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+
+# Computing router lookahead map
+## Computing wire lookahead
+Warning 851: Unable to find any sample location for segment CHANX type 'stub_dud' (length 1)
+Warning 852: Unable to find any sample location for segment CHANY type 'len4_y' (length 4)
+Warning 853: Unable to find any sample location for segment CHANX type 'len6_x' (length 6)
+Warning 854: Unable to find any sample location for segment CHANX type 'len18_x' (length 18)
+## Computing wire lookahead took 1.29 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+## Computing src/opin lookahead
+## Computing src/opin lookahead took 0.00 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+# Computing router lookahead map took 1.29 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+# Computing placement delta delay look-up
+RR graph channel widths unchanged, skipping RR graph rebuild
+## Computing delta delays
+## Computing delta delays took 0.04 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+# Computing placement delta delay look-up took 0.04 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+Using simple RL 'Softmax agent' for choosing move types
+# Placement
+## Initial Placement
+Initial placement iteration 0 has finished successfully
+## Initial Placement took 0.00 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+
+There are 21 point to point connections in this circuit.
+
+
+BB estimate of min-dist (placement) wire length: 155
+
+Completed placement consistency check successfully.
+Initial placement cost: 1 bb_cost: 1.01469 td_cost: 5.60245e-09
+Initial placement estimated Critical Path Delay (CPD): 1.46081 ns
+Initial placement estimated setup Total Negative Slack (sTNS): -7.90223 ns
+Initial placement estimated setup Worst Negative Slack (sWNS): -1.46081 ns
+
+Initial placement estimated setup slack histogram:
+[ -1.5e-09: -1.4e-09) 1 ( 14.3%) |*************************
+[ -1.4e-09: -1.3e-09) 0 (  0.0%) |
+[ -1.3e-09: -1.3e-09) 1 ( 14.3%) |*************************
+[ -1.3e-09: -1.2e-09) 1 ( 14.3%) |*************************
+[ -1.2e-09: -1.2e-09) 1 ( 14.3%) |*************************
+[ -1.2e-09: -1.1e-09) 0 (  0.0%) |
+[ -1.1e-09:   -1e-09) 0 (  0.0%) |
+[   -1e-09: -9.7e-10) 0 (  0.0%) |
+[ -9.7e-10: -9.1e-10) 2 ( 28.6%) |*************************************************
+[ -9.1e-10: -8.5e-10) 1 ( 14.3%) |*************************
+Placement contains 0 placement macros involving 0 blocks (average macro size -nan)
+
+Moves per temperature: 42
+Warning 855: Starting t: 8 of 28 configurations accepted.
+
+---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+Tnum   Time       T Av Cost Av BB Cost Av TD Cost     CPD       sTNS     sWNS Ac Rate Std Dev  R lim Crit Exp Tot Moves  Alpha
+      (sec)                                          (ns)       (ns)     (ns)                                                 
+---- ------ ------- ------- ---------- ---------- ------- ---------- -------- ------- ------- ------ -------- --------- ------
+   1    0.0 4.5e-04   0.929       0.87 5.2702e-09   1.300      -7.55   -1.300   0.238  0.0562   14.0     1.00        42  0.200
+   2    0.0 4.3e-04   0.798       0.64 2.2782e-09   1.300      -6.79   -1.300   0.214  0.0656   11.2     2.52        84  0.950
+   3    0.0 4.0e-04   0.910       0.55 1.8129e-09   1.092      -5.74   -1.092   0.238  0.0719    8.7     3.88       126  0.950
+   4    0.0 3.8e-04   0.983       0.48 2.3222e-09   0.880      -5.47   -0.880   0.119  0.0192    6.9     4.82       168  0.950
+   5    0.0 3.6e-04   0.928       0.44 1.637e-09    0.880      -5.33   -0.880   0.167  0.0173    4.7     6.01       210  0.950
+   6    0.0 3.5e-04   0.973       0.41 1.1886e-09   0.880      -5.17   -0.880   0.143  0.0145    3.4     6.70       252  0.950
+   7    0.0 3.3e-04   0.966       0.38 1.0304e-09   0.880      -5.07   -0.880   0.143  0.0177    2.4     7.25       294  0.950
+   8    0.0 3.1e-04   0.946       0.35 8.6114e-10   0.881      -5.01   -0.881   0.095  0.0370    1.7     7.63       336  0.950
+   9    0.0 3.0e-04   0.986       0.33 1.5145e-09   0.769      -4.89   -0.769   0.048  0.0095    1.1     7.94       378  0.950
+  10    0.0 2.8e-04   0.980       0.32 1.4862e-09   0.770      -4.89   -0.770   0.119  0.0145    1.0     8.00       420  0.950
+  11    0.0 0.0e+00   0.967       0.30 1.1797e-09   0.786      -4.87   -0.786   0.095  0.0081    1.0     8.00       462  0.800
+## Placement Quench took 0.00 seconds (max_rss 56.5 MiB)
+post-quench CPD = 0.710309 (ns) 
+
+BB estimate of min-dist (placement) wire length: 45
+
+Completed placement consistency check successfully.
+
+Swaps called: 490
+
+Aborted Move Reasons:
+  No moves aborted
+
+Placement estimated critical path delay (least slack): 0.710309 ns, Fmax: 1407.84 MHz
+Placement estimated setup Worst Negative Slack (sWNS): -0.710309 ns
+Placement estimated setup Total Negative Slack (sTNS): -4.78997 ns
+
+Placement estimated setup slack histogram:
+[ -7.1e-10: -7.1e-10) 2 ( 28.6%) |********************
+[ -7.1e-10:   -7e-10) 0 (  0.0%) |
+[   -7e-10:   -7e-10) 0 (  0.0%) |
+[   -7e-10:   -7e-10) 0 (  0.0%) |
+[   -7e-10: -6.9e-10) 0 (  0.0%) |
+[ -6.9e-10: -6.9e-10) 0 (  0.0%) |
+[ -6.9e-10: -6.8e-10) 0 (  0.0%) |
+[ -6.8e-10: -6.8e-10) 0 (  0.0%) |
+[ -6.8e-10: -6.8e-10) 0 (  0.0%) |
+[ -6.8e-10: -6.7e-10) 5 ( 71.4%) |*************************************************
+
+Placement estimated geomean non-virtual intra-domain period: nan ns (nan MHz)
+Placement estimated fanout-weighted geomean non-virtual intra-domain period: nan ns (nan MHz)
+
+Placement cost: 0.961018, bb_cost: 0.298472, td_cost: 2.2227e-09, 
+
+Placement resource usage:
+  io  implemented as io : 21
+  clb implemented as clb: 7
+
+Placement number of temperatures: 11
+Placement total # of swap attempts: 490
+	Swaps accepted:  76 (15.5 %)
+	Swaps rejected: 389 (79.4 %)
+	Swaps aborted :  25 ( 5.1 %)
+
+
+Percentage of different move types:
+	Uniform move: 38.57 % (acc=15.34 %, rej=84.66 %, aborted=0.00 %)
+	Median move: 25.92 % (acc=15.75 %, rej=76.38 %, aborted=7.87 %)
+	W. Centroid move: 25.71 % (acc=17.46 %, rej=75.40 %, aborted=7.14 %)
+	Centroid move: 4.08 % (acc=5.00 %, rej=75.00 %, aborted=20.00 %)
+	W. Median move: 0.61 % (acc=0.00 %, rej=33.33 %, aborted=66.67 %)
+	Crit. Uniform move: 0.61 % (acc=0.00 %, rej=100.00 %, aborted=0.00 %)
+	Feasible Region move: 4.49 % (acc=18.18 %, rej=81.82 %, aborted=0.00 %)
+
+Placement Quench timing analysis took 1.1835e-05 seconds (8.78e-06 STA, 3.055e-06 slack) (1 full updates: 1 setup, 0 hold, 0 combined).
+Placement Total  timing analysis took 0.000491289 seconds (0.000360546 STA, 0.000130743 slack) (13 full updates: 13 setup, 0 hold, 0 combined).
+update_td_costs: connections 0 nets 0 sum_nets 0 total 0
+# Placement took 2.79 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+
+# Routing
+RR graph channel widths unchanged, skipping RR graph rebuild
+Confirming router algorithm: TIMING_DRIVEN.
+## Initializing router criticalities
+Initial Net Connection Criticality Histogram:
+[        0:      0.1)  0 (  0.0%) |
+[      0.1:      0.2)  0 (  0.0%) |
+[      0.2:      0.3)  0 (  0.0%) |
+[      0.3:      0.4)  0 (  0.0%) |
+[      0.4:      0.5)  0 (  0.0%) |
+[      0.5:      0.6)  0 (  0.0%) |
+[      0.6:      0.7)  0 (  0.0%) |
+[      0.7:      0.8)  0 (  0.0%) |
+[      0.8:      0.9)  0 (  0.0%) |
+[      0.9:        1) 21 (100.0%) |************************************************
+## Initializing router criticalities took 0.00 seconds (max_rss 56.5 MiB, delta_rss +0.0 MiB)
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+Iter   Time    pres  BBs    Heap  Re-Rtd  Re-Rtd Overused RR Nodes      Wirelength      CPD       sTNS       sWNS       hTNS       hWNS Est Succ
+      (sec)     fac Updt    push    Nets   Conns                                       (ns)       (ns)       (ns)       (ns)       (ns)     Iter
+---- ------ ------- ---- ------- ------- ------- ----------------- --------------- -------- ---------- ---------- ---------- ---------- --------
+   1    0.0     0.0    0    4147      21      21      11 ( 0.038%)      26 ( 0.1%)    0.714     -4.779     -0.714      0.000      0.000      N/A
+Gdk-Message: 08:15:26.881: vpr: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Command exited with non-zero status 1
+	Command being timed: "/home/chem3000/GitClones/vtr_ccl/vtr-verilog-to-routing/vpr/vpr simple-7series_correctedSB.xml or --circuit_file or.pre-vpr.blif --route_chan_width 190 --disp on --max_router_iterations 150"
+	User time (seconds): 22.84
+	System time (seconds): 0.79
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 68:57:32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 57904
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 37794
+	Voluntary context switches: 38579
+	Involuntary context switches: 88
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 512
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

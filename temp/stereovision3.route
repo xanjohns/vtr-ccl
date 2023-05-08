@@ -1,0 +1,588 @@
+Placement_File: stereovision3.place Placement_ID: SHA256:134450930e3fcb1b10ae8c9d5bc356da0e49e6ee4d82f5fca6a0efd5eea08f24
+Array size: 7 x 7 logic blocks.
+
+Routing:
+
+Net 0 (sv_chip3_hierarchy_no_mem^tm3_vidin_vs)
+
+
+
+Net 1 (n277)
+
+
+
+Net 2 (sv_chip3_hierarchy_no_mem^vert~0_FF)
+
+
+
+Net 3 (sv_chip3_hierarchy_no_mem^tm3_vidin_href)
+
+
+
+Net 4 (n278)
+
+
+
+Net 5 (sv_chip3_hierarchy_no_mem^horiz~1_FF)
+
+
+
+Net 6 (sv_chip3_hierarchy_no_mem^horiz~0_FF)
+
+
+
+Net 7 (sv_chip3_hierarchy_no_mem^tm3_vidin_cref)
+
+
+
+Net 8 (n332)
+
+
+
+Net 9 (sv_chip3_hierarchy_no_mem^horiz~5_FF)
+
+
+
+Net 10 (sv_chip3_hierarchy_no_mem^horiz~2_FF)
+
+
+
+Net 11 (sv_chip3_hierarchy_no_mem^horiz~3_FF)
+
+
+
+Net 12 (sv_chip3_hierarchy_no_mem^vert~1_FF)
+
+
+
+Net 13 (sv_chip3_hierarchy_no_mem^vert~2_FF)
+
+
+
+Net 14 (n279)
+
+
+
+Net 15 (sv_chip3_hierarchy_no_mem^horiz~4_FF)
+
+
+
+Net 16 (sv_chip3_hierarchy_no_mem^tm3_clk_v0): global net connecting:
+
+Block sv_chip3_hierarchy_no_mem^tm3_clk_v0 (#52) at (0,5), Pin class 16.
+Block n279 (#0) at (2,4), Pin class 80.
+Block n291 (#1) at (2,3), Pin class 80.
+Block _n191 (#8) at (1,3), Pin class 80.
+Block n332 (#10) at (3,4), Pin class 80.
+Block _n101 (#12) at (2,2), Pin class 80.
+Block _n126 (#13) at (2,5), Pin class 80.
+Block _n141 (#14) at (2,1), Pin class 80.
+Block _n156 (#15) at (3,1), Pin class 80.
+Block _n171 (#16) at (1,2), Pin class 80.
+Block _n186 (#17) at (1,4), Pin class 80.
+Block _n201 (#18) at (3,5), Pin class 80.
+Block _n221 (#19) at (3,3), Pin class 80.
+
+
+Net 17 (n335)
+
+
+
+Net 18 (sv_chip3_hierarchy_no_mem^horiz~7_FF)
+
+
+
+Net 19 (sv_chip3_hierarchy_no_mem^horiz~6_FF)
+
+
+
+Net 20 (sv_chip3_hierarchy_no_mem^horiz~9_FF)
+
+
+
+Net 21 (sv_chip3_hierarchy_no_mem^horiz~8_FF)
+
+
+
+Net 22 (n291)
+
+
+
+Net 23 (sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF)
+
+
+
+Net 24 (sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF)
+
+
+
+Net 25 (sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF)
+
+
+
+Net 26 (sv_chip3_hierarchy_no_mem^iic_state~2_FF)
+
+
+
+Net 27 (sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF)
+
+
+
+Net 28 (sv_chip3_hierarchy_no_mem^iic_state~3_FF)
+
+
+
+Net 29 (sv_chip3_hierarchy_no_mem^iic_state~1_FF)
+
+
+
+Net 30 (sv_chip3_hierarchy_no_mem^iic_state~0_FF)
+
+
+
+Net 31 (n372)
+
+
+
+Net 32 (n373)
+
+
+
+Net 33 (n388)
+
+
+
+Net 34 (sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF)
+
+
+
+Net 35 (n396)
+
+
+
+Net 36 (n394)
+
+
+
+Net 37 (n393)
+
+
+
+Net 38 (n387)
+
+
+
+Net 39 (n418)
+
+
+
+Net 40 (n412)
+
+
+
+Net 41 (sv_chip3_hierarchy_no_mem^iic_state~6_FF)
+
+
+
+Net 42 (sv_chip3_hierarchy_no_mem^iic_state~5_FF)
+
+
+
+Net 43 (n422)
+
+
+
+Net 44 (n368)
+
+
+
+Net 45 (n416)
+
+
+
+Net 46 (sv_chip3_hierarchy_no_mem^iic_state~4_FF)
+
+
+
+Net 47 (sv_chip3_hierarchy_no_mem^tm3_clk_v2): global net connecting:
+
+Block sv_chip3_hierarchy_no_mem^tm3_clk_v2 (#53) at (0,1), Pin class 22.
+Block n394 (#3) at (4,3), Pin class 80.
+Block n388 (#4) at (5,2), Pin class 80.
+Block n401 (#5) at (4,1), Pin class 80.
+Block n402 (#6) at (5,3), Pin class 80.
+Block n404 (#7) at (4,2), Pin class 80.
+Block n160 (#9) at (4,4), Pin class 80.
+Block n412 (#11) at (5,4), Pin class 80.
+
+
+Net 48 (n386)
+
+
+
+Net 49 (n384)
+
+
+
+Net 50 (n383)
+
+
+
+Net 51 (sv_chip3_hierarchy_no_mem^iic_stop_FF)
+
+
+
+Net 52 (n367)
+
+
+
+Net 53 (n382)
+
+
+
+Net 54 (n380)
+
+
+
+Net 55 (n404)
+
+
+
+Net 56 (n410)
+
+
+
+Net 57 (n160)
+
+
+
+Net 58 (n376)
+
+
+
+Net 59 (n402)
+
+
+
+Net 60 (sv_chip3_hierarchy_no_mem^tm3_vidin_sda)
+
+
+
+Net 61 (n408)
+
+
+
+Net 62 (_n281)
+
+
+
+Net 63 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~18_FF)
+
+
+
+Net 64 (sv_chip3_hierarchy_no_mem^vert~5_FF)
+
+
+
+Net 65 (sv_chip3_hierarchy_no_mem^vert~7_FF)
+
+
+
+Net 66 (sv_chip3_hierarchy_no_mem^vert~3_FF)
+
+
+
+Net 67 (sv_chip3_hierarchy_no_mem^vert~4_FF)
+
+
+
+Net 68 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~16)
+
+
+
+Net 69 (sv_chip3_hierarchy_no_mem^vert~6_FF)
+
+
+
+Net 70 (n374)
+
+
+
+Net 71 (sv_chip3_hierarchy_no_mem^tm3_vidin_scl)
+
+
+
+Net 72 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~1_FF)
+
+
+
+Net 73 (sv_chip3_hierarchy_no_mem^creg2_FF)
+
+
+
+Net 74 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~0_FF)
+
+
+
+Net 75 (sv_chip3_hierarchy_no_mem^creg3_FF)
+
+
+
+Net 76 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~10_FF)
+
+
+
+Net 77 (sv_chip3_hierarchy_no_mem^vidin_new_data)
+
+
+
+Net 78 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~0)
+
+
+
+Net 79 (sv_chip3_hierarchy_no_mem^tm3_vidin_rts0)
+
+
+
+Net 80 (sv_chip3_hierarchy_no_mem^temp_reg1_FF)
+
+
+
+Net 81 (sv_chip3_hierarchy_no_mem^rst_FF)
+
+
+
+Net 82 (_n416)
+
+
+
+Net 83 (sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~4)
+
+
+
+Net 84 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~6_FF)
+
+
+
+Net 85 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~7_FF)
+
+
+
+Net 86 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~6_FF)
+
+
+
+Net 87 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~6)
+
+
+
+Net 88 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~7)
+
+
+
+Net 89 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~9)
+
+
+
+Net 90 (sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~2)
+
+
+
+Net 91 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~2_FF)
+
+
+
+Net 92 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~2_FF)
+
+
+
+Net 93 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~5_FF)
+
+
+
+Net 94 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~12_FF)
+
+
+
+Net 95 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~2)
+
+
+
+Net 96 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~10)
+
+
+
+Net 97 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~5)
+
+
+
+Net 98 (sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~1)
+
+
+
+Net 99 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~1_FF)
+
+
+
+Net 100 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~1_FF)
+
+
+
+Net 101 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~4_FF)
+
+
+
+Net 102 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~13_FF)
+
+
+
+Net 103 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~1)
+
+
+
+Net 104 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~11)
+
+
+
+Net 105 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~4)
+
+
+
+Net 106 (sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~0)
+
+
+
+Net 107 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~0_FF)
+
+
+
+Net 108 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~0_FF)
+
+
+
+Net 109 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~3_FF)
+
+
+
+Net 110 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~14_FF)
+
+
+
+Net 111 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~0)
+
+
+
+Net 112 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~12)
+
+
+
+Net 113 (sv_chip3_hierarchy_no_mem^vidin_rgb_reg~3)
+
+
+
+Net 114 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~8_FF)
+
+
+
+Net 115 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~7_FF)
+
+
+
+Net 116 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~9_FF)
+
+
+
+Net 117 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~15_FF)
+
+
+
+Net 118 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~6)
+
+
+
+Net 119 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~7)
+
+
+
+Net 120 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~13)
+
+
+
+Net 121 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~8)
+
+
+
+Net 122 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~5_FF)
+
+
+
+Net 123 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~4_FF)
+
+
+
+Net 124 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~6_FF)
+
+
+
+Net 125 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~16_FF)
+
+
+
+Net 126 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~3)
+
+
+
+Net 127 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~4)
+
+
+
+Net 128 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~14)
+
+
+
+Net 129 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~5)
+
+
+
+Net 130 (sv_chip3_hierarchy_no_mem^creg1_FF)
+
+
+
+Net 131 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~2_FF)
+
+
+
+Net 132 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~3_FF)
+
+
+
+Net 133 (sv_chip3_hierarchy_no_mem^vidin_addr_reg1~17_FF)
+
+
+
+Net 134 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~1)
+
+
+
+Net 135 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~15)
+
+
+
+Net 136 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~2)
+
+
+
+Net 137 (sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~3)
+
+
+
+Net 138 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~17): global net connecting:
+
+Block sv_chip3_hierarchy_no_mem^vidin_addr_reg~17 (#20) at (1,1), Pin class 70.
+Block out:sv_chip3_hierarchy_no_mem^vidin_addr_reg~17 (#50) at (1,0), Pin class 15.
+
+
+Net 139 (sv_chip3_hierarchy_no_mem^vidin_addr_reg~18): global net connecting:
+
+Block sv_chip3_hierarchy_no_mem^vidin_addr_reg~18 (#21) at (4,5), Pin class 70.
+Block out:sv_chip3_hierarchy_no_mem^vidin_addr_reg~18 (#51) at (0,5), Pin class 3.

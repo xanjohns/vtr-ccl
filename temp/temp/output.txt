@@ -1,0 +1,5 @@
+vpr_status=exited with return code 4
+vpr_seconds=246
+rundir=/home/chem3000/GitClones/xan-vtr/temp
+hostname=goeders10
+error=

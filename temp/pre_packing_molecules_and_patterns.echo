@@ -1,0 +1,86 @@
+# of pack patterns 1
+pack pattern index 0 block count 2 name ble6 root lut
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^o_led~6
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^o_led~5
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^o_led~4
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^o_led~3
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^o_led~2
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^o_led~1
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^o_led~0
+
+molecule type: atom
+	pattern index 1: atom block out:simpleOR^o_led~6
+
+molecule type: atom
+	pattern index 1: atom block out:simpleOR^o_led~5
+
+molecule type: atom
+	pattern index 1: atom block out:simpleOR^o_led~4
+
+molecule type: atom
+	pattern index 1: atom block out:simpleOR^o_led~3
+
+molecule type: atom
+	pattern index 1: atom block out:simpleOR^o_led~2
+
+molecule type: atom
+	pattern index 1: atom block out:simpleOR^o_led~1
+
+molecule type: atom
+	pattern index 1: atom block out:simpleOR^o_led~0
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~13
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~12
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~11
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~10
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~9
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~8
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~7
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~6
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~5
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~4
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~3
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~2
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~1
+
+molecule type: atom
+	pattern index 1: atom block simpleOR^in~0

@@ -1,0 +1,69 @@
+digraph G {
+	ranksep=.25;
+	"simpleOR_in~0" [shape=triangle];
+	"simpleOR_in~0" -> "simpleOR_bOR~0"[label="simpleOR^in~0"];
+	"simpleOR_bOR~0"
+	"simpleOR_bOR~0" -> "simpleOR_BUF~1"[label="simpleOR^o_led~0"];
+	"simpleOR_BUF~1" [shape=box];
+	"simpleOR_BUF~1" -> "simpleOR_o_led~0_O";
+	"simpleOR_o_led~0_O" [shape=triangle];
+	"simpleOR_in~1" [shape=triangle];
+	"simpleOR_in~1" -> "simpleOR_bOR~0"[label="simpleOR^in~1"];
+	"simpleOR_in~2" [shape=triangle];
+	"simpleOR_in~2" -> "simpleOR_bOR~2"[label="simpleOR^in~2"];
+	"simpleOR_bOR~2"
+	"simpleOR_bOR~2" -> "simpleOR_BUF~3"[label="simpleOR^o_led~1"];
+	"simpleOR_BUF~3" [shape=box];
+	"simpleOR_BUF~3" -> "simpleOR_o_led~1_O";
+	"simpleOR_o_led~1_O" [shape=triangle];
+	"simpleOR_in~3" [shape=triangle];
+	"simpleOR_in~3" -> "simpleOR_bOR~2"[label="simpleOR^in~3"];
+	"simpleOR_in~4" [shape=triangle];
+	"simpleOR_in~4" -> "simpleOR_bOR~4"[label="simpleOR^in~4"];
+	"simpleOR_bOR~4"
+	"simpleOR_bOR~4" -> "simpleOR_BUF~5"[label="simpleOR^o_led~2"];
+	"simpleOR_BUF~5" [shape=box];
+	"simpleOR_BUF~5" -> "simpleOR_o_led~2_O";
+	"simpleOR_o_led~2_O" [shape=triangle];
+	"simpleOR_in~5" [shape=triangle];
+	"simpleOR_in~5" -> "simpleOR_bOR~4"[label="simpleOR^in~5"];
+	"simpleOR_in~6" [shape=triangle];
+	"simpleOR_in~6" -> "simpleOR_bOR~6"[label="simpleOR^in~6"];
+	"simpleOR_bOR~6"
+	"simpleOR_bOR~6" -> "simpleOR_BUF~7"[label="simpleOR^o_led~3"];
+	"simpleOR_BUF~7" [shape=box];
+	"simpleOR_BUF~7" -> "simpleOR_o_led~3_O";
+	"simpleOR_o_led~3_O" [shape=triangle];
+	"simpleOR_in~7" [shape=triangle];
+	"simpleOR_in~7" -> "simpleOR_bOR~6"[label="simpleOR^in~7"];
+	"simpleOR_in~8" [shape=triangle];
+	"simpleOR_in~8" -> "simpleOR_bOR~8"[label="simpleOR^in~8"];
+	"simpleOR_bOR~8"
+	"simpleOR_bOR~8" -> "simpleOR_BUF~9"[label="simpleOR^o_led~4"];
+	"simpleOR_BUF~9" [shape=box];
+	"simpleOR_BUF~9" -> "simpleOR_o_led~4_O";
+	"simpleOR_o_led~4_O" [shape=triangle];
+	"simpleOR_in~9" [shape=triangle];
+	"simpleOR_in~9" -> "simpleOR_bOR~8"[label="simpleOR^in~9"];
+	"simpleOR_in~10" [shape=triangle];
+	"simpleOR_in~10" -> "simpleOR_bOR~10"[label="simpleOR^in~10"];
+	"simpleOR_bOR~10"
+	"simpleOR_bOR~10" -> "simpleOR_BUF~11"[label="simpleOR^o_led~5"];
+	"simpleOR_BUF~11" [shape=box];
+	"simpleOR_BUF~11" -> "simpleOR_o_led~5_O";
+	"simpleOR_o_led~5_O" [shape=triangle];
+	"simpleOR_in~11" [shape=triangle];
+	"simpleOR_in~11" -> "simpleOR_bOR~10"[label="simpleOR^in~11"];
+	"simpleOR_in~12" [shape=triangle];
+	"simpleOR_in~12" -> "simpleOR_bOR~12"[label="simpleOR^in~12"];
+	"simpleOR_bOR~12"
+	"simpleOR_bOR~12" -> "simpleOR_BUF~13"[label="simpleOR^o_led~6"];
+	"simpleOR_BUF~13" [shape=box];
+	"simpleOR_BUF~13" -> "simpleOR_o_led~6_O";
+	"simpleOR_o_led~6_O" [shape=triangle];
+	"simpleOR_in~13" [shape=triangle];
+	"simpleOR_in~13" -> "simpleOR_bOR~12"[label="simpleOR^in~13"];
+	"simpleOR_clk" [shape=triangle];
+	"simpleOR_ZGZ"
+	"simpleOR_OVC"
+}

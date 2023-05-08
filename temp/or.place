@@ -1,0 +1,33 @@
+Netlist_File: or.net Netlist_ID: SHA256:de809c142ebb5a8b5eb587d9a1a38800d6854e8c9df1f6788ae1086fc8db0720
+Array size: 10 x 15 logic blocks
+
+#block name	x	y	subblk	block number
+#----------	--	--	------	------------
+simpleOR^o_led~0	7	1	0	#0
+simpleOR^o_led~1	8	2	0	#1
+simpleOR^o_led~2	2	13	0	#2
+simpleOR^o_led~3	3	13	0	#3
+simpleOR^o_led~4	8	13	0	#4
+simpleOR^o_led~5	2	1	0	#5
+simpleOR^o_led~6	8	9	0	#6
+out:simpleOR^o_led~0	7	0	2	#7
+out:simpleOR^o_led~1	9	2	1	#8
+out:simpleOR^o_led~2	2	14	5	#9
+out:simpleOR^o_led~3	3	14	5	#10
+out:simpleOR^o_led~4	8	14	5	#11
+out:simpleOR^o_led~5	2	0	1	#12
+out:simpleOR^o_led~6	9	8	1	#13
+simpleOR^in~0	7	0	7	#14
+simpleOR^in~1	7	0	0	#15
+simpleOR^in~2	9	1	4	#16
+simpleOR^in~3	9	2	2	#17
+simpleOR^in~4	2	14	0	#18
+simpleOR^in~5	2	14	7	#19
+simpleOR^in~6	4	14	3	#20
+simpleOR^in~7	3	14	4	#21
+simpleOR^in~8	8	14	7	#22
+simpleOR^in~9	8	14	4	#23
+simpleOR^in~10	2	0	7	#24
+simpleOR^in~11	2	0	6	#25
+simpleOR^in~12	9	9	3	#26
+simpleOR^in~13	9	9	2	#27

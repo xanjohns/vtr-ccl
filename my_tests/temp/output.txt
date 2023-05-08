@@ -1,0 +1,5 @@
+vpr_status=success
+vpr_seconds=7381
+rundir=/home/chem3000/GitClones/xan-vtr/my_tests
+hostname=goeders10
+error=

@@ -1,0 +1,201 @@
+#Timing report of worst 7 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: simpleOR^in~13.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:simpleOR^o_led~6.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+simpleOR^in~13.inpad[0] (.input)                                 0.000     0.000
+simpleOR^o_led~6.in[1] (.names)                                  0.150     0.150
+simpleOR^o_led~6.out[0] (.names)                                 0.044     0.194
+out:simpleOR^o_led~6.outpad[0] (.output)                         0.149     0.342
+data arrival time                                                          0.342
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.342
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.342
+
+
+#Path 2
+Startpoint: simpleOR^in~1.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:simpleOR^o_led~0.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+simpleOR^in~1.inpad[0] (.input)                                  0.000     0.000
+simpleOR^o_led~0.in[1] (.names)                                  0.150     0.150
+simpleOR^o_led~0.out[0] (.names)                                 0.044     0.194
+out:simpleOR^o_led~0.outpad[0] (.output)                         0.150     0.343
+data arrival time                                                          0.343
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.343
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.343
+
+
+#Path 3
+Startpoint: simpleOR^in~5.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:simpleOR^o_led~2.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+simpleOR^in~5.inpad[0] (.input)                                  0.000     0.000
+simpleOR^o_led~2.in[1] (.names)                                  0.150     0.150
+simpleOR^o_led~2.out[0] (.names)                                 0.044     0.194
+out:simpleOR^o_led~2.outpad[0] (.output)                         0.150     0.343
+data arrival time                                                          0.343
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.343
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.343
+
+
+#Path 4
+Startpoint: simpleOR^in~7.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:simpleOR^o_led~3.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+simpleOR^in~7.inpad[0] (.input)                                  0.000     0.000
+simpleOR^o_led~3.in[1] (.names)                                  0.150     0.150
+simpleOR^o_led~3.out[0] (.names)                                 0.044     0.194
+out:simpleOR^o_led~3.outpad[0] (.output)                         0.150     0.343
+data arrival time                                                          0.343
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.343
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.343
+
+
+#Path 5
+Startpoint: simpleOR^in~9.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:simpleOR^o_led~4.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+simpleOR^in~9.inpad[0] (.input)                                  0.000     0.000
+simpleOR^o_led~4.in[1] (.names)                                  0.150     0.150
+simpleOR^o_led~4.out[0] (.names)                                 0.044     0.194
+out:simpleOR^o_led~4.outpad[0] (.output)                         0.151     0.344
+data arrival time                                                          0.344
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.344
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.344
+
+
+#Path 6
+Startpoint: simpleOR^in~11.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:simpleOR^o_led~5.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+simpleOR^in~11.inpad[0] (.input)                                 0.000     0.000
+simpleOR^o_led~5.in[1] (.names)                                  0.150     0.150
+simpleOR^o_led~5.out[0] (.names)                                 0.044     0.194
+out:simpleOR^o_led~5.outpad[0] (.output)                         0.151     0.344
+data arrival time                                                          0.344
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.344
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.344
+
+
+#Path 7
+Startpoint: simpleOR^in~3.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:simpleOR^o_led~1.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : hold
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+simpleOR^in~3.inpad[0] (.input)                                  0.000     0.000
+simpleOR^o_led~1.in[1] (.names)                                  0.150     0.150
+simpleOR^o_led~1.out[0] (.names)                                 0.044     0.194
+out:simpleOR^o_led~1.outpad[0] (.output)                         0.225     0.418
+data arrival time                                                          0.418
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                        -0.000
+data arrival time                                                          0.418
+--------------------------------------------------------------------------------
+slack (MET)                                                                0.418
+
+
+#End of timing report

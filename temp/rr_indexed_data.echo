@@ -1,0 +1,8 @@
+Delay normalization factor: 2.33313e-11
+Cost Index                    Base Cost           Ortho Cost Index    Seg Index           Inv. Length         T. Linear           T. Quadratic        C. Load             
+0 SOURCE                      2.33313e-11         -1                  -1                  nan                 0                   0                   0                   
+1 SINK                        0                   -1                  -1                  nan                 0                   0                   0                   
+2 OPIN                        2.33313e-11         -1                  -1                  nan                 0                   0                   0                   
+3 IPIN                        2.21648e-11         -1                  -1                  nan                 7.247e-11           0                   0                   
+4 CHANX unnamed_segment_0     9.33254e-11         5                   0                   0.25                9.33254e-11         0                   0                   
+5 CHANY unnamed_segment_0     9.33254e-11         4                   0                   0.25                9.33254e-11         0                   0                   

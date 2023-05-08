@@ -1,0 +1,5 @@
+vpr_status=exited with return code 2
+vpr_seconds=280
+rundir=/home/chem3000/GitClones/xan-vtr/broke_example
+hostname=goeders10
+error=

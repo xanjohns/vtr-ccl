@@ -1,0 +1,1275 @@
+# Benchmark "sv_chip3_hierarchy_no_mem" written by ABC on Fri Jul 29 22:43:25 2022 
+
+.model sv_chip3_hierarchy_no_mem 
+
+.inputs sv_chip3_hierarchy_no_mem^tm3_clk_v0 sv_chip3_hierarchy_no_mem^tm3_clk_v2 sv_chip3_hierarchy_no_mem^tm3_vidin_llc \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_vs sv_chip3_hierarchy_no_mem^tm3_vidin_href sv_chip3_hierarchy_no_mem^tm3_vidin_cref \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_rts0 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~0 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~1 \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~2 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~3 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~4 \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~5 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~6 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~7 \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~8 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~9 \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~10 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~11 \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~12 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~13 \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~14 sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~15 
+
+.outputs sv_chip3_hierarchy_no_mem^tm3_vidin_sda sv_chip3_hierarchy_no_mem^tm3_vidin_scl \
+ sv_chip3_hierarchy_no_mem^vidin_new_data sv_chip3_hierarchy_no_mem^vidin_rgb_reg~0 sv_chip3_hierarchy_no_mem^vidin_rgb_reg~1 \
+ sv_chip3_hierarchy_no_mem^vidin_rgb_reg~2 sv_chip3_hierarchy_no_mem^vidin_rgb_reg~3 sv_chip3_hierarchy_no_mem^vidin_rgb_reg~4 \
+ sv_chip3_hierarchy_no_mem^vidin_rgb_reg~5 sv_chip3_hierarchy_no_mem^vidin_rgb_reg~6 sv_chip3_hierarchy_no_mem^vidin_rgb_reg~7 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~0 sv_chip3_hierarchy_no_mem^vidin_addr_reg~1 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~2 sv_chip3_hierarchy_no_mem^vidin_addr_reg~3 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~4 sv_chip3_hierarchy_no_mem^vidin_addr_reg~5 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~6 sv_chip3_hierarchy_no_mem^vidin_addr_reg~7 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~8 sv_chip3_hierarchy_no_mem^vidin_addr_reg~9 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~10 sv_chip3_hierarchy_no_mem^vidin_addr_reg~11 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~12 sv_chip3_hierarchy_no_mem^vidin_addr_reg~13 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~14 sv_chip3_hierarchy_no_mem^vidin_addr_reg~15 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~16 sv_chip3_hierarchy_no_mem^vidin_addr_reg~17 \
+ sv_chip3_hierarchy_no_mem^vidin_addr_reg~18 
+
+
+.latch n160 sv_chip3_hierarchy_no_mem^iic_stop_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n165 sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n170 sv_chip3_hierarchy_no_mem^iic_state~0_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n175 sv_chip3_hierarchy_no_mem^tm3_vidin_scl_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n180 sv_chip3_hierarchy_no_mem^tm3_vidin_sda_xhdl0_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n185 sv_chip3_hierarchy_no_mem^iic_state~1_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n190 sv_chip3_hierarchy_no_mem^iic_state~2_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n195 sv_chip3_hierarchy_no_mem^iic_state~3_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n200 sv_chip3_hierarchy_no_mem^iic_state~4_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n205 sv_chip3_hierarchy_no_mem^iic_state~5_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n210 sv_chip3_hierarchy_no_mem^iic_state~6_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n215 sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n220 sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n225 sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n230 sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n235 sv_chip3_hierarchy_no_mem^rst_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n239 sv_chip3_hierarchy_no_mem^temp_reg1_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+.latch n243 sv_chip3_hierarchy_no_mem^temp_reg2_FF re sv_chip3_hierarchy_no_mem^tm3_clk_v2 0 
+
+
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n96 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~0_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n101 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~0_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n106 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~11_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n111 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~9_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n116 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n121 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~12_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n126 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~10_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n131 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n136 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~13_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n141 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~11_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n146 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~3_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n151 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~14_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n156 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~12_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n161 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~4_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n166 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~15_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n171 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~13_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n176 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~5_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n181 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~16_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n186 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~14_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n191 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~6_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n196 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~17_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n201 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~15_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n206 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vert~7_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n211 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~18_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n216 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~16_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n221 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~0_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n226 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~0_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n231 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n246 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n251 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~3_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n256 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~4_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n261 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~5_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n266 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~6_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n271 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~7_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n276 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg~8_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n281 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_new_data_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n286 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~0_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n291 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n296 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n301 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~3_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n306 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~4_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n311 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~5_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n316 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~6_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n321 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg~7_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n326 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n331 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n336 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n341 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n346 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~3_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n351 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~3_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n356 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~4_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n361 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~4_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n366 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~5_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n371 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~5_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n376 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~6_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n381 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~6_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n386 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~7_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n391 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~7_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n396 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~8_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n401 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~8_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n406 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^horiz~9_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n411 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~9_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n416 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_addr_reg1~10_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n421 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~0_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n426 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~0_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n431 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n436 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n441 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n446 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n451 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~3_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n456 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~3_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n461 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~4_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n466 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~4_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n471 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~5_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n476 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~5_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n481 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~6_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n486 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~6_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n491 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~7_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n496 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~7_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n500 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^creg1_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n504 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^creg2_FF 
+
+.subckt latch_^_re_^_sv_chip3_hierarchy_no_mem^tm3_clk_v0_^_0 I=_n508 C=sv_chip3_hierarchy_no_mem^tm3_clk_v0 \
+ O=sv_chip3_hierarchy_no_mem^creg3_FF 
+
+
+
+.names sv_chip3_hierarchy_no_mem^horiz~0_FF sv_chip3_hierarchy_no_mem^tm3_vidin_cref sv_chip3_hierarchy_no_mem^tm3_vidin_href \
+ _n96 
+001 1 
+111 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vs n277 sv_chip3_hierarchy_no_mem^vert~0_FF _n101 
+010 1 
+001 1 
+
+.names n279 n280 n278 sv_chip3_hierarchy_no_mem^tm3_vidin_href n277 
+---1 0 
+111- 0 
+
+.names sv_chip3_hierarchy_no_mem^horiz~6_FF sv_chip3_hierarchy_no_mem^horiz~7_FF sv_chip3_hierarchy_no_mem^horiz~8_FF \
+ sv_chip3_hierarchy_no_mem^horiz~9_FF n278 
+0000 1 
+
+.names sv_chip3_hierarchy_no_mem^horiz~0_FF sv_chip3_hierarchy_no_mem^horiz~1_FF n279 
+00 1 
+
+.names sv_chip3_hierarchy_no_mem^horiz~2_FF sv_chip3_hierarchy_no_mem^horiz~3_FF sv_chip3_hierarchy_no_mem^horiz~4_FF \
+ sv_chip3_hierarchy_no_mem^horiz~5_FF n280 
+0000 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~11_FF sv_chip3_hierarchy_no_mem^vert~0_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n106 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~9_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~11_FF _n281 _n111 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~0_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~10_FF \
+ sv_chip3_hierarchy_no_mem^creg2_FF sv_chip3_hierarchy_no_mem^creg3_FF _n281 
+0001 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vs n285 sv_chip3_hierarchy_no_mem^vert~1_FF _n116 
+010 1 
+001 1 
+
+.names n280 n279 n278 sv_chip3_hierarchy_no_mem^tm3_vidin_href sv_chip3_hierarchy_no_mem^vert~0_FF n285 
+----0 0 
+---1- 0 
+111-- 0 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~12_FF sv_chip3_hierarchy_no_mem^vert~1_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n121 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~10_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~12_FF _n281 _n126 
+1-0 1 
+-11 1 
+
+.names n285 sv_chip3_hierarchy_no_mem^vert~1_FF sv_chip3_hierarchy_no_mem^tm3_vidin_vs sv_chip3_hierarchy_no_mem^vert~2_FF \
+ _n131 
+1100 1 
+-001 1 
+0-01 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~13_FF sv_chip3_hierarchy_no_mem^vert~2_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n136 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~11_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~13_FF _n281 _n141 
+1-0 1 
+-11 1 
+
+.names n285 sv_chip3_hierarchy_no_mem^vert~1_FF sv_chip3_hierarchy_no_mem^vert~2_FF sv_chip3_hierarchy_no_mem^tm3_vidin_vs \
+ sv_chip3_hierarchy_no_mem^vert~3_FF _n146 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~14_FF sv_chip3_hierarchy_no_mem^vert~3_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n151 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~12_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~14_FF _n281 _n156 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vs n295 sv_chip3_hierarchy_no_mem^vert~4_FF _n161 
+010 1 
+001 1 
+
+.names n285 sv_chip3_hierarchy_no_mem^vert~1_FF sv_chip3_hierarchy_no_mem^vert~2_FF sv_chip3_hierarchy_no_mem^vert~3_FF n295 
+1111 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~15_FF sv_chip3_hierarchy_no_mem^vert~4_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n166 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~13_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~15_FF _n281 _n171 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vs n299 sv_chip3_hierarchy_no_mem^vert~5_FF _n176 
+010 1 
+001 1 
+
+.names n285 sv_chip3_hierarchy_no_mem^vert~1_FF sv_chip3_hierarchy_no_mem^vert~2_FF sv_chip3_hierarchy_no_mem^vert~3_FF \
+ sv_chip3_hierarchy_no_mem^vert~4_FF n299 
+11111 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~16_FF sv_chip3_hierarchy_no_mem^vert~5_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n181 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~14_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~16_FF _n281 _n186 
+1-0 1 
+-11 1 
+
+.names n299 sv_chip3_hierarchy_no_mem^vert~5_FF sv_chip3_hierarchy_no_mem^tm3_vidin_vs sv_chip3_hierarchy_no_mem^vert~6_FF \
+ _n191 
+1100 1 
+-001 1 
+0-01 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~17_FF sv_chip3_hierarchy_no_mem^vert~6_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n196 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~15_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~17_FF _n281 _n201 
+1-0 1 
+-11 1 
+
+.names n299 sv_chip3_hierarchy_no_mem^vert~5_FF sv_chip3_hierarchy_no_mem^vert~6_FF sv_chip3_hierarchy_no_mem^tm3_vidin_vs \
+ sv_chip3_hierarchy_no_mem^vert~7_FF _n206 
+11100 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~18_FF sv_chip3_hierarchy_no_mem^vert~7_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n211 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~16_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~18_FF _n281 _n216 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~0_FF sv_chip3_hierarchy_no_mem^horiz~0_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n221 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~0_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~1_FF _n281 _n226 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~1_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~2_FF _n281 _n231 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~2_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~3_FF _n281 _n246 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~3_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~4_FF _n281 _n251 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~4_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~5_FF _n281 _n256 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~5_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~6_FF _n281 _n261 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~6_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~7_FF _n281 _n266 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~7_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~8_FF _n281 _n271 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~8_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg1~9_FF _n281 _n276 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~0_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~0_FF _n281 _n286 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~1_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~1_FF _n281 _n291 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~2_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~2_FF _n281 _n296 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~3_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~3_FF _n281 _n301 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~4_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~4_FF _n281 _n306 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~5_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~5_FF _n281 _n311 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~6_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~6_FF _n281 _n316 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~7_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~7_FF _n281 _n321 
+1-0 1 
+-11 1 
+
+.names n327 sv_chip3_hierarchy_no_mem^horiz~1_FF sv_chip3_hierarchy_no_mem^tm3_vidin_href _n326 
+101 1 
+011 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_cref sv_chip3_hierarchy_no_mem^horiz~0_FF n327 
+01 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~1_FF sv_chip3_hierarchy_no_mem^horiz~1_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n331 
+-10 1 
+1-1 1 
+
+.names n327 sv_chip3_hierarchy_no_mem^horiz~1_FF sv_chip3_hierarchy_no_mem^horiz~2_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_href _n336 
+1101 1 
+-011 1 
+0-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~2_FF sv_chip3_hierarchy_no_mem^horiz~2_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n341 
+-10 1 
+1-1 1 
+
+.names n327 sv_chip3_hierarchy_no_mem^horiz~1_FF sv_chip3_hierarchy_no_mem^horiz~2_FF sv_chip3_hierarchy_no_mem^horiz~3_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_href _n346 
+11101 1 
+--011 1 
+-0-11 1 
+0--11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~3_FF sv_chip3_hierarchy_no_mem^horiz~3_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n351 
+-10 1 
+1-1 1 
+
+.names n334 sv_chip3_hierarchy_no_mem^horiz~4_FF sv_chip3_hierarchy_no_mem^tm3_vidin_href _n356 
+101 1 
+011 1 
+
+.names n327 sv_chip3_hierarchy_no_mem^horiz~1_FF sv_chip3_hierarchy_no_mem^horiz~2_FF sv_chip3_hierarchy_no_mem^horiz~3_FF \
+ n334 
+1111 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~4_FF sv_chip3_hierarchy_no_mem^horiz~4_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n361 
+-10 1 
+1-1 1 
+
+.names n337 sv_chip3_hierarchy_no_mem^horiz~5_FF sv_chip3_hierarchy_no_mem^tm3_vidin_href _n366 
+101 1 
+011 1 
+
+.names n334 sv_chip3_hierarchy_no_mem^horiz~4_FF n337 
+11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~5_FF sv_chip3_hierarchy_no_mem^horiz~5_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n371 
+-10 1 
+1-1 1 
+
+.names n337 sv_chip3_hierarchy_no_mem^horiz~5_FF sv_chip3_hierarchy_no_mem^horiz~6_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_href _n376 
+1101 1 
+-011 1 
+0-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~6_FF sv_chip3_hierarchy_no_mem^horiz~6_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n381 
+-10 1 
+1-1 1 
+
+.names n337 sv_chip3_hierarchy_no_mem^horiz~5_FF sv_chip3_hierarchy_no_mem^horiz~6_FF sv_chip3_hierarchy_no_mem^horiz~7_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_href _n386 
+11101 1 
+--011 1 
+-0-11 1 
+0--11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~7_FF sv_chip3_hierarchy_no_mem^horiz~7_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n391 
+-10 1 
+1-1 1 
+
+.names n344 sv_chip3_hierarchy_no_mem^horiz~8_FF sv_chip3_hierarchy_no_mem^tm3_vidin_href _n396 
+101 1 
+011 1 
+
+.names n334 sv_chip3_hierarchy_no_mem^horiz~4_FF sv_chip3_hierarchy_no_mem^horiz~5_FF sv_chip3_hierarchy_no_mem^horiz~6_FF \
+ sv_chip3_hierarchy_no_mem^horiz~7_FF n344 
+11111 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~8_FF sv_chip3_hierarchy_no_mem^horiz~8_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n401 
+-10 1 
+1-1 1 
+
+.names n344 sv_chip3_hierarchy_no_mem^horiz~8_FF sv_chip3_hierarchy_no_mem^horiz~9_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_href _n406 
+1101 1 
+-011 1 
+0-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg1~9_FF sv_chip3_hierarchy_no_mem^horiz~9_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n411 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_rts0 sv_chip3_hierarchy_no_mem^vidin_addr_reg1~10_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n416 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~0 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~0_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n421 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~0_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~0_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n426 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~1 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~1_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n431 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~1_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~1_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n436 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~2 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~2_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n441 
+-10 1 
+1-1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~2_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~2_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n446 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~0 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~3_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n451 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~3_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~3_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n456 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~1 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~4_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n461 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~4_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~4_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n466 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~2 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~5_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n471 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~5_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~5_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n476 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~3 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~6_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n481 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~6_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~6_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n486 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_vpo~4 sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~7_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n491 
+1-0 1 
+-11 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg2~7_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg1~7_FF \
+ sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n496 
+1-0 1 
+-11 1 
+
+.names n367 sv_chip3_hierarchy_no_mem^iic_state~6_FF sv_chip3_hierarchy_no_mem^iic_state~5_FF n366 \
+ sv_chip3_hierarchy_no_mem^iic_state~4_FF n160 
+1-001 1 
+-1-01 1 
+-11-- 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF n366 
+0000 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~3_FF n367 
+000 1 
+
+.names n235 sv_chip3_hierarchy_no_mem^iic_stop_FF n371 n165 
+--0 1 
+11- 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n370 n235 
+001 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF n370 
+000 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF n372 n373 n371 
+----0 0 
+0111- 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n372 
+11 1 
+
+.names sv_chip3_hierarchy_no_mem^temp_reg2_FF sv_chip3_hierarchy_no_mem^temp_reg1_FF sv_chip3_hierarchy_no_mem^rst_FF n373 
+--0 0 
+10- 0 
+
+.names n375 sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_stop_FF n170 
+-10 0 
+001 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF n372 \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF n375 
+--01 1 
+00-1 1 
+
+.names n377 n383 n160 n385 n387 n175 
+00000 0 
+
+.names n382 sv_chip3_hierarchy_no_mem^iic_state~4_FF n380 n378 sv_chip3_hierarchy_no_mem^iic_state~6_FF n377 
+---10 1 
+--0-0 1 
+00--0 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~5_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF n379 \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~4_FF n378 
+00101 1 
+00011 1 
+01111 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF n379 
+01 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~3_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF n381 n380 
+0-001 0 
+-0101 0 
+-0011 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~4_FF sv_chip3_hierarchy_no_mem^iic_state~5_FF n381 
+00 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~5_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF \
+ n382 
+-0010 0 
+10001 0 
+-0111 0 
+0-111 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~4_FF n384 sv_chip3_hierarchy_no_mem^iic_state~6_FF n383 
+--0 0 
+00- 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF n384 
+1100 1 
+0010 1 
+0001 1 
+1011 1 
+0111 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~3_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF n386 n385 
+00001 1 
+11001 1 
+10101 1 
+01011 1 
+00111 1 
+11111 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~6_FF sv_chip3_hierarchy_no_mem^iic_state~5_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~4_FF n386 
+011 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF n388 sv_chip3_hierarchy_no_mem^iic_state~3_FF n387 
+11011 1 
+00111 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~4_FF sv_chip3_hierarchy_no_mem^iic_state~6_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~5_FF n388 
+001 1 
+
+.names n408 sv_chip3_hierarchy_no_mem^iic_state~6_FF sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF n390 n421 n180 
+----0 1 
+--00- 1 
+01--- 1 
+
+.names n400 n404 n388 n396 n391 n390 
+--000 1 
+01-00 1 
+
+.names n394 n395 n392 n393 n379 n391 
+--011 1 
+01--1 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n392 
+1100 0 
+1010 0 
+0110 0 
+0001 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~4_FF sv_chip3_hierarchy_no_mem^iic_state~6_FF sv_chip3_hierarchy_no_mem^iic_state~5_FF \
+ n393 
+-1001 1 
+1-001 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n394 
+1-00 0 
+-010 0 
+0001 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~6_FF sv_chip3_hierarchy_no_mem^iic_state~5_FF sv_chip3_hierarchy_no_mem^iic_state~4_FF \
+ n395 
+-0011 1 
+0-011 1 
+
+.names n397 n398 n399 n396 
+111 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~6_FF sv_chip3_hierarchy_no_mem^iic_state~4_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~5_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF n397 
+0111 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF n398 
+-10 1 
+101 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n399 
+-010 1 
+0001 1 
+
+.names n401 sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n402 sv_chip3_hierarchy_no_mem^iic_state~3_FF n403 n400 
+01011 1 
+-0111 1 
+1-111 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF n401 
+11 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n402 
+000 0 
+-11 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~2_FF n403 
+--0 0 
+11- 0 
+
+.names n406 n405 n398 n407 n404 
+--11 0 
+00-- 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n405 
+0--0 1 
+1--1 1 
+100- 1 
+011- 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF n406 
+-110 0 
+0001 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n407 
+-0101 1 
+10011 1 
+
+.names n410 sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF n416 n409 n408 
+1-00 1 
+-1-- 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~3_FF n370 n403 sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n409 
+0111 1 
+
+.names n415 n411 n414 n413 sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF n410 
+01--0 0 
+1-10- 0 
+01-0- 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n411 
+010 1 
+001 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n413 
+1100 0 
+--11 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF n414 
+-100 1 
+1-00 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF n415 
+-100 0 
+1011 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF n417 n420 n427 sv_chip3_hierarchy_no_mem^iic_state~2_FF n416 
+-1100 1 
+0110- 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~3_FF n417 
+--0 0 
+00- 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n420 
+1-00 1 
+10-0 1 
+-001 1 
+0111 1 
+
+.names n160 n422 n424 n426 n430 n421 
+00000 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF n392 sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n386 n423 n422 
+-0011 1 
+1-011 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~2_FF n423 
+-1001 1 
+1-001 1 
+
+.names n425 n366 sv_chip3_hierarchy_no_mem^iic_state~5_FF sv_chip3_hierarchy_no_mem^iic_state~6_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~4_FF n424 
+0-000 1 
+-1001 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF n425 
+1000 0 
+0100 0 
+--11 0 
+
+.names n397 n427 n366 n429 n428 n426 
+--111 1 
+11--1 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF n427 
+11 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n428 
+00011 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~4_FF sv_chip3_hierarchy_no_mem^iic_state~6_FF n429 
+01 1 
+
+.names n431 n432 sv_chip3_hierarchy_no_mem^iic_state~5_FF n433 n430 
+0011 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~3_FF sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~4_FF \
+ n431 
+----1 0 
+1111- 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~2_FF sv_chip3_hierarchy_no_mem^iic_state~3_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF sv_chip3_hierarchy_no_mem^iic_state~4_FF n432 
+---0 0 
+000- 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n433 
+-1000 1 
+-0001 1 
+1000- 1 
+
+.names n375 sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_stop_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~1_FF n185 
+-100 1 
+-001 1 
+0-11 1 
+
+.names n375 sv_chip3_hierarchy_no_mem^iic_state~0_FF sv_chip3_hierarchy_no_mem^iic_state~1_FF \
+ sv_chip3_hierarchy_no_mem^iic_stop_FF sv_chip3_hierarchy_no_mem^iic_state~2_FF n190 
+-1100 1 
+--001 1 
+-0-01 1 
+0--11 1 
+
+.names n437 n438 sv_chip3_hierarchy_no_mem^iic_state~3_FF n195 
+010 1 
+001 1 
+
+.names n375 sv_chip3_hierarchy_no_mem^iic_stop_FF n437 
+11 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_stop_FF n427 sv_chip3_hierarchy_no_mem^iic_state~0_FF n438 
+011 1 
+
+.names n438 sv_chip3_hierarchy_no_mem^iic_state~3_FF n437 sv_chip3_hierarchy_no_mem^iic_state~4_FF n200 
+1100 1 
+-001 1 
+0-01 1 
+
+.names n438 sv_chip3_hierarchy_no_mem^iic_state~3_FF sv_chip3_hierarchy_no_mem^iic_state~4_FF n437 \
+ sv_chip3_hierarchy_no_mem^iic_state~5_FF n205 
+111-0 1 
+--001 1 
+-0-01 1 
+0--01 1 
+
+.names n427 n397 sv_chip3_hierarchy_no_mem^iic_state~0_FF n442 n443 n210 
+---10 1 
+111-0 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~3_FF sv_chip3_hierarchy_no_mem^iic_state~4_FF \
+ sv_chip3_hierarchy_no_mem^iic_state~5_FF n438 sv_chip3_hierarchy_no_mem^iic_state~6_FF n442 
+----0 0 
+1111- 0 
+
+.names sv_chip3_hierarchy_no_mem^iic_state~6_FF n375 sv_chip3_hierarchy_no_mem^iic_stop_FF n443 
+--0 0 
+10- 0 
+
+.names n446 n373 n215 
+01 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF \
+ sv_chip3_hierarchy_no_mem^iic_stop_FF sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF n401 n445 
+-0-01 1 
+0-111 1 
+-01-1 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF sv_chip3_hierarchy_no_mem^iic_stop_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF n372 n446 
+1010 1 
+-10- 1 
+0-0- 1 
+
+.names n449 n445 n450 n373 n220 
+---0 0 
+000- 0 
+
+.names n372 sv_chip3_hierarchy_no_mem^iic_stop_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF n449 
+00011 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF n450 
+--001 1 
+0--01 1 
+-00-1 1 
+
+.names n453 n452 n455 n454 n373 n225 
+----0 0 
+0001- 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF sv_chip3_hierarchy_no_mem^iic_stop_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n452 
+011 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_stop_FF sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF n401 n453 
+0011 1 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n454 
+01 0 
+
+.names sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF sv_chip3_hierarchy_no_mem^reg_prog_state~2_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF sv_chip3_hierarchy_no_mem^reg_prog_state~1_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n455 
+----0 0 
+1-00- 0 
+-111- 0 
+1-11- 0 
+11--- 0 
+
+.names n457 n373 n230 
+01 1 
+
+.names sv_chip3_hierarchy_no_mem^iic_stop_FF sv_chip3_hierarchy_no_mem^reg_prog_state~0_FF \
+ sv_chip3_hierarchy_no_mem^reg_prog_state~3_FF n401 sv_chip3_hierarchy_no_mem^reg_prog_state~4_FF n457 
+----1 0 
+0111- 0 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~17 
+0 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~18 
+0 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_sda_xhdl0_FF sv_chip3_hierarchy_no_mem^tm3_vidin_sda 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_scl_FF sv_chip3_hierarchy_no_mem^tm3_vidin_scl 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_new_data_FF sv_chip3_hierarchy_no_mem^vidin_new_data 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~0_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~0 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~1_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~1 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~2_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~2 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~3_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~3 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~4_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~4 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~5_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~5 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~6_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~6 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_rgb_reg~7_FF sv_chip3_hierarchy_no_mem^vidin_rgb_reg~7 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~0_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~0 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~1_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~1 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~2_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~2 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~3_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~3 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~4_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~4 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~5_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~5 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~6_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~6 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~7_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~7 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~8_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~8 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~9_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~9 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~10_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~10 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~11_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~11 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~12_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~12 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~13_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~13 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~14_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~14 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~15_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~15 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^vidin_addr_reg~16_FF sv_chip3_hierarchy_no_mem^vidin_addr_reg~16 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_cref _n500 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^creg1_FF _n504 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^creg2_FF _n508 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^tm3_vidin_rts0 n239 
+1 1 
+
+.names sv_chip3_hierarchy_no_mem^temp_reg1_FF n243 
+1 1 
+
+
+.end 
+
+
+
+
+
+.model CLOCK_GATING
+.inputs I
+.blackbox
+.end
+

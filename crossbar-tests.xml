@@ -35,26 +35,7 @@
 		  <port name="O"/>
 		</output_ports>
 	  </model>
-	  <model name="MUXF7">
-		<input_ports>
-		  <port combinational_sink_ports="O" name="I0"/>
-		  <port combinational_sink_ports="O" name="I1"/>
-		  <port combinational_sink_ports="O" name="S"/>
-		</input_ports>
-		<output_ports>
-		  <port name="O"/>
-		</output_ports>
-	  </model>
-	  <model name="MUXF8">
-		<input_ports>
-		  <port combinational_sink_ports="O" name="I0"/>
-		  <port combinational_sink_ports="O" name="I1"/>
-		  <port combinational_sink_ports="O" name="S"/>
-		</input_ports>
-		<output_ports>
-		  <port name="O"/>
-		</output_ports>
-	  </model>
+	  
 	</models>
 	<tiles>
 	  <tile name="io" area="0">
@@ -275,26 +256,10 @@
 		<output name="D" num_pins="1"/>
 		<output name="DMUX" num_pins="1"/>
 		<output name="DQ" num_pins="1"/>
-		<pb_type name="COMMON_LUT_AND_F78MUX" num_pb="1">
-		  <input name="A" num_pins="6"/>
-		  <input name="AX" num_pins="1"/>
-		  <input name="B" num_pins="6"/>
-		  <input name="BX" num_pins="1"/>
-		  <input name="C" num_pins="6"/>
-		  <input name="CX" num_pins="1"/>
-		  <input name="D" num_pins="6"/>
-		  <output name="AO5" num_pins="1"/>
-		  <output name="AO6" num_pins="1"/>
-		  <output name="BO5" num_pins="1"/>
-		  <output name="BO6" num_pins="1"/>
-		  <output name="CO5" num_pins="1"/>
-		  <output name="CO6" num_pins="1"/>
-		  <output name="DO5" num_pins="1"/>
-		  <output name="DO6" num_pins="1"/>
-		  <output name="F7AMUX_O" num_pins="1"/>
-		  <output name="F7BMUX_O" num_pins="1"/>
-		  <output name="F8MUX_O" num_pins="1"/>
-		  <pb_type name="ALUT" num_pb="4">
+
+		  <pb_type name="fle" num_pb="4">
+
+			<pb_type name="ALUT" num_pb="1">
 			<input name="A" num_pins="6"/>
 			<output name="O5" num_pins="1"/>
 			<output name="O6" num_pins="1"/>
@@ -320,6 +285,7 @@
 				<meta name="subtype">lut</meta>
 			  </metadata>
 			</pb_type>
+
 			<pb_type blif_model=".subckt MUXF6" name="F6MUX" num_pb="1">
 			  <input name="I0" num_pins="1"/>
 			  <input name="I1" num_pins="1"/>
@@ -353,79 +319,8 @@
 			  <direct input="ALUT.A[5]" name="F6MUX_S" output="F6MUX.S"/>
 			</interconnect>
 		  </pb_type>
-			  
-		  <pb_type blif_model=".subckt MUXF7" name="F7AMUX" num_pb="2">
-			<input name="I0" num_pins="1"/>
-			<input name="I1" num_pins="1"/>
-			<input name="S" num_pins="1"/>
-			<output name="O" num_pins="1"/>
-			<delay_constant in_port="F7AMUX.I0" max="1.9000000000000002e-10" out_port="F7AMUX.O" min="5.3000000000000004e-11"/>
-			<delay_constant in_port="F7AMUX.I1" max="1.93e-10" out_port="F7AMUX.O" min="5.5000000000000004e-11"/>
-			<delay_constant in_port="F7AMUX.S" max="2.7600000000000003e-10" out_port="F7AMUX.O" min="8.500000000000002e-11"/>
-			<metadata>
-			  <meta name="type">bel</meta>
-			  <meta name="subtype">mux</meta>
-			</metadata>
-		  </pb_type>
-  
-		  <pb_type blif_model=".subckt MUXF8" name="F8MUX" num_pb="1">
-			<input name="I0" num_pins="1"/>
-			<input name="I1" num_pins="1"/>
-			<input name="S" num_pins="1"/>
-			<output name="O" num_pins="1"/>
-			<delay_constant in_port="F8MUX.I0" max="1.04e-10" out_port="F8MUX.O" min="2.3e-11"/>
-			<delay_constant in_port="F8MUX.I1" max="9.400000000000001e-11" out_port="F8MUX.O" min="1.9000000000000002e-11"/>
-			<delay_constant in_port="F8MUX.S" max="2.7300000000000004e-10" out_port="F8MUX.O" min="8.000000000000001e-11"/>
-			<metadata>
-			  <meta name="type">bel</meta>
-			  <meta name="subtype">mux</meta>
-			</metadata>
-		  </pb_type>
-		  <interconnect>
-			<!-- LUT input pins -->
-			<!-- F7AMUX inputs -->
-			<!-- F7BMUX inputs -->
-			<!-- F8MUX inputs -->
-			<direct input="COMMON_LUT_AND_F78MUX.A" name="A1" output="ALUT[0].A"/>
-			<direct input="COMMON_LUT_AND_F78MUX.B" name="B1" output="ALUT[1].A"/>
-			<direct input="COMMON_LUT_AND_F78MUX.C" name="C1" output="ALUT[2].A"/>
-			<direct input="ALUT[0].O5" name="AO5" output="COMMON_LUT_AND_F78MUX.AO5"/>
-			<direct input="ALUT[0].O6" name="AO6" output="COMMON_LUT_AND_F78MUX.AO6"/>
-			<direct input="ALUT[1].O5" name="BO5" output="COMMON_LUT_AND_F78MUX.BO5"/>
-			<direct input="ALUT[1].O6" name="BO6" output="COMMON_LUT_AND_F78MUX.BO6"/>
-			<direct input="ALUT[2].O5" name="CO5" output="COMMON_LUT_AND_F78MUX.CO5"/>
-			<direct input="ALUT[2].O6" name="CO6" output="COMMON_LUT_AND_F78MUX.CO6"/>
-			<direct input="ALUT[3].O5" name="DO5" output="COMMON_LUT_AND_F78MUX.DO5"/>
-			<direct input="ALUT[3].O6" name="DO6" output="COMMON_LUT_AND_F78MUX.DO6"/>
-			
-			<direct input="F7AMUX[0].O" name="F7AMUX_O" output="COMMON_LUT_AND_F78MUX.F7AMUX_O"/>
-			<direct input="F7AMUX[1].O" name="F7BMUX_O" output="COMMON_LUT_AND_F78MUX.F7BMUX_O"/>
-			<direct input="F8MUX.O" name="F8MUX_O" output="COMMON_LUT_AND_F78MUX.F8MUX_O"/>
-			<direct input="COMMON_LUT_AND_F78MUX.D" name="D1" output="ALUT[3].A"/>
-			<direct input="ALUT[1].O6" name="F7AMUX_I0" output="F7AMUX[0].I0">
-			</direct>
-			<direct input="ALUT[0].O6" name="F7AMUX_I1" output="F7AMUX[0].I1">
-			</direct>
-			<direct input="COMMON_LUT_AND_F78MUX.AX" name="F7AMUX_S" output="F7AMUX[0].S"/>
-			<direct input="ALUT[3].O6" name="F7BMUX_I0" output="F7AMUX[1].I0">
-			</direct>
-			<direct input="ALUT[2].O6" name="F7BMUX_I1" output="F7AMUX[1].I1">
-			</direct>
-			<direct input="COMMON_LUT_AND_F78MUX.CX" name="F7BMUX_S" output="F7AMUX[1].S"/>
-			<direct input="F7AMUX[1].O" name="F8MUX_I0" output="F8MUX.I0">
-			</direct>
-			<direct input="F7AMUX[0].O" name="F8MUX_I1" output="F8MUX.I1">
-			</direct>
-			<direct input="COMMON_LUT_AND_F78MUX.BX" name="F8MUX_S" output="F8MUX.S"/>
-		  </interconnect>
-		</pb_type>
-		  <pb_type name="SLICE_FF" num_pb="1">
-			<clock name="CK" num_pins="1"/>
-			<input name="D" num_pins="4"/>
-			<input name="D5" num_pins="4"/>
-			<output name="Q" num_pins="4"/>
-			<output name="Q5" num_pins="4"/>
-			<pb_type blif_model=".latch" name="FDSE" num_pb="8" class="flipflop">
+		  
+		  <pb_type blif_model=".latch" name="FDSE" num_pb="2" class="flipflop">
 			  <clock name="clk" num_pins="1" port_class="clock"/>
 			  <input name="D" num_pins="1" port_class="D"/>
 			  <output name="Q" num_pins="1" port_class="Q"/>
@@ -436,27 +331,18 @@
 			  <T_clock_to_Q clock="clk" max="3.03e-10" port="FDSE.Q" min="9.900000000000001e-11"/>
 			  <metadata>
 				<meta name="fasm_params">
-		  ZINI = ZINI
+		  			ZINI = ZINI
 				</meta>
 				<meta name="type">bel</meta>
 				<meta name="subtype">flipflop</meta>
 			  </metadata>
 			</pb_type>
-			<interconnect>
-			  <complete input="SLICE_FF.CK" name="C_FF" output="FDSE.clk"/>
-			  <direct input="SLICE_FF.D5" name="D5" output="FDSE[3:0].D"/>
-			  <direct input="SLICE_FF.D" name="D" output="FDSE[7:4].D"/>
-			  <direct input="FDSE[3:0].Q" name="Q5" output="SLICE_FF.Q5"/>
-			  <direct input="FDSE[7:4].Q" name="Q" output="SLICE_FF.Q"/>
-			</interconnect>
-			<!-- <metadata>
-				<meta name="fasm_features">FFSYNC</meta>
-			  </metadata> -->
-			<metadata>
-			  <meta name="type">block</meta>
-			  <meta name="subtype">ignore</meta>
-			</metadata>
+
+
 		  </pb_type>
+
+		  
+		  
 		<interconnect>
 		  <!-- LUT input pins -->
 		  <!-- COMMON_SLICE inputs -->
@@ -465,75 +351,74 @@
 		  <!-- AMUX-DMUX output -->
 		  <!-- Carry -->
 		  <!-- Clock, Clock Enable and Reset -->
-		  <mux input="SLICE_FF.Q5[0] COMMON_LUT_AND_F78MUX.AO6 COMMON_LUT_AND_F78MUX.AO5 COMMON_LUT_AND_F78MUX.F7AMUX_O" name="AOUTMUX" output="BLK-TL-SLICEL.AMUX">
-            <delay_constant in_port="SLICE_FF.Q5[0]" max="1.75e-10" out_port="BLK-TL-SLICEL.AMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.AO6" max="2.09e-10" out_port="BLK-TL-SLICEL.AMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.AO5" max="2.0200000000000003e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+		  <mux input="FDSE[0].Q ALUT[0].O6 ALUT[0].O5 F7AMUX[0].O" name="AOUTMUX" output="BLK-TL-SLICEL.AMUX">
+            <delay_constant in_port="FDSE[0].Q" max="1.75e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+            <delay_constant in_port="ALUT[0].O6" max="2.09e-10" out_port="BLK-TL-SLICEL.AMUX"/>
+            <delay_constant in_port="ALUT[0].O5" max="2.0200000000000003e-10" out_port="BLK-TL-SLICEL.AMUX"/>
           </mux>
 
-		  <mux input="SLICE_FF.Q5[1] COMMON_LUT_AND_F78MUX.BO6 COMMON_LUT_AND_F78MUX.BO5 COMMON_LUT_AND_F78MUX.F8MUX_O" name="BOUTMUX" output="BLK-TL-SLICEL.BMUX">
-            <delay_constant in_port="SLICE_FF.Q5[1]" max="1.72e-10" out_port="BLK-TL-SLICEL.BMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.BO6" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.BO5" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
+		  <mux input="FDSE[1].Q ALUT[1].O6 ALUT[1].O5 F8MUX.O" name="BOUTMUX" output="BLK-TL-SLICEL.BMUX">
+            <delay_constant in_port="FDSE[1].Q" max="1.72e-10" out_port="BLK-TL-SLICEL.BMUX"/>
+            <delay_constant in_port="ALUT[1].O6" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
+            <delay_constant in_port="ALUT[1].O5" max="2.08e-10" out_port="BLK-TL-SLICEL.BMUX"/>
           </mux>
 
-		  <mux input="SLICE_FF.Q5[2] COMMON_LUT_AND_F78MUX.CO6 COMMON_LUT_AND_F78MUX.CO5 COMMON_LUT_AND_F78MUX.F7BMUX_O" name="COUTMUX" output="BLK-TL-SLICEL.CMUX">
-            <delay_constant in_port="SLICE_FF.Q5[2]" max="1.73e-10" out_port="BLK-TL-SLICEL.CMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.CO6" max="2.05e-10" out_port="BLK-TL-SLICEL.CMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.CO5" max="2.0300000000000002e-10" out_port="BLK-TL-SLICEL.CMUX"/>
+		  <mux input="FDSE[2].Q ALUT[2].O6 ALUT[2].O5 F7AMUX[1].O" name="COUTMUX" output="BLK-TL-SLICEL.CMUX">
+            <delay_constant in_port="FDSE[2].Q" max="1.73e-10" out_port="BLK-TL-SLICEL.CMUX"/>
+            <delay_constant in_port="ALUT[2].O6" max="2.05e-10" out_port="BLK-TL-SLICEL.CMUX"/>
+            <delay_constant in_port="ALUT[2].O5" max="2.0300000000000002e-10" out_port="BLK-TL-SLICEL.CMUX"/>
           </mux>
 
-		  <mux input="SLICE_FF.Q5[3] COMMON_LUT_AND_F78MUX.DO6 COMMON_LUT_AND_F78MUX.DO5" name="DOUTMUX" output="BLK-TL-SLICEL.DMUX">
-            <delay_constant in_port="SLICE_FF.Q5[3]" max="1.75e-10" out_port="BLK-TL-SLICEL.DMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.DO6" max="2.11e-10" out_port="BLK-TL-SLICEL.DMUX"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.DO5" max="2.08e-10" out_port="BLK-TL-SLICEL.DMUX"/>
+		  <mux input="FDSE[3].Q ALUT[3].O6 ALUT[3].O5" name="DOUTMUX" output="BLK-TL-SLICEL.DMUX">
+            <delay_constant in_port="FDSE[3].Q" max="1.75e-10" out_port="BLK-TL-SLICEL.DMUX"/>
+            <delay_constant in_port="ALUT[3].O6" max="2.11e-10" out_port="BLK-TL-SLICEL.DMUX"/>
+            <delay_constant in_port="ALUT[3].O5" max="2.08e-10" out_port="BLK-TL-SLICEL.DMUX"/>
           </mux>
 			<!-- note: commenting this out gives a chanel width of 214 ???? -->
-		  <mux input="BLK-TL-SLICEL.AX COMMON_LUT_AND_F78MUX.AO5" name="A5FFMUX" output="SLICE_FF.D5[0]">
-            <delay_constant in_port="BLK-TL-SLICEL.AX" max="2.0200000000000003e-10" out_port="SLICE_FF.D5[0]"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.AO5" max="1.07e-10" out_port="SLICE_FF.D5[0]"/>
+			<!-- this is in between fdse and the luts -->
+		  <mux input="BLK-TL-SLICEL.AX ALUT[0].O5" name="A5FFMUX" output="FDSE[0].D">
+            <delay_constant in_port="BLK-TL-SLICEL.AX" max="2.0200000000000003e-10" out_port="FDSE[0].D"/>
+            <delay_constant in_port="ALUT[0].O5" max="1.07e-10" out_port="FDSE[0].D"/>
           </mux>
 
 
-		  <mux input="BLK-TL-SLICEL.BX COMMON_LUT_AND_F78MUX.BO5" name="B5FFMUX" output="SLICE_FF.D5[1]">
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.BX" max="2.16e-10" out_port="SLICE_FF.D5[1]"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.BO5" max="1.07e-10" out_port="SLICE_FF.D5[1]"/>
-          </mux>
-          <mux input="BLK-TL-SLICEL.CX COMMON_LUT_AND_F78MUX.CO5" name="C5FFMUX" output="SLICE_FF.D5[2]">
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.CX" max="1.9600000000000002e-10" out_port="SLICE_FF.D5[2]"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.CO5" max="1.0900000000000001e-10" out_port="SLICE_FF.D5[2]"/>
-          </mux>
-          <mux input="BLK-TL-SLICEL.DX COMMON_LUT_AND_F78MUX.DO5" name="D5FFMUX" output="SLICE_FF.D5[3]">
-            <delay_constant in_port="BLK-TL-SLICEL.DX" max="1.93e-10" out_port="SLICE_FF.D5[3]"/>
-            <delay_constant in_port="COMMON_LUT_AND_F78MUX.DO5" max="1.0600000000000001e-10" out_port="SLICE_FF.D5[3]"/>
+		  <mux input="BLK-TL-SLICEL.BX ALUT[1].O5" name="B5FFMUX" output="FDSE[1].D">
+            <delay_constant in_port="BLK-TL-SLICEL.BX" max="2.16e-10" out_port="FDSE[1].D"/>
+            <delay_constant in_port="ALUT[1].O5" max="1.07e-10" out_port="FDSE[1].D"/>
           </mux>
 
-		  <direct input="BLK-TL-SLICEL.A_in" name="A" output="COMMON_LUT_AND_F78MUX.A"/>
-		  <direct input="BLK-TL-SLICEL.AX" name="AX" output="COMMON_LUT_AND_F78MUX.AX"/>
-		  <direct input="BLK-TL-SLICEL.B_in" name="B" output="COMMON_LUT_AND_F78MUX.B"/>
-		  <direct input="BLK-TL-SLICEL.BX" name="BX" output="COMMON_LUT_AND_F78MUX.BX"/>
-		  <direct input="BLK-TL-SLICEL.C_in" name="C" output="COMMON_LUT_AND_F78MUX.C"/>
-		  <direct input="BLK-TL-SLICEL.CX" name="CX" output="COMMON_LUT_AND_F78MUX.CX"/>
-		  <direct input="BLK-TL-SLICEL.D_in" name="D1" output="COMMON_LUT_AND_F78MUX.D"/>
+          <mux input="BLK-TL-SLICEL.CX ALUT[2].O5" name="C5FFMUX" output="FDSE[2].D">
+            <delay_constant in_port="BLK-TL-SLICEL.CX" max="1.9600000000000002e-10" out_port="FDSE[2].D"/>
+            <delay_constant in_port="ALUT[2].O5" max="1.0900000000000001e-10" out_port="FDSE[2].D"/>
+          </mux>
+
+          <mux input="BLK-TL-SLICEL.DX ALUT[3].O5" name="D5FFMUX" output="FDSE[3].D">
+            <delay_constant in_port="BLK-TL-SLICEL.DX" max="1.93e-10" out_port="FDSE[3].D"/>
+            <delay_constant in_port="ALUT[3].O5" max="1.0600000000000001e-10" out_port="FDSE[3].D"/>
+          </mux>
+
+		  <direct input="BLK-TL-SLICEL.A_in" name="A" output="ALUT[0].A"/>
+		  <direct input="BLK-TL-SLICEL.AX" name="AX" output="F7AMUX[0].S"/>
+		  <direct input="BLK-TL-SLICEL.B_in" name="B" output="ALUT[1].A"/>
+		  <direct input="BLK-TL-SLICEL.BX" name="BX" output="F8MUX.S"/>
+		  <direct input="BLK-TL-SLICEL.C_in" name="C" output="ALUT[2].A"/>
+		  <direct input="BLK-TL-SLICEL.CX" name="CX" output="F7AMUX[1].S"/>
+		  <direct input="BLK-TL-SLICEL.D_in" name="D1" output="ALUT[3].A"/>
 
 
-		  <direct input="BLK-TL-SLICEL.CLK" name="CK" output="SLICE_FF.CK"/>
+		  <direct input="BLK-TL-SLICEL.CLK" name="CK" output="FDSE.clk"/>
 
 
-		  <direct input="SLICE_FF.Q[0]" name="AQ" output="BLK-TL-SLICEL.AQ"/>
-		  <direct input="COMMON_LUT_AND_F78MUX.AO6" name="SLICEL_AOUT" output="BLK-TL-SLICEL.A"/>
-		  <direct input="SLICE_FF.Q[1]" name="BQ" output="BLK-TL-SLICEL.BQ"/>
-		  <direct input="COMMON_LUT_AND_F78MUX.BO6" name="SLICEL_BOUT" output="BLK-TL-SLICEL.B"/>
-		  <direct input="SLICE_FF.Q[2]" name="CQ" output="BLK-TL-SLICEL.CQ"/>
-		  <direct input="COMMON_LUT_AND_F78MUX.CO6" name="SLICEL_COUT" output="BLK-TL-SLICEL.C"/>
-		  <direct input="SLICE_FF.Q[3]" name="DQ" output="BLK-TL-SLICEL.DQ"/>
-		  <direct input="COMMON_LUT_AND_F78MUX.DO6" name="SLICEL_DOUT" output="BLK-TL-SLICEL.D"/>
+		  <direct input="FDSE[4].Q" name="AQ" output="BLK-TL-SLICEL.AQ"/>
+		  <direct input="ALUT[0].O6" name="SLICEL_AOUT" output="BLK-TL-SLICEL.A"/>
+		  <direct input="FDSE[5].Q" name="BQ" output="BLK-TL-SLICEL.BQ"/>
+		  <direct input="ALUT[1].O6" name="SLICEL_BOUT" output="BLK-TL-SLICEL.B"/>
+		  <direct input="FDSE[6].Q" name="CQ" output="BLK-TL-SLICEL.CQ"/>
+		  <direct input="ALUT[2].O6" name="SLICEL_COUT" output="BLK-TL-SLICEL.C"/>
+		  <direct input="FDSE[7].Q" name="DQ" output="BLK-TL-SLICEL.DQ"/>
+		  <direct input="ALUT[3].O6" name="SLICEL_DOUT" output="BLK-TL-SLICEL.D"/>
 
 		  <!-- All #O6 pins are tied to .# pins. check that this is right! -->
-
-
-		<complete name="crossbar" input="SLICE_FF.Q SLICE_FF.Q5" output="COMMON_LUT_AND_F78MUX.A COMMON_LUT_AND_F78MUX.B COMMON_LUT_AND_F78MUX.C COMMON_LUT_AND_F78MUX.D
-		COMMON_LUT_AND_F78MUX.AX COMMON_LUT_AND_F78MUX.BX COMMON_LUT_AND_F78MUX.CX"/>
 
 		</interconnect>
 	  </pb_type>

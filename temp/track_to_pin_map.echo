@@ -1,0 +1,8006 @@
+X MAP:
+
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:0 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:0 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:0 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:0 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:1 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:1 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:1 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:1 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:2 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:2 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:2 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:2 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:3 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:3 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:3 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:3 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:12 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:12 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:12 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:12 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:13 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:13 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:13 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:13 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:14 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:14 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:14 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:14 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:15 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:15 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:15 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:15 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:16 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:16 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:16 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:16 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:17 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:17 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:17 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:17 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:18 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:18 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:18 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:18 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:19 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:19 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:19 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:19 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:20 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:20 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:20 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:20 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:21 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:21 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:21 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:21 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:22 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:22 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:22 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:22 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:23 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:23 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:23 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:23 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:24 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:24 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:24 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:24 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:25 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:25 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:25 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:25 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:26 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:26 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:26 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:26 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:27 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:27 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:27 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:27 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:28 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:28 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:28 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:28 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:29 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:29 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:29 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:29 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:30 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:30 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:30 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:30 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:31 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:31 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:31 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:31 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:32 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:32 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:32 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:32 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:33 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:33 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:33 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:33 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:34 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:34 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:34 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:34 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:35 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:35 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:35 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:35 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:36 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:36 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:36 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:36 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:37 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:37 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:37 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:37 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:38 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:38 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:38 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:38 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:39 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:39 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:39 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:39 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:40 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:40 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:40 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:40 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:41 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:41 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:41 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:41 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:42 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:42 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:42 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:42 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:43 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:43 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:43 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:43 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:44 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:44 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:44 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:44 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:45 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:45 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:45 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:45 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:46 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:46 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:46 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:46 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:47 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:47 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:47 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:47 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:48 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:48 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:48 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:48 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:49 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:49 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:49 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:49 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:50 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:50 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:50 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:50 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:51 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:51 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:51 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:51 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:52 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:52 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:52 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:52 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:53 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:53 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:53 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:53 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:62 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:62 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:62 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:62 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:63 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:63 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:63 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:63 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:64 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:64 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:64 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:64 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:65 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:65 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:65 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:65 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:66 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:66 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:66 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:66 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:67 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:67 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:67 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:67 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:68 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:68 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:68 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:68 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:69 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:69 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:69 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:69 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:70 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:70 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:70 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:70 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:71 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:71 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:71 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:71 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:72 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:72 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:72 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:72 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:73 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:73 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:73 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:73 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:74 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:74 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:74 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:74 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:75 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:75 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:75 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:75 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:76 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:76 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:76 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:76 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:77 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:77 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:77 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:77 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:78 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:78 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:78 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:78 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:79 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:79 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:79 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:79 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:80 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:80 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:80 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:80 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:81 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:81 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:81 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:81 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:82 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:82 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:82 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:82 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:83 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:83 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:83 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:83 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:84 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:84 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:84 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:84 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:85 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:85 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:85 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:85 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:86 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:86 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:86 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:86 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:87 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:87 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:87 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:87 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:88 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:88 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:88 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:88 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:89 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:89 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:89 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:89 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:90 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:90 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:90 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:90 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:91 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:91 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:91 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:91 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:92 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:92 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:92 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:92 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:93 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:93 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:93 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:93 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:94 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:94 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:94 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:94 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:95 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:95 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:95 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:95 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:96 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:96 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:96 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:96 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:97 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:97 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:97 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:97 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:98 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:98 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:98 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:98 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:99 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:99 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:99 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:99 
+15 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:0 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:0 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:0 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:0 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:1 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:1 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:1 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:1 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:2 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:2 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:2 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:2 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:3 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:3 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:3 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:3 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:4 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:4 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:4 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:4 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:5 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:5 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:5 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:5 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:6 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:6 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:6 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:6 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:7 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:7 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:7 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:7 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:8 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:8 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:8 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:8 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:9 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:9 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:9 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:9 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:10 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:10 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:10 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:10 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:11 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:11 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:11 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:11 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:12 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:12 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:12 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:12 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:13 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:13 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:13 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:13 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:14 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:14 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:14 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:14 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:15 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:15 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:15 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:15 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:16 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:16 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:16 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:16 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:17 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:17 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:17 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:17 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:18 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:18 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:18 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:18 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:19 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:19 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:19 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:19 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:20 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:20 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:20 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:20 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:21 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:21 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:21 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:21 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:22 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:22 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:22 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:22 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:23 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:23 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:23 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:23 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:24 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:24 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:24 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:24 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:25 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:25 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:25 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:25 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:26 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:26 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:26 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:26 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:27 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:27 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:27 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:27 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:28 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:28 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:28 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:28 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:29 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:29 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:29 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:29 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:30 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:30 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:30 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:30 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:31 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:31 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:31 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:31 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:32 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:32 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:32 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:32 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:33 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:33 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:33 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:33 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:34 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:34 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:34 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:34 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:35 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:35 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:35 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:35 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:36 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:36 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:36 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:36 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:37 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:37 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:37 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:37 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:38 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:38 
+25 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:38 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:38 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:39 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:39 
+25 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:39 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:39 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:40 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:40 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:40 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:40 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:41 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:41 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:41 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:41 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:42 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:42 
+9 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:42 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:42 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:43 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:43 
+9 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:43 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:43 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:44 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:44 
+13 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:44 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:44 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:45 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:45 
+13 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:45 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:45 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:46 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:46 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:46 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:46 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:47 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:47 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:47 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:47 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:48 
+24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:48 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:48 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:48 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:49 
+24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:49 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:49 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:49 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:50 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:50 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:50 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:50 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:51 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:51 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:51 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:51 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:52 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:52 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:52 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:52 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:53 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:53 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:53 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:53 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:54 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:54 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:54 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:54 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:55 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:55 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:55 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:55 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:56 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:56 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:56 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:56 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:57 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:57 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:57 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:57 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:58 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:58 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:58 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:58 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:59 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:59 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:59 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:59 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:60 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:60 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:60 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:60 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:61 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:61 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:61 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:61 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:62 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:62 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:62 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:62 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:63 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:63 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:63 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:63 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:64 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:64 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:64 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:64 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:65 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:65 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:65 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:65 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:66 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:66 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:66 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:66 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:67 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:67 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:67 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:67 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:68 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:68 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:68 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:68 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:69 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:69 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:69 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:69 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:70 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:70 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:70 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:70 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:71 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:71 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:71 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:71 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:72 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:72 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:72 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:72 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:73 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:73 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:73 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:73 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:74 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:74 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:74 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:74 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:75 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:75 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:75 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:75 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:76 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:76 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:76 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:76 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:77 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:77 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:77 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:77 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:78 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:78 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:78 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:78 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:79 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:79 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:79 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:79 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:80 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:80 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:80 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:80 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:81 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:81 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:81 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:81 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:82 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:82 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:82 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:82 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:83 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:83 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:83 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:83 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:84 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:84 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:84 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:84 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:85 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:85 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:85 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:85 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:86 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:86 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:86 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:86 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:87 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:87 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:87 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:87 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:88 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:88 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:88 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:88 
+3 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:89 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:89 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:89 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:89 
+3 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:90 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:90 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:90 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:90 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:91 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:91 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:91 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:91 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:92 
+12 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:92 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:92 
+10 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:92 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:93 
+12 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:93 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:93 
+10 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:93 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:94 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:94 
+13 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:94 
+14 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:94 
+15 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:95 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:95 
+13 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:95 
+14 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:95 
+15 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:96 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:96 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:96 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:96 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:97 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:97 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:97 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:97 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:99 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:99 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:99 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:99 
+=====================
+
+
+Y MAP:
+
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:0 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:0 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:0 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:0 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:1 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:1 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:1 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:1 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:2 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:2 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:2 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:2 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:3 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:3 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:3 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:3 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:4 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:5 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:6 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:7 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:8 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:9 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:10 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:11 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:12 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:12 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:12 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:12 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:13 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:13 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:13 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:13 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:14 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:14 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:14 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:14 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:15 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:15 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:15 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:15 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:16 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:16 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:16 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:16 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:17 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:17 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:17 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:17 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:18 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:18 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:18 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:18 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:19 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:19 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:19 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:19 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:20 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:20 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:20 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:20 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:21 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:21 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:21 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:21 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:22 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:22 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:22 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:22 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:23 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:23 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:23 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:23 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:24 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:24 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:24 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:24 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:25 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:25 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:25 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:25 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:26 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:26 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:26 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:26 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:27 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:27 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:27 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:27 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:28 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:28 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:28 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:28 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:29 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:29 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:29 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:29 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:30 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:30 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:30 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:30 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:31 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:31 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:31 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:31 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:32 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:32 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:32 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:32 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:33 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:33 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:33 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:33 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:34 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:34 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:34 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:34 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:35 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:35 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:35 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:35 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:36 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:36 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:36 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:36 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:37 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:37 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:37 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:37 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:38 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:38 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:38 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:38 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:39 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:39 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:39 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:39 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:40 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:40 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:40 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:40 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:41 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:41 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:41 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:41 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:42 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:42 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:42 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:42 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:43 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:43 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:43 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:43 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:44 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:44 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:44 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:44 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:45 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:45 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:45 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:45 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:46 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:46 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:46 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:46 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:47 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:47 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:47 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:47 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:48 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:48 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:48 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:48 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:49 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:49 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:49 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:49 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:50 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:50 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:50 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:50 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:51 
+0 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:51 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:51 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:51 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:52 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:52 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:52 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:52 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:53 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:53 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:53 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:53 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:54 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:55 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:56 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:57 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:58 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:59 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:60 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:61 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:62 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:62 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:62 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:62 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:63 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:63 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:63 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:63 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:64 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:64 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:64 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:64 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:65 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:65 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:65 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:65 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:66 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:66 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:66 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:66 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:67 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:67 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:67 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:67 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:68 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:68 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:68 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:68 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:69 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:69 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:69 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:69 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:70 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:70 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:70 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:70 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:71 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:71 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:71 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:71 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:72 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:72 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:72 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:72 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:73 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:73 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:73 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:73 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:74 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:74 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:74 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:74 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:75 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:75 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:75 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:75 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:76 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:76 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:76 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:76 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:77 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:77 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:77 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:77 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:78 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:78 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:78 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:78 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:79 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:79 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:79 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:79 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:80 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:80 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:80 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:80 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:81 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:81 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:81 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:81 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:82 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:82 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:82 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:82 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:83 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:83 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:83 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:83 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:84 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:84 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:84 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:84 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:85 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:85 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:85 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:85 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:86 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:86 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:86 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:86 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:87 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:87 
+0 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:87 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:87 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:88 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:88 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:88 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:88 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:89 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:89 
+18 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:89 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:89 
+0 18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:90 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:90 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:90 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:90 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:91 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:91 
+3 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:91 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:91 
+3 21 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:92 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:92 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:92 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:92 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:93 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:93 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:93 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:93 
+6 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:94 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:94 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:94 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:94 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:95 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:95 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:95 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:95 
+9 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:96 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:96 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:96 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:96 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:97 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:97 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:97 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:97 
+12 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:98 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:98 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:98 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:98 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:0 TRACK:99 
+18 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:1 TRACK:99 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:2 TRACK:99 
+15 =====================
+
+TYPE:io width:0 height:0
+
+SIDE:3 TRACK:99 
+15 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:0 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:0 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:0 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:0 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:1 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:1 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:1 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:1 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:2 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:2 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:2 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:2 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:3 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:3 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:3 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:3 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:4 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:4 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:4 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:4 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:5 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:5 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:5 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:5 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:6 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:6 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:6 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:6 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:7 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:7 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:7 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:7 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:8 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:8 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:8 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:8 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:9 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:9 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:9 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:9 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:10 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:10 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:10 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:10 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:11 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:11 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:11 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:11 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:12 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:12 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:12 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:12 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:13 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:13 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:13 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:13 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:14 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:14 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:14 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:14 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:15 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:15 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:15 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:15 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:16 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:16 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:16 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:16 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:17 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:17 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:17 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:17 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:18 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:18 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:18 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:18 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:19 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:19 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:19 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:19 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:20 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:20 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:20 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:20 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:21 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:21 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:21 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:21 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:22 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:22 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:22 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:22 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:23 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:23 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:23 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:23 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:24 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:24 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:24 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:24 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:25 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:25 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:25 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:25 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:26 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:26 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:26 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:26 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:27 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:27 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:27 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:27 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:28 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:28 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:28 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:28 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:29 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:29 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:29 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:29 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:30 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:30 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:30 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:30 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:31 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:31 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:31 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:31 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:32 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:32 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:32 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:32 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:33 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:33 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:33 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:33 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:34 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:34 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:34 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:34 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:35 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:35 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:35 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:35 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:36 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:36 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:36 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:36 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:37 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:37 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:37 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:37 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:38 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:38 
+25 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:38 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:38 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:39 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:39 
+25 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:39 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:39 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:40 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:40 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:40 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:40 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:41 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:41 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:41 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:41 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:42 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:42 
+9 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:42 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:42 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:43 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:43 
+9 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:43 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:43 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:44 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:44 
+13 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:44 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:44 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:45 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:45 
+13 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:45 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:45 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:46 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:46 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:46 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:46 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:47 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:47 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:47 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:47 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:48 
+24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:48 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:48 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:48 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:49 
+24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:49 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:49 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:49 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:50 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:50 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:50 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:50 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:51 
+0 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:51 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:51 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:51 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:52 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:52 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:52 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:52 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:53 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:53 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:53 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:53 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:54 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:54 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:54 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:54 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:55 
+8 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:55 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:55 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:55 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:56 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:56 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:56 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:56 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:57 
+12 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:57 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:57 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:57 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:58 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:58 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:58 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:58 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:59 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:59 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:59 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:59 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:60 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:60 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:60 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:60 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:61 
+20 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:61 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:61 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:61 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:62 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:62 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:62 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:62 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:63 
+0 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:63 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:63 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:63 
+3 31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:64 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:64 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:64 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:64 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:65 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:65 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:65 
+6 26 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:65 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:66 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:66 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:66 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:66 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:67 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:67 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:67 
+10 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:67 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:68 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:68 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:68 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:68 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:69 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:69 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:69 
+14 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:69 
+27 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:70 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:70 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:70 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:70 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:71 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:71 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:71 
+18 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:71 
+15 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:72 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:72 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:72 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:72 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:73 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:73 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:73 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:73 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:74 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:74 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:74 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:74 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:75 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:75 
+1 25 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:75 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:75 
+3 23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:76 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:76 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:76 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:76 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:77 
+4 32 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:77 
+5 33 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:77 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:77 
+31 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:78 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:78 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:78 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:78 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:79 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:79 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:79 
+26 34 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:79 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:80 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:80 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:80 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:80 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:81 
+12 28 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:81 
+13 29 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:81 
+10 30 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:81 
+11 27 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:82 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:82 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:82 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:82 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:83 
+16 36 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:83 
+17 37 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:83 
+14 38 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:83 
+15 35 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:84 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:84 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:84 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:84 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:85 
+20 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:85 
+21 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:85 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:85 
+19 39 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:86 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:86 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:86 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:86 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:87 
+0 24 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:87 
+1 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:87 
+22 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:87 
+23 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:88 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:88 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:88 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:88 
+3 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:89 
+4 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:89 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:89 
+2 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:89 
+3 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:90 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:90 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:90 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:90 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:91 
+8 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:91 
+5 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:91 
+6 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:91 
+7 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:92 
+12 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:92 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:92 
+10 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:92 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:93 
+12 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:93 
+9 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:93 
+10 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:93 
+11 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:94 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:94 
+13 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:94 
+14 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:94 
+15 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:95 
+16 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:95 
+13 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:95 
+14 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:95 
+15 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:96 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:96 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:96 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:96 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:97 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:97 
+17 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:97 
+18 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:97 
+19 =====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:98 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:0 TRACK:99 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:1 TRACK:99 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:2 TRACK:99 
+=====================
+
+TYPE:clb width:0 height:0
+
+SIDE:3 TRACK:99 
+=====================
